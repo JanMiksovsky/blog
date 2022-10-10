@@ -1,0 +1,4 @@
+  {{#map ../posts}}
+    <h1>{{ (front .)/title }}</h1>
+    {{.}}
+  {{/map}}

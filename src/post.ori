@@ -1,0 +1,4 @@
+{{#page.ori}}
+  <h1>{{title}}</h1>
+  {{@text}}
+{{/page.ori}}

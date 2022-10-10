@@ -1,0 +1,3 @@
+posts = map(../posts, post.ori):
+
+all.html = all.ori():
