@@ -2237,7 +2237,6 @@
   ---
   <p>At the beginning of January, I set myself a goal to see if I could make at least one post on flow|state a month. January&#39;s now over, with no post. I&#39;ve had a draft of the promised follow-up to the last post on the <a href="http://miksovsky.blogs.com/flowstate/2008/10/the-shared-suff.html">Shared Suffering Hypothesis</a>&#0160;under construction for three months. (Thanks to Michael, Barry, Evan, &amp; co. for their comments, the most interesting dialogue I&#39;ve received on a post in a long while.) I still&#0160;can&#39;t find the time to finish off the darn post.</p><div><div><br /><div><div>It&#39;s sinking in that helming a startup through a stormy economy while adequately parenting three young children just doesn&#39;t leave enough personal time to do this blog justice. FeedBurner says I&#39;ve got several thousand subscribers, and I&#39;ve occasionally run into readers who offered me their encouragement (thanks, John F.!). I would prefer not to leave them wondering why there&#39;s no activity.</div><br /><div>I need less stress, not more, right now, and think the safest thing to do is declare an indefinite blog hiatus. There are still countless UI topics on which I would like to write, and I hope at some point to find the time to get some down. At that point you—and I—can be pleasantly surprised. Until then, thanks for reading.</div><br /><div>Best,</div><div>Jan</div></div></div></div>
 
-
 2008-10-05.html: |
   ---
   title: "The Shared Suffering Hypothesis, or setting things up the way everyone else does"
@@ -2573,7 +2572,6 @@
   <li><em><strong>Ambiguity:</strong> Sketches are intentionally ambiguous, and much of their value derives from their being able to be interpreted in different ways, and new relationships seen within them, even by the person who drew them.</em></li></ol>
 
   <p>Point #9 above states that sketches should exhibit an appropriate degree of refinement, a point echoed in a post I made a while back on <a href="http://miksovsky.blogs.com/flowstate/2006/10/using_crude_ske.html">matching design sketches to the desired level of design feedback</a>. I found the other attributes listed here interesting food for thought.</p>
-
 
 2007-08-16.html: |
   ---
@@ -3227,10 +3225,10 @@
 
   <p>Anyway, after a week of using WMP 11, I’m quite impressed.</p>
 
-2006-05-09.html: |
+2006-05-09 09:30:00 PM.html: |
   ---
   title: "Font impoverished"
-  date: 2006-05-09
+  date: 2006-05-09 09:30:00 PM
   slug: what_the_font
   originalUrl: https://miksovsky.blogs.com/flowstate/2006/05/what_the_font.html
   ---
@@ -3272,10 +3270,10 @@
   <p>Given the pace of change, I'm sure this problem will eventually be fixed. In a few years we'll look back at screen shots of client apps or web pages from this time and instantly recognize them as dating from an earlier era—because most of the text will be formatted in the same stupid sans serif fonts.</p>
   -----
 
-2006-05-09.html: |
+2006-05-09 09:29:00 PM.html: |
   ---
   title: "Blogging through the product cycle"
-  date: 2006-05-09
+  date: 2006-05-09 09:29:00 PM
   slug: blogging_throug
   originalUrl: https://miksovsky.blogs.com/flowstate/2006/05/blogging_throug.html
   ---
@@ -3357,10 +3355,10 @@
 
   <p>Overall, a nice information appliance.</p>
 
-2006-02-26.html: |
+2006-02-26.html 10:58:00 AM: |
   ---
   title: "Okay, death *TO* the lame Recycle Bin confirmation dialog in Windows"
-  date: 2006-02-26
+  date: 2006-02-26 10:58:00 AM
   slug: okay_death_to_t
   originalUrl: https://miksovsky.blogs.com/flowstate/2006/02/okay_death_to_t.html
   ---
@@ -3510,7 +3508,6 @@
   <p>I recall one UI like this that came up a long time ago in Microsoft's first email product, Microsoft Mail. (Microsoft Mail, interestingly, was written for Macintosh computers and ran on AppleTalk networks.) During a certain operation, the product needed to have the user insert and remove a sequence of floppy disks. To its credit, the team took incredible pains to: a) order the disk insertions so as to minimize the number of times during the process that the user needed to remove one disk and insert another, and b) ensure that the longest disk operation took place last.</p>
 
   <p>It's likely that no user ever perceived these refinements to the process, but I'm sure that some significant number of users were nevertheless saved the irritation of returning to their desk to discover that their computer was stuck halfway through, awaiting their return.</p>
-
 
 2005-12-06.html: |
   ---
@@ -4036,19 +4033,19 @@
 
   <p>That web sites handle feedback modelessly is taken for granted. Virtually all feedback regarding field validation in a web form is dealt with this way, typically as red text adjacent to the fields that require re-entry. A Win32 application like Outlook has to do more work than a web site to achieve the same effect, because Win32's facilities for layout are so primitive that the designers and developers have to handle all the layout themselves. Nevertheless, this isn't rocket science, and the technique is so useful that more app designers should consider adopting it.</p>
 
-2005-07-25.html: |
+2005-07-25 09:09:24 PM.html: |
   ---
   title: "Error message o' the week"
-  date: 2005-07-25
+  date: 2005-07-25 09:09:24 PM
   slug: error_message_o
   originalUrl: https://miksovsky.blogs.com/flowstate/2005/07/error_message_o.html
   ---
   <p>I've been using <a href="http://del.icio.us">del.icio.us</a> for a while to search for things, and finally got around to registering so I could tag things myself. I tried to create an account with an &quot;@&quot; sign in the user name, and the site produced the following message:</p><blockquote><p>you can't use silly characters in your username</p></blockquote>
 
-2005-07-25.html: |
+2005-07-25 09:40:00 AM.html: |
   ---
   title: "Positive emotion from the point of first contact"
-  date: 2005-07-25
+  date: 2005-07-25 09:40:00 AM
   slug: positive_emotio
   originalUrl: https://miksovsky.blogs.com/flowstate/2005/07/positive_emotio.html
   ---
@@ -4073,8 +4070,6 @@
   <p></p>
 
   <p></p>
-
-
 
 2005-07-22.html: |
   ---

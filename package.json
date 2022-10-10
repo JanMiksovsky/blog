@@ -1,0 +1,7 @@
+{
+  "name": "blog",
+  "type": "module",
+  "dependencies": {
+    "sharp": "0.31.1"
+  }
+}
