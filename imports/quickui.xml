@@ -73,7 +73,7 @@
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://quickui.wordpress.com/?page_id=2</guid>
   <description/>
-  <content:encoded><![CDATA[This blog covers various aspects of developing web user interfaces, and is a development-oriented companion to the <a href="http://miksovsky.blogs.com/flowstate">flow|state</a> design blog. The blog originally covered topics related to the <a href="http://quickui.org">QuickUI</a> framework, but now generally covers component-oriented web UI development.]]></content:encoded>
+  <content:encoded><![CDATA[This blog covers various aspects of developing web user interfaces, and is a development-oriented companion to the <a href="http://miksovsky.blogs.com/flowstate">flow|state</a> design blog. The blog originally covered topics related to the <a href="http://quickui.org">QuickUI</a> framework, but now generally covers component-oriented web UI development.
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>2</wp:post_id>
   <wp:post_date>2012-01-25 18:17:33</wp:post_date>
@@ -209,7 +209,7 @@ Now:
 <blockquote>&lt;Control className="MyControl"&gt;</blockquote>
 This change allows some consistency with the run-time function className(), and also reduces the chances for confusion if a Control class itself wants to define a "name" property.
 
-This is a breaking change, so markup users will need to download/build the latest qb tool, and force a rebuild of their project.]]></content:encoded>
+This is a breaking change, so markup users will need to download/build the latest qb tool, and force a rebuild of their project.
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>5</wp:post_id>
   <wp:post_date>2012-01-30 10:18:05</wp:post_date>
@@ -248,7 +248,7 @@ The tutorial is divided into two sections: the first shows how you can use Quick
 
 The existing markup tutorial has been moved to a new <a href="http://quickui.org/markup/">Markup</a> section that also now hosts the Downloads page for the client-side compiler. This reorganization helps emphasize the fact that the use of QuickUI markup is an optional, somewhat advanced mode of use; markup is no longer required to use or create QuickUI controls.
 
-This tutorial represents the first of several forthcoming steps to make QuickUI more appealing to a wider JavaScript audience.]]></content:encoded>
+This tutorial represents the first of several forthcoming steps to make QuickUI more appealing to a wider JavaScript audience.
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>14</wp:post_id>
   <wp:post_date>2012-02-01 08:00:00</wp:post_date>
@@ -354,7 +354,7 @@ This tutorial represents the first of several forthcoming steps to make QuickUI 
   <guid isPermaLink="false">https://quickui.wordpress.com/?p=25</guid>
   <description/>
   <content:encoded><![CDATA[<p>The documentation for the QuickUI Catalog, which now contains 60+ controls, has been updated to include documentation of each class' properties and methods.</p>
-<p>Previously, the only way to see how to use a control was to read the original control source code on GitHub. Now the descriptions for a class' members are extracted from the source, and then used to populate the documentation page for that class. For example, the <a href="https://github.com/JanMiksovsky/quickui-catalog/blob/master/quickui.catalog/ListBox.qui">ListBox source</a> is parsed to create the <a href="http://quickui.org/catalog/ListBox/">ListBox</a> documentation page.</p>]]></content:encoded>
+<p>Previously, the only way to see how to use a control was to read the original control source code on GitHub. Now the descriptions for a class' members are extracted from the source, and then used to populate the documentation page for that class. For example, the <a href="https://github.com/JanMiksovsky/quickui-catalog/blob/master/quickui.catalog/ListBox.qui">ListBox source</a> is parsed to create the <a href="http://quickui.org/catalog/ListBox/">ListBox</a> documentation page.</p>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>25</wp:post_id>
   <wp:post_date>2012-02-14 15:44:56</wp:post_date>
@@ -379,7 +379,7 @@ This tutorial represents the first of several forthcoming steps to make QuickUI 
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://blog.quickui.org/?p=29</guid>
   <description/>
-  <content:encoded><![CDATA[<p>A minor update.</p><ul><li>To facilitate controls that want to perform their own layout (HorizontalPanels, VerticalPanels, PanelWithOverlfow</li></ul>]]></content:encoded>
+  <content:encoded><![CDATA[<p>A minor update.</p><ul><li>To facilitate controls that want to perform their own layout (HorizontalPanels, VerticalPanels, PanelWithOverlfow</li></ul>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>29</wp:post_id>
   <wp:post_date>2012-03-16 22:12:19</wp:post_date>
@@ -404,7 +404,7 @@ This tutorial represents the first of several forthcoming steps to make QuickUI 
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://blog.quickui.org/?p=30</guid>
   <description/>
-  <content:encoded><![CDATA[<p>A minor update.</p><ul><li>To facilitate controls that want to perform their own layout, controls can bind to a new <a href="http://quickui.org/docs/control-events.html#layout">layout</a> event. Controls like HorizontalPanels, VerticalPanels, PanelWithOverlfow</li></ul>]]></content:encoded>
+  <content:encoded><![CDATA[<p>A minor update.</p><ul><li>To facilitate controls that want to perform their own layout, controls can bind to a new <a href="http://quickui.org/docs/control-events.html#layout">layout</a> event. Controls like HorizontalPanels, VerticalPanels, PanelWithOverlfow</li></ul>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>30</wp:post_id>
   <wp:post_date>2012-03-16 22:13:19</wp:post_date>
@@ -429,7 +429,7 @@ This tutorial represents the first of several forthcoming steps to make QuickUI 
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://blog.quickui.org/?p=31</guid>
   <description/>
-  <content:encoded><![CDATA[<p>A minor update.</p><ul><li>To facilitate controls that want to perform their own layout, controls can bind to a new <a href="http://quickui.org/docs/control-events.html#layout">layout</a> event. Catalog controls like HorizontalPanels, VerticalPanels, PanelWithOverlfow, and PersistentPanel use this to recalculate the layout of their contents in response to a change in window size.</li></ul>]]></content:encoded>
+  <content:encoded><![CDATA[<p>A minor update.</p><ul><li>To facilitate controls that want to perform their own layout, controls can bind to a new <a href="http://quickui.org/docs/control-events.html#layout">layout</a> event. Catalog controls like HorizontalPanels, VerticalPanels, PanelWithOverlfow, and PersistentPanel use this to recalculate the layout of their contents in response to a change in window size.</li></ul>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>31</wp:post_id>
   <wp:post_date>2012-03-16 22:14:19</wp:post_date>
@@ -454,7 +454,7 @@ This tutorial represents the first of several forthcoming steps to make QuickUI 
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://blog.quickui.org/?p=32</guid>
   <description/>
-  <content:encoded><![CDATA[<p>A minor update.</p><ul><li>To facilitate controls that want to perform their own layout, controls can bind to a new <a href="http://quickui.org/docs/control-events.html#layout">layout</a> event. Catalog controls like HorizontalPanels, VerticalPanels, PanelWithOverlfow, and PersistentPanel use this to recalculate the layout of their contents in response to a change in window size.</li><li>A companion event called <a href="http://quickui.org/docs/control-events.html#sizeChanged">sizeChanged</a> can be triggered by a control that wants to cooperatively let its parents know about a change in the control's size.</li><li>A helper Control </li></ul>]]></content:encoded>
+  <content:encoded><![CDATA[<p>A minor update.</p><ul><li>To facilitate controls that want to perform their own layout, controls can bind to a new <a href="http://quickui.org/docs/control-events.html#layout">layout</a> event. Catalog controls like HorizontalPanels, VerticalPanels, PanelWithOverlfow, and PersistentPanel use this to recalculate the layout of their contents in response to a change in window size.</li><li>A companion event called <a href="http://quickui.org/docs/control-events.html#sizeChanged">sizeChanged</a> can be triggered by a control that wants to cooperatively let its parents know about a change in the control's size.</li><li>A helper Control </li></ul>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>32</wp:post_id>
   <wp:post_date>2012-03-16 22:15:19</wp:post_date>
@@ -479,7 +479,7 @@ This tutorial represents the first of several forthcoming steps to make QuickUI 
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://blog.quickui.org/?p=33</guid>
   <description/>
-  <content:encoded><![CDATA[<p>A minor update.</p><ul><li>To facilitate controls that want to perform their own layout, controls can bind to a new <a href="http://quickui.org/docs/control-events.html#layout">layout</a> event. Catalog controls like HorizontalPanels, VerticalPanels, PanelWithOverlfow, and PersistentPanel use this to recalculate the layout of their contents in response to a change in window size.</li><li>A companion event called <a href="http://quickui.org/docs/control-events.html#sizeChanged">sizeChanged</a> can be triggered by a control that wants to cooperatively let its parents know about a change in the control's size.</li><li>A helper Control method called <a href="http://quickui.org/docs/control-prototype-methods.html#checkForSizeChange">checkForSizeChange()</a> can be called if a control has updated its contents and there's the possibility that its size has changed. The helper records the control's last know</li></ul>]]></content:encoded>
+  <content:encoded><![CDATA[<p>A minor update.</p><ul><li>To facilitate controls that want to perform their own layout, controls can bind to a new <a href="http://quickui.org/docs/control-events.html#layout">layout</a> event. Catalog controls like HorizontalPanels, VerticalPanels, PanelWithOverlfow, and PersistentPanel use this to recalculate the layout of their contents in response to a change in window size.</li><li>A companion event called <a href="http://quickui.org/docs/control-events.html#sizeChanged">sizeChanged</a> can be triggered by a control that wants to cooperatively let its parents know about a change in the control's size.</li><li>A helper Control method called <a href="http://quickui.org/docs/control-prototype-methods.html#checkForSizeChange">checkForSizeChange()</a> can be called if a control has updated its contents and there's the possibility that its size has changed. The helper records the control's last know</li></ul>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>33</wp:post_id>
   <wp:post_date>2012-03-16 22:16:19</wp:post_date>
@@ -504,7 +504,7 @@ This tutorial represents the first of several forthcoming steps to make QuickUI 
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://blog.quickui.org/2012/03/16/quickui-0-8-9-released/</guid>
   <description/>
-  <content:encoded><![CDATA[<p>A minor update.</p><ul><li>To facilitate controls that want to perform their own layout, controls can bind to a new <a href="http://quickui.org/docs/control-events.html#layout">layout</a> event. Catalog controls like HorizontalPanels, VerticalPanels, PanelWithOverlfow, and PersistentPanel use this to recalculate the layout of their contents in response to a change in window size.</li><li>A companion event called <a href="http://quickui.org/docs/control-events.html#sizeChanged">sizeChanged</a> can be triggered by a control that wants to cooperatively let its parents know about a change in the control's size.</li><li>A helper Control method called <a href="http://quickui.org/docs/control-prototype-methods.html#checkForSizeChange">checkForSizeChange()</a> can be called if a control has updated its contents and there's the possibility that its size has changed. The helper records the control's last known size and, if the size has indeed change, raises the aforementioned sizeChanged event.</li></ul>]]></content:encoded>
+  <content:encoded><![CDATA[<p>A minor update.</p><ul><li>To facilitate controls that want to perform their own layout, controls can bind to a new <a href="http://quickui.org/docs/control-events.html#layout">layout</a> event. Catalog controls like HorizontalPanels, VerticalPanels, PanelWithOverlfow, and PersistentPanel use this to recalculate the layout of their contents in response to a change in window size.</li><li>A companion event called <a href="http://quickui.org/docs/control-events.html#sizeChanged">sizeChanged</a> can be triggered by a control that wants to cooperatively let its parents know about a change in the control's size.</li><li>A helper Control method called <a href="http://quickui.org/docs/control-prototype-methods.html#checkForSizeChange">checkForSizeChange()</a> can be called if a control has updated its contents and there's the possibility that its size has changed. The helper records the control's last known size and, if the size has indeed change, raises the aforementioned sizeChanged event.</li></ul>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>34</wp:post_id>
   <wp:post_date>2012-03-16 22:16:45</wp:post_date>
@@ -775,7 +775,7 @@ The hope is that any issues can be teased out of the Web Components spec early e
 	<li>A QuickUI subclass maintains an is-a relationship with its base class. The &lt;shadow&gt; element in the Web Components spec may lead to subclasses that effectively maintain more of a has-a relationship with their parent class. It’s not immediately clear, for example, how one could define a base class and a subclass that meet all these conditions: a) both use the same root element (e.g., &lt;button&gt;), b) both are independently instantiable, c) the subclass can host base class elements (e.g., via &lt;shadow&gt;), and d) the subclass is a JavaScript instanceof (is-a) of the base class. These conditions often arise when extending an existing control class, and QuickUI control classes can meet all of them.</li>
 	<li>The Web Components proposal minimizes the impact on the HTML language itself, but one repercussion of this appears to be that component classes can’t define custom properties that can be set through markup. As currently understood, the spec calls for hosts to pass values to components exclusively through a single content tree. The component class must then prise apart this content through a “select=” attribute so that it can incorporate content subelements into different parts of the component.This is roughly analogous to the way command-line apps must parse their text arguments, with both the flexibility and the potential for great inconsistency that go with that. In this context, such flexibility may create significant complications for the creation and maintenance of subclasses, as varying levels of the class hierarchy impose different demands on the content. Overall, this doesn’t feel as specific or clean as the compound property syntax in a language like XAML (or <a href="http://quickui.org/markup/">QuickUI Markup</a>), in which a control class can define custom properties that may be set as string attributes, through nested subelements, or through property setter functions.</li>
 </ol>
-As these issues are investigated more deeply, the results of those investigations will be posted here.]]></content:encoded>
+As these issues are investigated more deeply, the results of those investigations will be posted here.
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>35</wp:post_id>
   <wp:post_date>2012-04-16 08:00:00</wp:post_date>
@@ -1001,7 +1001,7 @@ Such controls represent a significant percentage of the QuickUI Catalog — appr
 
 Overall, this pass through the QuickUI Catalog suggests that many interesting user interface components have a need to perform work when their content is set — to do something more than passively hold the content they’re passed. At this point, it’s not exactly whether the aforementioned QuickUI controls could be successfully ported to Web Components as the spec currently stands, which would be unfortunate. (As stated in the previous post, a long-term vision for the QuickUI framework is that controls created in QuickUI can be transitioned to a Web Components foundation in the future.)
 
-It’s possible that a component could use forthcoming support for DOM mutation observers could be used to track changes to its own content, but whether this would work, or work well, is not yet known. A control could also force its host to invoke some method on the control whenever the host changes the control’s content, but that would be unfortunate; it would place extra work on the developer, and a host’s failure to properly notify the control that its contents have changed could lead to subtle bugs.]]></content:encoded>
+It’s possible that a component could use forthcoming support for DOM mutation observers could be used to track changes to its own content, but whether this would work, or work well, is not yet known. A control could also force its host to invoke some method on the control whenever the host changes the control’s content, but that would be unfortunate; it would place extra work on the developer, and a host’s failure to properly notify the control that its contents have changed could lead to subtle bugs.
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>40</wp:post_id>
   <wp:post_date>2012-04-27 08:00:00</wp:post_date>
@@ -1081,7 +1081,7 @@ QuickUI control classes are subclasses of jQuery, so one of the key features in 
 
 With this in place, it’s now possible to create QuickUI controls in CoffeeScript with significantly less source code than the equivalent plain JavaScript. This is an overall win for web UI developers. If your team hasn’t already taken a look at CoffeeScript, now might be a good time.
 
-Creating QuickUI controls in CoffeeScript currently requires a plugin, but the plan is to fold CoffeeScript support directly into the quickui.js runtime. Read the <a href="http://quickui.org/docs/CoffeeScript.html">documentation for QuickUI support of CoffeeScript</a> for more details.]]></content:encoded>
+Creating QuickUI controls in CoffeeScript currently requires a plugin, but the plan is to fold CoffeeScript support directly into the quickui.js runtime. Read the <a href="http://quickui.org/docs/CoffeeScript.html">documentation for QuickUI support of CoffeeScript</a> for more details.
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>45</wp:post_id>
   <wp:post_date>2012-05-07 08:00:00</wp:post_date>
@@ -1178,7 +1178,7 @@ Creating QuickUI controls in CoffeeScript currently requires a plugin, but the p
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">https://quickui.wordpress.com/?p=50</guid>
   <description/>
-  <content:encoded><![CDATA[<p>QuickUI 0.9 has been released. This is a major update which includes a number of changes that make it easier than ever to create reusable, extensible web user interface components.</p> <ul> <li>The means by which classes are defined has been substantially simplified, which means that QuickUI is doing a lot less work when a class is defined. One result is that the previous Control.subclass() method has been replaced with a simple jQuery.sub() call. An overload still permits one to pass in a JavaScript object defining the class, but now everything in that object is simply copied over to the new class’ prototype. A new “inherited:” key now holds the Control JSON used to render the control; see the <a href="http://quickui.org/docs/control-JSON.html">docs</a> for more details. <li>The way you refer to an element within a control’s DOM has changed. Previously, you set an ID on an element in Control JSON using an “id:” key. Under the covers, this set an ID on the HTML element. As of QuickUI 0.9, to refer to an element in code, the Control JSON should include a “ref:” key. (See the <a href="http://quickui.org/tutorial/element-reference-functions.html">tutorial example</a>.) Under the covers, this will set a CSS class on the element. As before, this also implicitly creates an element reference function you can use to get that element through code: e.g., setting ref: “foo” on an element lets you get back to that element with the element reference function $foo(). <li>A control’s initialize() method now implicitly invokes the initialize() methods of its base classes. Previously, you had to remember to have initialize() invoke this._super(), which was error prone. Failure to invoke this._super() would often mean that a base class’ event handlers didn’t get wired up, which could lead to bugs which were difficult to track down. <li>CoffeeScript support, <a href="http://blog.quickui.org/2012/05/07/quickui-now-supports-coffeescript/">announced earlier</a>, has been folded into the core quickui.js runtime.</li></ul> <p>While the above work was underway, the QuickUI source code was substantially overhauled:</p> <ul> <li>The aforementioned support for creating QuickUI controls in CoffeeScript has gone so well that QuickUI’s own runtime has now itself been ported to CoffeeScript. This does <em>not</em> mean that QuickUI developers need to use CoffeeScript; QuickUI supports plain JavaScript development and CoffeeScript development equally well. For people using QuickUI, this simply means that a number of planned improvements to QuickUI (including those listed above) could more easily be tackled. <li>The quickui.js runtime file itself is now built with Ben Alman’s handy <a href="https://github.com/cowboy/grunt">Grunt</a> build tool. <li>The optional QuickUI markup compiler has been moved into a separate GitHub repo, quickui-markup.</li></ul> <p>Please take a look!</p>]]></content:encoded>
+  <content:encoded><![CDATA[<p>QuickUI 0.9 has been released. This is a major update which includes a number of changes that make it easier than ever to create reusable, extensible web user interface components.</p> <ul> <li>The means by which classes are defined has been substantially simplified, which means that QuickUI is doing a lot less work when a class is defined. One result is that the previous Control.subclass() method has been replaced with a simple jQuery.sub() call. An overload still permits one to pass in a JavaScript object defining the class, but now everything in that object is simply copied over to the new class’ prototype. A new “inherited:” key now holds the Control JSON used to render the control; see the <a href="http://quickui.org/docs/control-JSON.html">docs</a> for more details. <li>The way you refer to an element within a control’s DOM has changed. Previously, you set an ID on an element in Control JSON using an “id:” key. Under the covers, this set an ID on the HTML element. As of QuickUI 0.9, to refer to an element in code, the Control JSON should include a “ref:” key. (See the <a href="http://quickui.org/tutorial/element-reference-functions.html">tutorial example</a>.) Under the covers, this will set a CSS class on the element. As before, this also implicitly creates an element reference function you can use to get that element through code: e.g., setting ref: “foo” on an element lets you get back to that element with the element reference function $foo(). <li>A control’s initialize() method now implicitly invokes the initialize() methods of its base classes. Previously, you had to remember to have initialize() invoke this._super(), which was error prone. Failure to invoke this._super() would often mean that a base class’ event handlers didn’t get wired up, which could lead to bugs which were difficult to track down. <li>CoffeeScript support, <a href="http://blog.quickui.org/2012/05/07/quickui-now-supports-coffeescript/">announced earlier</a>, has been folded into the core quickui.js runtime.</li></ul> <p>While the above work was underway, the QuickUI source code was substantially overhauled:</p> <ul> <li>The aforementioned support for creating QuickUI controls in CoffeeScript has gone so well that QuickUI’s own runtime has now itself been ported to CoffeeScript. This does <em>not</em> mean that QuickUI developers need to use CoffeeScript; QuickUI supports plain JavaScript development and CoffeeScript development equally well. For people using QuickUI, this simply means that a number of planned improvements to QuickUI (including those listed above) could more easily be tackled. <li>The quickui.js runtime file itself is now built with Ben Alman’s handy <a href="https://github.com/cowboy/grunt">Grunt</a> build tool. <li>The optional QuickUI markup compiler has been moved into a separate GitHub repo, quickui-markup.</li></ul> <p>Please take a look!</p>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>50</wp:post_id>
   <wp:post_date>2012-05-15 10:32:51</wp:post_date>
@@ -1286,7 +1286,7 @@ $buttons.eachControl( function( index, $button ) {
 <div></div>
 <div>This ability to write tighter code has already invited the successful implementation of a number of long-planned improvements to the runtime. It's hard to say how many of those improvements were easier to tackle because of advantages in the CoffeeScript language itself, and how many were tackled just because CoffeeScript is a shiny, new tool. But as a general rule, it seems that CoffeeScript permits a programmer to more directly express their intention than one can do in JavaScript — and any language that can do that is a step forward.</div>
 <div></div>
-<div>Best of all, using any language like CoffeeScript that compiles to plain JavaScript enables a developer to finally break a hard dependence between language choice and the user's browser. Now that QuickUI itself is written in CoffeeScript, it can take immediate advantage of improvements in CoffeeScript the day they appear, instead of waiting years for incremental JavaScript improvements to make their way through committee, into browsers, and into users' hands.</div>]]></content:encoded>
+<div>Best of all, using any language like CoffeeScript that compiles to plain JavaScript enables a developer to finally break a hard dependence between language choice and the user's browser. Now that QuickUI itself is written in CoffeeScript, it can take immediate advantage of improvements in CoffeeScript the day they appear, instead of waiting years for incremental JavaScript improvements to make their way through committee, into browsers, and into users' hands.</div>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>52</wp:post_id>
   <wp:post_date>2012-05-15 14:55:29</wp:post_date>
@@ -1341,7 +1341,7 @@ First, it’s now even easier to create web user interface components in CoffeeS
 <pre>control window.MyButton extends BasicButton</pre>
 The QuickUI <a href="http://quickui.org/docs/CoffeeScript.html">documentation for creating controls in CoffeeScript</a> has been updated to reflect this.
 
-Second, QuickUI 0.9.1 has a simplified model for generic styling. The QuickUI Catalog controls define generic styles that allow them to function without you needing to provide styling for them. You can easily turn off a base class’ generic style by setting the subclass’ <a href="http://quickui.org/docs/control-prototype-methods.html#generic">generic()</a> property to false.]]></content:encoded>
+Second, QuickUI 0.9.1 has a simplified model for generic styling. The QuickUI Catalog controls define generic styles that allow them to function without you needing to provide styling for them. You can easily turn off a base class’ generic style by setting the subclass’ <a href="http://quickui.org/docs/control-prototype-methods.html#generic">generic()</a> property to false.
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>62</wp:post_id>
   <wp:post_date>2012-06-07 10:28:08</wp:post_date>
@@ -1463,7 +1463,7 @@ The $.sub() plugin doesn’t seem to be used much, perhaps because its benefits 
 
 QuickUI relies upon the $.sub() technique to make its base Control a subclass of jQuery. This is what lets you use any jQuery feature with QuickUI controls directly: you can bind events to them with $.on(), you can style them with $.css(), and so on. That’s because your control class derives from Control, and so ultimately derives from jQuery.
 
-You can <a href="http://quickui.org/tutorial/creating-control-class.html">create a new QuickUI control class in JavaScript</a> by invoking Control.sub(). And, with QuickUI 0.9.1, you can now create subclasses of Control (and, therefore, jQuery ) <a href="http://quickui.org/docs/CoffeeScript.html">using CoffeeScript’s built-in class syntax</a>, which is concise and highly legible. In either language, you can easily create your own reusable web user interface components that have direct access to all the power of jQuery.]]></content:encoded>
+You can <a href="http://quickui.org/tutorial/creating-control-class.html">create a new QuickUI control class in JavaScript</a> by invoking Control.sub(). And, with QuickUI 0.9.1, you can now create subclasses of Control (and, therefore, jQuery ) <a href="http://quickui.org/docs/CoffeeScript.html">using CoffeeScript’s built-in class syntax</a>, which is concise and highly legible. In either language, you can easily create your own reusable web user interface components that have direct access to all the power of jQuery.
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>66</wp:post_id>
   <wp:post_date>2012-06-07 11:51:51</wp:post_date>
@@ -1626,7 +1626,7 @@ You can <a href="http://quickui.org/tutorial/creating-control-class.html">create
 
 The result is a <a href="http://quickui.org/docs/contacts.html">sample Contacts application</a> built in QuickUI. The sample takes advantage of QuickUI’s support for CoffeeScript, which turns out to be an elegant language to express both Backbone and QuickUI classes.
 
-Read the sample’s documentation for more details of its construction.]]></content:encoded>
+Read the sample’s documentation for more details of its construction.
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>78</wp:post_id>
   <wp:post_date>2012-06-18 08:00:00</wp:post_date>
@@ -1655,7 +1655,7 @@ Read the sample’s documentation for more details of its construction.]]></cont
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://quickui.files.wordpress.com/2012/06/web-component-poll.png</guid>
   <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
+  <content:encoded><![CDATA[
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>82</wp:post_id>
   <wp:post_date>2012-06-29 21:41:23</wp:post_date>
@@ -1688,7 +1688,7 @@ Read the sample’s documentation for more details of its construction.]]></cont
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://quickui.files.wordpress.com/2012/06/web-component-poll_thumb.png</guid>
   <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
+  <content:encoded><![CDATA[
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>83</wp:post_id>
   <wp:post_date>2012-06-29 21:41:26</wp:post_date>
@@ -1927,7 +1927,7 @@ The QuickUI framework, at least, is more expressive with regard to component con
 
 To be sure, the Google team, and the others working on Web Components, are smart folks, and it’s likely they’ve already given at least some thought to the problems raised in this post. But more input, particularly when informed by real application experience by potential users of a standard, is always valuable in weighing decisions about what should go into the standard. And it's in that spirit that this post is written.
 
-If you yourself have worked with component frameworks, and have experiences that bear on this issue, please share them with the folks at Google. A good forum for feedback might be the <a href="https://plus.google.com/103330502635338602217/posts">Web Components page on Google+</a>. (Be sure to thank everyone for their work!)]]></content:encoded>
+If you yourself have worked with component frameworks, and have experiences that bear on this issue, please share them with the folks at Google. A good forum for feedback might be the <a href="https://plus.google.com/103330502635338602217/posts">Web Components page on Google+</a>. (Be sure to thank everyone for their work!)
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>84</wp:post_id>
   <wp:post_date>2012-07-02 08:00:28</wp:post_date>
@@ -2348,7 +2348,7 @@ genuinely excellent, keep up writing.]]></wp:comment_content>
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">https://quickui.wordpress.com/?p=104</guid>
   <description/>
-  <content:encoded><![CDATA[<p>Version 0.9.2 is primarily a bug-fix release. Beyond a variety of minor fixes, there are just a couple of notable changes:</p> <ol> <li>Using $.control( element ) on an existing element to cast the element to the correct subclass of Control now returns null (instead of undefined) if the given element is not a control.</li> <li>A bug has been fixed which prevented quickui.js from loading in IE8. Thanks to QuickUI user Toussaint for reporting this bug and helping to test the fix!</li></ol> <p>The release of 0.9.2 coincides with the release of version 0.9.2 of the QuickUI Catalog, which includes the following:</p> <ol> <li>Modes now derives from a new base class called Sequence, a general-purpose class for any linear sequence of elements that can be navigated via a next() and previous() method. Modes now focuses on showing just one element of a Sequence at a time. As part of this change, Modes.activeChild() has been renamed to Modes.activeElement().</li> <li>SlidingPages has been renamed SlidingPanels (since its contained elements aren’t necessarily pages). The class now also derives from Sequence. Finally, SlidingPanels has been updated to take advantage of CSS transitions on browsers that support them, falling back to a jQuery animation on older browsers.</li> <li>LateralNavigator has been refactored to handle two general cases: first, navigating through a Sequence of elements, and second navigating through an abstract axis like time. The former case is specifically addressed with a new class called SequenceNavigator. The latter case is used in CalendarMonthNavigator.</li> <li>An issue that prevented CalendarMonthNavigator from correctly vertically aligning its heading elements has been fixed. CalendarMonthNavigator now also uses a new class, MonthAndYear, to show both the month and year instead of just the month name.</li> <li>A new VerticalAlign class handles the general problem of vertically aligning child elements in older browsers.</li> <li>A new Carousel class derives from SequenceNavigator, and uses a SlidingPanels class to provide a sliding transition between elements in the sequence.</li> <li>The TabSet class has been renamed to Tabs.</li></ol> <p>This release is also notable as the first one in which Catalog controls have been written (and, some cases, rewritten) in CoffeeScript.</p>]]></content:encoded>
+  <content:encoded><![CDATA[<p>Version 0.9.2 is primarily a bug-fix release. Beyond a variety of minor fixes, there are just a couple of notable changes:</p> <ol> <li>Using $.control( element ) on an existing element to cast the element to the correct subclass of Control now returns null (instead of undefined) if the given element is not a control.</li> <li>A bug has been fixed which prevented quickui.js from loading in IE8. Thanks to QuickUI user Toussaint for reporting this bug and helping to test the fix!</li></ol> <p>The release of 0.9.2 coincides with the release of version 0.9.2 of the QuickUI Catalog, which includes the following:</p> <ol> <li>Modes now derives from a new base class called Sequence, a general-purpose class for any linear sequence of elements that can be navigated via a next() and previous() method. Modes now focuses on showing just one element of a Sequence at a time. As part of this change, Modes.activeChild() has been renamed to Modes.activeElement().</li> <li>SlidingPages has been renamed SlidingPanels (since its contained elements aren’t necessarily pages). The class now also derives from Sequence. Finally, SlidingPanels has been updated to take advantage of CSS transitions on browsers that support them, falling back to a jQuery animation on older browsers.</li> <li>LateralNavigator has been refactored to handle two general cases: first, navigating through a Sequence of elements, and second navigating through an abstract axis like time. The former case is specifically addressed with a new class called SequenceNavigator. The latter case is used in CalendarMonthNavigator.</li> <li>An issue that prevented CalendarMonthNavigator from correctly vertically aligning its heading elements has been fixed. CalendarMonthNavigator now also uses a new class, MonthAndYear, to show both the month and year instead of just the month name.</li> <li>A new VerticalAlign class handles the general problem of vertically aligning child elements in older browsers.</li> <li>A new Carousel class derives from SequenceNavigator, and uses a SlidingPanels class to provide a sliding transition between elements in the sequence.</li> <li>The TabSet class has been renamed to Tabs.</li></ol> <p>This release is also notable as the first one in which Catalog controls have been written (and, some cases, rewritten) in CoffeeScript.</p>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>104</wp:post_id>
   <wp:post_date>2012-08-06 08:00:00</wp:post_date>
@@ -2466,7 +2466,7 @@ http://quickui.org/catalog/HighlightEffects/ does nothing in Chrome and Firefox,
 <p>As much as possible, it would be useful for the syntax of QuickUI templates to mirror that proposed for Web Components. However, as noted in an earlier post, <a href="http://blog.quickui.org/2012/07/02/web-component-properties/">Shadow DOM subtrees do not currently support named DOM-valued properties</a>, nor any other standard means for identifying the parameters of a custom element. Shadow DOM subtrees can make use of CSS selectors in a “select” attribute to pull elements out of an element’s content.</p>
 <p>However, there is no practical way for an external agent to programmatically inspect component code to determine <em>which </em>elements are going to be pulled out. This is exactly what a template parsing engine needs to be able to do.</p><pre><p>class window.ComponentHost extends Control
   inherited:
-    content: """</p><p>      &lt;img src="{{picture}}"/&gt;</p><p>      &lt;span&gt;{{content}}&lt;/span&gt;</p><p>    """</p></pre>]]></content:encoded>
+    content: """</p><p>      &lt;img src="{{picture}}"/&gt;</p><p>      &lt;span&gt;{{content}}&lt;/span&gt;</p><p>    """</p></pre>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>106</wp:post_id>
   <wp:post_date>2012-11-20 16:12:17</wp:post_date>
@@ -2499,7 +2499,7 @@ The corresponding release of QuickUI Catalog 0.9.3 includes some minor enhanceme
 <ul>
 	<li><span style="line-height:15px;">A new <a href="http://quickui.org/catalog/TextBoxWithButton">TextBoxWithButton</a> control covers the common UI pattern of a text box with an adjacent button (often labeled "Go" or something similar). </span>The existing SearchBox control has been refactored to derive from TextBoxWithButton.</li>
 	<li>A new <a href="http://quickui.org/catalog/Log">Log </a>control handles the common need to log text output (e.g., from a background process) to the page.</li>
-</ul>]]></content:encoded>
+</ul>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>108</wp:post_id>
   <wp:post_date>2013-01-11 17:10:51</wp:post_date>
@@ -2541,7 +2541,7 @@ Now that that port has been accomplished, it will be easier to move the Catalog 
 	<li><a href="http://quickui.org/catalog/ToggleButton">ToggleButton</a> is a button that can track a selected state. This can be used as is, or as a base class for custom toggle classes.</li>
 	<li><a href="http://quickui.org/catalog/Link">Link</a> wraps a standard HTML &lt;a&gt; tag, and can be used as a base class for custom link classes.</li>
 	<li><a href="http://quickui.org/catalog/TextBox">TextBox</a> wraps a standard HTML text input element, and can be used as a base class for custom text box classes.</li>
-</ul>]]></content:encoded>
+</ul>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>113</wp:post_id>
   <wp:post_date>2013-01-23 15:38:46</wp:post_date>
@@ -2631,7 +2631,7 @@ Now that that port has been accomplished, it will be easier to move the Catalog 
 <div style="font-family:Calibri, sans-serif;font-size:14px;">would be</div>
 <div style="font-family:Calibri, sans-serif;font-size:14px;"> </div>
 <div style="font-family:Calibri, sans-serif;font-size:14px;"> </div>
-<div style="font-family:Calibri, sans-serif;font-size:14px;">    <img src="72044948-A4ED-4F47-BC29-483186E6FE1B" alt="" /></div>]]></content:encoded>
+<div style="font-family:Calibri, sans-serif;font-size:14px;">    <img src="72044948-A4ED-4F47-BC29-483186E6FE1B" alt="" /></div>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>116</wp:post_id>
   <wp:post_date>2013-02-14 16:52:59</wp:post_date>
@@ -2658,7 +2658,7 @@ Now that that port has been accomplished, it will be easier to move the Catalog 
   <description/>
   <content:encoded><![CDATA[<p>Bad news: this week's release of CoffeeScript 1.5 is incompatible with even the current QuickUI release, 0.9.3.</p>
 <p>QuickUI goes through <a href="http://blog.quickui.org/2012/06/07/jquery-fn-init/">significant trouble to subclass jQuery</a> because of jQuery's complex constructor. jQuery depends on an unusual feature of JavaScript called an "other typed" constructor: a class constructor that returns something other than a plain instance of the class being instantiated. When the CoffeeScript project considered dropping support for such constructors, cases were made to keep that feature (see <a href="https://github.com/jashkenas/coffee-script/issues/2359">CoffeeScript issue #2359</a>, but other people made similar cases on other issues). However, those arguments did not carry the day, and as of CoffeeScript 1.5, "other typed" constructors are rejected by the compiler. This effectively breaks the CoffeeScript source for QuickUI itself as well as for QuickUI Catalog.</p>
-<p>Possible fixes are being investigated, but this issue runs very deep, and a number of straightforward workarounds have already been ruled out. A real fix will likely require a substantial change to the way QuickUI instantiates controls. For the time being, it is recommended that QuickUI developers use CoffeeScript 1.4.0.</p>]]></content:encoded>
+<p>Possible fixes are being investigated, but this issue runs very deep, and a number of straightforward workarounds have already been ruled out. A real fix will likely require a substantial change to the way QuickUI instantiates controls. For the time being, it is recommended that QuickUI developers use CoffeeScript 1.4.0.</p>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>117</wp:post_id>
   <wp:post_date>2013-02-27 14:20:00</wp:post_date>
@@ -2692,7 +2692,7 @@ Now that that port has been accomplished, it will be easier to move the Catalog 
 <p>Meanwhile, a workaround had already begun to drastically simplify the Control constructor — in exchange for dropping the ability to instantiate a control class' constructor without the "new" keyword. As it turns out, QuickUI controls are typically instantiated via the framework itself, either declaratively through Control JSON or imperatively by invoking Control.create(). Only the framework needed to directly instantiate a control class, and so the framework source was updated to always make use of the "new" keyword.</p>
 <p>By the time this workaround was ready for deployment, the CoffeeScript 1.6 change made that workaround unnecessary. However, because the workaround was already working, and had significantly simplified the framework source, it was decided to keep the workaround. It was probably still correct for CoffeeScript 1.6 to back out the earlier breaking change to control constructors in CS 1.5. As this experience shows, the change not only dictated what CoffeeScript developers could do, it prevented or impaired their ability to integrated with plain JavaScript libraries which made use of "other typed" constructors.</p>
 <p>In general, despite this constructor change deep in the framework, QuickUI developers should generally observe no changes in framework behavior.</p>
-<p>The QuickUI Catalog has a few small bug fixes, but the version number has been bumped to 0.9.4.0 to keep in sync with the new version number for QuickUI 0.9.4.</p>]]></content:encoded>
+<p>The QuickUI Catalog has a few small bug fixes, but the version number has been bumped to 0.9.4.0 to keep in sync with the new version number for QuickUI 0.9.4.</p>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>118</wp:post_id>
   <wp:post_date>2013-05-13 11:51:36</wp:post_date>
@@ -2755,7 +2755,7 @@ Quetzal isn't ready for real use yet: it does just a few things at this stage, i
 If you're interested in following along, subscribe to this blog, and/or follow me on <a href="https://twitter.com/JanMiksovsky">Twitter</a> and <a href="https://plus.google.com/118102862690539596548">Google+</a>.
 
 Cheers,
-Jan Miksovsky]]></content:encoded>
+Jan Miksovsky
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>120</wp:post_id>
   <wp:post_date>2013-06-03 08:00:49</wp:post_date>
@@ -3026,7 +3026,7 @@ We'll see how the Quetzal experiment evolves, but so far, writing directly to th
 
 <em>So, jQuery, maybe we should spend some time apart.<em> <em>Maybe we should see some other people. </em>It's not you — it's me!</em> Don't worry; I might miss you terribly and come running back. Or maybe we'll just be friends.</em>
 
-<em>It's okay. We'll always have IE6.</em>]]></content:encoded>
+<em>It's okay. We'll always have IE6.</em>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>122</wp:post_id>
   <wp:post_date>2013-06-04 08:00:00</wp:post_date>
@@ -3368,7 +3368,7 @@ This post is effectively a form of <a href="http://en.wikipedia.org/wiki/Rubber
 
 It's theoretically possible I've hit some limit in the expressiveness permitted to custom elements in their current state. Perhaps that limitation could be addressed. If not, I'd  have to write off a big chunk of the solutions used by the QuickUI Catalog and QuickUI apps, and find alternate ways of meeting the same needs.
 
-I'm hoping, however, that I'm just missing something. If you have some passing familiarity with HTML custom elements and Shadow DOM, and have ideas about how to approach this problem within the existing technology, I'd love to hear them!]]></content:encoded>
+I'm hoping, however, that I'm just missing something. If you have some passing familiarity with HTML custom elements and Shadow DOM, and have ideas about how to approach this problem within the existing technology, I'd love to hear them!
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>143</wp:post_id>
   <wp:post_date>2013-06-11 08:00:22</wp:post_date>
@@ -3484,7 +3484,7 @@ Ightsero's Essential Tool]]></wp:comment_content>
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://quickui.files.wordpress.com/2013/06/buttons.png</guid>
   <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
+  <content:encoded><![CDATA[
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>145</wp:post_id>
   <wp:post_date>2013-06-10 17:09:41</wp:post_date>
@@ -3517,7 +3517,7 @@ Ightsero's Essential Tool]]></wp:comment_content>
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://quickui.files.wordpress.com/2013/06/shadow.png</guid>
   <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
+  <content:encoded><![CDATA[
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>146</wp:post_id>
   <wp:post_date>2013-06-10 17:09:43</wp:post_date>
@@ -3581,7 +3581,7 @@ Every single time I have to write a JavaScript loop instead of a CoffeeScript li
 
 That said, JavaScript is the standard. One thing I've learned from QuickUI is that if you're trying to build a community around a common library, creating that library in a programming language with a narrow audience dramatically limits the rate at which you can grow. One commenter named "jokester" offered on my original Quetzal post: "I’ll unfortunately not contribute to a project coded in CoffeeScript." Regardless of the advantages I believe CoffeeScript offers to developers, I'd rather allow orders of magnitude more people to contribute in the standard JavaScript language they're already proficient in.
 
-Anyway, that's about the state of things. This Quetzal project is still just an experiment, and doesn't do much useful yet, but it's proving a good way to learn.]]></content:encoded>
+Anyway, that's about the state of things. This Quetzal project is still just an experiment, and doesn't do much useful yet, but it's proving a good way to learn.
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>155</wp:post_id>
   <wp:post_date>2013-07-17 08:00:24</wp:post_date>
@@ -3624,7 +3624,7 @@ Anyway, that's about the state of things. This Quetzal project is still just an 
 	<li>A quetzal-combo-box element ties together a text input element, a popup, and a button to invoke or dismiss the popup. See this post on <a href="http://miksovsky.blogs.com/flowstate/2011/10/listcombobox.html">the original QuickUI combo box</a> for details on combo box behavior. Again, a key feature here is keyboard support: the Down key invokes the popup (if it's not already open), and the Escape key dismisses it. Another feature (inherited from the popup-source element) is positioning the popup above or below the text area as room allows. This combo box element doesn't provide a specific popup UI. Rather, it's intended to be used as a base class for custom combo box elements.</li>
 	<li>A quetzal-list-combo-box element combines the two above elements to create a typical combo box which presents choices as a dropdown list box. This includes standard auto-complete behavior. In many situations, a combo box like this is often a better UI solution than a plain text box with auto-complete: the user has a clearly visible button which can be used to invoke the complete list of choices. This is more discoverable than requiring the user to begin typing to see what the possible choices are. The auto-complete behavior matches against the textContent of the elements' children, so the list items can be any type of item that has meaningful textContent. The sample shown uses a custom element that shows a color swatch next to a color name; typing some text will auto-complete against the set of color names.</li>
 </ul>
-These elements still need more work. For example, the combo box needs a stock mobile variant in which the element can fill the screen when making a selection to provide bigger hit targets and maximize the number of visible list choices. Also, at the moment simply tapping a list box element causes the Android Chrome browser to crash. This makes it somewhat hard to debug. :( Nevertheless, I think these element demonstrate that a good set of UI base classes will make it much easier to create custom UI designs as web components take hold.]]></content:encoded>
+These elements still need more work. For example, the combo box needs a stock mobile variant in which the element can fill the screen when making a selection to provide bigger hit targets and maximize the number of visible list choices. Also, at the moment simply tapping a list box element causes the Android Chrome browser to crash. This makes it somewhat hard to debug. :( Nevertheless, I think these element demonstrate that a good set of UI base classes will make it much easier to create custom UI designs as web components take hold.
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>159</wp:post_id>
   <wp:post_date>2013-08-26 08:00:25</wp:post_date>
@@ -3727,7 +3727,7 @@ So that store-page itself can be extended, it in turn redefines that toolbar slo
 
 Sometimes tiny differences in fundamental features, like this refinement to the &lt;shadow&gt; behavior, can open up new realms of possibility. While it doesn’t look like much, when combined with subclassing, you’ve just been given a powerful new tool for creating custom web elements. You’ll be able to create a wide range of new general-purpose elements that can be filled in by other people to suit their needs, and you’ll be able to fill in general-purpose elements created by others to suit your own needs. This is a huge step towards a <a href="http://miksovsky.blogs.com/flowstate/2012/03/snapping-together-a-skyscraper.html">vibrant ecosystem of web user interface components</a>.
 
-<em>Beyond the expanded capabilities enabled here, I’m personally excited to see this change because I’ve been advocating for it for so long. I made a pitch for this on a visit to Google back in May 2012, and have promoted the idea in various forums since then. Other people like Scott Miles at Google also lobbied for the same thing. Special thanks are owed to Scott and to Dominic Cooney for contributing their own weight behind this idea and building the momentum required to make it happen; to Blink developer Hayato Ito for his work updating the spec and implementing the feature in Blink; and to Dimitri Glazkov for his careful oversight of the Shadow DOM spec. This is one spec change that was totally worth the trouble!</em>]]></content:encoded>
+<em>Beyond the expanded capabilities enabled here, I’m personally excited to see this change because I’ve been advocating for it for so long. I made a pitch for this on a visit to Google back in May 2012, and have promoted the idea in various forums since then. Other people like Scott Miles at Google also lobbied for the same thing. Special thanks are owed to Scott and to Dominic Cooney for contributing their own weight behind this idea and building the momentum required to make it happen; to Blink developer Hayato Ito for his work updating the spec and implementing the feature in Blink; and to Dimitri Glazkov for his careful oversight of the Shadow DOM spec. This is one spec change that was totally worth the trouble!</em>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>168</wp:post_id>
   <wp:post_date>2013-11-08 08:00:09</wp:post_date>
@@ -4054,7 +4054,7 @@ How are you planning to address this in Quetzal or are you not working on it any
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://quickui.files.wordpress.com/2013/11/page-template-1.png</guid>
   <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
+  <content:encoded><![CDATA[
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>175</wp:post_id>
   <wp:post_date>2013-11-08 10:54:50</wp:post_date>
@@ -4087,7 +4087,7 @@ How are you planning to address this in Quetzal or are you not working on it any
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://quickui.files.wordpress.com/2013/11/page-template-2.png</guid>
   <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
+  <content:encoded><![CDATA[
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>176</wp:post_id>
   <wp:post_date>2013-11-08 10:54:51</wp:post_date>
@@ -4120,7 +4120,7 @@ How are you planning to address this in Quetzal or are you not working on it any
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://quickui.files.wordpress.com/2013/11/page-template-3.png</guid>
   <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
+  <content:encoded><![CDATA[
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>177</wp:post_id>
   <wp:post_date>2013-11-08 10:54:51</wp:post_date>
@@ -4153,7 +4153,7 @@ How are you planning to address this in Quetzal or are you not working on it any
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">http://quickui.files.wordpress.com/2013/11/page-template-4.png</guid>
   <description/>
-  <content:encoded><![CDATA[]]></content:encoded>
+  <content:encoded><![CDATA[
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>178</wp:post_id>
   <wp:post_date>2013-11-08 10:54:52</wp:post_date>
@@ -4237,7 +4237,7 @@ I’ll continue to keep the quickui.org site live for the indefinite future. In 
 To those of you that used QuickUI or provided feedback on it, I’d like to offer my warm thanks for all of your support.
 
 Best,
-Jan Miksovsky]]></content:encoded>
+Jan Miksovsky
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>189</wp:post_id>
   <wp:post_date>2013-11-26 08:00:58</wp:post_date>
@@ -4350,7 +4350,7 @@ I have deep respect for a person who can launch something entirely on their own,
 </ol>
 
 Ah, well, live and learn. I’m still looking forward to watching the web’s UI component ecosystem take shape, because we’ll all get to make awesome stuff together.
-]]></content:encoded>
+
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>200</wp:post_id>
   <wp:post_date>2013-12-01 08:00:34</wp:post_date>
@@ -4493,7 +4493,7 @@ Should be required reading for library developers, kudos.]]></wp:comment_content
 <p>There</p></li>
 <li><p>World</p></li>
 </ul>
-]]></content:encoded>
+
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>209</wp:post_id>
   <wp:post_date>2013-11-26 14:36:01</wp:post_date>
@@ -4526,7 +4526,7 @@ Should be required reading for library developers, kudos.]]></wp:comment_content
   <dc:creator>janmiksovsky</dc:creator>
   <guid isPermaLink="false">https://blog.quickui.org/2022/10/08/wp-global-styles-pub%2ftwentyeleven/</guid>
   <description/>
-  <content:encoded><![CDATA[{"version":2,"isGlobalStylesUserThemeJSON":true}]]></content:encoded>
+  <content:encoded><![CDATA[{"version":2,"isGlobalStylesUserThemeJSON":true}
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>230</wp:post_id>
   <wp:post_date>2022-10-08 20:28:46</wp:post_date>

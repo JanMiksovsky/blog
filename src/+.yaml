@@ -1,3 +1,4 @@
 posts = map(../posts, post.ori):
+quickui_posts = map(../quickui, post.ori):
 
 all.html = all.ori():
