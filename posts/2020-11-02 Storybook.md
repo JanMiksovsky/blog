@@ -11,11 +11,7 @@ I recently tried [Storybook](https://storybook.js.org/), a popular tool for brow
 
 Storybook is a good idea. It’s helpful to be able to quickly browse a component library and see the range of what each component can do.
 
-<figure>
-  <a href="/images/ck/Storybook.png">
-    <img src="/images/ck/Storybook.png" style="max-width: 100%;">
-  </a>
-</figure>
+<img src="/images/ck/Storybook.png" style="max-width: 100%;">
 
 Storybook offers useful features like:
 
@@ -67,11 +63,7 @@ I built a simple component library browser that achieves perhaps 60% of what I w
 
 The first iteration closely followed the Storybook UI:
 
-<figure>
-  <a href="/images/ck/Story browser with Storybook styles.png">
-    <img src="/images/ck/Story browser with Storybook styles.png" style="max-width: 100%;">
-  </a>
-</figure>
+<img src="/images/ck/Story browser with Storybook styles.png">
 
 Building this with web components, and generally using the web platform more directly, makes it possible to do much (not all) of what Storybook does much more simply and flexibly.
 
@@ -94,11 +86,7 @@ Since there's not much going on here, there's very little new that someone has t
 
 I eventually changed the page styles to get a plainer look which I felt put more attention on the demos:
 
-<figure>
-  <a href="/images/ck/Story browser.png">
-    <img src="/images/ck/Story browser.png" style="max-width: 100%;">
-  </a>
-</figure>
+<img src="/images/ck/Story browser.png">
 
 # What I left out
 
