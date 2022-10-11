@@ -1,4 +1,12 @@
-  {{#map ../posts}}
-    <h1>{{ (front .)/title }}</h1>
-    {{.}}
-  {{/map}}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    {{#map ../posts}}
+      <h1>{{ (front .)/title }}</h1>
+      {{.}}
+    {{/map}}
+  </body>
+</html>
