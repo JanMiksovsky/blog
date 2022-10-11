@@ -1,5 +1,5 @@
-html = map(../posts, mdHtml, '.md', '.html'):
-posts = map(html, post.ori):
+html = mapDeep(../posts, mdHtml, '.md', '.html'):
+posts = mapDeep(html, post.ori):
 postsAlias = posts:
 
 all.html = all.ori():
