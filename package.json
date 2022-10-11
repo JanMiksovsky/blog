@@ -4,5 +4,8 @@
   "dependencies": {
     "@graphorigami/origami": "github:GraphOrigami/origami#05035faa",
     "sharp": "0.31.1"
+  },
+  "scripts": {
+    "build": "ori copy virtual/src/production, files/dist"
   }
 }

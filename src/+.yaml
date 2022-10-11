@@ -1,4 +1,10 @@
 html = map(../posts, mdHtml, '.md', '.html'):
 posts = map(html, post.ori):
+postsAlias = posts:
 
 all.html = all.ori():
+
+production = meta(this):
+  images = ../images:
+  posts = merge(postsAlias, this):
+    index.html = postsAlias/index.html:
