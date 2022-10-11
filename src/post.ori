@@ -1,4 +1,4 @@
 {{#page.ori}}
   <h1>{{title}}</h1>
-  {{@text}}
+  {{mdHtml @text}}
 {{/page.ori}}
