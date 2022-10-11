@@ -5,27 +5,27 @@ slug: general-purpose-calendar-web-components
 originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calendar-web-components.html
 ---
 
-<p dir="ltr">Which of these month calendars looks correct to you?</p>
-<p dir="ltr">
+<p>Which of these month calendars looks correct to you?</p>
+<p>
   <img
     alt="Calendar (English UK)"
     src="/images/flowstate/6a00d83451fb6769e201a511ed85ac970c-800wi.png"
   />
   &#0160;
 </p>
-<p dir="ltr">
+<p>
   <img
     alt="Calendar (English US)"
     src="/images/flowstate/6a00d83451fb6769e201a73df8bdf5970d-800wi.png"
   />
 </p>
-<p dir="ltr">
+<p>
   <img
     alt="Calendar (English, starts on Saturday)"
     src="/images/flowstate/6a00d83451fb6769e201a73df8be19970d-800wi.png"
   />
 </p>
-<p dir="ltr">
+<p>
   One of the calendars will probably look right. The other two will just look
   wrong — like they’re mistakes, or maybe not even calendars. Setting aside the
   basics of which language the words appear in, the simple question of which day
@@ -38,7 +38,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
   which case you might want the first column to be the rightmost instead of the
   leftmost.
 </p>
-<p dir="ltr">
+<p>
   These are the kinds of detail that are nearly impossible for a small team to
   get right if they’re writing their own calendar from scratch, and yet the
   world is filled with proprietary date picker widgets and calendars. Even if we
@@ -52,7 +52,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
   good to begin with, if you copied that code, you likely haven&#39;t picked up
   any of the bug fixes that were made in it since you made your copy.
 </p>
-<p dir="ltr">
+<p>
   This is yet another area where a broad web component ecosystem will
   fundamentally change things. As discussed on this blog many times before, the
   economics of user experience design and engineering will of course change. But
@@ -60,8 +60,8 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
   allow a broad swath of the software industry to finally get UI details right
   on tricky things like calendars.
 </p>
-<h2 dir="ltr">Open calendar components</h2>
-<p dir="ltr">
+<h2>Open calendar components</h2>
+<p>
   With that goal in mind, I’ve contributed a set of calendar components to the
   open source Basic Web Components project. Rather than producing a monolithic
   monthly calendar component, these components follow the
@@ -74,7 +74,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
 </p>
 <ul>
   <li>
-    <p dir="ltr">
+    <p>
       <a
         href="http://component.kitchen/components/basic-calendar-day"
         target="_self"
@@ -86,7 +86,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
     </p>
   </li>
   <li>
-    <p dir="ltr">
+    <p>
       <a
         href="http://component.kitchen/components/basic-calendar-week"
         target="_self"
@@ -103,7 +103,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
     </p>
   </li>
   <li>
-    <p dir="ltr">
+    <p>
       <a
         href="http://component.kitchen/components/basic-calendar-month-days"
         target="_self"
@@ -118,7 +118,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
     </p>
   </li>
   <li>
-    <p dir="ltr">
+    <p>
       <a
         href="http://component.kitchen/components/basic-days-of-week"
         target="_self"
@@ -135,7 +135,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
     </p>
   </li>
   <li>
-    <p dir="ltr">
+    <p>
       <a
         href="http://component.kitchen/components/basic-month-name"
         target="_self"
@@ -145,7 +145,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
     </p>
   </li>
   <li>
-    <p dir="ltr">
+    <p>
       <a
         href="http://component.kitchen/components/basic-month-and-year"
         target="_self"
@@ -156,7 +156,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
     </p>
   </li>
   <li>
-    <p dir="ltr">
+    <p>
       <a
         href="http://component.kitchen/components/basic-calendar-month"
         target="_self"
@@ -184,8 +184,8 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
   these further to meet your own application’s brand. This should not be too
   difficult, as web components can be styled through CSS.
 </p>
-<h2 dir="ltr">Localization</h2>
-<p dir="ltr">
+<h2>Localization</h2>
+<p>
   To easily and accurately localize these calendar web components, they all make
   use of the excellent
   <a href="https://github.com/jquery/globalize" target="_self">Globalize</a>
@@ -198,32 +198,32 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
   up appropriately. Here’s basic-month-calendar in Japanese, French (in France),
   and Arabic (in Saudi Arabia):
 </p>
-<p dir="ltr">
+<p>
   <img
     alt="Calendar (Japanese)"
     src="/images/flowstate/6a00d83451fb6769e201a3fd3db373970b-800wi.png"
   />
 </p>
-<p dir="ltr">
+<p>
   <img
     alt="Calendar (French)"
     src="/images/flowstate/6a00d83451fb6769e201a73df8be84970d-800wi.png"
   />
 </p>
-<p dir="ltr">
+<p>
   <img
     alt="Calendar (Arabic, Saudi Arabia)"
     src="/images/flowstate/6a00d83451fb6769e201a3fd3db388970b-800wi.png"
   />&#0160;
 </p>
-<p dir="ltr">
+<p>
   Note that all text strings here (the month names, and the names for the days
   of the week) are coming from Globalize, not from the application or the
   calendar component. Globalize also supports different formats for the names of
   the days of the week, so you can choose between&#0160;full and abbreviated
   headings.
 </p>
-<p dir="ltr">
+<p>
   <em
     >[Aside: an open question for me is whether a calendar for a right-to-left
     language should have the order of days go from right-to-left as well. I can
@@ -237,7 +237,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
     components assume that left-to-right is generally acceptable.]</em
   >
 </p>
-<p dir="ltr">
+<p>
   To simplify the localization of an app using these components, I’ve put
   together a simple
   <a
@@ -252,7 +252,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
   of basic-culture-selector directly through declarative data binding, with no
   scripting required.
 </p>
-<p dir="ltr">
+<p>
   Reality check: Localization is an incredibly complex topic, and language- and
   culture-aware components are just a part of a solution. To really do justice
   to a global audience, an app team would need to take a comprehensive approach
@@ -264,8 +264,8 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
   their preferred language/country/etc. on a site-by-site basis. Still, having
   solid, localizable components is a good place to start.
 </p>
-<h2 dir="ltr">A calendar as a meta-component</h2>
-<p dir="ltr">
+<h2>A calendar as a meta-component</h2>
+<p>
   Many applications want to render data on a calendar: appointments,
   availability, and so on. Most calendar widgets are useless in this regard
   outside a narrowly-envisioned range of scenarios, because they make so many
@@ -275,7 +275,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
   components for each day whose only requirement is that they can accept a date.
   How a day component renders that date is entirely up to them.
 </p>
-<p dir="ltr">
+<p>
   For this reason, the basic-calendar-month (and -week) components have a dayTag
   attribute that can be used to provide the name of another component class that
   will be used to render the individual days of the month/week. The default
@@ -285,7 +285,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
   This allows one to easily render arbitrary data into the structure of a
   calendar.
 </p>
-<p dir="ltr">
+<p>
   To show this in action, suppose we want to create a month calendar that shows
   the major phases of the moon (new, first quarter, full, last quarter, or
   nothing special). To keep things well factored, we start by creating a web
@@ -306,14 +306,14 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
   use that class to render the days. Et voilà, with a teeny tiny bit of work, we
   get a perpetual moon calendar. In U.S. English, this would look like:
 </p>
-<p dir="ltr">
+<p>
   <img
     alt="Calendar (Moon Phase)"
     src="/images/flowstate/6a00d83451fb6769e201a3fd3db566970b-800wi.png"
   />
 </p>
-<p dir="ltr">&#0160;</p>
-<p dir="ltr">
+<p>&#0160;</p>
+<p>
   [See the
   <a
     href="http://component.kitchen/components/basic-calendar-day"
@@ -321,14 +321,14 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
     >live demo</a
   >]
 </p>
-<p dir="ltr">
+<p>
   By building on top of basic-month-calendar, this moon calendar not only avoids
   the headaches of date math, it also automatically obtains a high degree of
   localizability provided by the underlying Globalize library. As improvements
   are made in the underlying basic-month-calendar, the moon calendar picks up
   those improvements for free.
 </p>
-<p dir="ltr">
+<p>
   Here one web component (basic-month-calendar) allows a portion of its UI (the
   rendering of days) to be overridden by accepting a second web component class
   as input (via the dayTag attribute). The calendar is effectively an abstract
@@ -337,7 +337,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
   abstract classes in programming languages, and seems generally useful in many
   other component situations.
 </p>
-<p dir="ltr">
+<p>
   Patterns like this may go a long way toward ensuring web components can really
   be general purpose, and may ultimately be a key part of managing some of the
   date math and localization complexities I’ve touched upon in this post. As
@@ -352,7 +352,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calen
   sufficient attention to make it reliable in a wide range of circumstances.
 </p>
 <p>&#0160;</p>
-<p dir="ltr">
+<p>
   <em
     >[Speaking of open source contributions, I wanted to take this opportunity
     to publicly thank a few people who offered early contributions to the

@@ -5,7 +5,7 @@ slug: deconstructing-the-standard-photo-carousel-into-general-purpose-web-compon
 originalUrl: https://miksovsky.blogs.com/flowstate/2014/06/deconstructing-the-standard-photo-carousel-into-general-purpose-web-components.html
 ---
 
-<p dir="ltr">
+<p>
   I recently contributed a small handful of web components to the
   <a
     href="https://github.com/basic-web-components/components-dev/wiki"
@@ -15,35 +15,33 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/06/deconstructing-the-st
   building UI with web components is going to be pretty different from how
   you’ve created UI in the past.
 </p>
-<h2 dir="ltr">The basic photo carousel as a component</h2>
-<p dir="ltr">
+<h2>The basic photo carousel as a component</h2>
+<p>
   The web components I was working on are related to the standard sort of photo
   carousel you see everywhere on the web these days:
 </p>
 <p>
   <img
     alt="Basic-sequence-navigator"
-    class="asset asset-image at-xid-6a00d83451fb6769e201a3fd1dbad4970b img-responsive"
     src="/images/flowstate/6a00d83451fb6769e201a3fd1dbad4970b-500wi.jpeg"
-    alt="Basic-sequence-navigator"
   />
   <br /><br />There are a zillion widgets out there that will create such a
   thing for you, but they generally are connected to a specific web platform
   (WordPress, SquareSpace, etc.) or require the use of JavaScript.&#0160;
 </p>
-<p dir="ltr">
+<p>
   A carousel web component, on the other hand, lets you construct such a thing
   in HTML alone. Here&#39;s a carousel component called
   basic-sequence-navigator:
 </p>
-<p dir="ltr">
-  <span style="font-family: terminal, monaco"
+<p>
+  <span
     >&lt;basic-sequence-navigator&gt;<br />&#0160; &lt;img
     src=”image1.jpg”&gt;<br />&#0160; &lt;img src=”image2.jpg”&gt;<br />&#0160;
     &lt;img src=”image3.jpg”&gt;<br />&#0160; ...<br />&lt;/basic-sequence-navigator&gt;</span
   >
 </p>
-<p dir="ltr">
+<p>
   You can see a live demo of this component on the Component Kitchen page for
   <a
     href="http://component.kitchen/components/basic-sequence-navigator"
@@ -57,8 +55,8 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/06/deconstructing-the-st
   required. That’s pretty neat all on its own, but the component’s construction
   is also interesting in its own right.
 </p>
-<h2 dir="ltr">Building up from simple pieces</h2>
-<p dir="ltr">
+<h2>Building up from simple pieces</h2>
+<p>
   Existing carousel widgets suffer from trying to present a final solution.
   Someone creates a single widget that handles everything: positioning the
   images, transition effects, Next/Previous buttons, programmatic API, events,
@@ -66,14 +64,14 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/06/deconstructing-the-st
   have to reject the whole widget, or else spend time fiddling with widget
   options in hopes of finding a combination of settings that does what you want.
 </p>
-<p dir="ltr">
+<p>
   Given that web components lets you build bigger things from smaller things, I
   wanted to try to factor the carousel as a user experience into simple pieces
   that you could combine in different ways. Even if you don’t like a specific
   end result, you may nevertheless find some of the building blocks useful in
   constructing your own solution.
 </p>
-<p dir="ltr">
+<p>
   For starters, consider that the Next/Previous buttons shown above are just a
   specific answer to the general question: how does a user navigate the sequence
   of images? Those buttons aren’t the only answer; there are other common
@@ -90,30 +88,23 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/06/deconstructing-the-st
   transitional effects like sliding or cross-fading, but
   <em>doesn’t include its own navigation UI</em>.
 </p>
-<p dir="ltr">
+<p>
   That means you can wire up buttons of your own (or any UI you want) to drive
   an instance of the more fundamental basic-sequence component. A crude example
   of this would be:
 </p>
 <p>
-  <span style="font-family: terminal, monaco"
+  <span
     >&lt;button
     onclick=&quot;document.querySelector(&#39;#sequence&#39;).previous()&quot;&gt;Previous&lt;/button&gt;</span
-  ><br /><span style="font-family: terminal, monaco"
+  ><br /><span
     >&lt;button
     onclick=&quot;document.querySelector(&#39;#sequence&#39;).next()&quot;&gt;Next&lt;/button&gt;</span
-  ><br /><span style="font-family: terminal, monaco"
-    >&lt;basic-sequence id=&quot;sequence&quot;&gt;</span
-  ><br /><span style="font-family: terminal, monaco"
+  ><br /><span>&lt;basic-sequence id=&quot;sequence&quot;&gt;</span><br /><span
     >&#0160; &lt;img src=”image1.jpg”&gt;</span
-  ><br /><span style="font-family: terminal, monaco"
-    >&#0160; &lt;img src=”image2.jpg”&gt;</span
-  ><br /><span style="font-family: terminal, monaco"
+  ><br /><span>&#0160; &lt;img src=”image2.jpg”&gt;</span><br /><span
     >&#0160; &lt;img src=”image3.jpg”&gt;</span
-  ><br /><span style="font-family: terminal, monaco">&#0160; ...</span
-  ><br /><span style="font-family: terminal, monaco"
-    >&lt;/basic-sequence&gt;</span
-  >
+  ><br /><span>&#0160; ...</span><br /><span>&lt;/basic-sequence&gt;</span>
 </p>
 <p>
   You can see a demo of this solution on the page for
@@ -124,7 +115,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/06/deconstructing-the-st
   get things like transition effects for free, for example. At the same time,
   you can create exactly the user experience you want.
 </p>
-<p dir="ltr">
+<p>
   Maybe you don’t want <em>any</em> visible UI, you just want to show one image
   after another on a timed basis. There’s a separate component called
   <a href="http://component.kitchen/components/basic-slideshow" target="_self"
@@ -132,21 +123,14 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/06/deconstructing-the-st
   >&#0160;that does just that. It uses basic-sequence under the covers, but adds
   the notion of a timer and play/stop semantics:
 </p>
-<p dir="ltr">
-  <span style="font-family: terminal, monaco"
-    >&lt;basic-slideshow effect=”reveal”&gt;</span
-  ><br /><span style="font-family: terminal, monaco"
+<p>
+  <span>&lt;basic-slideshow effect=”reveal”&gt;</span><br /><span
     >&#0160; &lt;img src=”image1.jpg”&gt;</span
-  ><br /><span style="font-family: terminal, monaco"
-    >&#0160; &lt;img src=”image2.jpg”&gt;</span
-  ><br /><span style="font-family: terminal, monaco"
+  ><br /><span>&#0160; &lt;img src=”image2.jpg”&gt;</span><br /><span
     >&#0160; &lt;img src=”image3.jpg”&gt;</span
-  ><br /><span style="font-family: terminal, monaco">&#0160; ...</span
-  ><br /><span style="font-family: terminal, monaco"
-    >&lt;/basic-slideshow&gt;</span
-  >
+  ><br /><span>&#0160; ...</span><br /><span>&lt;/basic-slideshow&gt;</span>
 </p>
-<p dir="ltr">
+<p>
   What if you don’t care about transition effects? You can build on top of an
   even simpler component called
   <a href="http://component.kitchen/components/basic-modes" target="_self"
@@ -162,29 +146,29 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/06/deconstructing-the-st
   <em>that</em> component is built from even simpler one. It’s components, all
   the way down.
 </p>
-<p dir="ltr">
+<p>
   The idea here is that UI shouldn’t be delivered as a huge, final thing with a
   million knobs on it to cover every conceivable situation. Instead, complex UI
   should be built up from simpler pieces, each of which do a great job at one
   thing.
 </p>
-<h2 dir="ltr">Styleability</h2>
-<p dir="ltr">
+<h2>Styleability</h2>
+<p>
   Of course, if you do like the general idea of Next and Previous buttons, but
   want them to look different, you can use basic-sequence-navigator, and then
   take advantage of the styleability built into web components. Using CSS rules,
   you can override the default styling to better match your app’s aesthetics and
   brand.
 </p>
-<h2 dir="ltr">Get your UI for nothing, and accessibility for free</h2>
-<p dir="ltr">
+<h2>Get your UI for nothing, and accessibility for free</h2>
+<p>
   The basic-sequence-navigator component has a nice feature most carousels lack:
   keyboard support! If you press the Left or Right key while the component has
   focus, the carousel advances, respectively, to the previous or next image. To
   help make that feature more discoverable, the component sports a focus
   rectangle when it has the focus.
 </p>
-<p dir="ltr">
+<p>
   It’s kind of appalling the web is chock full of photo carousels that can’t be
   navigated with a keyboard. That not only shuts out a big chunk of people for
   whom a mouse or trackpad is hard to use, it’s also generally inconvenient for
@@ -192,7 +176,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/06/deconstructing-the-st
   images, using Left/Right keys is simply much faster than moving a mouse or
   finger back and forth to hit buttons on either side of the images.
 </p>
-<p dir="ltr">
+<p>
   Some web sites, generally big ones with large staff, can afford to spend time
   getting accessibility details like keyboard navigation right. But I’m willing
   to bet that the vast majority of photo carousels on the web today aren’t
@@ -203,7 +187,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/06/deconstructing-the-st
   any single team, the predicted return on the investment is just too low to
   pursue.
 </p>
-<p dir="ltr">
+<p>
   With web components, the economics could improve radically. Once people can
   share UI solutions as components, even small improvements can potentially
   benefit thousands of sites. So someone may find it worth their time to add
@@ -213,7 +197,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/06/deconstructing-the-st
   someone else out there (you?) who knows ARIA inside and out and can help get
   it right.&#0160;
 </p>
-<p dir="ltr">
+<p>
   The best part is that, if accessibility can be improved for free, everyone
   benefits
   <em
@@ -223,15 +207,15 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2014/06/deconstructing-the-st
   &lt;basic-sequence-navigator&gt; because it has good accessibility. They’re
   going to adopt it for selfish reasons — it’s going to save them time.&#0160;
 </p>
-<p dir="ltr">
+<p>
   That’s fine! If someone can just drop in a photo carousel component because it
   saves time implementing a design, they&#39;ll use it, even if they know
   nothing about accessibility. They don’t even need to know that the
   carousel&#39;s built-in accessibility features exist for the component to help
   them support a broader audience of end users.
 </p>
-<h2 dir="ltr">Some principles for general-purpose web components</h2>
-<p dir="ltr">
+<h2>Some principles for general-purpose web components</h2>
+<p>
   If you’re interested in this approach, and want to learn more about creating
   general-purpose web components, the Basic Web Components site has a page on
   <a
