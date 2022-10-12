@@ -1,8 +1,13 @@
 html = mapDeep(../posts, mdHtml, '.md', '.html'):
-posts = mapDeep(html, post.ori):
+templated = mapDeep(html, post.ori):
 postsAlias = posts:
 
-all.html = all.ori():
+posts = merge(this, templated):
+  "[year]":
+    index.yaml = html/{{year}}:
+    index.html = year.ori(index.yaml):
+
+# all.html = all.ori():
 
 production = meta(this):
   images = ../images:
