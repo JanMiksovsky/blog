@@ -1,13 +1,22 @@
 html = mapDeep(../posts, mdHtml, '.md', '.html'):
 templated = mapDeep(html, post.ori):
-postsAlias = posts:
 
 posts = mergeDeep(this, templated):
   "[year]":
     index.yaml = html/{{year}}:
     index.html = year.ori(index.yaml):
+postsAlias = posts:
 
-production = meta(this):
+# production = meta(this):
+#   images = ../images:
+#   posts = merge(postsAlias, this):
+#     index.html = postsAlias/index.html:
+
+develop:
   images = ../images:
-  posts = merge(postsAlias, this):
-    index.html = postsAlias/index.html:
+  posts = postsAlias:
+
+production = filter(develop, this):
+  images: true
+  posts: true
+  …index.html: true
