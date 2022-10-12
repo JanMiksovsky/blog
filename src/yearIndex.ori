@@ -1,0 +1,12 @@
+---
+title: Posts by year
+---
+{{#page.ori}}
+  <ul>
+  {{#map templated}}
+    <li>
+      <a href="{{@key}}">{{@key}}</a>
+    </li>
+  {{/map}}
+  </ul>
+{{/page.ori}}

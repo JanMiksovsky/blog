@@ -1,0 +1,6 @@
+---
+title: Jan Miksovsky
+---
+{{#page.ori}}
+  <a href="posts">Posts</a>
+{{/page.ori}}
