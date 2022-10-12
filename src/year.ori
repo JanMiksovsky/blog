@@ -6,8 +6,7 @@
   <body>
     <h1>{{year}}</h1>
     {{#map .}}
-      <h1>{{parseFront(.)/title}}</h1>
-      {{parseFront(.)/@bodyText}}
+      {{ post.ori(.) }}
     {{/map}}
   </body>
 </html>
