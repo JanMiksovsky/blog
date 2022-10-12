@@ -7,8 +7,6 @@ posts = mergeDeep(this, templated):
     index.yaml = html/{{year}}:
     index.html = year.ori(index.yaml):
 
-# all.html = all.ori():
-
 production = meta(this):
   images = ../images:
   posts = merge(postsAlias, this):
