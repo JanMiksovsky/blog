@@ -13,6 +13,7 @@ develop:
       index.html = year.ori(index.yaml):
 
 production = filter(develop, this):
+  client: true
   images: true
   posts: true
   …index.html: true
