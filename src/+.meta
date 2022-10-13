@@ -1,10 +1,12 @@
 html = mapDeep(../posts, mdHtml, '.md', '.html'):
 templated = mapDeep(html, post.ori):
+pages = mapDeep(html, postPage.ori):
 
 develop:
+  client = ../client:
   images = ../images:
   index.html = index.ori():
-  posts = mergeDeep(this, templated):
+  posts = mergeDeep(this, pages):
     index.html = yearIndex.ori():
     "[year]":
       index.yaml = html/{{year}}:

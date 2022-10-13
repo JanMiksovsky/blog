@@ -2,9 +2,10 @@
 title: Posts by year
 ---
 {{#page.ori}}
-  <ul>
-  {{#map templated}}
-    <li>
+  <h1>Archive</h1>
+  <ul class="yearList">
+  {{#map reverse(templated)}}
+    <li class="yearItem">
       <a href="{{@key}}">{{@key}}</a>
     </li>
   {{/map}}

@@ -2,8 +2,11 @@
 title = year:
 ---
 {{#page.ori}}
-  <h1>{{year}}</h1>
-  {{#map .}}
-    {{ post.ori(.) }}
+  <h1 class="yearHeader">{{year}}</h1>
+  {{#map reverse(.)}}
+    {{ post.ori(graph(.)) }}
   {{/map}}
+  <footer>
+    Back to <a href="..">archive</a>
+  </footer>
 {{/page.ori}}
