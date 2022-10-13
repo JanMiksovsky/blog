@@ -4,7 +4,7 @@ title = year:
 {{#page.ori}}
   <h1 class="yearHeader">{{year}}</h1>
   {{#map reverse(.)}}
-    {{ post.ori(graph(.)) }}
+    {{ post.ori(.) }}
   {{/map}}
   <footer>
     Back to <a href="..">archive</a>

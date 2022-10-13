@@ -2,6 +2,10 @@ html = mapDeep(../posts, mdHtml, '.md', '.html'):
 templated = mapDeep(html, post.ori):
 pages = mapDeep(html, postPage.ori):
 
+# recent = html/2005:
+recent = take(reverse(valuesDeep(html)), 10):
+feedItems.yaml = values(map(recent, feedItem)):
+
 develop:
   client = ../client:
   images = ../images:
@@ -11,9 +15,21 @@ develop:
     "[year]":
       index.yaml = html/{{year}}:
       index.html = year.ori(index.yaml):
+  feed.json:
+    # Top-level feed data in JSON Feed format
+    # See https://www.jsonfeed.org/version/1.1/
+    version: https://jsonfeed.org/version/1.1
+    title: Jan Miksovsky’s blog
+    description: Writings on the craft of user interface design and development
+    feed_url: https://jan.miksovsky.com/feed.json
+    home_page_url: https://jan.miksovsky.com
+    items = feedItems.yaml:
+  rss.xml = feedRss(feed.json):
 
 production = filter(develop, this):
   client: true
+  feed.json: true
   images: true
   posts: true
+  rss.xml: true
   …index.html: true

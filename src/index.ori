@@ -2,5 +2,22 @@
 title: Jan Miksovsky
 ---
 {{#page.ori}}
-  <a href="posts">Posts</a>
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="{{title}}"
+    href="rss.xml"
+  />
+  <link
+    rel="alternate"
+    type="application/json"
+    title="{{title}}"
+    href="feed.json"
+  />
+  {{#map recent}}
+    {{ post.ori(.) }}
+  {{/map}}
+  <footer>
+    <a href="posts/">Archive</a>
+  </footer>
 {{/page.ori}}
