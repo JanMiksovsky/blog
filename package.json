@@ -2,7 +2,7 @@
   "name": "blog",
   "type": "module",
   "dependencies": {
-    "@graphorigami/origami": "github:GraphOrigami/origami#408b7c98",
+    "@graphorigami/origami": "github:GraphOrigami/origami#b6a7def3",
     "sharp": "0.31.1"
   },
   "scripts": {
