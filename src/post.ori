@@ -1,4 +1,5 @@
 <article>
+  {{foo()}}
   <a class="quiet" href="{{@key}}">
     <h1 class="postHeader">{{title}}</h1>
   </a>

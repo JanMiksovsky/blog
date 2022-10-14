@@ -14,7 +14,7 @@ title: Jan Miksovsky
     title="{{title}}"
     href="feed.json"
   />
-  {{#map recent}}
+  {{#mapDeep recent}}
     {{ post.ori(.) }}
   {{/map}}
   <footer>
