@@ -4,8 +4,9 @@ templated = mapDeep(html, post.ori):
 pages = mapDeep(html, postPage.ori):
 
 # recent = html/2005:
-recent = take(reverse(valuesDeep(html)), 10):
-feedItems.yaml = values(map(recent, feedItem)):
+reversed = reverse(html):
+recent = takeDeep(reverse(html), 10):
+feedItems.yaml = map(valuesDeep(recent), feedItem):
 
 develop:
   client = ../client:
