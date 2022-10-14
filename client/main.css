@@ -21,11 +21,21 @@ body > div {
   display: none;
 }
 
-header {
+header,
+footer {
   display: grid;
   grid-template-columns: auto 1fr;
   justify-items: end;
+}
+
+header {
   padding-bottom: 1em;
+}
+
+footer {
+  border-top: 1px solid lightgray;
+  margin-top: var(--space);
+  padding-top: var(--space);
 }
 
 main {
@@ -40,12 +50,6 @@ article {
 
 article:first-child {
   margin-top: 0;
-}
-
-footer {
-  border-top: 1px solid lightgray;
-  margin-top: var(--space);
-  padding-top: var(--space);
 }
 
 a.quiet {

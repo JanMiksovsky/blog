@@ -7,6 +7,6 @@ title = year:
     {{ post.ori(.) }}
   {{/map}}
   <footer>
-    Back to <a href="..">archive</a>
+    {{banner.ori()}}
   </footer>
 {{/page.ori}}
