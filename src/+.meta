@@ -1,4 +1,5 @@
-html = mapDeep(../posts, mdHtml, '.md', '.html'):
+slugs = postSlugs(../posts):
+html = mapDeep(slugs, mdHtml, '.md', '.html'):
 templated = mapDeep(html, post.ori):
 pages = mapDeep(html, postPage.ori):
 
