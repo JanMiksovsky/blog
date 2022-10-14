@@ -1,18 +1,20 @@
-import { ExplorableGraph, isPlainObject } from "@graphorigami/origami";
+import { ExplorableGraph } from "@graphorigami/origami";
 
 export default async function takeDeep(variant, count) {
-  const plain = await ExplorableGraph.plain(variant);
-  const { result } = traverse(plain, count);
+  const graph = await ExplorableGraph.from(variant);
+  const { result } = await traverse(graph, count);
   return ExplorableGraph.from(result);
 }
 
-function traverse(obj, count) {
+async function traverse(graph, count) {
   const result = {};
-  for (const [key, value] of Object.entries(obj)) {
+  for await (const key of graph) {
     if (count === 0) {
       break;
-    } else if (isPlainObject(value)) {
-      const traversed = traverse(value, count);
+    }
+    const value = await graph.get(key);
+    if (ExplorableGraph.isExplorable(value)) {
+      const traversed = await traverse(value, count);
       result[key] = traversed.result;
       count = traversed.count;
     } else {
