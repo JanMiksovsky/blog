@@ -11,6 +11,10 @@
         <a class="quiet" href="/">Jan Miksovsky Home</a>
         •
         <a class="quiet" href="/posts/">Archive</a>
+        {{#if yearArea}}
+        •
+        <a class="quiet" href="/posts/{{yearArea}}/">{{yearArea}}</a>
+        {{/if}}
       </span>
       <a class="quiet" href="https://twitter.com/JanMiksovsky">@JanMiksovsky</a>
     </header>
