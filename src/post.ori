@@ -1,6 +1,5 @@
 <article>
-  {{foo()}}
-  <a class="quiet" href="{{@key}}">
+  <a class="quiet" href="{{postUrl()}}">
     <h1 class="postHeader">{{title}}</h1>
   </a>
   <p class="postDate">{{ formatDate(date) }}</p>

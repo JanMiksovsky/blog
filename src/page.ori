@@ -7,7 +7,11 @@
   </head>
   <body>
     <header>
-      <a class="quiet" href="/">Jan Miksovsky’s blog</a>
+      <span>
+        <a class="quiet" href="/">Jan Miksovsky Home</a>
+        •
+        <a class="quiet" href="/posts/">Archive</a>
+      </span>
       <a class="quiet" href="https://twitter.com/JanMiksovsky">@JanMiksovsky</a>
     </header>
     <main>
