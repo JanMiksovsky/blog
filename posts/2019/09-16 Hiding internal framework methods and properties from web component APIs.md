@@ -1,7 +1,6 @@
 ---
 title: Hiding internal framework methods and properties from web component APIs
 date: 2019-09-16 16:00 UTC
-slug: hiding-internal-framework-methods-and-properties-from-web-component-apis
 originalUrl: https://component.kitchen/blog/posts/hiding-internal-framework-methods-and-properties-from-web-component-apis
 ---
 

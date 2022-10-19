@@ -1,7 +1,6 @@
 ---
 title: Unsurprising code and magic — optimizing for the first time vs the nth time
 date: 2020-03-09 16:00 UTC
-slug: unsurprising-code-and-magic-optimizing-for-the-first-time-vs-the-nth-time
 originalUrl: https://component.kitchen/blog/posts/unsurprising-code-and-magic-optimizing-for-the-first-time-vs-the-nth-time
 ---
 

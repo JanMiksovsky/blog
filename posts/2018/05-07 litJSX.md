@@ -1,7 +1,6 @@
 ---
 title: Using JavaScript template literals with JSX for server-side rendering
 date: 2018-05-07 16:00 UTC
-slug: using-javascript-template-literals-with-jsx-for-server-side-rendering
 originalUrl: https://component.kitchen/blog/posts/using-javascript-template-literals-with-jsx-for-server-side-rendering
 ---
 

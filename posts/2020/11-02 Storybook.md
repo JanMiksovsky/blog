@@ -1,7 +1,6 @@
 ---
 title: Building a Storybook-like demo browser with web components — a much simpler way to get most of the benefits
 date: 2020-11-02 16:00
-slug: building-a-storybook-like-demo-browser-with-web-components-a-much-simpler-way-to-get-most-of-the-benefits
 originalUrl: https://component.kitchen/blog/posts/building-a-storybook-like-demo-browser-with-web-components-a-much-simpler-way-to-get-most-of-the-benefits
 ---
 

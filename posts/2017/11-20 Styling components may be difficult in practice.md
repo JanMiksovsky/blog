@@ -1,7 +1,6 @@
 ---
 title: Styling is critical to web component reuse, but may prove difficult in practice
 date: 2017-11-20 16:00 UTC
-slug: styling-is-critical-to-web-component-reuse-but-may-prove-difficult-in-practice
 originalUrl: https://component.kitchen/blog/posts/styling-is-critical-to-web-component-reuse-but-may-prove-difficult-in-practice
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Supporting both automatic and manual registration of custom elements
 date: 2019-10-07 16:00 UTC
-slug: supporting-both-automatic-and-manual-registration-of-custom-elements
 originalUrl: https://component.kitchen/blog/posts/supporting-both-automatic-and-manual-registration-of-custom-elements
 ---
 

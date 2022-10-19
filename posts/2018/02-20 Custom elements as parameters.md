@@ -1,7 +1,6 @@
 ---
 title: Customizing custom elements with... custom elements
 date: 2018-02-20 16:00 UTC
-slug: customizing-custom-elements-with-custom-elements
 originalUrl: https://component.kitchen/blog/posts/customizing-custom-elements-with-custom-elements
 ---
 

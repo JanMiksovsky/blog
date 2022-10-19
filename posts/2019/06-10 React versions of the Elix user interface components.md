@@ -1,7 +1,6 @@
 ---
 title: Should the Elix project maintain React versions of its general-purpose UI components?
 date: 2019-06-10 16:00 UTC
-slug: should-the-elix-project-maintain-react-versions-of-its-general-purpose-ui-components
 originalUrl: https://component.kitchen/blog/posts/should-the-elix-project-maintain-react-versions-of-its-general-purpose-ui-components
 ---
 

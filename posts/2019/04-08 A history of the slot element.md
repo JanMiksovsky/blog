@@ -1,7 +1,6 @@
 ---
 title: A history of the HTML slot element
 date: 2019-04-08 16:00 UTC
-slug: a-history-of-the-html-slot-element
 originalUrl: https://component.kitchen/blog/posts/a-history-of-the-html-slot-element
 ---
 
