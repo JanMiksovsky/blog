@@ -1,0 +1,17 @@
+# posts = pages:
+# posts+ = meta(this):
+#   index.html = yearIndex.ori():
+#   "[year]":
+#     index.yaml = html/{{year}}:
+#     index.html = year.ori(index.yaml):
+
+posts = mergeDeep(meta(this), pages):
+  index.html = yearIndex.ori():
+  "[year]":
+    index.yaml = html/{{year}}:
+    index.html = year.ori(index.yaml):
+
+index.html = index.ori():
+
+feed.json = graph(feed.meta):
+rss.xml = feedRss(feed.json):
