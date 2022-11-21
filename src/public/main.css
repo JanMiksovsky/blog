@@ -114,6 +114,16 @@ svg {
   margin-bottom: 0.5em;
 }
 
+.optional {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .optional {
+    display: initial;
+  }
+}
+
 @media (min-width: 800px) {
   body {
     grid-template-columns: minmax(auto, 800px);
