@@ -2,7 +2,7 @@
   "name": "blog",
   "type": "module",
   "dependencies": {
-    "@graphorigami/origami": "github:GraphOrigami/origami#3e66eaf1"
+    "@graphorigami/origami": "github:GraphOrigami/origami#337bec47"
   },
   "scripts": {
     "build": "ori copy virtual/src/public, files/dist"

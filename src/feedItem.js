@@ -1,8 +1,7 @@
 import { ExplorableGraph } from "@graphorigami/origami";
 
-export default async function feedItem(buffer) {
-  const text = String(buffer);
-  const plain = await ExplorableGraph.plain(text);
+export default async function feedItem(item) {
+  const plain = await ExplorableGraph.plain(item);
   const { date, slug, title } = plain;
   const content_html = plain["@text"];
 

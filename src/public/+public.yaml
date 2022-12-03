@@ -1,16 +1,8 @@
-# posts = pages:
-# posts+ = meta(this):
-#   index.html = yearIndex.ori():
-#   "[year]":
-#     index.yaml = html/{{year}}:
-#     index.html = year.ori(index.yaml):
-
-posts = mergeDeep(meta(this), pages):
+# Add a top-level index page to each year.
+posts = mergeDeep(meta(this), years):
   index.html = yearIndex.ori():
-  "[year]":
-    index.yaml = html/{{year}}:
-    index.html = year.ori(index.yaml):
 
+# Top-level index page
 index.html = index.ori():
 
 feed.json = graph(feed.meta):

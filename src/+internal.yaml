@@ -1,9 +1,27 @@
+# Add slugs to the posts.
 slugs = postSlugs(../posts):
+
+# Convert posts from markdown to HTML.
 html = mapDeep(slugs, mdHtml, extension='md→html'):
+
+# Apply the individual post template to the posts.
+# This is used by yearIndex.ori
 templated = mapDeep(html, post.ori):
+
+# Apply the post page template to the posts.
+# This is used in the posts archive.
 pages = mapDeep(html, postPage.ori):
 
-# recent = html/2005:
+# Add an index page to the year folders in the virtual pages graph.
+years = map(pages, =merge(@value, setScope(this)), keyName='year'):
+  (index.yaml) = html/{{year}}:
+  index.html = year.ori(index.yaml):
+
+# The recent feed is the posts in reverse chronological order.
+# For the `recent` feed, we only want 10 posts.
 reversed = reverse(html):
 recent = takeDeep(reverse(html), 10):
+# recent = html/2005:
+
+# The feed data is the recent posts with just the necessary feed data.
 feedItems.yaml = map(valuesDeep(recent), feedItem):
