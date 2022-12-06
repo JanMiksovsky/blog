@@ -10,7 +10,7 @@ pages = mapDeep(html, postPage.ori):
 
 # Add an index page to the year folders in the virtual pages graph.
 years = map(pages, =mix(@value, setScope(this)), keyName='year'):
-  index.html = year.ori(slugs(year)):
+  index.html = year.ori(html(year)):
 
 # The recent feed is the posts in reverse chronological order.
 # For the `recent` feed, we only want 10 posts.
@@ -23,7 +23,7 @@ feedItems.yaml = map(valuesDeep(recent), feedItem):
 # Main site
 site = mix(public, this):
   # Add an index page to the overall posts archive.
-  posts = merge(years, this):
+  posts = mix(years, this):
     index.html = yearIndex.ori():
 
   # Top-level index page
