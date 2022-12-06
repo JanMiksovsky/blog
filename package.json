@@ -5,6 +5,6 @@
     "@graphorigami/origami": "github:GraphOrigami/origami#337bec47"
   },
   "scripts": {
-    "build": "ori copy virtual/src/public, files/dist"
+    "build": "ori copy virtual/src/site.meta/site, files/dist"
   }
 }
