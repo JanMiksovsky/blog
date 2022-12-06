@@ -1,9 +1,0 @@
-# Add a top-level index page to each year.
-posts = mergeDeep(meta(this), years):
-  index.html = yearIndex.ori():
-
-# Top-level index page
-index.html = index.ori():
-
-feed.json = graph(feed.meta):
-rss.xml = feedRss(feed.json):
