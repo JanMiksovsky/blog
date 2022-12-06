@@ -29,5 +29,5 @@ site = mix(public, this):
   # Top-level index page
   index.html = index.ori():
 
-  feed.json = graph(feed.meta):
+  feed.json = graph(setScope(feed.meta)):
   rss.xml = feedRss(feed.json):
