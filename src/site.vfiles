@@ -9,7 +9,7 @@ html = mapDeep(slugs, mdHtml, extension='md→html'):
 pages = mapDeep(html, postPage.ori):
 
 # Add an index page to the year folders in the virtual pages graph.
-years = map(pages, =mix(@value, setScope(this)), keyName='year'):
+years = map(pages, =merge(@value, setScope(this)), keyName='year'):
   index.html = year.ori(html(year)):
 
 # The recent feed is the posts in reverse chronological order.
@@ -21,9 +21,9 @@ recent = takeDeep(reverse(html), 10):
 feedItems.yaml = map(valuesDeep(recent), feedItem):
 
 # Main site
-site = mix(public, this):
+site = merge(public, this):
   # Add an index page to the overall posts archive.
-  posts = mix(years, this):
+  posts = merge(years, this):
     index.html = yearIndex.ori():
 
   # Top-level index page
