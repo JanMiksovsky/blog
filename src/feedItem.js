@@ -1,4 +1,5 @@
 import { ExplorableGraph } from "@graphorigami/origami";
+import path from "path";
 
 export default async function feedItem(item) {
   const plain = await ExplorableGraph.plain(item);
@@ -9,8 +10,12 @@ export default async function feedItem(item) {
   const date_published = new Date(`${date} GMT-7`);
 
   const year = date_published.getFullYear();
+
   const key = await this.get("@key");
-  const url = `https://jan.miksovsky.com/posts/${year}/${key}`;
+  const basename = path.basename(key, ".yaml");
+  const keyHtml = basename + ".html";
+
+  const url = `https://jan.miksovsky.com/posts/${year}/${keyHtml}`;
 
   return {
     content_html,

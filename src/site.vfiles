@@ -18,7 +18,8 @@ reversed = reverse(html):
 recent = takeDeep(reverse(html), 10):
 
 # The feed data is the recent posts with just the necessary feed data.
-feedItems.yaml = map(valuesDeep(recent), feedItem):
+feedItems = mapDeep(recent, feedItem, extension='html→yaml'):
+feedItems.yaml = valuesDeep(feedItems):
 
 # Main site
 site = merge(public, this):
