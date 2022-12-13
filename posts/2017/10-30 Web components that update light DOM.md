@@ -81,4 +81,4 @@ Generally speaking, you'll need to write the code to update the light DOM yourse
 
 What goes on in a component's shadow may only be half the picture — a substantial amount of work may be going on in the light DOM. That's an important point to consider when you're deciding how you want to write your component. Most component frameworks are focused on rendering Shadow DOM, so you'll need to understand what light DOM updates are appropriate and make them yourself.
 
-Code to handle such cases can be complex. For that reason, the Elix project tries to identify common scenarios for updating light DOM and address those with mixins like [AriaListMixin](/elix/AriaListMixin).
+Code to handle such cases can be complex. For that reason, the Elix project tries to identify common scenarios for updating light DOM and address those with mixins like [AriaListMixin](https://component.kitchen/elix/AriaListMixin).

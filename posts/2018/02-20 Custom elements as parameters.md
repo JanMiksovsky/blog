@@ -102,7 +102,7 @@ class CustomSpinBox extends HTMLElement {
 
 ## Advantages of making components customizable this way
 
-A developer who customizes a spin box component this way doesn't need to know everything about the internals of the spin box; they just make a button. (To create a good button, they can use the Elix [WrappedStandardElement](/elix/WrappedStandardElement) utility class.) Because the spin box will use the button in the right place, the button will get the right positioning and have all the right event handlers to ensure interaction with the rest of the spin box.
+A developer who customizes a spin box component this way doesn't need to know everything about the internals of the spin box; they just make a button. (To create a good button, they can use the Elix [WrappedStandardElement](https://component.kitchen/elix/WrappedStandardElement) utility class.) Because the spin box will use the button in the right place, the button will get the right positioning and have all the right event handlers to ensure interaction with the rest of the spin box.
 
 This kind of indirection is roughly analogous to a function that accepts another function as a parameter. In this case, we’re creating a custom element that accepts another custom element as a parameter. Complex components can expose as many element parameters as necessary.
 

@@ -6,10 +6,10 @@ originalUrl: https://component.kitchen/blog/posts/building-a-great-menu-componen
 
 We've released v2.2 of the [Elix](/elix) web components library, which includes some new components for menus:
 
-- [PopupSource](/elix/PopupSource) for buttons that invoke any kind of popup
-- [MenuButton](/elix/MenuButton) for the common case of a button that invokes a menu
-- [Menu](/elix/Menu) which contains the collection of menu items
-- [DropdownList](/elix/DropdownList) for a `MenuButton` variation that's effectively a completely customizable `<select>` element.
+- [PopupSource](https://component.kitchen/elix/PopupSource) for buttons that invoke any kind of popup
+- [MenuButton](https://component.kitchen/elix/MenuButton) for the common case of a button that invokes a menu
+- [Menu](https://component.kitchen/elix/Menu) which contains the collection of menu items
+- [DropdownList](https://component.kitchen/elix/DropdownList) for a `MenuButton` variation that's effectively a completely customizable `<select>` element.
 
 We want all these menu components to feel as polished and natural as native OS menus. Native menus have a number of subtle details, and getting the UI details right turns out to be outrageously complex. Menus are a good example of [the fractal nature of UI design](http://www.miksovsky.blogs.com/flowstate/2005/10/the_fractal_nat.html).
 
@@ -24,7 +24,7 @@ Just to get started, we need to be able to position a menu with respect to a sou
 - Calculations of whether the menu fits in a particular direction are affected by the scroll position of the document.
 - To complicate things, we'll want to put the keyboard focus in the menu — but moving the keyboard focus can cause scrolling as a side effect. (This is especially true in Safari, whose [focus](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus) method doesn't yet support the `focusOptions` parameter.) So we'll have to complete all our menu layout and rendering before we try to move the focus into the menu.
 
-Because these positioning rules generally apply to all popups invoked from buttons — not just menus, but also things like combo boxes — we've enshrined responsibility for position popups relative to a source button in a general-purpose [PopupSource](/elix/PopupSource) class.
+Because these positioning rules generally apply to all popups invoked from buttons — not just menus, but also things like combo boxes — we've enshrined responsibility for position popups relative to a source button in a general-purpose [PopupSource](https://component.kitchen/elix/PopupSource) class.
 
 ## Two ways of selecting a menu command with a mouse
 
@@ -60,13 +60,13 @@ If reading this on your phone, try opening our [MenuButton demo](https://compone
 
 As with all Elix components, we strive for excellent keyboard support. This benefits all users that want to use a keyboard and improves universal accessibility.
 
-We allow users to invoke a menu button by pressing Space. The user can navigate the items in the resulting `Menu` with the full set of keyboard navigation keys supported by [KeyboardDirectionMixin](/elix/KeyboardDirectionMixin), [KeyboardPagedSelectionMixin](/elix/KeyboardPagedSelectionMixin), and [KeyboardPrefixSelectionMixin](/elix/KeyboardPrefixSelectionMixin). Without writing any new code, those mixins give `Menu` support for Up/Down keys, Page Up/Page Down keys, Home/End keys, and prefix selection (e.g., type "Z" to select "Zoom").
+We allow users to invoke a menu button by pressing Space. The user can navigate the items in the resulting `Menu` with the full set of keyboard navigation keys supported by [KeyboardDirectionMixin](https://component.kitchen/elix/KeyboardDirectionMixin), [KeyboardPagedSelectionMixin](https://component.kitchen/elix/KeyboardPagedSelectionMixin), and [KeyboardPrefixSelectionMixin](https://component.kitchen/elix/KeyboardPrefixSelectionMixin). Without writing any new code, those mixins give `Menu` support for Up/Down keys, Page Up/Page Down keys, Home/End keys, and prefix selection (e.g., type "Z" to select "Zoom").
 
 In making our menu components accessible via ARIA, we were helped by this excellent Inclusive Components article on [Menus & Menu Buttons](https://inclusive-components.design/menus-menu-buttons/). The whole Inclusive Components series is worth a read.
 
-While our `Menu` component generally behaves like our [ListBox](/elix/ListBox), the accessibility rules for menus are different than lists. The `role` attributes involved are different, for one thing. Another way in which menu accessibility is different than that for lists is that the overall list element can take the keyboard focus, whereas the browser expects a menu to put the keyboard focus on an individual menu item.
+While our `Menu` component generally behaves like our [ListBox](https://component.kitchen/elix/ListBox), the accessibility rules for menus are different than lists. The `role` attributes involved are different, for one thing. Another way in which menu accessibility is different than that for lists is that the overall list element can take the keyboard focus, whereas the browser expects a menu to put the keyboard focus on an individual menu item.
 
-Happily, our [mixin-based approach to components](https://component.kitchen/elix/mixins) was hugely helpful in letting us create a `Menu` component that worked _mostly_ like our `ListBox` component, but with some differences. Rather than subclassing `ListBox` or creating a common base class (as we might have in a traditional class hierarchy), we simply copied over the set of mixins `ListBox` was using, dropped the ones we didn't need, and then created an [AriaMenuMixin](/elix/AriaMenuMixin) for menus to replace the [AriaListMixin](/elix/AriaListMixin) which `ListBox` needs. We end up with a `Menu` that cleanly shares 90% of the code from `ListBox` without any class hierarchy entanglements.
+Happily, our [mixin-based approach to components](https://component.kitchen/elix/mixins) was hugely helpful in letting us create a `Menu` component that worked _mostly_ like our `ListBox` component, but with some differences. Rather than subclassing `ListBox` or creating a common base class (as we might have in a traditional class hierarchy), we simply copied over the set of mixins `ListBox` was using, dropped the ones we didn't need, and then created an [AriaMenuMixin](https://component.kitchen/elix/AriaMenuMixin) for menus to replace the [AriaListMixin](https://component.kitchen/elix/AriaListMixin) which `ListBox` needs. We end up with a `Menu` that cleanly shares 90% of the code from `ListBox` without any class hierarchy entanglements.
 
 ## Customizability
 
@@ -78,7 +78,7 @@ For styling and general customizability, all these menus components have replace
 
 ## Bonus: a customizable select element
 
-With our `MenuButton` component in hand, it was easy to create a [DropdownList](/elix/DropdownList) variation that shows the selected value as the menu button's label. When the user makes a selection from the menu, the button label updates to match.
+With our `MenuButton` component in hand, it was easy to create a [DropdownList](https://component.kitchen/elix/DropdownList) variation that shows the selected value as the menu button's label. When the user makes a selection from the menu, the button label updates to match.
 
 This effectively lets you use `DropdownList` as a customizable version of the built-in HTML `<select>` element. The native `<select>` can only cope with text choices, but `DropdownList` can handle arbitrary content — including custom elements, of course — as content in both the menu button and the menu items. See this [customized dropdown list demo](/demos/colorDropdownList.html) for an example.
 

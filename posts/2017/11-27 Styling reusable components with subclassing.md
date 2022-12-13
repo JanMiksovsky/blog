@@ -21,7 +21,7 @@ Let's add custom styling and behavior to that increment/decrement component. We'
   </template>
 ```
 
-Now we'll make use of a new Elix mixin called [RenderUpdatesMixin](/elix/RenderUpdatesMixin) that asks the component for a set of _updates_ to apply during rendering. The mixin will then update the DOM as requested. The component supplies this `updates` object as a property, indicating the attributes, classes, styles, and other properties to update:
+Now we'll make use of a new Elix mixin called [RenderUpdatesMixin](https://component.kitchen/elix/RenderUpdatesMixin) that asks the component for a set of _updates_ to apply during rendering. The mixin will then update the DOM as requested. The component supplies this `updates` object as a property, indicating the attributes, classes, styles, and other properties to update:
 
 ```
   get updates() {
@@ -176,7 +176,7 @@ Above we style the buttons with some base styling. We can also modify attributes
 
 ## Mixins that update light and shadow DOM
 
-If you're reluctant to create a class hierarchy, you can do what Elix does and factor most of your code into [functional mixins](/elix/mixins). Mixins allow your code to be reused across classes, and permit a great deal of flexibility.
+If you're reluctant to create a class hierarchy, you can do what Elix does and factor most of your code into [functional mixins](https://component.kitchen/elix/mixins). Mixins allow your code to be reused across classes, and permit a great deal of flexibility.
 
 For example, I've previously described how components often need to [update light DOM](https://component.kitchen/blog/posts/your-web-components-with-shadow-dom-may-need-to-update-light-dom-too) to support ARIA attributes. To address that scenario, we've factored out ARIA attribute handling for list-like components into a mixin called [AriaListMixin](https://github.com/elix/elix/blob/master/src/AriaListMixin.js). That mixin augments the component's `updates` getter to apply attributes like `role`, `aria-orientation`, and `aria-activedescendant`.
 
