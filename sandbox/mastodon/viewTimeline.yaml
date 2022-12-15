@@ -1,0 +1,2815 @@
+- id: "109518879363391178"
+  created_at: 2022-12-15T17:31:18.564Z
+  in_reply_to_id: "109518809480831231"
+  in_reply_to_account_id: "108197637416268369"
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: en
+  uri: https://fosstodon.org/users/rauschma/statuses/109518879363391178
+  url: https://fosstodon.org/@rauschma/109518879363391178
+  replies_count: 1
+  reblogs_count: 0
+  favourites_count: 4
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: "<p>Upside: Rereading material I wrote a long time ago always gives me
+    ideas for improving it.</p>"
+  filtered: {}
+  reblog: null
+  application: null
+  account:
+    id: "108197637416268369"
+    username: rauschma
+    acct: rauschma
+    display_name: Axel Rauschmayer
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-04-26T00:00:00.000Z
+    note: '<p>I specialize in JavaScript, TypeScript and web
+      development.</p><p>Other interests:<br />– Human languages: German,
+      English, French, Spanish, Dutch, Mandarin<br />– Sustainability, degrowth,
+      permaculture, urbanism<br />– Tiny houses<br />– Education<br />–
+      Psychology, getting out of one’s head, heart-centered living<br />–
+      Minimalistic spiritual schools: Advaita, Daoism, Buddhism, Christian
+      mysticism, Jiddu Krishnamurti, etc.</p><p>I live in Munich. <a
+      href="http://pronoun.is/he" target="_blank" rel="nofollow noopener
+      noreferrer"><span class="invisible">http://</span><span
+      class="">pronoun.is/he</span><span class="invisible"></span></a></p><p><a
+      href="https://fosstodon.org/tags/fedi22" class="mention hashtag"
+      rel="tag">#<span>fedi22</span></a>: <a
+      href="https://fosstodon.org/tags/javascript" class="mention hashtag"
+      rel="tag">#<span>javascript</span></a> <a
+      href="https://fosstodon.org/tags/typescript" class="mention hashtag"
+      rel="tag">#<span>typescript</span></a> <a
+      href="https://fosstodon.org/tags/webdev" class="mention hashtag"
+      rel="tag">#<span>webdev</span></a></p>'
+    url: https://fosstodon.org/@rauschma
+    avatar: https://cdn.fosstodon.org/accounts/avatars/108/197/637/416/268/369/original/760c65e18f724974.jpg
+    avatar_static: https://cdn.fosstodon.org/accounts/avatars/108/197/637/416/268/369/original/760c65e18f724974.jpg
+    header: https://fosstodon.org/headers/original/missing.png
+    header_static: https://fosstodon.org/headers/original/missing.png
+    followers_count: 3206
+    following_count: 160
+    statuses_count: 974
+    last_status_at: 2022-12-15
+    noindex: true
+    emojis: {}
+    fields:
+      - name: "📜 Blog (#2ality):"
+        value: <a href="https://2ality.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">https://</span><span
+          class="">2ality.com</span><span class="invisible"></span></a>
+        verified_at: 2022-11-08T00:37:57.326+00:00
+      - name: "📚 Free ebooks:"
+        value: <a href="https://exploringjs.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">https://</span><span
+          class="">exploringjs.com</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: "📧 Newsletter:"
+        value: <a href="http://esnextnews.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">http://</span><span
+          class="">esnextnews.com</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: "💡 Non-tech:"
+        value: <span class="h-card"><a href="https://mastodon.green/@light_bulbs"
+          class="u-url
+          mention">@<span>light_bulbs@mastodon.green</span></a></span>
+        verified_at: null
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card: null
+  poll: null
+- id: "109518842215959326"
+  created_at: 2022-12-15T17:21:51.742Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: null
+  uri: https://fosstodon.org/users/rauschma/statuses/109518842215959326/activity
+  url: https://fosstodon.org/users/rauschma/statuses/109518842215959326/activity
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: ""
+  filtered: {}
+  reblog:
+    id: "109518702183386851"
+    created_at: 2022-12-15T16:46:14.000Z
+    in_reply_to_id: null
+    in_reply_to_account_id: null
+    sensitive: false
+    spoiler_text: ""
+    visibility: public
+    language: en
+    uri: https://mstdn.social/users/alexandrawhite/statuses/109518702129353476
+    url: https://mstdn.social/@alexandrawhite/109518702129353476
+    replies_count: 0
+    reblogs_count: 1
+    favourites_count: 0
+    edited_at: null
+    favourited: false
+    reblogged: false
+    muted: false
+    bookmarked: false
+    content: <p>I interviewed my colleague and friend, Elisa Bandy, about her work
+      to make Google's internal web documentation accessible. <a
+      href="https://mstdn.social/tags/Accessibility" class="mention hashtag"
+      rel="nofollow noopener noreferrer"
+      target="_blank">#<span>Accessibility</span></a> work is critical
+      internally AND externally. <a
+      href="https://web.dev/community-highlight-elisa/" rel="nofollow noopener
+      noreferrer" target="_blank"><span class="invisible">https://</span><span
+      class="ellipsis">web.dev/community-highlight-el</span><span
+      class="invisible">isa/</span></a></p>
+    filtered: {}
+    reblog: null
+    account:
+      id: "109317330738849854"
+      username: alexandrawhite
+      acct: alexandrawhite@mstdn.social
+      display_name: Alexandra White
+      locked: false
+      bot: false
+      discoverable: false
+      group: false
+      created_at: 2022-11-04T00:00:00.000Z
+      note: <p>Got to claim my name, for once. Sometimes known as heyawhite@.
+        Technical writer for Google Chrome and the Privacy Sandbox. <a
+        href="https://mstdn.social/tags/accessibility" class="mention hashtag"
+        rel="nofollow noopener noreferrer"
+        target="_blank">#<span>accessibility</span></a> <a
+        href="https://mstdn.social/tags/privacy" class="mention hashtag"
+        rel="nofollow noopener noreferrer"
+        target="_blank">#<span>privacy</span></a></p>
+      url: https://mstdn.social/@alexandrawhite
+      avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/317/330/738/849/854/original/00b9f62f32b07781.png
+      avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/317/330/738/849/854/original/00b9f62f32b07781.png
+      header: https://cdn.fosstodon.org/cache/accounts/headers/109/317/330/738/849/854/original/a751ec2ca6990563.png
+      header_static: https://cdn.fosstodon.org/cache/accounts/headers/109/317/330/738/849/854/original/a751ec2ca6990563.png
+      followers_count: 101
+      following_count: 31
+      statuses_count: 23
+      last_status_at: 2022-12-15
+      emojis: {}
+      fields:
+        - name: Pronouns
+          value: She/Her
+          verified_at: null
+        - name: Website
+          value: <a href="https://heyawhite.com" rel="nofollow noopener noreferrer"
+            target="_blank"><span class="invisible">https://</span><span
+            class="">heyawhite.com</span><span class="invisible"></span></a>
+          verified_at: 2022-12-13T18:40:21.552+00:00
+    media_attachments: {}
+    mentions: {}
+    tags:
+      - name: accessibility
+        url: https://fosstodon.org/tags/accessibility
+    emojis: {}
+    card:
+      url: https://web.dev/community-highlight-elisa/
+      title: "Community highlight: Elisa Bandy"
+      description: "One of a series of interviews with people working in
+        accessibility. This time, we spoke with accessibility expert, Elisa
+        Bandy. "
+      type: link
+      author_name: ""
+      author_url: ""
+      provider_name: web.dev
+      provider_url: ""
+      html: ""
+      width: 400
+      height: 200
+      image: https://cdn.fosstodon.org/cache/preview_cards/images/012/986/620/original/ac342c70cffeff31.png
+      embed_url: ""
+      blurhash: U7S$r,%0?as?tSs+s9R:~VjK9Zk6xYa%kWW,
+    poll: null
+  application: null
+  account:
+    id: "108197637416268369"
+    username: rauschma
+    acct: rauschma
+    display_name: Axel Rauschmayer
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-04-26T00:00:00.000Z
+    note: '<p>I specialize in JavaScript, TypeScript and web
+      development.</p><p>Other interests:<br />– Human languages: German,
+      English, French, Spanish, Dutch, Mandarin<br />– Sustainability, degrowth,
+      permaculture, urbanism<br />– Tiny houses<br />– Education<br />–
+      Psychology, getting out of one’s head, heart-centered living<br />–
+      Minimalistic spiritual schools: Advaita, Daoism, Buddhism, Christian
+      mysticism, Jiddu Krishnamurti, etc.</p><p>I live in Munich. <a
+      href="http://pronoun.is/he" target="_blank" rel="nofollow noopener
+      noreferrer"><span class="invisible">http://</span><span
+      class="">pronoun.is/he</span><span class="invisible"></span></a></p><p><a
+      href="https://fosstodon.org/tags/fedi22" class="mention hashtag"
+      rel="tag">#<span>fedi22</span></a>: <a
+      href="https://fosstodon.org/tags/javascript" class="mention hashtag"
+      rel="tag">#<span>javascript</span></a> <a
+      href="https://fosstodon.org/tags/typescript" class="mention hashtag"
+      rel="tag">#<span>typescript</span></a> <a
+      href="https://fosstodon.org/tags/webdev" class="mention hashtag"
+      rel="tag">#<span>webdev</span></a></p>'
+    url: https://fosstodon.org/@rauschma
+    avatar: https://cdn.fosstodon.org/accounts/avatars/108/197/637/416/268/369/original/760c65e18f724974.jpg
+    avatar_static: https://cdn.fosstodon.org/accounts/avatars/108/197/637/416/268/369/original/760c65e18f724974.jpg
+    header: https://fosstodon.org/headers/original/missing.png
+    header_static: https://fosstodon.org/headers/original/missing.png
+    followers_count: 3206
+    following_count: 160
+    statuses_count: 974
+    last_status_at: 2022-12-15
+    noindex: true
+    emojis: {}
+    fields:
+      - name: "📜 Blog (#2ality):"
+        value: <a href="https://2ality.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">https://</span><span
+          class="">2ality.com</span><span class="invisible"></span></a>
+        verified_at: 2022-11-08T00:37:57.326+00:00
+      - name: "📚 Free ebooks:"
+        value: <a href="https://exploringjs.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">https://</span><span
+          class="">exploringjs.com</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: "📧 Newsletter:"
+        value: <a href="http://esnextnews.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">http://</span><span
+          class="">esnextnews.com</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: "💡 Non-tech:"
+        value: <span class="h-card"><a href="https://mastodon.green/@light_bulbs"
+          class="u-url
+          mention">@<span>light_bulbs@mastodon.green</span></a></span>
+        verified_at: null
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card: null
+  poll: null
+- id: "109518809480831231"
+  created_at: 2022-12-15T17:13:32.248Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: en
+  uri: https://fosstodon.org/users/rauschma/statuses/109518809480831231
+  url: https://fosstodon.org/@rauschma/109518809480831231
+  replies_count: 2
+  reblogs_count: 10
+  favourites_count: 21
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: "<p>Tip for writing documentation: Assume that your reader doesn’t know
+    anything and needs you to explain things really well. Because you will be
+    that reader in a few weeks (after you forgot what you wrote).</p>"
+  filtered: {}
+  reblog: null
+  application: null
+  account:
+    id: "108197637416268369"
+    username: rauschma
+    acct: rauschma
+    display_name: Axel Rauschmayer
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-04-26T00:00:00.000Z
+    note: '<p>I specialize in JavaScript, TypeScript and web
+      development.</p><p>Other interests:<br />– Human languages: German,
+      English, French, Spanish, Dutch, Mandarin<br />– Sustainability, degrowth,
+      permaculture, urbanism<br />– Tiny houses<br />– Education<br />–
+      Psychology, getting out of one’s head, heart-centered living<br />–
+      Minimalistic spiritual schools: Advaita, Daoism, Buddhism, Christian
+      mysticism, Jiddu Krishnamurti, etc.</p><p>I live in Munich. <a
+      href="http://pronoun.is/he" target="_blank" rel="nofollow noopener
+      noreferrer"><span class="invisible">http://</span><span
+      class="">pronoun.is/he</span><span class="invisible"></span></a></p><p><a
+      href="https://fosstodon.org/tags/fedi22" class="mention hashtag"
+      rel="tag">#<span>fedi22</span></a>: <a
+      href="https://fosstodon.org/tags/javascript" class="mention hashtag"
+      rel="tag">#<span>javascript</span></a> <a
+      href="https://fosstodon.org/tags/typescript" class="mention hashtag"
+      rel="tag">#<span>typescript</span></a> <a
+      href="https://fosstodon.org/tags/webdev" class="mention hashtag"
+      rel="tag">#<span>webdev</span></a></p>'
+    url: https://fosstodon.org/@rauschma
+    avatar: https://cdn.fosstodon.org/accounts/avatars/108/197/637/416/268/369/original/760c65e18f724974.jpg
+    avatar_static: https://cdn.fosstodon.org/accounts/avatars/108/197/637/416/268/369/original/760c65e18f724974.jpg
+    header: https://fosstodon.org/headers/original/missing.png
+    header_static: https://fosstodon.org/headers/original/missing.png
+    followers_count: 3206
+    following_count: 160
+    statuses_count: 974
+    last_status_at: 2022-12-15
+    noindex: true
+    emojis: {}
+    fields:
+      - name: "📜 Blog (#2ality):"
+        value: <a href="https://2ality.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">https://</span><span
+          class="">2ality.com</span><span class="invisible"></span></a>
+        verified_at: 2022-11-08T00:37:57.326+00:00
+      - name: "📚 Free ebooks:"
+        value: <a href="https://exploringjs.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">https://</span><span
+          class="">exploringjs.com</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: "📧 Newsletter:"
+        value: <a href="http://esnextnews.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">http://</span><span
+          class="">esnextnews.com</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: "💡 Non-tech:"
+        value: <span class="h-card"><a href="https://mastodon.green/@light_bulbs"
+          class="u-url
+          mention">@<span>light_bulbs@mastodon.green</span></a></span>
+        verified_at: null
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card: null
+  poll: null
+- id: "109518755420059380"
+  created_at: 2022-12-15T16:59:47.341Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: en
+  uri: https://fosstodon.org/users/rauschma/statuses/109518755420059380
+  url: https://fosstodon.org/@rauschma/109518755420059380
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: 2022-12-15T17:14:07.359Z
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: '<p>New section in my blog post on the “Iterator Helpers” proposal:
+    “How will this proposal affect future JavaScript APIs?”<br /><a
+    href="https://2ality.com/2022/12/iterator-helpers.html#future-apis"
+    target="_blank" rel="nofollow noopener noreferrer"><span
+    class="invisible">https://</span><span
+    class="ellipsis">2ality.com/2022/12/iterator-he</span><span
+    class="invisible">lpers.html#future-apis</span></a> <a
+    href="https://fosstodon.org/tags/JavaScript" class="mention hashtag"
+    rel="tag">#<span>JavaScript</span></a> <a
+    href="https://fosstodon.org/tags/Iteration" class="mention hashtag"
+    rel="tag">#<span>Iteration</span></a></p>'
+  filtered: {}
+  reblog: null
+  application: null
+  account:
+    id: "108197637416268369"
+    username: rauschma
+    acct: rauschma
+    display_name: Axel Rauschmayer
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-04-26T00:00:00.000Z
+    note: '<p>I specialize in JavaScript, TypeScript and web
+      development.</p><p>Other interests:<br />– Human languages: German,
+      English, French, Spanish, Dutch, Mandarin<br />– Sustainability, degrowth,
+      permaculture, urbanism<br />– Tiny houses<br />– Education<br />–
+      Psychology, getting out of one’s head, heart-centered living<br />–
+      Minimalistic spiritual schools: Advaita, Daoism, Buddhism, Christian
+      mysticism, Jiddu Krishnamurti, etc.</p><p>I live in Munich. <a
+      href="http://pronoun.is/he" target="_blank" rel="nofollow noopener
+      noreferrer"><span class="invisible">http://</span><span
+      class="">pronoun.is/he</span><span class="invisible"></span></a></p><p><a
+      href="https://fosstodon.org/tags/fedi22" class="mention hashtag"
+      rel="tag">#<span>fedi22</span></a>: <a
+      href="https://fosstodon.org/tags/javascript" class="mention hashtag"
+      rel="tag">#<span>javascript</span></a> <a
+      href="https://fosstodon.org/tags/typescript" class="mention hashtag"
+      rel="tag">#<span>typescript</span></a> <a
+      href="https://fosstodon.org/tags/webdev" class="mention hashtag"
+      rel="tag">#<span>webdev</span></a></p>'
+    url: https://fosstodon.org/@rauschma
+    avatar: https://cdn.fosstodon.org/accounts/avatars/108/197/637/416/268/369/original/760c65e18f724974.jpg
+    avatar_static: https://cdn.fosstodon.org/accounts/avatars/108/197/637/416/268/369/original/760c65e18f724974.jpg
+    header: https://fosstodon.org/headers/original/missing.png
+    header_static: https://fosstodon.org/headers/original/missing.png
+    followers_count: 3206
+    following_count: 160
+    statuses_count: 974
+    last_status_at: 2022-12-15
+    noindex: true
+    emojis: {}
+    fields:
+      - name: "📜 Blog (#2ality):"
+        value: <a href="https://2ality.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">https://</span><span
+          class="">2ality.com</span><span class="invisible"></span></a>
+        verified_at: 2022-11-08T00:37:57.326+00:00
+      - name: "📚 Free ebooks:"
+        value: <a href="https://exploringjs.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">https://</span><span
+          class="">exploringjs.com</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: "📧 Newsletter:"
+        value: <a href="http://esnextnews.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">http://</span><span
+          class="">esnextnews.com</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: "💡 Non-tech:"
+        value: <span class="h-card"><a href="https://mastodon.green/@light_bulbs"
+          class="u-url
+          mention">@<span>light_bulbs@mastodon.green</span></a></span>
+        verified_at: null
+  media_attachments: {}
+  mentions: {}
+  tags:
+    - name: javascript
+      url: https://fosstodon.org/tags/javascript
+    - name: iteration
+      url: https://fosstodon.org/tags/iteration
+  emojis: {}
+  card:
+    url: https://2ality.com/2022/12/iterator-helpers.html#future-apis
+    title: "ECMAScript proposal: iterator helpers"
+    description: "In this blog post, we look at the ECMAScript proposal “Iterator
+      helpers” by Gus Caplan, Michael Ficarra, Adam Vandolder, Jason Orendorff,
+      Kevin Gibbons, and Yulia Startsev. It introduces utility methods for
+      working with iterable data: .map(), .filter(), .take(), etc. The style of
+      the proposed API clashes with the style of the current iteration API.
+      We’ll explore how we can fix that."
+    type: link
+    author_name: ""
+    author_url: ""
+    provider_name: ""
+    provider_url: ""
+    html: ""
+    width: 0
+    height: 0
+    image: null
+    embed_url: ""
+    blurhash: null
+  poll: null
+- id: "109518686893016970"
+  created_at: 2022-12-15T16:42:21.000Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: null
+  uri: https://mastodon.green/users/philnel/statuses/109518686875462945/activity
+  url: null
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: ""
+  filtered: {}
+  reblog:
+    id: "109518432633665335"
+    created_at: 2022-12-15T15:37:38.000Z
+    in_reply_to_id: null
+    in_reply_to_account_id: null
+    sensitive: false
+    spoiler_text: ""
+    visibility: public
+    language: en
+    uri: https://med-mastodon.com/users/luckytran/statuses/109518432395726443
+    url: https://med-mastodon.com/@luckytran/109518432395726443
+    replies_count: 4
+    reblogs_count: 40
+    favourites_count: 0
+    edited_at: null
+    favourited: false
+    reblogged: false
+    muted: false
+    bookmarked: false
+    content: '<p>You can now order free COVID-19 rapid tests again here: <a
+      href="http://covidtests.gov" rel="nofollow noopener noreferrer"
+      target="_blank"><span class="invisible">http://</span><span
+      class="">covidtests.gov</span><span class="invisible"></span></a></p><p><a
+      href="https://med-mastodon.com/tags/COVID" class="mention hashtag"
+      rel="nofollow noopener noreferrer" target="_blank">#<span>COVID</span></a>
+      <a href="https://med-mastodon.com/tags/COVID19" class="mention hashtag"
+      rel="nofollow noopener noreferrer"
+      target="_blank">#<span>COVID19</span></a> <a
+      href="https://med-mastodon.com/tags/PublicHealth" class="mention hashtag"
+      rel="nofollow noopener noreferrer"
+      target="_blank">#<span>PublicHealth</span></a></p>'
+    filtered: {}
+    reblog: null
+    account:
+      id: "109306066741779853"
+      username: luckytran
+      acct: luckytran@med-mastodon.com
+      display_name: "Dr. Lucky Tran :verified:"
+      locked: false
+      bot: false
+      discoverable: true
+      group: false
+      created_at: 2022-11-07T00:00:00.000Z
+      note: '<p>Scientist &amp; organizer working in public health, climate justice,
+        &amp; scicomm.</p><p>Currently: Columbia University, March for
+        Science.</p><p>Contact/Links: <a href="https://linktr.ee/luckytran"
+        rel="nofollow noopener noreferrer" target="_blank"><span
+        class="invisible">https://</span><span
+        class="">linktr.ee/luckytran</span><span
+        class="invisible"></span></a></p>'
+      url: https://med-mastodon.com/@luckytran
+      avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/306/066/741/779/853/original/67ff4986165fb071.jpg
+      avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/306/066/741/779/853/original/67ff4986165fb071.jpg
+      header: https://cdn.fosstodon.org/cache/accounts/headers/109/306/066/741/779/853/original/c661a3d065da5330.png
+      header_static: https://cdn.fosstodon.org/cache/accounts/headers/109/306/066/741/779/853/original/c661a3d065da5330.png
+      followers_count: 7797
+      following_count: 158
+      statuses_count: 227
+      last_status_at: 2022-12-15
+      emojis:
+        - shortcode: verified
+          url: https://cdn.fosstodon.org/cache/custom_emojis/images/000/759/065/original/0ec16c7e7b0ad7ea.png
+          static_url: https://cdn.fosstodon.org/cache/custom_emojis/images/000/759/065/static/0ec16c7e7b0ad7ea.png
+          visible_in_picker: true
+      fields:
+        - name: Verified by
+          value: <a href="https://fedified.com" rel="nofollow noopener noreferrer"
+            target="_blank"><span class="invisible">https://</span><span
+            class="">fedified.com</span><span class="invisible"></span></a>
+          verified_at: 2022-12-15T07:48:02.067+00:00
+        - name: Twitter
+          value: <a href="https://twitter.com/luckytran" rel="nofollow noopener
+            noreferrer" target="_blank"><span
+            class="invisible">https://</span><span
+            class="">twitter.com/luckytran</span><span
+            class="invisible"></span></a>
+          verified_at: null
+        - name: Instagram
+          value: <a href="https://www.instagram.com/drluckytran/" rel="nofollow noopener
+            noreferrer" target="_blank"><span
+            class="invisible">https://www.</span><span
+            class="">instagram.com/drluckytran/</span><span
+            class="invisible"></span></a>
+          verified_at: null
+        - name: Youtube
+          value: <a href="https://www.youtube.com/@luckytran?sub_confirmation=1"
+            rel="nofollow noopener noreferrer" target="_blank"><span
+            class="invisible">https://www.</span><span
+            class="ellipsis">youtube.com/@luckytran?sub_con</span><span
+            class="invisible">firmation=1</span></a>
+          verified_at: null
+    media_attachments:
+      - id: "109518432546295888"
+        type: image
+        url: https://cdn.fosstodon.org/cache/media_attachments/files/109/518/432/546/295/888/original/84efe2f8a0ea6f0e.jpeg
+        preview_url: https://cdn.fosstodon.org/cache/media_attachments/files/109/518/432/546/295/888/small/84efe2f8a0ea6f0e.jpeg
+        remote_url: https://cdn.masto.host/medmastodoncom/media_attachments/files/109/518/412/593/321/902/original/034d2e751497ff35.jpeg
+        preview_remote_url: null
+        text_url: null
+        meta:
+          focus:
+            x: 0
+            y: 0
+          original:
+            width: 1125
+            height: 1363
+            size: 1125x1363
+            aspect: 0.8253851797505503
+          small:
+            width: 436
+            height: 528
+            size: 436x528
+            aspect: 0.8257575757575758
+        description: >-
+          Get free at-⁠home COVID-⁠19 tests this winter
+
+
+          Every U.S. household is eligible to order 4 free at-home COVID-⁠19 tests.
+
+
+          Order Free At-Home Tests
+        blurhash: UQQ^8gIo%1Rk}?jYNHoL9^kCt6bH={s:Rkf6
+    mentions: {}
+    tags:
+      - name: COVID
+        url: https://fosstodon.org/tags/COVID
+      - name: COVID19
+        url: https://fosstodon.org/tags/COVID19
+      - name: publichealth
+        url: https://fosstodon.org/tags/publichealth
+    emojis: {}
+    card:
+      url: https://www.covid.gov/tests
+      title: COVID.gov/tests - Free at-home COVID-19 tests
+      description: Every U.S. household is eligible to order 4 free at-home COVID-⁠19 tests.
+      type: link
+      author_name: HHS
+      author_url: ""
+      provider_name: COVID.gov
+      provider_url: ""
+      html: ""
+      width: 400
+      height: 213
+      image: https://cdn.fosstodon.org/cache/preview_cards/images/009/221/171/original/b1edc346f7a2dc08.jpg
+      embed_url: ""
+      blurhash: UhL4NgDi00E1E1M{o#xuM{jZozt7WBkCs:ni
+    poll: null
+  account:
+    id: "109293521815814007"
+    username: philnel
+    acct: philnel@mastodon.green
+    display_name: Philip Nel
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-11-05T00:00:00.000Z
+    note: "<p>👨🏼‍🏫 Prof. he/him.<br>📚 Books on children's books &amp; comics: <a
+      href=\"https://philnel.com/writing/books/\" rel=\"nofollow noopener
+      noreferrer\" target=\"_blank\"><span
+      class=\"invisible\">https://</span><span
+      class=\"\">philnel.com/writing/books/</span><span
+      class=\"invisible\"></span></a> <br> 📷 IG: thephilnel<br>🐝 Hive: <span
+      class=\"h-card\"><a href=\"https://mastodon.green/@philnel\" class=\"u-url
+      mention\" rel=\"nofollow noopener noreferrer\"
+      target=\"_blank\">@<span>philnel</span></a></span><br>🎵 Spotify:
+      thephilnel<br>🐦 (former) Twitter: <span class=\"h-card\"><a
+      href=\"https://mastodon.green/@philnel\" class=\"u-url mention\"
+      rel=\"nofollow noopener noreferrer\"
+      target=\"_blank\">@<span>philnel</span></a></span></p>"
+    url: https://mastodon.green/@philnel
+    avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/293/521/815/814/007/original/4778304daa59bf2f.jpg
+    avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/293/521/815/814/007/original/4778304daa59bf2f.jpg
+    header: https://cdn.fosstodon.org/cache/accounts/headers/109/293/521/815/814/007/original/77fff9c98f9a3425.jpg
+    header_static: https://cdn.fosstodon.org/cache/accounts/headers/109/293/521/815/814/007/original/77fff9c98f9a3425.jpg
+    followers_count: 139
+    following_count: 100
+    statuses_count: 253
+    last_status_at: 2022-12-15
+    emojis: {}
+    fields:
+      - name: website
+        value: <a href="https://philnel.com/" rel="nofollow noopener noreferrer"
+          target="_blank"><span class="invisible">https://</span><span
+          class="">philnel.com/</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: Instagram
+        value: <a href="https://www.instagram.com/thephilnel/" rel="nofollow noopener
+          noreferrer" target="_blank"><span
+          class="invisible">https://www.</span><span
+          class="">instagram.com/thephilnel/</span><span
+          class="invisible"></span></a>
+        verified_at: null
+      - name: YouTube
+        value: <a href="https://www.youtube.com/channel/UCflpE_3DHOuNcjCMj-3tW2w"
+          rel="nofollow noopener noreferrer" target="_blank"><span
+          class="invisible">https://www.</span><span
+          class="ellipsis">youtube.com/channel/UCflpE_3DH</span><span
+          class="invisible">OuNcjCMj-3tW2w</span></a>
+        verified_at: null
+      - name: Books
+        value: <a href="https://philnel.com/writing/books/" rel="nofollow noopener
+          noreferrer" target="_blank"><span
+          class="invisible">https://</span><span
+          class="">philnel.com/writing/books/</span><span
+          class="invisible"></span></a>
+        verified_at: null
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card: null
+  poll: null
+- id: "109518677409688446"
+  created_at: 2022-12-15T16:39:56.000Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: null
+  uri: https://mastodon.green/users/philnel/statuses/109518677390829898/activity
+  url: null
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: ""
+  filtered:
+    - filter:
+        id: "5157"
+        title: Noise
+        context:
+          - home
+        expires_at: null
+        filter_action: hide
+      keyword_matches:
+        - Musk
+      status_matches: null
+  reblog:
+    id: "109518487899067013"
+    created_at: 2022-12-15T15:51:43.000Z
+    in_reply_to_id: null
+    in_reply_to_account_id: null
+    sensitive: false
+    spoiler_text: ""
+    visibility: public
+    language: en
+    uri: https://mstdn.social/users/RollingStone/statuses/109518487795185463
+    url: https://mstdn.social/@RollingStone/109518487795185463
+    replies_count: 27
+    reblogs_count: 44
+    favourites_count: 0
+    edited_at: null
+    favourited: false
+    reblogged: false
+    muted: false
+    bookmarked: false
+    content: <p>Tesla’s third-largest shareholder tweeted that Musk had “abandoned
+      Tesla” and that the company “has no working CEO." <a
+      href="https://www.rollingstone.com/politics/politics-news/elon-musk-sells-billions-tesla-stock-1234647923/"
+      rel="nofollow noopener noreferrer" target="_blank"><span
+      class="invisible">https://www.</span><span
+      class="ellipsis">rollingstone.com/politics/poli</span><span
+      class="invisible">tics-news/elon-musk-sells-billions-tesla-stock-1234647923/</span></a></p>
+    filtered:
+      - filter:
+          id: "5157"
+          title: Noise
+          context:
+            - home
+          expires_at: null
+          filter_action: hide
+        keyword_matches:
+          - Musk
+        status_matches: null
+    reblog: null
+    account:
+      id: "109326662321352800"
+      username: RollingStone
+      acct: RollingStone@mstdn.social
+      display_name: Rolling Stone
+      locked: false
+      bot: false
+      discoverable: true
+      group: false
+      created_at: 2022-11-05T00:00:00.000Z
+      note: <p>The latest news and more from Rolling Stone magazine and
+        RollingStone.com</p>
+      url: https://mstdn.social/@RollingStone
+      avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/326/662/321/352/800/original/bd44bcd0e00a805b.jpeg
+      avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/326/662/321/352/800/original/bd44bcd0e00a805b.jpeg
+      header: https://fosstodon.org/headers/original/missing.png
+      header_static: https://fosstodon.org/headers/original/missing.png
+      followers_count: 14098
+      following_count: 2
+      statuses_count: 91
+      last_status_at: 2022-12-15
+      emojis: {}
+      fields:
+        - name: Website
+          value: <a href="https://rollingstone.com" rel="nofollow noopener noreferrer"
+            target="_blank"><span class="invisible">https://</span><span
+            class="">rollingstone.com</span><span class="invisible"></span></a>
+          verified_at: 2022-12-15T17:46:47.213+00:00
+        - name: Verification
+          value: <a href="https://rollingstone.com" rel="nofollow noopener noreferrer"
+            target="_blank"><span class="invisible">https://</span><span
+            class="">rollingstone.com</span><span class="invisible"></span></a>
+          verified_at: 2022-12-15T17:46:47.361+00:00
+    media_attachments: {}
+    mentions: {}
+    tags: {}
+    emojis: {}
+    card:
+      url: https://www.rollingstone.com/politics/politics-news/elon-musk-sells-billions-tesla-stock-1234647923/
+      title: Elon Musk Is Dumping Billions in Tesla Stock
+      description: Tesla’s third-largest shareholder tweeted that Musk had “abandoned
+        Tesla” and that the company “has no working CEO”
+      type: link
+      author_name: ""
+      author_url: ""
+      provider_name: Rolling Stone
+      provider_url: ""
+      html: ""
+      width: 400
+      height: 225
+      image: https://cdn.fosstodon.org/cache/preview_cards/images/012/984/035/original/17e05ae1862e06dc.jpg
+      embed_url: ""
+      blurhash: UJ9ZK5xa0yI:bGs;j]NaELWp-VxaWUR*t7%2
+    poll: null
+  account:
+    id: "109293521815814007"
+    username: philnel
+    acct: philnel@mastodon.green
+    display_name: Philip Nel
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-11-05T00:00:00.000Z
+    note: "<p>👨🏼‍🏫 Prof. he/him.<br>📚 Books on children's books &amp; comics: <a
+      href=\"https://philnel.com/writing/books/\" rel=\"nofollow noopener
+      noreferrer\" target=\"_blank\"><span
+      class=\"invisible\">https://</span><span
+      class=\"\">philnel.com/writing/books/</span><span
+      class=\"invisible\"></span></a> <br> 📷 IG: thephilnel<br>🐝 Hive: <span
+      class=\"h-card\"><a href=\"https://mastodon.green/@philnel\" class=\"u-url
+      mention\" rel=\"nofollow noopener noreferrer\"
+      target=\"_blank\">@<span>philnel</span></a></span><br>🎵 Spotify:
+      thephilnel<br>🐦 (former) Twitter: <span class=\"h-card\"><a
+      href=\"https://mastodon.green/@philnel\" class=\"u-url mention\"
+      rel=\"nofollow noopener noreferrer\"
+      target=\"_blank\">@<span>philnel</span></a></span></p>"
+    url: https://mastodon.green/@philnel
+    avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/293/521/815/814/007/original/4778304daa59bf2f.jpg
+    avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/293/521/815/814/007/original/4778304daa59bf2f.jpg
+    header: https://cdn.fosstodon.org/cache/accounts/headers/109/293/521/815/814/007/original/77fff9c98f9a3425.jpg
+    header_static: https://cdn.fosstodon.org/cache/accounts/headers/109/293/521/815/814/007/original/77fff9c98f9a3425.jpg
+    followers_count: 139
+    following_count: 100
+    statuses_count: 253
+    last_status_at: 2022-12-15
+    emojis: {}
+    fields:
+      - name: website
+        value: <a href="https://philnel.com/" rel="nofollow noopener noreferrer"
+          target="_blank"><span class="invisible">https://</span><span
+          class="">philnel.com/</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: Instagram
+        value: <a href="https://www.instagram.com/thephilnel/" rel="nofollow noopener
+          noreferrer" target="_blank"><span
+          class="invisible">https://www.</span><span
+          class="">instagram.com/thephilnel/</span><span
+          class="invisible"></span></a>
+        verified_at: null
+      - name: YouTube
+        value: <a href="https://www.youtube.com/channel/UCflpE_3DHOuNcjCMj-3tW2w"
+          rel="nofollow noopener noreferrer" target="_blank"><span
+          class="invisible">https://www.</span><span
+          class="ellipsis">youtube.com/channel/UCflpE_3DH</span><span
+          class="invisible">OuNcjCMj-3tW2w</span></a>
+        verified_at: null
+      - name: Books
+        value: <a href="https://philnel.com/writing/books/" rel="nofollow noopener
+          noreferrer" target="_blank"><span
+          class="invisible">https://</span><span
+          class="">philnel.com/writing/books/</span><span
+          class="invisible"></span></a>
+        verified_at: null
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card: null
+  poll: null
+- id: "109518671855737693"
+  created_at: 2022-12-15T16:38:32.000Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: null
+  uri: https://mastodon.green/users/philnel/statuses/109518671842925434/activity
+  url: null
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: ""
+  filtered: {}
+  reblog:
+    id: "109517360991704922"
+    created_at: 2022-12-15T11:05:07.000Z
+    in_reply_to_id: null
+    in_reply_to_account_id: null
+    sensitive: false
+    spoiler_text: ""
+    visibility: public
+    language: en
+    uri: https://mastodon.online/users/brianbilston/statuses/109517360802317972
+    url: https://mastodon.online/@brianbilston/109517360802317972
+    replies_count: 44
+    reblogs_count: 233
+    favourites_count: 7
+    edited_at: null
+    favourited: false
+    reblogged: false
+    muted: false
+    bookmarked: false
+    content: <p>Here’s a poem in the shape of a Christmas tree. It’s called
+      ‘Needles’.</p>
+    filtered: {}
+    reblog: null
+    account:
+      id: "109301972632528691"
+      username: brianbilston
+      acct: brianbilston@mastodon.online
+      display_name: Brian Bilston
+      locked: false
+      bot: false
+      discoverable: true
+      group: false
+      created_at: 2022-11-06T00:00:00.000Z
+      note: "<p>Ceci n'est pas un poème. New book: Days Like These (Picador).
+        Represented by Jo Unwin.</p>"
+      url: https://mastodon.online/@brianbilston
+      avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/301/972/632/528/691/original/ecae0708775965fa.png
+      avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/301/972/632/528/691/original/ecae0708775965fa.png
+      header: https://cdn.fosstodon.org/cache/accounts/headers/109/301/972/632/528/691/original/e4eb1be758851cc2.jpeg
+      header_static: https://cdn.fosstodon.org/cache/accounts/headers/109/301/972/632/528/691/original/e4eb1be758851cc2.jpeg
+      followers_count: 10442
+      following_count: 75
+      statuses_count: 426
+      last_status_at: 2022-12-15
+      emojis: {}
+      fields:
+        - name: My books
+          value: <a href="https://uk.bookshop.org/shop/brianbilston" rel="nofollow
+            noopener noreferrer" target="_blank"><span
+            class="invisible">https://</span><span
+            class="ellipsis">uk.bookshop.org/shop/brianbils</span><span
+            class="invisible">ton</span></a>
+          verified_at: null
+        - name: Gigs
+          value: <a href="https://brianbilston.com/events/" rel="nofollow noopener
+            noreferrer" target="_blank"><span
+            class="invisible">https://</span><span
+            class="">brianbilston.com/events/</span><span
+            class="invisible"></span></a>
+          verified_at: null
+    media_attachments:
+      - id: "109517360868274650"
+        type: image
+        url: https://cdn.fosstodon.org/cache/media_attachments/files/109/517/360/868/274/650/original/24bd058d157425d3.jpeg
+        preview_url: https://cdn.fosstodon.org/cache/media_attachments/files/109/517/360/868/274/650/small/24bd058d157425d3.jpeg
+        remote_url: https://files.mastodon.online/media_attachments/files/109/517/358/906/845/737/original/cf57b3634f80918f.jpeg
+        preview_remote_url: null
+        text_url: null
+        meta:
+          focus:
+            x: 0.01511879049676026
+            y: 0.8034934497816594
+          original:
+            width: 828
+            height: 1030
+            size: 828x1030
+            aspect: 0.8038834951456311
+          small:
+            width: 430
+            height: 535
+            size: 430x535
+            aspect: 0.8037383177570093
+        description: |-
+          Needles
+           
+                              I
+                         wrote
+                        a poem
+                    in the shape
+                  of a Christmas
+               tree but then forgot
+          to water it and only a few
+                          days
+                          later
+
+                   there
+                                                 were
+          words
+                             all        over
+
+                     the                                           
+
+                                              carpet
+        blurhash: U4T9L#t7~qxuWBRj%Mxu%Mt7IURj-;ayIUay
+    mentions: {}
+    tags: {}
+    emojis: {}
+    card: null
+    poll: null
+  account:
+    id: "109293521815814007"
+    username: philnel
+    acct: philnel@mastodon.green
+    display_name: Philip Nel
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-11-05T00:00:00.000Z
+    note: "<p>👨🏼‍🏫 Prof. he/him.<br>📚 Books on children's books &amp; comics: <a
+      href=\"https://philnel.com/writing/books/\" rel=\"nofollow noopener
+      noreferrer\" target=\"_blank\"><span
+      class=\"invisible\">https://</span><span
+      class=\"\">philnel.com/writing/books/</span><span
+      class=\"invisible\"></span></a> <br> 📷 IG: thephilnel<br>🐝 Hive: <span
+      class=\"h-card\"><a href=\"https://mastodon.green/@philnel\" class=\"u-url
+      mention\" rel=\"nofollow noopener noreferrer\"
+      target=\"_blank\">@<span>philnel</span></a></span><br>🎵 Spotify:
+      thephilnel<br>🐦 (former) Twitter: <span class=\"h-card\"><a
+      href=\"https://mastodon.green/@philnel\" class=\"u-url mention\"
+      rel=\"nofollow noopener noreferrer\"
+      target=\"_blank\">@<span>philnel</span></a></span></p>"
+    url: https://mastodon.green/@philnel
+    avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/293/521/815/814/007/original/4778304daa59bf2f.jpg
+    avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/293/521/815/814/007/original/4778304daa59bf2f.jpg
+    header: https://cdn.fosstodon.org/cache/accounts/headers/109/293/521/815/814/007/original/77fff9c98f9a3425.jpg
+    header_static: https://cdn.fosstodon.org/cache/accounts/headers/109/293/521/815/814/007/original/77fff9c98f9a3425.jpg
+    followers_count: 139
+    following_count: 100
+    statuses_count: 253
+    last_status_at: 2022-12-15
+    emojis: {}
+    fields:
+      - name: website
+        value: <a href="https://philnel.com/" rel="nofollow noopener noreferrer"
+          target="_blank"><span class="invisible">https://</span><span
+          class="">philnel.com/</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: Instagram
+        value: <a href="https://www.instagram.com/thephilnel/" rel="nofollow noopener
+          noreferrer" target="_blank"><span
+          class="invisible">https://www.</span><span
+          class="">instagram.com/thephilnel/</span><span
+          class="invisible"></span></a>
+        verified_at: null
+      - name: YouTube
+        value: <a href="https://www.youtube.com/channel/UCflpE_3DHOuNcjCMj-3tW2w"
+          rel="nofollow noopener noreferrer" target="_blank"><span
+          class="invisible">https://www.</span><span
+          class="ellipsis">youtube.com/channel/UCflpE_3DH</span><span
+          class="invisible">OuNcjCMj-3tW2w</span></a>
+        verified_at: null
+      - name: Books
+        value: <a href="https://philnel.com/writing/books/" rel="nofollow noopener
+          noreferrer" target="_blank"><span
+          class="invisible">https://</span><span
+          class="">philnel.com/writing/books/</span><span
+          class="invisible"></span></a>
+        verified_at: null
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card: null
+  poll: null
+- id: "109518642707464314"
+  created_at: 2022-12-15T16:31:06.000Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: en
+  uri: https://mastodontech.de/users/wolframkriesing/statuses/109518642651890206
+  url: https://mastodontech.de/@wolframkriesing/109518642651890206
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: 2022-12-15T16:32:03.000Z
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: <p>Either the docker-compose command has changed a lot since, or <a
+    href="https://mastodontech.de/tags/chatGPT" class="mention hashtag"
+    rel="nofollow noopener noreferrer" target="_blank">#<span>chatGPT</span></a>
+    just doesn't know. It gives me a lot of wrong answers. :(</p><p>At least I
+    learn a lot. Doing it wrong, but being close is sometimes quite effective
+    way of learning too.</p>
+  filtered: {}
+  reblog: null
+  account:
+    id: "109251723970520678"
+    username: wolframkriesing
+    acct: wolframkriesing@mastodontech.de
+    display_name: Wolfram wants peace
+    locked: false
+    bot: false
+    discoverable: false
+    group: false
+    created_at: 2022-10-29T00:00:00.000Z
+    note: <p>Doing <a href="https://jskatas.org" rel="nofollow noopener noreferrer"
+      target="_blank"><span class="invisible">https://</span><span
+      class="">jskatas.org</span><span class="invisible"></span></a> ... also
+      involved in <a href="https://JSCraftCamp.org" rel="nofollow noopener
+      noreferrer" target="_blank"><span class="invisible">https://</span><span
+      class="">JSCraftCamp.org</span><span class="invisible"></span></a> <a
+      href="https://JSCodeRetreat.com" rel="nofollow noopener noreferrer"
+      target="_blank"><span class="invisible">https://</span><span
+      class="">JSCodeRetreat.com</span><span class="invisible"></span></a>
+      working at sonomotors, my opinions</p><p>Munich, Bavaria  ·  <a
+      href="https://picostitch.com" rel="nofollow noopener noreferrer"
+      target="_blank"><span class="invisible">https://</span><span
+      class="">picostitch.com</span><span class="invisible"></span></a></p>
+    url: https://mastodontech.de/@wolframkriesing
+    avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/251/723/970/520/678/original/033762dd2e4dd723.jpg
+    avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/251/723/970/520/678/original/033762dd2e4dd723.jpg
+    header: https://cdn.fosstodon.org/cache/accounts/headers/109/251/723/970/520/678/original/7aa7923b8b8e6150.jpeg
+    header_static: https://cdn.fosstodon.org/cache/accounts/headers/109/251/723/970/520/678/original/7aa7923b8b8e6150.jpeg
+    followers_count: 137
+    following_count: 66
+    statuses_count: 51
+    last_status_at: 2022-12-15
+    emojis: {}
+    fields:
+      - name: JS Katas
+        value: <a href="https://jskatas.org" rel="nofollow noopener noreferrer"
+          target="_blank"><span class="invisible">https://</span><span
+          class="">jskatas.org</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: Monthly JavaScript The Language Meetup
+        value: <a href="https://www.meetup.com/javascript-the-language/events/"
+          rel="nofollow noopener noreferrer" target="_blank"><span
+          class="invisible">https://www.</span><span
+          class="ellipsis">meetup.com/javascript-the-lang</span><span
+          class="invisible">uage/events/</span></a>
+        verified_at: null
+  media_attachments: {}
+  mentions: {}
+  tags:
+    - name: chatgpt
+      url: https://fosstodon.org/tags/chatgpt
+  emojis: {}
+  card: null
+  poll: null
+- id: "109518571428390141"
+  created_at: 2022-12-15T16:12:59.000Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: en
+  uri: https://mastodon.social/users/jhludwig/statuses/109518571403038817
+  url: https://mastodon.social/@jhludwig/109518571403038817
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: <p><a
+    href="https://www.technologyreview.com/2022/12/15/1065013/twitter-brain-death"
+    rel="nofollow noopener noreferrer" target="_blank"><span
+    class="invisible">https://www.</span><span
+    class="ellipsis">technologyreview.com/2022/12/1</span><span
+    class="invisible">5/1065013/twitter-brain-death</span></a> -- it does seem
+    like Twitter is becoming dominated by outrage over Elon's latest, and
+    outrage over the outrage.  All other conversations are withering away.</p>
+  filtered:
+    - filter:
+        id: "5157"
+        title: Noise
+        context:
+          - home
+        expires_at: null
+        filter_action: hide
+      keyword_matches:
+        - Elon
+      status_matches: null
+  reblog: null
+  account:
+    id: "109372936918635076"
+    username: jhludwig
+    acct: jhludwig@mastodon.social
+    display_name: John Ludwig
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-11-16T00:00:00.000Z
+    note: <p>Kind of Retired? Formerly Xevo, Surround.io, Ignition, Microsoft.
+      Interested in family, friends, learning, tech, reading.  <span
+      class="h-card"><a href="https://mastodon.social/@jhludwig" class="u-url
+      mention" rel="nofollow noopener noreferrer"
+      target="_blank">@<span>jhludwig</span></a></span> on most services</p>
+    url: https://mastodon.social/@jhludwig
+    avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/372/936/918/635/076/original/bf5b0a071d5b7fac.png
+    avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/372/936/918/635/076/original/bf5b0a071d5b7fac.png
+    header: https://fosstodon.org/headers/original/missing.png
+    header_static: https://fosstodon.org/headers/original/missing.png
+    followers_count: 39
+    following_count: 125
+    statuses_count: 14
+    last_status_at: 2022-12-15
+    emojis: {}
+    fields:
+      - name: Blog
+        value: www.theludwigs.com
+        verified_at: null
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card:
+    url: https://www.technologyreview.com/2022/12/15/1065013/twitter-brain-death/
+    title: We’re witnessing the brain death of Twitter
+    description: An analysis of Musk’s tweets shows him at the center of
+      conversations once kept on the fringes of Twitter.
+    type: link
+    author_name: Abby Ohlheiser
+    author_url: ""
+    provider_name: MIT Technology Review
+    provider_url: ""
+    html: ""
+    width: 400
+    height: 200
+    image: https://cdn.fosstodon.org/cache/preview_cards/images/012/970/243/original/ec0248d49622c7e5.jpeg
+    embed_url: ""
+    blurhash: U59-06MzQ3%y.kW=M2xGySo|Q[R7QsnOpYTI
+  poll: null
+- id: "109518546031258095"
+  created_at: 2022-12-15T16:06:32.321Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: en
+  uri: https://fosstodon.org/users/rauschma/statuses/109518546031258095
+  url: https://fosstodon.org/@rauschma/109518546031258095
+  replies_count: 2
+  reblogs_count: 0
+  favourites_count: 1
+  edited_at: 2022-12-15T16:13:03.415Z
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: '<p>It just occurred to me: .reduce() is great for computing the
+    minimum of an Array or an Iterator. Example for the latter, via
+    (*):</p><p>import assert from &#39;node:assert/strict&#39;;<br />import
+    &#39;@ rauschma/iterator-helpers-polyfill/install&#39;;<br />const map = new
+    Map([<br />  [3, true],<br />  [-5, true],<br />  [4, true],<br />]);<br
+    />assert.equal(<br />  map.keys().reduce((min, cur) =&gt; cur &lt; min ? cur
+    : min, Infinity),<br />  -5<br />);</p><p>(*) <a
+    href="https://github.com/rauschma/iterator-helpers-polyfill" target="_blank"
+    rel="nofollow noopener noreferrer"><span
+    class="invisible">https://</span><span
+    class="ellipsis">github.com/rauschma/iterator-h</span><span
+    class="invisible">elpers-polyfill</span></a></p>'
+  filtered: {}
+  reblog: null
+  application: null
+  account:
+    id: "108197637416268369"
+    username: rauschma
+    acct: rauschma
+    display_name: Axel Rauschmayer
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-04-26T00:00:00.000Z
+    note: '<p>I specialize in JavaScript, TypeScript and web
+      development.</p><p>Other interests:<br />– Human languages: German,
+      English, French, Spanish, Dutch, Mandarin<br />– Sustainability, degrowth,
+      permaculture, urbanism<br />– Tiny houses<br />– Education<br />–
+      Psychology, getting out of one’s head, heart-centered living<br />–
+      Minimalistic spiritual schools: Advaita, Daoism, Buddhism, Christian
+      mysticism, Jiddu Krishnamurti, etc.</p><p>I live in Munich. <a
+      href="http://pronoun.is/he" target="_blank" rel="nofollow noopener
+      noreferrer"><span class="invisible">http://</span><span
+      class="">pronoun.is/he</span><span class="invisible"></span></a></p><p><a
+      href="https://fosstodon.org/tags/fedi22" class="mention hashtag"
+      rel="tag">#<span>fedi22</span></a>: <a
+      href="https://fosstodon.org/tags/javascript" class="mention hashtag"
+      rel="tag">#<span>javascript</span></a> <a
+      href="https://fosstodon.org/tags/typescript" class="mention hashtag"
+      rel="tag">#<span>typescript</span></a> <a
+      href="https://fosstodon.org/tags/webdev" class="mention hashtag"
+      rel="tag">#<span>webdev</span></a></p>'
+    url: https://fosstodon.org/@rauschma
+    avatar: https://cdn.fosstodon.org/accounts/avatars/108/197/637/416/268/369/original/760c65e18f724974.jpg
+    avatar_static: https://cdn.fosstodon.org/accounts/avatars/108/197/637/416/268/369/original/760c65e18f724974.jpg
+    header: https://fosstodon.org/headers/original/missing.png
+    header_static: https://fosstodon.org/headers/original/missing.png
+    followers_count: 3206
+    following_count: 160
+    statuses_count: 974
+    last_status_at: 2022-12-15
+    noindex: true
+    emojis: {}
+    fields:
+      - name: "📜 Blog (#2ality):"
+        value: <a href="https://2ality.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">https://</span><span
+          class="">2ality.com</span><span class="invisible"></span></a>
+        verified_at: 2022-11-08T00:37:57.326+00:00
+      - name: "📚 Free ebooks:"
+        value: <a href="https://exploringjs.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">https://</span><span
+          class="">exploringjs.com</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: "📧 Newsletter:"
+        value: <a href="http://esnextnews.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">http://</span><span
+          class="">esnextnews.com</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: "💡 Non-tech:"
+        value: <span class="h-card"><a href="https://mastodon.green/@light_bulbs"
+          class="u-url
+          mention">@<span>light_bulbs@mastodon.green</span></a></span>
+        verified_at: null
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card:
+    url: https://github.com/rauschma/iterator-helpers-polyfill
+    title: GitHub - rauschma/iterator-helpers-polyfill
+    description: Contribute to rauschma/iterator-helpers-polyfill development by
+      creating an account on GitHub.
+    type: link
+    author_name: ""
+    author_url: ""
+    provider_name: GitHub
+    provider_url: ""
+    html: ""
+    width: 400
+    height: 200
+    image: https://cdn.fosstodon.org/cache/preview_cards/images/012/738/830/original/032aa43e84cdd4a9.png
+    embed_url: ""
+    blurhash: UPS6Pnt7RjxuxoofWBt7IWRjt7ay~pWBt7Rj
+  poll: null
+- id: "109518535706716622"
+  created_at: 2022-12-15T16:03:54.000Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: en
+  uri: https://mastodon.social/users/jhludwig/statuses/109518535685805201
+  url: https://mastodon.social/@jhludwig/109518535685805201
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: <p>Chindogu -- a new concept for me -- <a
+    href="https://theprepared.org/features-feed/chindogu" rel="nofollow noopener
+    noreferrer" target="_blank"><span class="invisible">https://</span><span
+    class="ellipsis">theprepared.org/features-feed/</span><span
+    class="invisible">chindogu</span></a></p>
+  filtered: {}
+  reblog: null
+  account:
+    id: "109372936918635076"
+    username: jhludwig
+    acct: jhludwig@mastodon.social
+    display_name: John Ludwig
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-11-16T00:00:00.000Z
+    note: <p>Kind of Retired? Formerly Xevo, Surround.io, Ignition, Microsoft.
+      Interested in family, friends, learning, tech, reading.  <span
+      class="h-card"><a href="https://mastodon.social/@jhludwig" class="u-url
+      mention" rel="nofollow noopener noreferrer"
+      target="_blank">@<span>jhludwig</span></a></span> on most services</p>
+    url: https://mastodon.social/@jhludwig
+    avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/372/936/918/635/076/original/bf5b0a071d5b7fac.png
+    avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/372/936/918/635/076/original/bf5b0a071d5b7fac.png
+    header: https://fosstodon.org/headers/original/missing.png
+    header_static: https://fosstodon.org/headers/original/missing.png
+    followers_count: 39
+    following_count: 125
+    statuses_count: 14
+    last_status_at: 2022-12-15
+    emojis: {}
+    fields:
+      - name: Blog
+        value: www.theludwigs.com
+        verified_at: null
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card:
+    url: https://theprepared.org/features-feed/chindogu
+    title: On Chindogu — The Prepared
+    description: The near-universal comedy of technological failure.
+    type: link
+    author_name: ""
+    author_url: ""
+    provider_name: The Prepared
+    provider_url: ""
+    html: ""
+    width: 400
+    height: 265
+    image: https://cdn.fosstodon.org/cache/preview_cards/images/012/984/661/original/3f65bd1fa27777dc.jpeg
+    embed_url: ""
+    blurhash: UYFicB_4E2M{Ngx^?HjEtRM{M{axMxWBogWB
+  poll: null
+- id: "109518510262052179"
+  created_at: 2022-12-15T15:53:23.000Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: private
+  language: null
+  uri: https://birdsite.wilde.cloud/users/yayalexisgay/statuses/1603417949804679169
+  url: https://birdsite.wilde.cloud/users/yayalexisgay/statuses/1603417949804679169
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: <p>Woo! 🎉 New <span class="h-card"><a
+    href="https://birdsite.wilde.cloud/@NonTechnicalPod" class="u-url mention"
+    rel="nofollow noopener noreferrer"
+    target="_blank">@<span>NonTechnicalPod</span></a></span> feat. <span
+    class="h-card"><a href="https://birdsite.wilde.cloud/@Brooke" class="u-url
+    mention" rel="nofollow noopener noreferrer"
+    target="_blank">@<span>Brooke</span></a></span> Hammerling, Founder of The
+    New New Thing!</p><p>We talk fold-and-roll, Marlboro Lights in the PanAm
+    building, a Middle English Party Trick, bathrobe BETRAYAL, &amp; going with
+    The Flo.</p><p>listen ➡️ <a
+    href="https://podcasts.apple.com/us/podcast/non-technical/id1542532605?i=1000590137084"
+    rel="nofollow noopener noreferrer" target="_blank"><span
+    class="invisible">https://</span><span
+    class="ellipsis">podcasts.apple.com/us/podcast/</span><span
+    class="invisible">non-technical/id1542532605?i=1000590137084</span></a></p><p>sponsored
+    by @knocklabs✨</p>
+  filtered: {}
+  reblog: null
+  account:
+    id: "107995335141002110"
+    username: yayalexisgay
+    acct: yayalexisgay@birdsite.wilde.cloud
+    display_name: Alexis Gay
+    locked: false
+    bot: true
+    discoverable: true
+    group: false
+    created_at: 2022-03-21T00:00:00.000Z
+    note: Type A comedian 😎 | Host of <span class="h-card"><a
+      href="https://birdsite.wilde.cloud/@NonTechnicalPod" class="u-url mention"
+      rel="nofollow noopener noreferrer"
+      target="_blank">@<span>NonTechnicalPod</span></a></span> 🎙️ | Prev. <span
+      class="h-card"><a href="https://birdsite.wilde.cloud/@Patreon"
+      class="u-url mention" rel="nofollow noopener noreferrer"
+      target="_blank">@<span>Patreon</span></a></span> 💻 | Videos here! ⬇️ 🎥
+    url: https://birdsite.wilde.cloud/users/yayalexisgay
+    avatar: https://cdn.fosstodon.org/cache/accounts/avatars/107/995/335/141/002/110/original/6bbc1636142cdc05.jpg
+    avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/107/995/335/141/002/110/original/6bbc1636142cdc05.jpg
+    header: https://cdn.fosstodon.org/cache/accounts/headers/107/995/335/141/002/110/original/0e421cad566ef0e2.jpeg
+    header_static: https://cdn.fosstodon.org/cache/accounts/headers/107/995/335/141/002/110/original/0e421cad566ef0e2.jpeg
+    followers_count: 2
+    following_count: 0
+    statuses_count: 15
+    last_status_at: 2022-12-15
+    emojis: {}
+    fields:
+      - name: Official
+        value: <a href="https://twitter.com/yayalexisgay" rel="nofollow noopener
+          noreferrer" target="_blank"><span
+          class="invisible">https://</span><span
+          class="ellipsis">twitter.com/yayalexisgay</span></a>
+        verified_at: null
+  media_attachments:
+    - id: "109518509839842253"
+      type: video
+      url: https://cdn.fosstodon.org/cache/media_attachments/files/109/518/509/839/842/253/original/7fdf041ca4f34cfd.mp4
+      preview_url: https://cdn.fosstodon.org/cache/media_attachments/files/109/518/509/839/842/253/small/7fdf041ca4f34cfd.png
+      remote_url: https://video.twimg.com/amplify_video/1603416578837647360/vid/720x720/HiGALgwT9gD-9PYs.mp4?tag=14
+      preview_remote_url: null
+      text_url: null
+      meta:
+        original:
+          width: 720
+          height: 720
+          frame_rate: 24/1
+          duration: 83.541667
+          bitrate: 477914
+        small:
+          width: 400
+          height: 400
+          size: 400x400
+          aspect: 1
+      description: null
+      blurhash: UbE_ggWV0fnj={jZIpoMt8WVjYs:W=ofoKR+
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card:
+    url: https://podcasts.apple.com/us/podcast/96-brooke-hammerling-founder-the-new-new-thing-said/id1542532605?i=1000590137084
+    title: "‎Non-Technical: 96. Brooke Hammerling (Founder, The New New Thing) said
+      she’d buy the flowers herself on Apple Podcasts"
+    description: ‎Show Non-Technical, Ep 96. Brooke Hammerling (Founder, The New New
+      Thing) said she’d buy the flowers herself - Dec 14, 2022
+    type: link
+    author_name: ""
+    author_url: ""
+    provider_name: Apple Podcasts
+    provider_url: ""
+    html: ""
+    width: 400
+    height: 210
+    image: https://cdn.fosstodon.org/cache/preview_cards/images/012/984/312/original/05af6882431d0c89.png
+    embed_url: ""
+    blurhash: UhRfFDoL.mbaofj[jaayyDayMdoLsCf6W:bH
+  poll: null
+- id: "109518406637979766"
+  created_at: 2022-12-15T15:31:05.350Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: null
+  uri: https://fosstodon.org/users/rauschma/statuses/109518406637979766/activity
+  url: https://fosstodon.org/users/rauschma/statuses/109518406637979766/activity
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: ""
+  filtered: {}
+  reblog:
+    id: "109518403258506546"
+    created_at: 2022-12-15T15:30:12.000Z
+    in_reply_to_id: null
+    in_reply_to_account_id: null
+    sensitive: false
+    spoiler_text: ""
+    visibility: public
+    language: en
+    uri: https://mastodon.green/users/light_bulbs/statuses/109518403193958706
+    url: https://mastodon.green/@light_bulbs/109518403193958706
+    replies_count: 0
+    reblogs_count: 1
+    favourites_count: 1
+    edited_at: null
+    favourited: false
+    reblogged: false
+    muted: false
+    bookmarked: false
+    content: <p>Dell concept laptop has pop-out components, disassembles
+      screwdriver-free<br>[More modular laptops can last a very long time. The
+      challenge is to also make them pleasant to use and not too clunky.]<br><a
+      href="https://arstechnica.com/gadgets/2022/12/dell-concept-laptop-has-pop-out-components-disassembles-screwdriver-free/"
+      rel="nofollow noopener noreferrer" target="_blank"><span
+      class="invisible">https://</span><span
+      class="ellipsis">arstechnica.com/gadgets/2022/1</span><span
+      class="invisible">2/dell-concept-laptop-has-pop-out-components-disassembles-screwdriver-free/</span></a></p>
+    filtered: {}
+    reblog: null
+    account:
+      id: "109302528201381101"
+      username: light_bulbs
+      acct: light_bulbs@mastodon.green
+      display_name: Light bulbs
+      locked: false
+      bot: false
+      discoverable: true
+      group: false
+      created_at: 2022-11-06T00:00:00.000Z
+      note: "<p>There are many ideas and projects that make me hopeful for the future.
+        To change our behavior, it helps to see things that already
+        work.</p><p>Topics: agriculture, urbanism, education, democracy, income,
+        technology, etc.</p>"
+      url: https://mastodon.green/@light_bulbs
+      avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/302/528/201/381/101/original/6b4d46bfd07b911d.png
+      avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/302/528/201/381/101/original/6b4d46bfd07b911d.png
+      header: https://fosstodon.org/headers/original/missing.png
+      header_static: https://fosstodon.org/headers/original/missing.png
+      followers_count: 147
+      following_count: 20
+      statuses_count: 92
+      last_status_at: 2022-12-15
+      emojis: {}
+      fields:
+        - name: Website
+          value: <a href="https://www.light-bulbs.net/p/about.html" rel="nofollow noopener
+            noreferrer" target="_blank"><span
+            class="invisible">https://www.</span><span
+            class="">light-bulbs.net/p/about.html</span><span
+            class="invisible"></span></a>
+          verified_at: null
+        - name: Author
+          value: <span class="h-card"><a href="https://fosstodon.org/@rauschma"
+            class="u-url mention" rel="nofollow noopener noreferrer"
+            target="_blank">@<span>rauschma@fosstodon.org</span></a></span>
+          verified_at: null
+    media_attachments: {}
+    mentions: {}
+    tags: {}
+    emojis: {}
+    card:
+      url: https://arstechnica.com/gadgets/2022/12/dell-concept-laptop-has-pop-out-components-disassembles-screwdriver-free/
+      title: Dell concept laptop has pop-out components, disassembles screwdriver-free
+      description: We watched Dell dismantle the PC in well under a minute.
+      type: link
+      author_name: ""
+      author_url: ""
+      provider_name: Ars Technica
+      provider_url: ""
+      html: ""
+      width: 400
+      height: 300
+      image: https://cdn.fosstodon.org/cache/preview_cards/images/012/979/425/original/90a55280bcd69fc9.jpg
+      embed_url: ""
+      blurhash: U9F=gdb|D%9bPWWAibDjDjOZS~wG0Kxu_2M{
+    poll: null
+  application: null
+  account:
+    id: "108197637416268369"
+    username: rauschma
+    acct: rauschma
+    display_name: Axel Rauschmayer
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-04-26T00:00:00.000Z
+    note: '<p>I specialize in JavaScript, TypeScript and web
+      development.</p><p>Other interests:<br />– Human languages: German,
+      English, French, Spanish, Dutch, Mandarin<br />– Sustainability, degrowth,
+      permaculture, urbanism<br />– Tiny houses<br />– Education<br />–
+      Psychology, getting out of one’s head, heart-centered living<br />–
+      Minimalistic spiritual schools: Advaita, Daoism, Buddhism, Christian
+      mysticism, Jiddu Krishnamurti, etc.</p><p>I live in Munich. <a
+      href="http://pronoun.is/he" target="_blank" rel="nofollow noopener
+      noreferrer"><span class="invisible">http://</span><span
+      class="">pronoun.is/he</span><span class="invisible"></span></a></p><p><a
+      href="https://fosstodon.org/tags/fedi22" class="mention hashtag"
+      rel="tag">#<span>fedi22</span></a>: <a
+      href="https://fosstodon.org/tags/javascript" class="mention hashtag"
+      rel="tag">#<span>javascript</span></a> <a
+      href="https://fosstodon.org/tags/typescript" class="mention hashtag"
+      rel="tag">#<span>typescript</span></a> <a
+      href="https://fosstodon.org/tags/webdev" class="mention hashtag"
+      rel="tag">#<span>webdev</span></a></p>'
+    url: https://fosstodon.org/@rauschma
+    avatar: https://cdn.fosstodon.org/accounts/avatars/108/197/637/416/268/369/original/760c65e18f724974.jpg
+    avatar_static: https://cdn.fosstodon.org/accounts/avatars/108/197/637/416/268/369/original/760c65e18f724974.jpg
+    header: https://fosstodon.org/headers/original/missing.png
+    header_static: https://fosstodon.org/headers/original/missing.png
+    followers_count: 3206
+    following_count: 160
+    statuses_count: 974
+    last_status_at: 2022-12-15
+    noindex: true
+    emojis: {}
+    fields:
+      - name: "📜 Blog (#2ality):"
+        value: <a href="https://2ality.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">https://</span><span
+          class="">2ality.com</span><span class="invisible"></span></a>
+        verified_at: 2022-11-08T00:37:57.326+00:00
+      - name: "📚 Free ebooks:"
+        value: <a href="https://exploringjs.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">https://</span><span
+          class="">exploringjs.com</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: "📧 Newsletter:"
+        value: <a href="http://esnextnews.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">http://</span><span
+          class="">esnextnews.com</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: "💡 Non-tech:"
+        value: <span class="h-card"><a href="https://mastodon.green/@light_bulbs"
+          class="u-url
+          mention">@<span>light_bulbs@mastodon.green</span></a></span>
+        verified_at: null
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card: null
+  poll: null
+- id: "109518337677825025"
+  created_at: 2022-12-15T15:13:32.000Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: null
+  uri: https://mastodon.green/users/philnel/statuses/109518337637326416/activity
+  url: null
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: ""
+  filtered: {}
+  reblog:
+    id: "109517831273523542"
+    created_at: 2022-12-15T13:04:44.000Z
+    in_reply_to_id: null
+    in_reply_to_account_id: null
+    sensitive: false
+    spoiler_text: ""
+    visibility: public
+    language: en
+    uri: https://mastodon.online/users/ksetiya/statuses/109517831201593729
+    url: https://mastodon.online/@ksetiya/109517831201593729
+    replies_count: 1
+    reblogs_count: 2
+    favourites_count: 0
+    edited_at: null
+    favourited: false
+    reblogged: false
+    muted: false
+    bookmarked: false
+    content: <p>LIFE IS HARD was picked as one of the best books of 2022 by Life
+      Examined @kcrw@twitter.com!<br><a
+      href="https://www.kcrw.com/best-2022/best-of-life-examined-books-reading-2022"
+      rel="nofollow noopener noreferrer" target="_blank"><span
+      class="invisible">https://www.</span><span
+      class="ellipsis">kcrw.com/best-2022/best-of-lif</span><span
+      class="invisible">e-examined-books-reading-2022</span></a></p>
+    filtered: {}
+    reblog: null
+    account:
+      id: "109308250332754018"
+      username: ksetiya
+      acct: ksetiya@mastodon.online
+      display_name: Kieran Setiya
+      locked: false
+      bot: false
+      discoverable: true
+      group: false
+      created_at: 2022-11-06T00:00:00.000Z
+      note: '<p>MIT philosopher; would-be self-help guru; master of the semi-colon;
+        podcast: <a href="http://bit.ly/-five-q" rel="nofollow noopener
+        noreferrer" target="_blank"><span class="invisible">http://</span><span
+        class="">bit.ly/-five-q</span><span class="invisible"></span></a>;
+        substack: <a href="http://bit.ly/-ksetiya" rel="nofollow noopener
+        noreferrer" target="_blank"><span class="invisible">http://</span><span
+        class="">bit.ly/-ksetiya</span><span class="invisible"></span></a>;
+        book: <a href="http://bit.ly/-life-is-hard-ks" rel="nofollow noopener
+        noreferrer" target="_blank"><span class="invisible">http://</span><span
+        class="">bit.ly/-life-is-hard-ks</span><span
+        class="invisible"></span></a></p>'
+      url: https://mastodon.online/@ksetiya
+      avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/308/250/332/754/018/original/905e374841558abd.jpg
+      avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/308/250/332/754/018/original/905e374841558abd.jpg
+      header: https://cdn.fosstodon.org/cache/accounts/headers/109/308/250/332/754/018/original/6d528a1c4bebfc6c.png
+      header_static: https://cdn.fosstodon.org/cache/accounts/headers/109/308/250/332/754/018/original/6d528a1c4bebfc6c.png
+      followers_count: 137
+      following_count: 18
+      statuses_count: 30
+      last_status_at: 2022-12-15
+      emojis: {}
+      fields:
+        - name: Website
+          value: <a href="http://www.ksetiya.net" rel="nofollow noopener noreferrer"
+            target="_blank"><span class="invisible">http://www.</span><span
+            class="">ksetiya.net</span><span class="invisible"></span></a>
+          verified_at: null
+    media_attachments: {}
+    mentions: {}
+    tags: {}
+    emojis: {}
+    card:
+      url: https://www.kcrw.com/best-2022/best-of-life-examined-books-reading-2022
+      title: Life Examined’s best reads of 2022
+      description: Life Examined shares the best reads of 2022. From books about joy,
+        heartbreak, and the superpowers of animals, this list has something for
+        everyone.
+      type: link
+      author_name: ""
+      author_url: ""
+      provider_name: KCRW
+      provider_url: ""
+      html: ""
+      width: 0
+      height: 0
+      image: null
+      embed_url: ""
+      blurhash: null
+    poll: null
+  account:
+    id: "109293521815814007"
+    username: philnel
+    acct: philnel@mastodon.green
+    display_name: Philip Nel
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-11-05T00:00:00.000Z
+    note: "<p>👨🏼‍🏫 Prof. he/him.<br>📚 Books on children's books &amp; comics: <a
+      href=\"https://philnel.com/writing/books/\" rel=\"nofollow noopener
+      noreferrer\" target=\"_blank\"><span
+      class=\"invisible\">https://</span><span
+      class=\"\">philnel.com/writing/books/</span><span
+      class=\"invisible\"></span></a> <br> 📷 IG: thephilnel<br>🐝 Hive: <span
+      class=\"h-card\"><a href=\"https://mastodon.green/@philnel\" class=\"u-url
+      mention\" rel=\"nofollow noopener noreferrer\"
+      target=\"_blank\">@<span>philnel</span></a></span><br>🎵 Spotify:
+      thephilnel<br>🐦 (former) Twitter: <span class=\"h-card\"><a
+      href=\"https://mastodon.green/@philnel\" class=\"u-url mention\"
+      rel=\"nofollow noopener noreferrer\"
+      target=\"_blank\">@<span>philnel</span></a></span></p>"
+    url: https://mastodon.green/@philnel
+    avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/293/521/815/814/007/original/4778304daa59bf2f.jpg
+    avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/293/521/815/814/007/original/4778304daa59bf2f.jpg
+    header: https://cdn.fosstodon.org/cache/accounts/headers/109/293/521/815/814/007/original/77fff9c98f9a3425.jpg
+    header_static: https://cdn.fosstodon.org/cache/accounts/headers/109/293/521/815/814/007/original/77fff9c98f9a3425.jpg
+    followers_count: 139
+    following_count: 100
+    statuses_count: 253
+    last_status_at: 2022-12-15
+    emojis: {}
+    fields:
+      - name: website
+        value: <a href="https://philnel.com/" rel="nofollow noopener noreferrer"
+          target="_blank"><span class="invisible">https://</span><span
+          class="">philnel.com/</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: Instagram
+        value: <a href="https://www.instagram.com/thephilnel/" rel="nofollow noopener
+          noreferrer" target="_blank"><span
+          class="invisible">https://www.</span><span
+          class="">instagram.com/thephilnel/</span><span
+          class="invisible"></span></a>
+        verified_at: null
+      - name: YouTube
+        value: <a href="https://www.youtube.com/channel/UCflpE_3DHOuNcjCMj-3tW2w"
+          rel="nofollow noopener noreferrer" target="_blank"><span
+          class="invisible">https://www.</span><span
+          class="ellipsis">youtube.com/channel/UCflpE_3DH</span><span
+          class="invisible">OuNcjCMj-3tW2w</span></a>
+        verified_at: null
+      - name: Books
+        value: <a href="https://philnel.com/writing/books/" rel="nofollow noopener
+          noreferrer" target="_blank"><span
+          class="invisible">https://</span><span
+          class="">philnel.com/writing/books/</span><span
+          class="invisible"></span></a>
+        verified_at: null
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card: null
+  poll: null
+- id: "109518320761514956"
+  created_at: 2022-12-15T15:09:14.000Z
+  in_reply_to_id: "109513832784843881"
+  in_reply_to_account_id: "109293521815814007"
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: en
+  uri: https://mastodon.green/users/philnel/statuses/109518320717106119
+  url: https://mastodon.green/@philnel/109518320717106119
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: <p>📻 More <a href="https://mastodon.green/tags/BestOf22"
+    class="mention hashtag" rel="nofollow noopener noreferrer"
+    target="_blank">#<span>BestOf22</span></a> <a
+    href="https://mastodon.green/tags/music" class="mention hashtag"
+    rel="nofollow noopener noreferrer"
+    target="_blank">#<span>music</span></a><br>🎶 Best <a
+    href="https://mastodon.green/tags/Gospel" class="mention hashtag"
+    rel="nofollow noopener noreferrer" target="_blank">#<span>Gospel</span></a>
+    Song<br>🎙 The Harlem Gospel Travelers, "Look Up"<br><a
+    href="https://www.youtube.com/watch?v=cOUt1qDEHlw" rel="nofollow noopener
+    noreferrer" target="_blank"><span class="invisible">https://www.</span><span
+    class="ellipsis">youtube.com/watch?v=cOUt1qDEHl</span><span
+    class="invisible">w</span></a></p>
+  filtered: {}
+  reblog: null
+  account:
+    id: "109293521815814007"
+    username: philnel
+    acct: philnel@mastodon.green
+    display_name: Philip Nel
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-11-05T00:00:00.000Z
+    note: "<p>👨🏼‍🏫 Prof. he/him.<br>📚 Books on children's books &amp; comics: <a
+      href=\"https://philnel.com/writing/books/\" rel=\"nofollow noopener
+      noreferrer\" target=\"_blank\"><span
+      class=\"invisible\">https://</span><span
+      class=\"\">philnel.com/writing/books/</span><span
+      class=\"invisible\"></span></a> <br> 📷 IG: thephilnel<br>🐝 Hive: <span
+      class=\"h-card\"><a href=\"https://mastodon.green/@philnel\" class=\"u-url
+      mention\" rel=\"nofollow noopener noreferrer\"
+      target=\"_blank\">@<span>philnel</span></a></span><br>🎵 Spotify:
+      thephilnel<br>🐦 (former) Twitter: <span class=\"h-card\"><a
+      href=\"https://mastodon.green/@philnel\" class=\"u-url mention\"
+      rel=\"nofollow noopener noreferrer\"
+      target=\"_blank\">@<span>philnel</span></a></span></p>"
+    url: https://mastodon.green/@philnel
+    avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/293/521/815/814/007/original/4778304daa59bf2f.jpg
+    avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/293/521/815/814/007/original/4778304daa59bf2f.jpg
+    header: https://cdn.fosstodon.org/cache/accounts/headers/109/293/521/815/814/007/original/77fff9c98f9a3425.jpg
+    header_static: https://cdn.fosstodon.org/cache/accounts/headers/109/293/521/815/814/007/original/77fff9c98f9a3425.jpg
+    followers_count: 139
+    following_count: 100
+    statuses_count: 253
+    last_status_at: 2022-12-15
+    emojis: {}
+    fields:
+      - name: website
+        value: <a href="https://philnel.com/" rel="nofollow noopener noreferrer"
+          target="_blank"><span class="invisible">https://</span><span
+          class="">philnel.com/</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: Instagram
+        value: <a href="https://www.instagram.com/thephilnel/" rel="nofollow noopener
+          noreferrer" target="_blank"><span
+          class="invisible">https://www.</span><span
+          class="">instagram.com/thephilnel/</span><span
+          class="invisible"></span></a>
+        verified_at: null
+      - name: YouTube
+        value: <a href="https://www.youtube.com/channel/UCflpE_3DHOuNcjCMj-3tW2w"
+          rel="nofollow noopener noreferrer" target="_blank"><span
+          class="invisible">https://www.</span><span
+          class="ellipsis">youtube.com/channel/UCflpE_3DH</span><span
+          class="invisible">OuNcjCMj-3tW2w</span></a>
+        verified_at: null
+      - name: Books
+        value: <a href="https://philnel.com/writing/books/" rel="nofollow noopener
+          noreferrer" target="_blank"><span
+          class="invisible">https://</span><span
+          class="">philnel.com/writing/books/</span><span
+          class="invisible"></span></a>
+        verified_at: null
+  media_attachments: {}
+  mentions: {}
+  tags:
+    - name: bestof22
+      url: https://fosstodon.org/tags/bestof22
+    - name: music
+      url: https://fosstodon.org/tags/music
+    - name: gospel
+      url: https://fosstodon.org/tags/gospel
+  emojis: {}
+  card:
+    url: https://www.youtube.com/watch?v=cOUt1qDEHlw
+    title: The Harlem Gospel Travelers - "Look Up" [OFFICIAL MUSIC VIDEO]
+    description: ""
+    type: video
+    author_name: Colemine Records
+    author_url: https://www.youtube.com/@ColemineRecords
+    provider_name: YouTube
+    provider_url: https://www.youtube.com/
+    html: <iframe width="200" height="113"
+      src="https://www.youtube.com/embed/cOUt1qDEHlw?feature=oembed"
+      frameborder="0" allowfullscreen="" title="The Harlem Gospel Travelers -
+      &quot;Look Up&quot; [OFFICIAL MUSIC VIDEO]"></iframe>
+    width: 200
+    height: 113
+    image: https://cdn.fosstodon.org/cache/preview_cards/images/012/982/240/original/267386e8129c944f.jpg
+    embed_url: ""
+    blurhash: UJCZt$MxIp%gx^s.RiWV00tSxaMxMxkWozof
+  poll: null
+- id: "109518320028057493"
+  created_at: 2022-12-15T15:09:03.786Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: null
+  uri: https://fosstodon.org/users/kulykov/statuses/109518320028057493/activity
+  url: https://fosstodon.org/users/kulykov/statuses/109518320028057493/activity
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: ""
+  filtered: {}
+  reblog:
+    id: "109518303961307842"
+    created_at: 2022-12-15T15:04:58.630Z
+    in_reply_to_id: null
+    in_reply_to_account_id: null
+    sensitive: false
+    spoiler_text: ""
+    visibility: public
+    language: en
+    uri: https://fosstodon.org/users/enhance_dev/statuses/109518303961307842
+    url: https://fosstodon.org/@enhance_dev/109518303961307842
+    replies_count: 0
+    reblogs_count: 3
+    favourites_count: 1
+    edited_at: null
+    favourited: false
+    reblogged: false
+    muted: false
+    bookmarked: false
+    content: <p>💡 Using Lit Components in an Enhance App</p><p>Lit is a popular
+      library that can be used to build web components. Lit can play nice with
+      Enhance with a little modification.</p><p><a
+      href="https://blog.begin.com/posts/2022-12-15-using-lit-components-in-an-enhance-app"
+      target="_blank" rel="nofollow noopener noreferrer"><span
+      class="invisible">https://</span><span
+      class="ellipsis">blog.begin.com/posts/2022-12-1</span><span
+      class="invisible">5-using-lit-components-in-an-enhance-app</span></a></p>
+    filtered: {}
+    reblog: null
+    application: null
+    account:
+      id: "109327715550801546"
+      username: enhance_dev
+      acct: enhance_dev
+      display_name: enhance
+      locked: false
+      bot: false
+      discoverable: true
+      group: false
+      created_at: 2022-11-11T00:00:00.000Z
+      note: <p>The first HTML framework!<br /><a href="http://enhance.dev"
+        target="_blank" rel="nofollow noopener noreferrer"><span
+        class="invisible">http://</span><span class="">enhance.dev</span><span
+        class="invisible"></span></a></p>
+      url: https://fosstodon.org/@enhance_dev
+      avatar: https://cdn.fosstodon.org/accounts/avatars/109/327/715/550/801/546/original/081a3492566aaae3.jpg
+      avatar_static: https://cdn.fosstodon.org/accounts/avatars/109/327/715/550/801/546/original/081a3492566aaae3.jpg
+      header: https://cdn.fosstodon.org/accounts/headers/109/327/715/550/801/546/original/4481d3160aed2a48.jpeg
+      header_static: https://cdn.fosstodon.org/accounts/headers/109/327/715/550/801/546/original/4481d3160aed2a48.jpeg
+      followers_count: 95
+      following_count: 0
+      statuses_count: 9
+      last_status_at: 2022-12-15
+      noindex: true
+      emojis: {}
+      fields: {}
+    media_attachments: {}
+    mentions: {}
+    tags: {}
+    emojis: {}
+    card:
+      url: https://blog.begin.com/posts/2022-12-15-using-lit-components-in-an-enhance-app
+      title: Using Lit Components in an Enhance App - Begin
+      description: Lit is a popular library that can be used to build web components.
+        Lit can play nice with Enhance with a little modification.
+      type: link
+      author_name: ""
+      author_url: ""
+      provider_name: Using Lit Components in an Enhance App - Begin
+      provider_url: ""
+      html: ""
+      width: 400
+      height: 183
+      image: https://cdn.fosstodon.org/cache/preview_cards/images/012/981/996/original/a9118005c6643cbc.jpg
+      embed_url: ""
+      blurhash: UNAvmls-0jWEI@R,xWs-IXj@xrR+n%odbHR+
+    poll: null
+  application: null
+  account:
+    id: "109369547238683244"
+    username: kulykov
+    acct: kulykov
+    display_name: Serhii Kulykov
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-11-19T00:00:00.000Z
+    note: <p>JS developer and open source enthusiast from Ukraine 🇺🇦  Building <a
+      href="https://fosstodon.org/tags/WebComponents" class="mention hashtag"
+      rel="tag">#<span>WebComponents</span></a> at <a
+      href="https://fosstodon.org/tags/Vaadin" class="mention hashtag"
+      rel="tag">#<span>Vaadin</span></a>. Open Web Components <a
+      href="https://fosstodon.org/tags/OpenWC" class="mention hashtag"
+      rel="tag">#<span>OpenWC</span></a> and Modern Web <a
+      href="https://fosstodon.org/tags/ModernWebDev" class="mention hashtag"
+      rel="tag">#<span>ModernWebDev</span></a> contributor and team member.
+      Currently working on <a
+      href="https://fosstodon.org/tags/WebComponentsAdvent" class="mention
+      hashtag" rel="tag">#<span>WebComponentsAdvent</span></a></p>
+    url: https://fosstodon.org/@kulykov
+    avatar: https://cdn.fosstodon.org/accounts/avatars/109/369/547/238/683/244/original/e2ff385f15dae647.png
+    avatar_static: https://cdn.fosstodon.org/accounts/avatars/109/369/547/238/683/244/original/e2ff385f15dae647.png
+    header: https://cdn.fosstodon.org/accounts/headers/109/369/547/238/683/244/original/26ad5f59a9b8ecfa.jpeg
+    header_static: https://cdn.fosstodon.org/accounts/headers/109/369/547/238/683/244/original/26ad5f59a9b8ecfa.jpeg
+    followers_count: 137
+    following_count: 186
+    statuses_count: 85
+    last_status_at: 2022-12-15
+    noindex: true
+    emojis: {}
+    fields:
+      - name: Vanilla Colorful
+        value: <a href="https://web-padawan.github.io/vanilla-colorful/" target="_blank"
+          rel="nofollow noopener noreferrer me"><span
+          class="invisible">https://</span><span
+          class="ellipsis">web-padawan.github.io/vanilla-</span><span
+          class="invisible">colorful/</span></a>
+        verified_at: null
+      - name: GitHub
+        value: <a href="https://github.com/web-padawan" target="_blank" rel="nofollow
+          noopener noreferrer me"><span class="invisible">https://</span><span
+          class="">github.com/web-padawan</span><span
+          class="invisible"></span></a>
+        verified_at: 2022-11-19T08:58:42.500+00:00
+      - name: Web Components Bookmarks
+        value: <a href="https://webcomponents.today" target="_blank" rel="nofollow
+          noopener noreferrer me"><span class="invisible">https://</span><span
+          class="">webcomponents.today</span><span class="invisible"></span></a>
+        verified_at: 2022-11-30T19:06:00.956+00:00
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card: null
+  poll: null
+- id: "109518275399291194"
+  created_at: 2022-12-15T14:57:42.810Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: en
+  uri: https://fosstodon.org/users/rauschma/statuses/109518275399291194
+  url: https://fosstodon.org/@rauschma/109518275399291194
+  replies_count: 1
+  reblogs_count: 4
+  favourites_count: 2
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: '<p>This is my polyfill for the proposed <a
+    href="https://fosstodon.org/tags/JavaScript" class="mention hashtag"
+    rel="tag">#<span>JavaScript</span></a> Set methods: <a
+    href="https://github.com/rauschma/set-methods-polyfill" target="_blank"
+    rel="nofollow noopener noreferrer"><span
+    class="invisible">https://</span><span
+    class="ellipsis">github.com/rauschma/set-method</span><span
+    class="invisible">s-polyfill</span></a></p><p>It has a “library mode” where
+    it doesn’t change any globals:</p><p>import {intersection, isSupersetOf}
+    from &#39;<span class="h-card"><a href="https://fosstodon.org/@rauschma"
+    class="u-url
+    mention">@<span>rauschma</span></a></span>/set-methods-polyfill&#39;;<br
+    />import assert from
+    &#39;node:assert/strict&#39;;</p><p>assert.deepEqual(<br
+    />  intersection(new Set([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]), new
+    Set([&#39;c&#39;, &#39;d&#39;])),<br />  new Set([&#39;c&#39;])<br />);<br
+    />assert.equal(<br />  isSupersetOf(new Set([&#39;a&#39;, &#39;b&#39;,
+    &#39;c&#39;]), new Set([&#39;a&#39;])),<br />  true<br />);</p>'
+  filtered: {}
+  reblog: null
+  application: null
+  account:
+    id: "108197637416268369"
+    username: rauschma
+    acct: rauschma
+    display_name: Axel Rauschmayer
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-04-26T00:00:00.000Z
+    note: '<p>I specialize in JavaScript, TypeScript and web
+      development.</p><p>Other interests:<br />– Human languages: German,
+      English, French, Spanish, Dutch, Mandarin<br />– Sustainability, degrowth,
+      permaculture, urbanism<br />– Tiny houses<br />– Education<br />–
+      Psychology, getting out of one’s head, heart-centered living<br />–
+      Minimalistic spiritual schools: Advaita, Daoism, Buddhism, Christian
+      mysticism, Jiddu Krishnamurti, etc.</p><p>I live in Munich. <a
+      href="http://pronoun.is/he" target="_blank" rel="nofollow noopener
+      noreferrer"><span class="invisible">http://</span><span
+      class="">pronoun.is/he</span><span class="invisible"></span></a></p><p><a
+      href="https://fosstodon.org/tags/fedi22" class="mention hashtag"
+      rel="tag">#<span>fedi22</span></a>: <a
+      href="https://fosstodon.org/tags/javascript" class="mention hashtag"
+      rel="tag">#<span>javascript</span></a> <a
+      href="https://fosstodon.org/tags/typescript" class="mention hashtag"
+      rel="tag">#<span>typescript</span></a> <a
+      href="https://fosstodon.org/tags/webdev" class="mention hashtag"
+      rel="tag">#<span>webdev</span></a></p>'
+    url: https://fosstodon.org/@rauschma
+    avatar: https://cdn.fosstodon.org/accounts/avatars/108/197/637/416/268/369/original/760c65e18f724974.jpg
+    avatar_static: https://cdn.fosstodon.org/accounts/avatars/108/197/637/416/268/369/original/760c65e18f724974.jpg
+    header: https://fosstodon.org/headers/original/missing.png
+    header_static: https://fosstodon.org/headers/original/missing.png
+    followers_count: 3206
+    following_count: 160
+    statuses_count: 974
+    last_status_at: 2022-12-15
+    noindex: true
+    emojis: {}
+    fields:
+      - name: "📜 Blog (#2ality):"
+        value: <a href="https://2ality.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">https://</span><span
+          class="">2ality.com</span><span class="invisible"></span></a>
+        verified_at: 2022-11-08T00:37:57.326+00:00
+      - name: "📚 Free ebooks:"
+        value: <a href="https://exploringjs.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">https://</span><span
+          class="">exploringjs.com</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: "📧 Newsletter:"
+        value: <a href="http://esnextnews.com" target="_blank" rel="nofollow noopener
+          noreferrer me"><span class="invisible">http://</span><span
+          class="">esnextnews.com</span><span class="invisible"></span></a>
+        verified_at: null
+      - name: "💡 Non-tech:"
+        value: <span class="h-card"><a href="https://mastodon.green/@light_bulbs"
+          class="u-url
+          mention">@<span>light_bulbs@mastodon.green</span></a></span>
+        verified_at: null
+  media_attachments: {}
+  mentions:
+    - id: "108197637416268369"
+      username: rauschma
+      url: https://fosstodon.org/@rauschma
+      acct: rauschma
+  tags:
+    - name: javascript
+      url: https://fosstodon.org/tags/javascript
+  emojis: {}
+  card:
+    url: https://github.com/rauschma/set-methods-polyfill
+    title: "GitHub - rauschma/set-methods-polyfill: A polyfill for the ECMAScript
+      proposal “Set Methods for JavaScript”"
+    description: "A polyfill for the ECMAScript proposal “Set Methods for
+      JavaScript” - GitHub - rauschma/set-methods-polyfill: A polyfill for the
+      ECMAScript proposal “Set Methods for JavaScript”"
+    type: link
+    author_name: ""
+    author_url: ""
+    provider_name: GitHub
+    provider_url: ""
+    html: ""
+    width: 400
+    height: 200
+    image: https://cdn.fosstodon.org/cache/preview_cards/images/012/981/594/original/380d7021b7cf940e.png
+    embed_url: ""
+    blurhash: UOR{+0t7Rjt7${ofWBj[IqWBt7jt~pRjt7ay
+  poll: null
+- id: "109517456060851712"
+  created_at: 2022-12-15T11:29:20.000Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: unlisted
+  language: null
+  uri: https://eigenmagic.net/users/sundress/statuses/109517456029640464/activity
+  url: null
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: ""
+  filtered: {}
+  reblog:
+    id: "109517440912330511"
+    created_at: 2022-12-15T11:25:28.000Z
+    in_reply_to_id: null
+    in_reply_to_account_id: null
+    sensitive: false
+    spoiler_text: ""
+    visibility: public
+    language: en
+    uri: https://mastodon.social/users/swearyanthony/statuses/109517440842107143
+    url: https://mastodon.social/@swearyanthony/109517440842107143
+    replies_count: 2
+    reblogs_count: 5
+    favourites_count: 0
+    edited_at: null
+    favourited: false
+    reblogged: false
+    muted: false
+    bookmarked: false
+    content: <p>With all of the talk of the birdsite dying a reminder that the
+      moment the Old Good Internet died was when Google killed Reader. That was
+      the most grim TGIF ever.</p>
+    filtered: {}
+    reblog: null
+    account:
+      id: "43429"
+      username: swearyanthony
+      acct: swearyanthony@mastodon.social
+      display_name: Anthony B,
+      locked: false
+      bot: false
+      discoverable: false
+      group: false
+      created_at: 2018-08-17T00:00:00.000Z
+      note: <p>I once had a 3 word mission statement of "save the world" now I'm a dad
+        and I'm a fan of being a dad. A+ would recommend it. Working on a book,
+        still.</p>
+      url: https://mastodon.social/@swearyanthony
+      avatar: https://cdn.fosstodon.org/accounts/avatars/000/043/429/original/a29f3f91a1a7b49e.png
+      avatar_static: https://cdn.fosstodon.org/accounts/avatars/000/043/429/original/a29f3f91a1a7b49e.png
+      header: https://fosstodon.org/headers/original/missing.png
+      header_static: https://fosstodon.org/headers/original/missing.png
+      followers_count: 595
+      following_count: 451
+      statuses_count: 120
+      last_status_at: 2022-12-15
+      emojis: {}
+      fields: {}
+    media_attachments: {}
+    mentions: {}
+    tags: {}
+    emojis: {}
+    card: null
+    poll: null
+  account:
+    id: "109414272778247864"
+    username: sundress
+    acct: sundress@eigenmagic.net
+    display_name: Alice Boxhall
+    locked: false
+    bot: false
+    discoverable: false
+    group: false
+    created_at: 2022-11-26T00:00:00.000Z
+    note: <p>Tired since 2006. I once beat Tony Abbot in an ocean
+      swim.</p><p>Software engineer working on the web platform at
+      Igalia.</p><p>she/her</p>
+    url: https://eigenmagic.net/@sundress
+    avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/414/272/778/247/864/original/279801b086da2f42.jpeg
+    avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/414/272/778/247/864/original/279801b086da2f42.jpeg
+    header: https://cdn.fosstodon.org/cache/accounts/headers/109/414/272/778/247/864/original/40196fcad4e123a3.jpeg
+    header_static: https://cdn.fosstodon.org/cache/accounts/headers/109/414/272/778/247/864/original/40196fcad4e123a3.jpeg
+    followers_count: 535
+    following_count: 177
+    statuses_count: 74
+    last_status_at: 2022-12-15
+    emojis: {}
+    fields: {}
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card: null
+  poll: null
+- id: "109517162883754184"
+  created_at: 2022-12-15T10:14:47.169Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: null
+  uri: https://fosstodon.org/users/kulykov/statuses/109517162883754184/activity
+  url: https://fosstodon.org/users/kulykov/statuses/109517162883754184/activity
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: ""
+  filtered: {}
+  reblog:
+    id: "109517121358098834"
+    created_at: 2022-12-15T10:04:13.000Z
+    in_reply_to_id: null
+    in_reply_to_account_id: null
+    sensitive: false
+    spoiler_text: ""
+    visibility: public
+    language: en
+    uri: https://mastodon.social/users/SimonMartinelli/statuses/109517121323426182
+    url: https://mastodon.social/@SimonMartinelli/109517121323426182
+    replies_count: 0
+    reblogs_count: 1
+    favourites_count: 1
+    edited_at: null
+    favourited: false
+    reblogged: false
+    muted: false
+    bookmarked: false
+    content: <p>Vaadin 23.3 is out! <a
+      href="https://vaadin.com/blog/vaadin-23.3-kubernetes-cloud-new-ui-components"
+      rel="nofollow noopener noreferrer" target="_blank"><span
+      class="invisible">https://</span><span
+      class="ellipsis">vaadin.com/blog/vaadin-23.3-ku</span><span
+      class="invisible">bernetes-cloud-new-ui-components</span></a></p>
+    filtered: {}
+    reblog: null
+    account:
+      id: "109257014720033210"
+      username: SimonMartinelli
+      acct: SimonMartinelli@mastodon.social
+      display_name: Simon Martinelli
+      locked: false
+      bot: false
+      discoverable: false
+      group: false
+      created_at: 2022-10-28T00:00:00.000Z
+      note: <p>Vaadin Community Award Winner, Speaker, Programming Architect, and
+        Lecturer for Software Architecture and Persistence. Tweeting about Java
+        full-stack development</p>
+      url: https://mastodon.social/@SimonMartinelli
+      avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/257/014/720/033/210/original/0e86b0ce6383f74c.jpg
+      avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/257/014/720/033/210/original/0e86b0ce6383f74c.jpg
+      header: https://cdn.fosstodon.org/cache/accounts/headers/109/257/014/720/033/210/original/d763a6bae192fe62.jpeg
+      header_static: https://cdn.fosstodon.org/cache/accounts/headers/109/257/014/720/033/210/original/d763a6bae192fe62.jpeg
+      followers_count: 337
+      following_count: 205
+      statuses_count: 294
+      last_status_at: 2022-12-15
+      emojis: {}
+      fields:
+        - name: Website
+          value: <a href="https://martinelli.ch" rel="nofollow noopener noreferrer"
+            target="_blank"><span class="invisible">https://</span><span
+            class="">martinelli.ch</span><span class="invisible"></span></a>
+          verified_at: 2022-12-12T14:04:21.109+00:00
+        - name: GitHub
+          value: <a href="https://github.com/simasch" rel="nofollow noopener noreferrer"
+            target="_blank"><span class="invisible">https://</span><span
+            class="">github.com/simasch</span><span
+            class="invisible"></span></a>
+          verified_at: null
+        - name: LinkedIn
+          value: <a href="https://www.linkedin.com/in/simonmartinelli/" rel="nofollow
+            noopener noreferrer" target="_blank"><span
+            class="invisible">https://www.</span><span
+            class="ellipsis">linkedin.com/in/simonmartinell</span><span
+            class="invisible">i/</span></a>
+          verified_at: null
+        - name: StackOverflow
+          value: <a href="https://stackoverflow.com/users/1045142/simon-martinelli"
+            rel="nofollow noopener noreferrer" target="_blank"><span
+            class="invisible">https://</span><span
+            class="ellipsis">stackoverflow.com/users/104514</span><span
+            class="invisible">2/simon-martinelli</span></a>
+          verified_at: null
+    media_attachments: {}
+    mentions: {}
+    tags: {}
+    emojis: {}
+    card:
+      url: https://vaadin.com/blog/vaadin-23.3-kubernetes-cloud-new-ui-components
+      title: "Vaadin 23.3: Running Vaadin Flow apps in Kubernetes and cloud just got
+        easier, plus three new UI components | Vaadin"
+      description: Vaadin 23.3 makes it easier to run Vaadin Flow apps in Kubernetes
+        and cloud environments, comes with two new Acceleration Kits, new UI
+        components, and more!
+      type: link
+      author_name: ""
+      author_url: ""
+      provider_name: ""
+      provider_url: ""
+      html: ""
+      width: 400
+      height: 225
+      image: https://cdn.fosstodon.org/cache/preview_cards/images/012/970/668/original/1585ba5bd3f6cbaa.png
+      embed_url: ""
+      blurhash: UF8S0UkC10bI%LayOWf7ENay%0jtEQj@-TbG
+    poll: null
+  application: null
+  account:
+    id: "109369547238683244"
+    username: kulykov
+    acct: kulykov
+    display_name: Serhii Kulykov
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-11-19T00:00:00.000Z
+    note: <p>JS developer and open source enthusiast from Ukraine 🇺🇦  Building <a
+      href="https://fosstodon.org/tags/WebComponents" class="mention hashtag"
+      rel="tag">#<span>WebComponents</span></a> at <a
+      href="https://fosstodon.org/tags/Vaadin" class="mention hashtag"
+      rel="tag">#<span>Vaadin</span></a>. Open Web Components <a
+      href="https://fosstodon.org/tags/OpenWC" class="mention hashtag"
+      rel="tag">#<span>OpenWC</span></a> and Modern Web <a
+      href="https://fosstodon.org/tags/ModernWebDev" class="mention hashtag"
+      rel="tag">#<span>ModernWebDev</span></a> contributor and team member.
+      Currently working on <a
+      href="https://fosstodon.org/tags/WebComponentsAdvent" class="mention
+      hashtag" rel="tag">#<span>WebComponentsAdvent</span></a></p>
+    url: https://fosstodon.org/@kulykov
+    avatar: https://cdn.fosstodon.org/accounts/avatars/109/369/547/238/683/244/original/e2ff385f15dae647.png
+    avatar_static: https://cdn.fosstodon.org/accounts/avatars/109/369/547/238/683/244/original/e2ff385f15dae647.png
+    header: https://cdn.fosstodon.org/accounts/headers/109/369/547/238/683/244/original/26ad5f59a9b8ecfa.jpeg
+    header_static: https://cdn.fosstodon.org/accounts/headers/109/369/547/238/683/244/original/26ad5f59a9b8ecfa.jpeg
+    followers_count: 137
+    following_count: 186
+    statuses_count: 85
+    last_status_at: 2022-12-15
+    noindex: true
+    emojis: {}
+    fields:
+      - name: Vanilla Colorful
+        value: <a href="https://web-padawan.github.io/vanilla-colorful/" target="_blank"
+          rel="nofollow noopener noreferrer me"><span
+          class="invisible">https://</span><span
+          class="ellipsis">web-padawan.github.io/vanilla-</span><span
+          class="invisible">colorful/</span></a>
+        verified_at: null
+      - name: GitHub
+        value: <a href="https://github.com/web-padawan" target="_blank" rel="nofollow
+          noopener noreferrer me"><span class="invisible">https://</span><span
+          class="">github.com/web-padawan</span><span
+          class="invisible"></span></a>
+        verified_at: 2022-11-19T08:58:42.500+00:00
+      - name: Web Components Bookmarks
+        value: <a href="https://webcomponents.today" target="_blank" rel="nofollow
+          noopener noreferrer me"><span class="invisible">https://</span><span
+          class="">webcomponents.today</span><span class="invisible"></span></a>
+        verified_at: 2022-11-30T19:06:00.956+00:00
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card: null
+  poll: null
+- id: "109516775918621799"
+  created_at: 2022-12-15T08:36:22.547Z
+  in_reply_to_id: null
+  in_reply_to_account_id: null
+  sensitive: false
+  spoiler_text: ""
+  visibility: public
+  language: null
+  uri: https://fosstodon.org/users/kulykov/statuses/109516775918621799/activity
+  url: https://fosstodon.org/users/kulykov/statuses/109516775918621799/activity
+  replies_count: 0
+  reblogs_count: 0
+  favourites_count: 0
+  edited_at: null
+  favourited: false
+  reblogged: false
+  muted: false
+  bookmarked: false
+  content: ""
+  filtered: {}
+  reblog:
+    id: "109516517287012607"
+    created_at: 2022-12-15T07:30:35.000Z
+    in_reply_to_id: null
+    in_reply_to_account_id: null
+    sensitive: false
+    spoiler_text: ""
+    visibility: public
+    language: en
+    uri: https://foojay.social/users/foojay/statuses/109516517216397336
+    url: https://foojay.social/@foojay/109516517216397336
+    replies_count: 0
+    reblogs_count: 3
+    favourites_count: 1
+    edited_at: null
+    favourited: false
+    reblogged: false
+    muted: false
+    bookmarked: false
+    content: '<p>Great stuff on Foojay :foojay: Today, <span class="h-card"><a
+      href="https://mstdn.social/@marcushellberg" class="u-url mention"
+      rel="nofollow noopener noreferrer"
+      target="_blank">@<span>marcushellberg</span></a></span> announces new
+      releases for <a href="https://foojay.social/tags/Vaadin" class="mention
+      hashtag" rel="nofollow noopener noreferrer"
+      target="_blank">#<span>Vaadin</span></a> and <a
+      href="https://foojay.social/tags/HillaFramework" class="mention hashtag"
+      rel="nofollow noopener noreferrer"
+      target="_blank">#<span>HillaFramework</span></a>, end to end goodness with
+      <a href="https://foojay.social/tags/SpringBoot" class="mention hashtag"
+      rel="nofollow noopener noreferrer"
+      target="_blank">#<span>SpringBoot</span></a>, <a
+      href="https://foojay.social/tags/Kubernetes" class="mention hashtag"
+      rel="nofollow noopener noreferrer"
+      target="_blank">#<span>Kubernetes</span></a>, and so much more, new UI
+      components included, check it out: </p><p><a
+      href="https://foojay.io/today/vaadin-23-3-improves-kubernetes-support/"
+      rel="nofollow noopener noreferrer" target="_blank"><span
+      class="invisible">https://</span><span
+      class="ellipsis">foojay.io/today/vaadin-23-3-im</span><span
+      class="invisible">proves-kubernetes-support/</span></a> </p><p><a
+      href="https://foojay.io/today/hilla-1-3-faster-react-spring-boot-development"
+      rel="nofollow noopener noreferrer" target="_blank"><span
+      class="invisible">https://</span><span
+      class="ellipsis">foojay.io/today/hilla-1-3-fast</span><span
+      class="invisible">er-react-spring-boot-development</span></a> </p><p><a
+      href="https://foojay.social/tags/foojaytip" class="mention hashtag"
+      rel="nofollow noopener noreferrer"
+      target="_blank">#<span>foojaytip</span></a> <a
+      href="https://foojay.social/tags/releasenotes" class="mention hashtag"
+      rel="nofollow noopener noreferrer"
+      target="_blank">#<span>releasenotes</span></a></p>'
+    filtered: {}
+    reblog: null
+    account:
+      id: "109352629863837734"
+      username: foojay
+      acct: foojay@foojay.social
+      display_name: Foojay.io
+      locked: false
+      bot: false
+      discoverable: false
+      group: false
+      created_at: 2022-11-15T00:00:00.000Z
+      note: <p>Foojay.io is a central resource for the Java community’s daily
+        ​information needs, providing a community platform for the Java
+        ecosystem​ — bringing together and helping Java professionals
+        everywhere.​</p>
+      url: https://foojay.social/@foojay
+      avatar: https://cdn.fosstodon.org/cache/accounts/avatars/109/352/629/863/837/734/original/adca87a41eb86a0f.png
+      avatar_static: https://cdn.fosstodon.org/cache/accounts/avatars/109/352/629/863/837/734/original/adca87a41eb86a0f.png
+      header: https://cdn.fosstodon.org/cache/accounts/headers/109/352/629/863/837/734/original/a7ece1c6effd45b0.png
+      header_static: https://cdn.fosstodon.org/cache/accounts/headers/109/352/629/863/837/734/original/a7ece1c6effd45b0.png
+      followers_count: 202
+      following_count: 205
+      statuses_count: 87
+      last_status_at: 2022-12-15
+      emojis: {}
+      fields:
+        - name: Website
+          value: <a href="https://foojay.io" rel="nofollow noopener noreferrer"
+            target="_blank"><span class="invisible">https://</span><span
+            class="">foojay.io</span><span class="invisible"></span></a>
+          verified_at: null
+        - name: Podcasts
+          value: <a href="https://foojay.buzzsprout.com" rel="nofollow noopener
+            noreferrer" target="_blank"><span
+            class="invisible">https://</span><span
+            class="">foojay.buzzsprout.com</span><span
+            class="invisible"></span></a>
+          verified_at: null
+        - name: Twitter
+          value: <a href="https://twitter.com/foojayio" rel="nofollow noopener noreferrer"
+            target="_blank"><span class="invisible">https://</span><span
+            class="">twitter.com/foojayio</span><span
+            class="invisible"></span></a>
+          verified_at: null
+    media_attachments: {}
+    mentions:
+      - id: "109345054382892336"
+        username: marcushellberg
+        url: https://mstdn.social/@marcushellberg
+        acct: marcushellberg@mstdn.social
+    tags:
+      - name: vaadin
+        url: https://fosstodon.org/tags/vaadin
+      - name: hillaframework
+        url: https://fosstodon.org/tags/hillaframework
+      - name: springboot
+        url: https://fosstodon.org/tags/springboot
+      - name: kubernetes
+        url: https://fosstodon.org/tags/kubernetes
+      - name: foojaytip
+        url: https://fosstodon.org/tags/foojaytip
+      - name: releasenotes
+        url: https://fosstodon.org/tags/releasenotes
+    emojis:
+      - shortcode: foojay
+        url: https://cdn.fosstodon.org/cache/custom_emojis/images/000/771/865/original/fe257da1fde1ebf9.png
+        static_url: https://cdn.fosstodon.org/cache/custom_emojis/images/000/771/865/static/fe257da1fde1ebf9.png
+        visible_in_picker: true
+    card:
+      url: https://foojay.io/today/vaadin-23-3-improves-kubernetes-support/
+      title: Vaadin 23.2 Improves Kubernetes, Three New Components
+      description: Vaadin 23.3 includes improved clustering support for high
+        availability and rolling updates. It also includes 3 new components.
+      type: link
+      author_name: ""
+      author_url: ""
+      provider_name: foojay
+      provider_url: ""
+      html: ""
+      width: 400
+      height: 124
+      image: https://cdn.fosstodon.org/cache/preview_cards/images/012/966/225/original/3c818c55bc2004bc.png
+      embed_url: ""
+      blurhash: UD2QTZmPXokDj[f6f6j[QkX:n3f,ayfPf6a}
+    poll: null
+  application: null
+  account:
+    id: "109369547238683244"
+    username: kulykov
+    acct: kulykov
+    display_name: Serhii Kulykov
+    locked: false
+    bot: false
+    discoverable: true
+    group: false
+    created_at: 2022-11-19T00:00:00.000Z
+    note: <p>JS developer and open source enthusiast from Ukraine 🇺🇦  Building <a
+      href="https://fosstodon.org/tags/WebComponents" class="mention hashtag"
+      rel="tag">#<span>WebComponents</span></a> at <a
+      href="https://fosstodon.org/tags/Vaadin" class="mention hashtag"
+      rel="tag">#<span>Vaadin</span></a>. Open Web Components <a
+      href="https://fosstodon.org/tags/OpenWC" class="mention hashtag"
+      rel="tag">#<span>OpenWC</span></a> and Modern Web <a
+      href="https://fosstodon.org/tags/ModernWebDev" class="mention hashtag"
+      rel="tag">#<span>ModernWebDev</span></a> contributor and team member.
+      Currently working on <a
+      href="https://fosstodon.org/tags/WebComponentsAdvent" class="mention
+      hashtag" rel="tag">#<span>WebComponentsAdvent</span></a></p>
+    url: https://fosstodon.org/@kulykov
+    avatar: https://cdn.fosstodon.org/accounts/avatars/109/369/547/238/683/244/original/e2ff385f15dae647.png
+    avatar_static: https://cdn.fosstodon.org/accounts/avatars/109/369/547/238/683/244/original/e2ff385f15dae647.png
+    header: https://cdn.fosstodon.org/accounts/headers/109/369/547/238/683/244/original/26ad5f59a9b8ecfa.jpeg
+    header_static: https://cdn.fosstodon.org/accounts/headers/109/369/547/238/683/244/original/26ad5f59a9b8ecfa.jpeg
+    followers_count: 137
+    following_count: 186
+    statuses_count: 85
+    last_status_at: 2022-12-15
+    noindex: true
+    emojis: {}
+    fields:
+      - name: Vanilla Colorful
+        value: <a href="https://web-padawan.github.io/vanilla-colorful/" target="_blank"
+          rel="nofollow noopener noreferrer me"><span
+          class="invisible">https://</span><span
+          class="ellipsis">web-padawan.github.io/vanilla-</span><span
+          class="invisible">colorful/</span></a>
+        verified_at: null
+      - name: GitHub
+        value: <a href="https://github.com/web-padawan" target="_blank" rel="nofollow
+          noopener noreferrer me"><span class="invisible">https://</span><span
+          class="">github.com/web-padawan</span><span
+          class="invisible"></span></a>
+        verified_at: 2022-11-19T08:58:42.500+00:00
+      - name: Web Components Bookmarks
+        value: <a href="https://webcomponents.today" target="_blank" rel="nofollow
+          noopener noreferrer me"><span class="invisible">https://</span><span
+          class="">webcomponents.today</span><span class="invisible"></span></a>
+        verified_at: 2022-11-30T19:06:00.956+00:00
+  media_attachments: {}
+  mentions: {}
+  tags: {}
+  emojis: {}
+  card: null
+  poll: null

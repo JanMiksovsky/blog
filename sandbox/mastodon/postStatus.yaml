@@ -1,0 +1,60 @@
+id: "109519144056186263"
+created_at: 2022-12-15T18:38:37.458Z
+in_reply_to_id: null
+in_reply_to_account_id: null
+sensitive: false
+spoiler_text: ""
+visibility: direct
+language: en
+uri: https://fosstodon.org/users/JanMiksovsky/statuses/109519144056186263
+url: https://fosstodon.org/@JanMiksovsky/109519144056186263
+replies_count: 0
+reblogs_count: 0
+favourites_count: 0
+edited_at: null
+favourited: false
+reblogged: false
+muted: false
+bookmarked: false
+content: <p>Test 2 of posting a status via the Mastodon API</p>
+filtered: {}
+reblog: null
+application:
+  name: Jan Miksovsky Blog
+  website: https://jan.miksovsky.com
+account:
+  id: "108233264850167313"
+  username: JanMiksovsky
+  acct: JanMiksovsky
+  display_name: Jan Miksovsky
+  locked: false
+  bot: false
+  discoverable: false
+  group: false
+  created_at: 2022-05-02T00:00:00.000Z
+  note: <p>UX design and engineering architect; founder of cozi.com,
+    component.kitchen, Elix web components; section hiker; father of three;
+    日本語能力試験の受験者</p>
+  url: https://fosstodon.org/@JanMiksovsky
+  avatar: https://cdn.fosstodon.org/accounts/avatars/108/233/264/850/167/313/original/a79b888cd9386aac.jpeg
+  avatar_static: https://cdn.fosstodon.org/accounts/avatars/108/233/264/850/167/313/original/a79b888cd9386aac.jpeg
+  header: https://cdn.fosstodon.org/accounts/headers/108/233/264/850/167/313/original/ec4c2291a8aeb705.jpeg
+  header_static: https://cdn.fosstodon.org/accounts/headers/108/233/264/850/167/313/original/ec4c2291a8aeb705.jpeg
+  followers_count: 37
+  following_count: 27
+  statuses_count: 4
+  last_status_at: 2022-12-15
+  noindex: true
+  emojis: {}
+  fields:
+    - name: Blog
+      value: <a href="https://jan.miksovsky.com" target="_blank" rel="nofollow
+        noopener noreferrer me"><span class="invisible">https://</span><span
+        class="">jan.miksovsky.com</span><span class="invisible"></span></a>
+      verified_at: 2022-11-21T17:59:16.263+00:00
+media_attachments: {}
+mentions: {}
+tags: {}
+emojis: {}
+card: null
+poll: null

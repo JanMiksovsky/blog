@@ -1,0 +1,7 @@
+id: "110874"
+name: Jan Miksovsky Blog
+website: https://jan.miksovsky.com
+redirect_uri: urn:ietf:wg:oauth:2.0:oob
+client_id: FDnnpcotpJon9m3h0rE82ZVCzpl5hLybhVW6IRLSDSQ
+client_secret: sEeIzLUXo-q9hV4TKit4g00ooQQFCEIgtvD4V4YXPdo
+vapid_key: BHKY6hkaUL7WByhqx8H8Knbfrpixu8vqTNjiu3XblHR-H6eY2ZD9LYe7fUxOuav6eCfwmK2LHWmzL22vvwN8B2E=
