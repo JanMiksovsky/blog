@@ -1,0 +1,194 @@
+type: root
+children:
+  - type: paragraph
+    children:
+      - type: text
+        value: "The Graph Origami serve() command can serve up any graph, including one
+          defined in a YAML file:"
+        position:
+          start:
+            line: 2
+            column: 1
+            offset: 1
+          end:
+            line: 2
+            column: 96
+            offset: 96
+    position:
+      start:
+        line: 2
+        column: 1
+        offset: 1
+      end:
+        line: 2
+        column: 96
+        offset: 96
+  - type: code
+    lang: yaml
+    meta: null
+    value: |-
+      index.html: |
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <link rel="stylesheet" href="styles/styles.css" />
+          </head>
+          <body>
+            …
+          </body>
+        </html>
+
+      about.html: |
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <link rel="stylesheet" href="styles/styles.css" />
+          </head>
+          <body>
+            …
+          </body>
+        </html>
+
+      styles:
+        styles.css: |
+          body {
+            …
+          }
+    position:
+      start:
+        line: 4
+        column: 1
+        offset: 98
+      end:
+        line: 32
+        column: 4
+        offset: 504
+  - type: paragraph
+    children:
+      - type: text
+        value: "If you have Graph Origami installed globally, you can serve this with:"
+        position:
+          start:
+            line: 34
+            column: 1
+            offset: 506
+          end:
+            line: 34
+            column: 71
+            offset: 576
+    position:
+      start:
+        line: 34
+        column: 1
+        offset: 506
+      end:
+        line: 34
+        column: 71
+        offset: 576
+  - type: code
+    lang: console
+    meta: null
+    value: |-
+      $ ori serve site.yaml
+      Server running at http://localhost:5000. Press Ctrl+C to stop.
+    position:
+      start:
+        line: 36
+        column: 1
+        offset: 578
+      end:
+        line: 39
+        column: 4
+        offset: 677
+  - type: paragraph
+    children:
+      - type: text
+        value: "The YAML/JSON file can be local, or come from the network. This lets you
+          serve a site directly out of a gist like
+          https://gist.github.com/JanMiksovsky/0d41ea862f2d08cbd2f6fcd805683511
+          using its “raw” URL form:"
+        position:
+          start:
+            line: 41
+            column: 1
+            offset: 679
+          end:
+            line: 41
+            column: 210
+            offset: 888
+    position:
+      start:
+        line: 41
+        column: 1
+        offset: 679
+      end:
+        line: 41
+        column: 210
+        offset: 888
+  - type: code
+    lang: console
+    meta: null
+    value: $ ori serve
+      https://gist.githubusercontent.com/JanMiksovsky/0d41ea862f2d08cbd2f6fcd805683511/raw/46502f5e3cb5b129627f057ca493462bde9f7c23/site.yaml
+    position:
+      start:
+        line: 43
+        column: 1
+        offset: 890
+      end:
+        line: 45
+        column: 4
+        offset: 1052
+  - type: paragraph
+    children:
+      - type: text
+        value: "This might be interesting, for example, to share multi-file repro cases
+          via any means that lets you share a file. You can serve the site out
+          of the repro case file directly, or unpack it to local files:"
+        position:
+          start:
+            line: 47
+            column: 1
+            offset: 1054
+          end:
+            line: 47
+            column: 203
+            offset: 1256
+    position:
+      start:
+        line: 47
+        column: 1
+        offset: 1054
+      end:
+        line: 47
+        column: 203
+        offset: 1256
+  - type: code
+    lang: console
+    meta: null
+    value: >-
+      $ ori copy
+      https://gist.githubusercontent.com/JanMiksovsky/0d41ea862f2d08cbd2f6fcd805683511/raw/46502f5e3cb5b129627f057ca493462bde9f7c23/site.yaml,
+      files/snapshot
+
+      $ ls snapshot
+
+      about.html index.html styles
+    position:
+      start:
+        line: 49
+        column: 1
+        offset: 1258
+      end:
+        line: 53
+        column: 4
+        offset: 1478
+position:
+  start:
+    line: 1
+    column: 1
+    offset: 0
+  end:
+    line: 54
+    column: 1
+    offset: 1479

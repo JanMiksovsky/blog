@@ -1,0 +1,67 @@
+- text: "The Graph Origami serve() command can serve up any graph, including one
+    defined in a YAML file:"
+  render:
+    - |-
+      <pre><code class="language-yaml">index.html: |
+        &#x3C;!DOCTYPE html>
+        &#x3C;html lang="en">
+          &#x3C;head>
+            &#x3C;link rel="stylesheet" href="styles/styles.css" />
+          &#x3C;/head>
+          &#x3C;body>
+            …
+          &#x3C;/body>
+        &#x3C;/html>
+
+      about.html: |
+        &#x3C;!DOCTYPE html>
+        &#x3C;html lang="en">
+          &#x3C;head>
+            &#x3C;link rel="stylesheet" href="styles/styles.css" />
+          &#x3C;/head>
+          &#x3C;body>
+            …
+          &#x3C;/body>
+        &#x3C;/html>
+
+      styles:
+        styles.css: |
+          body {
+            …
+          }
+      </code></pre>
+- text: "If you have Graph Origami installed globally, you can serve this with:"
+  render:
+    - |-
+      <pre><code class="language-console">$ ori serve site.yaml
+      Server running at http://localhost:5000. Press Ctrl+C to stop.
+      </code></pre>
+- text: The YAML/JSON file can be local, or come from the network. This lets you
+    serve a site directly out of a gist like
+    https://gist.github.com/JanMiksovsky/0d41ea862f2d08cbd2f6fcd805683511 using
+    its “raw” URL form. You can also do this on an ad hoc basis via npx.
+  render:
+    - >-
+      <pre><code class="language-console">$ ori serve
+      https://gist.githubusercontent.com/JanMiksovsky/0d41ea862f2d08cbd2f6fcd805683511/raw/46502f5e3cb5b129627f057ca493462bde9f7c23/site.yaml
+
+      </code></pre>
+    - >-
+      <pre><code class="language-console">$ npx @graphorigami/origami serve
+      https://gist.githubusercontent.com/JanMiksovsky/0d41ea862f2d08cbd2f6fcd805683511/raw/46502f5e3cb5b129627f057ca493462bde9f7c23/site.yaml
+
+      </code></pre>
+- text: "This might be interesting, for example, to share multi-file repro cases
+    via any means that lets you share a file. You can serve the site out of the
+    repro case file directly, or unpack it to local files:"
+  render:
+    - >-
+      <pre><code class="language-console">$ ori copy
+      https://gist.githubusercontent.com/JanMiksovsky/0d41ea862f2d08cbd2f6fcd805683511/raw/46502f5e3cb5b129627f057ca493462bde9f7c23/site.yaml,
+      files/snapshot
+
+      $ ls snapshot
+
+      about.html index.html styles
+
+      </code></pre>

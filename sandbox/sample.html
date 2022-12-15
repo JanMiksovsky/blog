@@ -1,0 +1,44 @@
+---
+title: Serve a web site from a YAML file
+---
+<p>The Graph Origami serve() command can serve up any graph, including one defined in a YAML file:</p>
+<pre><code class="language-yaml"><span class="hljs-attr">index.html:</span> <span class="hljs-string">|
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/styles.css&quot; /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      …
+    &lt;/body&gt;
+  &lt;/html&gt;
+</span>
+<span class="hljs-attr">about.html:</span> <span class="hljs-string">|
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+      &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/styles.css&quot; /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      …
+    &lt;/body&gt;
+  &lt;/html&gt;
+</span>
+<span class="hljs-attr">styles:</span>
+  <span class="hljs-attr">styles.css:</span> <span class="hljs-string">|
+    body {
+      …
+    }</span>
+</code></pre>
+<p>If you have Graph Origami installed globally, you can serve this with:</p>
+<pre><code class="language-console"><span class="hljs-meta prompt_">$ </span><span class="language-bash">ori serve site.yaml</span>
+Server running at http://localhost:5000. Press Ctrl+C to stop.
+</code></pre>
+<p>The YAML/JSON file can be local, or come from the network. This lets you serve a site directly out of a gist like <a href="https://gist.github.com/JanMiksovsky/0d41ea862f2d08cbd2f6fcd805683511">https://gist.github.com/JanMiksovsky/0d41ea862f2d08cbd2f6fcd805683511</a> using its “raw” URL form:</p>
+<pre><code class="language-console"><span class="hljs-meta prompt_">$ </span><span class="language-bash">ori serve https://gist.githubusercontent.com/JanMiksovsky/0d41ea862f2d08cbd2f6fcd805683511/raw/46502f5e3cb5b129627f057ca493462bde9f7c23/site.yaml</span>
+</code></pre>
+<p>This might be interesting, for example, to share multi-file repro cases via any means that lets you share a file. You can serve the site out of the repro case file directly, or unpack it to local files:</p>
+<pre><code class="language-console"><span class="hljs-meta prompt_">$ </span><span class="language-bash">ori copy https://gist.githubusercontent.com/JanMiksovsky/0d41ea862f2d08cbd2f6fcd805683511/raw/46502f5e3cb5b129627f057ca493462bde9f7c23/site.yaml, files/snapshot</span>
+<span class="hljs-meta prompt_">$ </span><span class="language-bash"><span class="hljs-built_in">ls</span> snapshot</span>
+about.html index.html styles
+</code></pre>

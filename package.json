@@ -2,7 +2,11 @@
   "name": "blog",
   "type": "module",
   "dependencies": {
-    "@graphorigami/origami": "github:GraphOrigami/origami#49249f3f"
+    "@graphorigami/origami": "github:GraphOrigami/origami#49249f3f",
+    "unified": "10.1.2",
+    "remark-parse": "10.0.1",
+    "remark-rehype": "10.1.0",
+    "rehype-stringify": "9.0.3"
   },
   "scripts": {
     "build": "ori copy virtual/src/site.vfiles/site, files/dist"
