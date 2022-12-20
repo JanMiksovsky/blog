@@ -1,8 +1,9 @@
-export default async function postStatus(status) {
-  const data = {
-    status,
-    visibility: "direct",
-  };
+export default async function postStatus(options) {
+  const data = Object.assign({}, options);
+  if (!data.visibility) {
+    data.visibility = "direct";
+  }
+
   const body = JSON.stringify(data);
 
   const response = await fetch("https://fosstodon.org/api/v1/statuses", {
@@ -18,7 +19,7 @@ export default async function postStatus(status) {
   if (response.ok) {
     return json;
   } else {
-    console.log(JSON.stringify(json, null, 2));
+    console.error(JSON.stringify(json, null, 2));
     return undefined;
   }
 }
