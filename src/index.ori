@@ -1,7 +1,7 @@
 ---
 title: Jan Miksovsky
 ---
-{{#page.ori}}
+{{page.ori =`
   <link
     rel="alternate"
     type="application/rss+xml"
@@ -14,10 +14,8 @@ title: Jan Miksovsky
     title="{{title}}"
     href="feed.json"
   />
-  {{#mapDeep recent}}
-    {{ post.ori(.) }}
-  {{/map}}
+  {{mapDeep recent, =post.ori(.) }}
   <footer>
     <a href="posts/">Archive</a>
   </footer>
-{{/page.ori}}
+`}}

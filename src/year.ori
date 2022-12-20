@@ -1,12 +1,10 @@
 ---
 title = year:
 ---
-{{#page.ori}}
+{{page.ori =`
   <h1 class="yearHeader">{{year}}</h1>
-  {{#map reverse(.)}}
-    {{ post.ori(.) }}
-  {{/map}}
+  {{map reverse(.), =post.ori(.) }}
   <footer>
     {{banner.ori()}}
   </footer>
-{{/page.ori}}
+`}}
