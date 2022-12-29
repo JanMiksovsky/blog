@@ -12,7 +12,7 @@ As it turns out, Elix already had much of what we need to build a recalc engine,
 
 ## The smallest amount of framework we can get away with
 
-As we've noted before, it's [not practical to write a production component library without any shared code](https://component.kitchen/blog/posts/nobody-writes-production-web-components-in-vanilla-js-so-using-a-framework-makes-total-sense). Writing web components requires enough boilerplate that most people end up using a framework, even if it's just a tiny framework they wrote themselves.
+As we've noted before, it's [not practical to write a production component library without any shared code](/posts/2015/10-26-nobody-writes-production-web-components-in-vanilla-js-so-using-a-framework-makes-total-sense.html). Writing web components requires enough boilerplate that most people end up using a framework, even if it's just a tiny framework they wrote themselves.
 
 Elix has had to develop its own core library so that we can create reliable, polished, general-purpose web components. Our framework happens to be composed of JavaScript mixins. We don't particularly care to push this framework on other people, but we do discuss it from time to time in case the work we've done can help write their own framework-level code better.
 
