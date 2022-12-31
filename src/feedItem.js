@@ -7,8 +7,7 @@ export default async function feedItem(item) {
   const content_html = plain["@text"];
 
   // Date will not have time zone; shift to Pacific time.
-  const date_published = new Date(`${date} GMT-7`);
-
+  const date_published = new Date(Date.parse(`${date} PST`));
   const year = date_published.getFullYear();
 
   const key = await this.get("@key");
