@@ -10,7 +10,7 @@ export default async function postThread(thread, threadOptions = {}) {
   for (const value of Object.values(plain)) {
     const statusOptions = Object.assign({}, threadOptions, value);
     if (replyId) {
-      options.in_reply_to_id = replyId;
+      statusOptions.in_reply_to_id = replyId;
     }
     const response = await postStatus(statusOptions);
     if (!response) {
