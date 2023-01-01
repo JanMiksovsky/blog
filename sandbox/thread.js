@@ -11,40 +11,38 @@ export default async function thread(markdownBuffer) {
 
   const ast = await unified().use(remarkParse).parse(body);
   const posts = [];
-  let currentPost = {
-    text: "",
-    render: [],
-  };
-  let handlingAttachments = false;
+  let currentPost = null;
   for (const node of ast.children) {
     switch (node.type) {
       case "paragraph":
-        if (handlingAttachments) {
+        if (currentPost) {
           posts.push(currentPost);
-          currentPost = {
-            text: "",
-            render: [],
-          };
-          handlingAttachments = false;
         }
-        if (currentPost.text.length > 0) {
-          currentPost.text += "\n";
-        }
-        currentPost.text += node.children[0].value;
+        const status = node.children[0].value;
+        currentPost = {
+          status,
+        };
         break;
 
       case "code":
-        handlingAttachments = true;
+        if (!currentPost) {
+          currentPost = {
+            status: "",
+          };
+        }
         const codeHast = await unified().use(remarkRehype).run(node);
         const codeHtml = await unified()
           .use(rehypeStringify)
           .stringify(codeHast);
+        if (!currentPost.render) {
+          currentPost.render = [];
+        }
         currentPost.render.push(codeHtml);
         break;
     }
   }
 
-  if (currentPost.text.length > 0) {
+  if (currentPost) {
     posts.push(currentPost);
   }
 
