@@ -7,4 +7,4 @@
   <a class="quiet" href="/posts/{{yearArea}}/">{{yearArea}}</a>
   `}}
 </span>
-<a class="quiet" rel="me" href="https://fosstodon.org/@JanMiksovsky"><span>@JanMiksovsky</span><span class="optional">@fosstodon.org</span></a>
+<a class="quiet" rel="me" href="https://fosstodon.org/@JanMiksovsky"><span class="optional">fosstodon.org/</span><span>@JanMiksovsky</span></a>
