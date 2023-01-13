@@ -1,5 +1,5 @@
 ---
-title: Strategies for picking emoji for words without emoji
+title: Strategies for picking emoji for words that don't have emoji
 date: 2023-01-17
 ---
 
@@ -7,7 +7,7 @@ There have been many modern attempts to construct a visual language, and a funda
 
 ![](/images/2023/01/challenges.png)
 
-To compensate for this, [Emojese](https://emojese.org) resorts to a number of [strategies](https://github.com/JanMiksovsky/emojese/blob/main/docs/Guidelines.md) to identify emoji sequences that can represent something new.
+To compensate for this, the [Emojese emoji language](https://emojese.org) resorts to a number of [strategies](https://github.com/JanMiksovsky/emojese/blob/main/docs/Guidelines.md) to identify emoji sequences that can represent something new.
 
 ![](/images/2023/01/comparison.png)
 
