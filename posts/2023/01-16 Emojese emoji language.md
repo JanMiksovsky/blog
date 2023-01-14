@@ -21,4 +21,4 @@ As a harder test, here’s a quip I translated into Emojese expressing a more co
 
 ![](/images/2023/01/ifYouThrowBaby.png)
 
-One of my kids and their high school friends had fun playing with Emojese messages on their Discord server. It took about 10 minutes for the conversation to veer into insults like `🫵の👩‍🍼`, which goes to show that the street finds its own uses for things.
+One of my kids and their high school friends had fun playing with Emojese messages on their Discord server. It took about 10 minutes for the conversation to veer into insults like `🫵の👩‍🍼`. This just goes to show that the street finds its own uses for things.
