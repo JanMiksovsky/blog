@@ -3,15 +3,13 @@ title: Unicode should add missing emoji for very common words
 date: 2013-01-19
 ---
 
-I think it would be a worthwhile endeavor to deliberately fill out Unicode with emoji for the many [common words without obvious emoji representations](https://github.com/JanMiksovsky/emojese/blob/main/docs/Challenges.md). Some of these concepts are quite abstract; any visual representation might be challenging, especially at small sizes. The Unicode Emoji Subcommittee requires new emoji proposals to be legible at 18x18 pixels, which is quite small.
-
-That document includes hypothetical icons pulled from [Noun Project](https://thenounproject.com/) as examples of how those concepts might be represented visually. You can get a sense for just how many of these concepts _can_ be represented well.
-
-**_ examples _**
-
-You can also open [Emojese](https://emojese.org) and turn on Experimental Emoji to see how these icons would feel in practice.
+When developing vocabulary for [Emojese](https://emojese.org), I found some places where I felt common words might benefit from new emoji. You can turn on Experimental Emoji in the Emojese app to see how these icons would feel in practice.
 
 ![](/images/2023/01/weCanGiveYouHelp.png)
+
+I think it would be a worthwhile endeavor to deliberately fill out Unicode with emoji for the many [common words without obvious emoji representations](https://github.com/JanMiksovsky/emojese/blob/main/docs/Challenges.md). Some of these concepts are quite abstract; any visual representation might be challenging, especially at small sizes. The Unicode Emoji Subcommittee requires new emoji proposals to be legible at 18x18 pixels, which is quite small. Still, you can get a sense for just how many of these concepts _can_ be represented well.
+
+![](/images/2023/01/wordsWithoutEmoji.png)
 
 The Emoji Subcommittee is very conservative these days when it comes to approving new emoji — but in recent years the same subcommittee approved 150 emojis for a single idea: 💑 [Couple with Heart](https://emojipedia.org/couple-with-heart/).
 

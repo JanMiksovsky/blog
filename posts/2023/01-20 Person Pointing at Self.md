@@ -11,11 +11,7 @@ Given the ubiquity of this gesture around the world, I felt the value of this em
 
 ![](/images/2023/01/hanSolo.jpg)
 
-While this emoji proposal grew out of my tinkering on the Emojese emoji language, the emoji is language-independent; you could use it while texting in any language.
-
-![](/images/2023/01/whoMe.png)
-
-If you open [Emojese](https://emojese.org) and turn on Experimental Emoji, you can try typing “I” or “me” in a sentence and see what it would be like to use Person Pointing at Self for this purpose.
+While this emoji proposal grew out of my tinkering on the Emojese emoji language, the emoji is language-independent; you could use it while texting in any language. If you open [Emojese](https://emojese.org) and turn on Experimental Emoji, you can try typing “I” or “me” in a sentence and see what it would be like to use Person Pointing at Self for this purpose.
 
 ![](/images/2023/01/iWillSendIt.png)
 

@@ -5,7 +5,7 @@ date: 2023-01-17
 
 Creating a written language from emoji is challenging. Any constructed visual language faces the problem of identifying vocabulary. This problem is even harder with the Unicode emoji set, which is skewed to faces, hearts, animals, occupations, foods, flags, and cultural totems. There are many [common words without obvious emoji representations](https://github.com/JanMiksovsky/emojese/blob/main/docs/Challenges.md).
 
-![](/images/2023/01/challenges.png)
+![](/images/2023/01/wordsWithoutEmoji.png)
 
 To compensate for this, the [Emojese emoji language](https://emojese.org) resorts to a number of [strategies](https://github.com/JanMiksovsky/emojese/blob/main/docs/Guidelines.md) to identify emoji sequences that can represent something new.
 
