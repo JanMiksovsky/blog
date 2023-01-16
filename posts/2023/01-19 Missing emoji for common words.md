@@ -1,6 +1,7 @@
 ---
 title: Unicode should add missing emoji for very common words
 date: 2013-01-19
+draft: true
 ---
 
 When developing vocabulary for [Emojese](https://emojese.org), I found some places where I felt common words might benefit from new emoji. You can turn on Experimental Emoji in the Emojese app to see how these icons would feel in practice.

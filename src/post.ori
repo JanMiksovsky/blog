@@ -1,3 +1,4 @@
+{{ unless draft, =`
 <article>
   <a class="quiet" href="{{postUrl()}}">
     <h1 class="postHeader">{{title}}</h1>
@@ -5,3 +6,4 @@
   <p class="postDate">{{ formatDate(date) }}</p>
   {{@text}}
 </article>
+` }}

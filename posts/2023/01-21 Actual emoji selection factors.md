@@ -1,6 +1,7 @@
 ---
 title: The actual selection factors for new Unicode emoji proposals
 date: 2023-01-21
+draft: true
 ---
 
 The Unicode emoji proposal process is open to the public in theory, but as far as I can tell, is currently accepting a tiny number of proposals based mostly on "things people like".
