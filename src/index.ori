@@ -14,7 +14,7 @@ title: Jan Miksovsky
     title="{{title}}"
     href="feed.json"
   />
-  {{mapDeep recent, =post.ori(.) }}
+  {{mapDeep recent, =unless(./draft, post.ori(.)) }}
   <footer>
     <a href="posts/">Archive</a>
   </footer>
