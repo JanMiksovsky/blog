@@ -15,7 +15,7 @@ All emoji languages initially look silly/overwhelming — it’s hard to read so
 
 The best I can hope for is that, after seeing a translation, you feel it's reasonable and that the few unavoidable abstract symbols are memorable. If the language is consistent in using 👉 as "this" and "☀️", then 👉☀️ for "this day"/"today" begins to feel acceptable.
 
-This lets you write things roughly like Randall Monroe did with a 1000-word vocabulary in his [Up Goer Five](https://xkcd.com/1133/) comic and Thing Explainer book — only in emoji. 🔮⋯ ⬚ ▶️ 👉⟿ ↬ 🌌 ⇒ 🫵 ⤻💁 👎 😬💦 & 🫵 ⤻🚫 → ↬ 🌌 👉☀️
+This lets you write things roughly like Randall Monroe did with a 1000-word vocabulary in his [Up Goer Five](https://xkcd.com/1133/) comic and Thing Explainer book — only in emoji. 🔮⋯ ⬚👈 ▶️ 👉⟿ ↬ 🌌 ⇒ 🫵 ⤻💁 👎 😬💦 & 🫵 ⤻🚫 → ↬ 🌌 👉☀️
 
 ![](/images/2023/01/ifItStartPoint.png)
 
