@@ -15,10 +15,10 @@ export default async function thread(markdownBuffer) {
   for (const node of ast.children) {
     switch (node.type) {
       case "paragraph":
-        if (currentPost) {
+        if (currentPost?.status) {
           posts.push(currentPost);
         }
-        const status = node.children[0].value;
+        const status = nodeText(node);
         currentPost = {
           status,
         };
@@ -42,9 +42,55 @@ export default async function thread(markdownBuffer) {
     }
   }
 
-  if (currentPost) {
+  if (currentPost?.status) {
     posts.push(currentPost);
   }
 
   return posts;
+}
+
+function lastLinkToEnd(nodes) {
+  const linkTotal = nodes.filter((node) => node.type === "link").length;
+  const adjusted = [];
+  let linkCount = 0;
+  let lastUrl;
+  for (const node of nodes) {
+    if (node.type === "link") {
+      linkCount++;
+      if (linkCount === linkTotal) {
+        const linkText = nodeText(node.children);
+        adjusted.push({
+          type: "text",
+          value: linkText,
+        });
+        lastUrl = node.url;
+      } else {
+        adjusted.push(node);
+      }
+    } else {
+      adjusted.push(node);
+    }
+  }
+  if (lastUrl) {
+    adjusted.push({
+      type: "text",
+      value: ` ${lastUrl}`,
+    });
+  }
+  return adjusted;
+}
+
+function nodeText(node) {
+  if (node instanceof Array) {
+    return node.map((node) => nodeText(node)).join("");
+  }
+  switch (node.type) {
+    case "text":
+      return node.value;
+    case "link":
+      return `${nodeText(node.children)} (${node.url})`;
+    case "paragraph":
+      const adjusted = lastLinkToEnd(node.children);
+      return nodeText(adjusted);
+  }
 }

@@ -1,24 +1,18 @@
 ---
-title: "Emojese: a written emoji language"
-date: 2023-01-16
+title: Strategies for picking emoji for words that don't have emoji
+date: 2023-01-17
 ---
 
-The [Emojese emoji language](https://emojese.org) is rich enough to express complex thoughts entirely in emoji and other Unicode glyphs.
+Creating a written language from emoji is challenging. Any constructed visual language faces the problem of identifying vocabulary. This problem is even harder with the Unicode emoji set, which is skewed to faces, hearts, animals, occupations, foods, flags, and cultural totems. There are many [common words without obvious emoji representations](https://github.com/JanMiksovsky/emojese/blob/main/docs/Challenges.md).
 
-![](/images/2023/01/funToSeeYou.png)
+![](/images/2023/01/wordsWithoutEmoji.png)
 
-I think emoji languages are a fun idea, but when I looked for an emoji language in 2020, I couldn’t find anything that was: a) satisfying, and b) sendable as real text. My kids and I explored ideas which I formalized into Emojese and embodied in the above app for writing and reading sentences. Emojese is a pidgin language with a handful of grammar suggestions and emoji definitions for 1000+ words.
+To compensate for this, the [Emojese emoji language](https://emojese.org) resorts to a number of [strategies](https://github.com/JanMiksovsky/emojese/blob/main/docs/Guidelines.md) to identify emoji sequences that can represent something new.
 
-A friend and I had a ton of fun texting back and forth in Emojese for several months — a 🕵️Secret Decoder Ring for texting! Before long, we could read many messages before decoding them in the app. I expect you would experience similar results.
+![](/images/2023/01/comparison.png)
 
-All emoji languages initially look silly/overwhelming — it’s hard to read so many unfamiliar images, the choice of symbols feels arbitrary, and the constraints of existing emoji result in unfamiliar pairings like 👉☀️ for "today".
+A particularly productive strategy is to designate certain emoji or glyphs to communicate abstract ideas and incorporate these into larger glyphs to contribute those abstract meanings. Chinese and Japanese kanji have characters called “radicals” that express such core meanings. For an emoji language, we can pick specific emoji and Unicode glyphs to fill the same role as radicals in emoji sequences:
 
-The best I can hope for is that, after seeing a translation, you feel it's reasonable and that the few unavoidable abstract symbols are memorable. If the language is consistent in using 👉 as "this" and "☀️", then 👉☀️ for "this day"/"today" begins to feel acceptable.
+![](/images/2023/01/concepts.png)
 
-This lets you write things roughly like Randall Monroe did with a 1000-word vocabulary in his [Up Goer Five](https://xkcd.com/1133/) comic and Thing Explainer book — only in emoji.
-
-![](/images/2023/01/upGoerFive.png)
-
-![](/images/2023/01/ifItStartPoint.png)
-
-One of my kids and their high school friends had fun playing with Emojese messages on their Discord server. It took about 10 minutes for the conversation to veer into insults like `🫵の👩‍🍼`. This just goes to show that the street finds its own uses for things.
+The goal is to produce sequences which, while perhaps not obvious on first reading, are good enough and consistent enough to be remembered. Using this and other strategies, Emojese now has 1000+ common words, which is large enough to be general purpose and to communicate some complex ideas.
