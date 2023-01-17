@@ -1,7 +1,6 @@
 ---
 title: Strategies for picking emoji for words that don't have emoji
 date: 2023-01-17
-draft: true
 ---
 
 Creating a written language from emoji is challenging. Any constructed visual language faces the problem of identifying vocabulary. This problem is even harder with the Unicode emoji set, which is skewed to faces, hearts, animals, occupations, foods, flags, and cultural totems. There are many [common words without obvious emoji representations](https://github.com/JanMiksovsky/emojese/blob/main/docs/Challenges.md).
