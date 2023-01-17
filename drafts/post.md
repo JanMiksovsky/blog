@@ -1,18 +1,17 @@
 ---
-title: Strategies for picking emoji for words that don't have emoji
-date: 2023-01-17
+title: Emoji’s destiny is to become a global written pidgin language
+date: 2023-01-18
+draft: true
 ---
 
-Creating a written language from emoji is challenging. Any constructed visual language faces the problem of identifying vocabulary. This problem is even harder with the Unicode emoji set, which is skewed to faces, hearts, animals, occupations, foods, flags, and cultural totems. There are many [common words without obvious emoji representations](https://github.com/JanMiksovsky/emojese/blob/main/docs/Challenges.md).
+With emoji as an expanding foundation for cross-cultural communication, I don’t think it’s a stretch to envision the eventual emergence of a basic grammar and the identification of existing emoji for specific abstract meanings. Emoji will form the basis of a written pidgin language: a simplified language that is incomplete but can nevertheless fill a useful role.
 
-![](/images/2023/01/wordsWithoutEmoji.png)
+Emoji dramatically extend the world’s set of commonly-understood symbols. There were universal symbols before emoji, but they were generally confined to domains like math, science, and music. Emoji has increased that universal set by an order of magnitude. I assume it’s also shifting what can be understood across cultures.
 
-To compensate for this, the [Emojese emoji language](https://emojese.org) resorts to a number of [strategies](https://github.com/JanMiksovsky/emojese/blob/main/docs/Guidelines.md) to identify emoji sequences that can represent something new.
+As a software designer in the 1990s, I received instruction from our international localization teams to avoid using gestures like 👍 in icons because some cultures interpreted them as offensive. As software has eaten the world, the culture of its makers has spread as well. I assume that _in the context of software_ most people around the world can now recognize the intended positive meaning of 👍 regardless of their cultural background.
 
-![](/images/2023/01/comparison.png)
+Any specific constructed emoji language like the [Emojese emoji language](https://emojese.org) is unlikely to take root — but we can watch for something similar to spontaneously emerge and spread around the world. Isn’t that a beautiful idea worth encouraging?
 
-A particularly productive strategy is to designate certain emoji or glyphs to communicate abstract ideas and incorporate these into larger glyphs to contribute those abstract meanings. Chinese and Japanese kanji have characters called “radicals” that express such core meanings. For an emoji language, we can pick specific emoji and Unicode glyphs to fill the same role as radicals in emoji sequences:
+My guess: a charismatic young musician or music group stretches emoji into a pidgin as a way to connect with a global audience of teen fans, who pick up the pidgin to express their enthusiasm and thoughts across a language boundary. Fifty years later, those fans can stay at an AirBnB with checkout instructions like
 
-![](/images/2023/01/concepts.png)
-
-The goal is to produce sequences which, while perhaps not obvious on first reading, are good enough and consistent enough to be remembered. Using this and other strategies, Emojese now has 1000+ common words, which is large enough to be general purpose and to communicate some complex ideas.
+◐⏰ 🫵 ⎋, 📦⬇️ 🚮⬚ 📥 🗑️ ⩕ 🚗Ⓟ📍

@@ -1,5 +1,5 @@
 To post a thread from markdown:
 
 ```console
-$ ori postThread thread latest-post.md
+$ cat posts/2023/something.md | ori thread stdin/ | tee drafts/thread.yaml
 ```
