@@ -5,7 +5,7 @@ date: 2023-01-18
 
 Emoji week continues! With emoji as an expanding foundation for cross-cultural communication, I don’t think it’s a stretch to envision the eventual emergence of a basic grammar and the identification of existing emoji for specific abstract meanings. Emoji will form the basis of a written pidgin language: a simplified language that is incomplete but can nevertheless fill a useful role.
 
-![](images/2023/01/beforeYouLeave.png)
+![](/images/2023/01/beforeYouLeave.png)
 
 Emoji dramatically extend the world’s set of commonly-understood symbols. There were universal symbols before emoji, but they were generally confined to domains like math, science, and music. Emoji has increased that universal set by an order of magnitude. I assume it’s also shifting what can be understood across cultures.
 
