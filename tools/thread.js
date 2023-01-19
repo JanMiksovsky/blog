@@ -87,10 +87,18 @@ function nodeText(node) {
   switch (node.type) {
     case "text":
       return node.value;
+
     case "link":
       return `${nodeText(node.children)} (${node.url})`;
+
     case "paragraph":
       const adjusted = lastLinkToEnd(node.children);
       return nodeText(adjusted);
+
+    default:
+      if (node.children) {
+        return nodeText(node.children);
+      }
+      return "";
   }
 }

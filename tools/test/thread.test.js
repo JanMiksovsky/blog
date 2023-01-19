@@ -6,7 +6,7 @@ test("thread", async () => {
   test("paragraphs to statuses", async () => {
     const markdown = `Hello
 
-world`;
+  world`;
     const statuses = await thread(markdown);
     assert.deepEqual(statuses, [
       {
@@ -35,6 +35,16 @@ world`;
       {
         status:
           "Here is one (https://example.com/1) and two. https://example.com/2",
+      },
+    ]);
+  });
+
+  test("flatten formatting", async () => {
+    const markdown = `Hello **_world_**, how are **[_you_](https://example.com)**?`;
+    const statuses = await thread(markdown);
+    assert.deepEqual(statuses, [
+      {
+        status: "Hello world, how are you (https://example.com)?",
       },
     ]);
   });
