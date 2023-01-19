@@ -1,14 +1,16 @@
 ---
 title: Unicode should add missing emoji for very common words
 date: 2013-01-19
-draft: true
 ---
 
-When developing vocabulary for [Emojese](https://emojese.org), I found some places where I felt common words might benefit from new emoji. You can turn on Experimental Emoji in the Emojese app to see how these icons would feel in practice.
+While developing vocabulary for the [Emojese emoji
+language](https://emojese.org), I've found many common words that might benefit
+from new emoji. You can turn on Experimental Emoji in the app to see how
+these could feel in practice.
 
 ![](/images/2023/01/weCanGiveYouHelp.png)
 
-I think it would be a worthwhile endeavor to deliberately fill out Unicode with emoji for the many [common words without obvious emoji representations](https://github.com/JanMiksovsky/emojese/blob/main/docs/Challenges.md). Some of these concepts are quite abstract; any visual representation might be challenging, especially at small sizes. The Unicode Emoji Subcommittee requires new emoji proposals to be legible at 18x18 pixels, which is quite small. Still, you can get a sense for just how many of these concepts _can_ be represented well.
+I think it would be worthwhile to deliberately fill out Unicode with emoji for the many [common words without obvious emoji representations](https://github.com/JanMiksovsky/emojese/blob/main/docs/Challenges.md). Some of these concepts are quite abstract; any visual representation might be challenging, especially at small sizes. The Unicode Emoji Subcommittee requires new emoji proposals to be legible at 18x18 pixels, which is quite small. Still, you can get a sense for just how many of these concepts _can_ be represented well.
 
 ![](/images/2023/01/wordsWithoutEmoji.png)
 
