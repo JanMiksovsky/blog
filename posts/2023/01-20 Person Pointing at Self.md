@@ -1,12 +1,11 @@
 ---
 title: Emoji proposal for Person Pointing at Self
 date: 2023-01-20
-draft: true
 ---
 
 A while back I submitted a proposal to Unicode for a new emoji to represent “I” or “me”: [Person Pointing at Self](https://drive.google.com/file/d/1y-aO0tl6LnSpHavLnpESRt6h5Idz4K0_/view?usp=sharing).
 
-<img src="/images/2023/01/personPointingAtSelf.png" style="max-width: 100%; width: 500px;" alt="Proposed person pointing at self emoji>
+<img src="/images/2023/01/personPointingAtSelf.png" style="max-width: 100%; width: 500px;" alt="Proposed person pointing at self emoji">
 
 Given the ubiquity of this gesture around the world, I felt the value of this emoji was self-evident.
 
