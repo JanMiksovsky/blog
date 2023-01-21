@@ -1,5 +1,5 @@
 ---
-title: The actual selection factors for new Unicode emoji proposals
+title: The actual selection factors for new Unicode emoji proposals?
 date: 2023-01-21
 ---
 
@@ -18,9 +18,9 @@ That said, the committee rejected an emoji to represent “I”/“me”: possib
 
 Reading recent approvals like the [new emojis in Unicode 15.0](https://blog.emojipedia.org/whats-new-in-unicode-15-0/), we can infer that the subcommittee applies additional, undocumented criteria, which may include:
 
-1. Is it a heart or a face? People like those.
-2. Is it a popular food or charismatic fauna/flora? People like those.
-3. Is it an important cultural totem? Please like those — and it’s hard to tell a large group they don’t deserve representation.
+1. **Is it a heart or a face?** People like those.
+2. **Is it a popular food or charismatic fauna/flora?** People like those.
+3. **Is it an important cultural totem?** Please like those — and it’s hard to tell a large group they don’t deserve representation.
 
 If these really are something like the criteria applied to new proposals, the subcommittee leads people to waste their time crafting proposals that have no chance of being accepted. And limiting new emoji to "things people like" is a crabbed vision of what emoji could do for humanity. Focusing on _things people actually talk about_ seems like a better, less arbitrary metric that would enable more substantive communication.
 
