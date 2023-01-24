@@ -30,5 +30,8 @@ site = merge(public, this):
   # Top-level index page
   index.html = index.ori():
 
+  # About page
+  about.html = page.ori(mdHtml(about.md)):
+
   feed.json = graph(setScope(feed.meta)):
   rss.xml = feedRss(feed.json):
