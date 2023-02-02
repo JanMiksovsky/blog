@@ -8,9 +8,11 @@ html = mapDeep(slugs, mdHtml, { extension: 'md→html' })
 # This is used in the posts archive.
 pages = mapDeep(html, postPage.ori)
 
-# Add an index page to the year folders in the virtual pages graph.
+# Add an index page to the year folders in the virtual pages graph. The setScope
+# call captures the scope that includes the current year, ensuring the year.ori
+# template can see that `year` in scope when it is rendered.
 years = map(pages, =merge(@value, setScope({
-  index.html = year.ori(html(year))
+  index.html = year.ori()
 })), { keyName: 'year' })
 
 # The recent feed is the posts in reverse chronological order.
