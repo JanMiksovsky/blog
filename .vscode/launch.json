@@ -19,7 +19,7 @@
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/node_modules/@graphorigami/origami/src/cli/cli.js",
       "runtimeArgs": ["--preserve-symlinks"],
-      "args": ["serve watch virtual/src/site.vfiles/site"]
+      "args": ["serve watch src, =defaultPages site.graph/public"]
     }
   ]
 }

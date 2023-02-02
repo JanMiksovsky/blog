@@ -11,7 +11,7 @@
     "unified": "10.1.2"
   },
   "scripts": {
-    "build": "ori copy virtual/src/site.vfiles/site, files/dist",
+    "build": "ori copy src/site.graph/public, files/dist",
     "test": "node tools/test/*.test.js"
   }
 }
