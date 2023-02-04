@@ -1,4 +1,8 @@
 export default function postSlug(filename) {
+  if (filename === "index.md" || filename === "index.html") {
+    // No slug for index page
+    return undefined;
+  }
   let slug = filename.toLowerCase();
   // Remove some characters
   slug = slug.replace(/['’]/, "");

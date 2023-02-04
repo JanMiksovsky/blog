@@ -1,5 +1,6 @@
-# Add slugs to the posts.
-slugs = postSlugs(…/posts)
+# Add slugs to the top-level `posts` folder.
+slugs = postSlugs(posts)
+# slugs = mapKeys(posts, =postSlug(@key))
 
 # Convert posts from markdown to HTML.
 html = mapDeep(slugs, mdHtml, { extension: 'md→html' })
