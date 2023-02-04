@@ -1,7 +1,7 @@
 <article>
-  <a class="quiet" href="{{postUrl()}}">
-    <h1 class="postHeader">{{title}}</h1>
+  <a class="quiet" href="{{ postUrl() }}">
+    <h1 class="postHeader">{{ ./title }}</h1>
   </a>
-  <p class="postDate">{{ formatDate(date) }}</p>
-  {{@text}}
+  <p class="postDate">{{ formatDate(./date) }}</p>
+  {{ @text }}
 </article>
