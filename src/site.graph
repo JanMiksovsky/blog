@@ -23,7 +23,9 @@ recent = takeDeep(reverse(html), 10)
 
 # The feed data is the recent posts with just the necessary feed data.
 feedItems = mapDeep(recent, feedItem, { extension: 'html→yaml' })
-feedItems.yaml = valuesDeep(feedItems)
+flatItems = valuesDeep(feedItems)
+# Set scope on feed.meta so it can see flatItems ablove
+feed = setScope(feed.meta)
 
 # Main site
 public = merge(client, {
@@ -38,6 +40,6 @@ public = merge(client, {
   # About page
   about.html = page.ori(mdHtml(about.md))
 
-  feed.json = graph(setScope(feed.meta))
-  rss.xml = feedRss(feed.json)
+  feed.json = json(feed)
+  rss.xml = feedRss(feed)
 })
