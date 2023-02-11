@@ -21,14 +21,13 @@ years = map(pages, =merge(@value, setScope({
 reversed = reverse(html)
 recent = takeDeep(reverse(html), 10)
 
-# The feed data is the recent posts with just the necessary feed data.
+# The feed items are the recent posts with just the necessary feed data.
 feedItems = mapDeep(recent, feedItem, { extension: 'html→yaml' })
-flatItems = valuesDeep(feedItems)
-# Set scope on feed.meta so it can see flatItems ablove
-feed = setScope(feed.meta)
+feed = extendScope(feed.yaml, { @input: valuesDeep(feedItems) })
 
 # Main site
 public = merge(client, {
+
   # Add an index page to the overall posts archive.
   posts = merge(years, {
     index.html = yearIndex.ori()
