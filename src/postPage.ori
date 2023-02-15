@@ -1,9 +1,4 @@
 ---
 yearArea = postYear():
 ---
-{{page.ori =`
-  {{post.ori(.)}}
-  <footer>
-    {{banner.ori()}}
-  </footer>
-`}}
+{{ page.ori(post.ori(@input)) }}
