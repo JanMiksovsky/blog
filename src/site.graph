@@ -3,7 +3,7 @@ slugs = postSlugs(posts)
 # slugs = mapKeys(posts, =postSlug(@key))
 
 # Convert posts from markdown to HTML.
-html = mapDeep(slugs, mdHtml, { extension: 'md→html' })
+html = mapDeep(slugs, =mdHtml(@value), { extension: 'md→html' })
 
 # Apply the post page template to the posts.
 # This is used in the posts archive.

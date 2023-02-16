@@ -1,4 +1,4 @@
 ---
-yearArea = postYear():
+yearArea: !ori postYear()
 ---
 {{ page.ori(post.ori(@input)) }}

@@ -4,7 +4,7 @@ import path from "path";
 export default async function feedItem(item) {
   const plain = await ExplorableGraph.plain(item);
   const { date, slug, title } = plain;
-  const content_html = plain["@text"];
+  const content_html = String(item);
 
   // Date will not have time zone; shift to Pacific time.
   const date_published = new Date(Date.parse(`${date} PST`));
