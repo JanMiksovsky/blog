@@ -13,13 +13,13 @@ pages = mapDeep(html, postPage.ori)
 # call captures the scope that includes the current year, ensuring the year.ori
 # template can see that `year` in scope when it is rendered.
 years = map(pages, =merge(@value, setScope({
-  index.html = year.ori()
+  index.html = yearPage.ori()
 })), { keyName: 'year' })
 
 # The recent feed is the posts in reverse chronological order.
 # For the `recent` feed, we only want 10 posts.
 reversed = reverse(html)
-recent = takeDeep(reverse(html), 10)
+recent = takeDeep(reversed, 10)
 
 # The feed items are the recent posts with just the necessary feed data.
 feedItems = mapDeep(recent, feedItem, { extension: 'html→yaml' })
@@ -30,7 +30,7 @@ public = merge(client, {
 
   # Add an index page to the overall posts archive.
   posts = merge(years, {
-    index.html = yearIndex.ori()
+    index.html = archivePage.ori()
   })
 
   # Top-level index page
