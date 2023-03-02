@@ -6,7 +6,7 @@ title: Posts by year
   <ul class="yearList">
   {{map reversed, =`
     <li class="yearItem">
-      <a href="{{@key}}">{{@key}}</a>
+      <a href="{{@key}}/">{{@key}}</a>
     </li>
   `}}
   </ul>
