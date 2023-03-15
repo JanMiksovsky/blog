@@ -11,7 +11,7 @@ export default async function takeDeep(variant, count) {
 
 async function traverse(graph, count) {
   const map = new Map();
-  for await (const key of graph) {
+  for (const key of await graph.keys()) {
     if (count === 0) {
       break;
     }

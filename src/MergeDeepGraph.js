@@ -3,18 +3,6 @@ export default class MergeDeepGraph {
     this.graphs = graphs;
   }
 
-  async *[Symbol.asyncIterator]() {
-    const keys = new Set();
-    for (const graph of this.graphs) {
-      for await (const key of graph) {
-        if (!keys.has(key)) {
-          keys.add(key);
-          yield key;
-        }
-      }
-    }
-  }
-
   async get(key) {
     const explorableValues = [];
     for (const graph of this.graphs) {
@@ -38,5 +26,15 @@ export default class MergeDeepGraph {
       : explorableValues.length === 1
       ? explorableValues[0]
       : new this.constructor(...explorableValues);
+  }
+
+  async keys() {
+    const keys = new Set();
+    for (const graph of this.graphs) {
+      for (const key of await graph.keys()) {
+        keys.add(key);
+      }
+    }
+    return keys;
   }
 }

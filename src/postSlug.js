@@ -1,4 +1,4 @@
-export default function postSlug(filename) {
+export default function postSlug(value, filename) {
   if (filename === "index.md" || filename === "index.html") {
     // No slug for index page
     return undefined;
