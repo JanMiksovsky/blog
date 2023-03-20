@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://jan.miksovsky.com/sitemap.xml

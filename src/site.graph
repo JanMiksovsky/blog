@@ -41,4 +41,6 @@ public = merge(client, {
 
   feed.json = json(feed)
   rss.xml = feedRss(feed)
+
+  sitemap.xml = @sitemap(public, "https://jan.miksovsky.com")
 })
