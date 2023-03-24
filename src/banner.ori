@@ -2,7 +2,7 @@
   <a class="quiet" href="/"><span class="optional">Jan Miksovsky </span>Home</a>
   •
   <a class="quiet" href="/posts/">Archive</a>
-  {{if yearArea, =`
+  {{ @if yearArea, =`
   •
   <a class="quiet" href="/posts/{{yearArea}}/">{{yearArea}}</a>
   `}}

@@ -4,7 +4,7 @@ title: Posts by year
 {{page.ori =`
   <h1>Archive</h1>
   <ul class="yearList">
-  {{map reversed, =`
+  {{ @map/values reversed, =`
     <li class="yearItem">
       <a href="{{@key}}/">{{@key}}</a>
     </li>

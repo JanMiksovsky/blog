@@ -3,33 +3,33 @@ slugs = postSlugs(posts)
 # slugs = mapKeys(posts, =postSlug(@key), { deep: true })
 
 # Convert posts from markdown to HTML.
-html = mapDeep(slugs, =mdHtml(@value), { extension: 'md→html' })
+html = @map/values(slugs, =@mdHtml(@value), { deep: @true, extension: 'md→html' })
 
 # Apply the post page template to the posts.
 # This is used in the posts archive.
-pages = mapDeep(html, postPage.ori)
+pages = @map/values(html, postPage.ori, { deep: @true })
 
 # Add an index page to the year folders in the virtual pages graph. The setScope
 # call captures the scope that includes the current year, ensuring the year.ori
 # template can see that `year` in scope when it is rendered.
-years = map(pages, =merge(@value, setScope({
+years = @map/values(pages, =@graph/merge(@value, @scope/set({
   index.html = yearPage.ori()
 })), { keyName: 'year' })
 
 # The recent feed is the posts in reverse chronological order.
 # For the `recent` feed, we only want 10 posts.
-reversed = reverse(html)
+reversed = @graph/reverse(html)
 recent = takeDeep(reversed, 10)
 
 # The feed items are the recent posts with just the necessary feed data.
-feedItems = mapDeep(recent, feedItem, { extension: 'html→yaml' })
-feed = extendScope(feed.yaml, { @input: valuesDeep(feedItems) })
+feedItems = @map/values(recent, feedItem, { deep: @true, extension: 'html→yaml' })
+feed = @scope/extend(feed.yaml, { @input: @graph/valuesDeep(feedItems) })
 
 # Main site
-public = merge(client, {
+public = @graph/merge(client, {
 
   # Add an index page to the overall posts archive.
-  posts = merge(years, {
+  posts = @graph/merge(years, {
     index.html = archivePage.ori()
   })
 
@@ -37,10 +37,10 @@ public = merge(client, {
   index.html = index.ori()
 
   # About page
-  about.html = page.ori(mdHtml(about.md))
+  about.html = page.ori(@mdHtml(about.md))
 
-  feed.json = json(feed)
-  rss.xml = feedRss(feed)
+  feed.json = @json(feed)
+  rss.xml = @rss(feed)
 
-  sitemap.xml = @sitemap(public, "https://jan.miksovsky.com")
+  sitemap.xml = @graph/sitemap(public, "https://jan.miksovsky.com")
 })
