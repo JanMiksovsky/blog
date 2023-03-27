@@ -2,7 +2,7 @@
   "name": "blog",
   "type": "module",
   "dependencies": {
-    "@graphorigami/origami": "github:GraphOrigami/origami#7c708d42"
+    "@graphorigami/origami": "github:GraphOrigami/origami#88ed47a1"
   },
   "devDependencies": {
     "rehype-stringify": "9.0.3",
@@ -11,7 +11,7 @@
     "unified": "10.1.2"
   },
   "scripts": {
-    "build": "ori copy src/site.graph/public, files/dist",
+    "build": "ori @copy src/site.graph/public, @files/dist",
     "test": "node tools/test/*.test.js"
   }
 }

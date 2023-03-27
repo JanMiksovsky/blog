@@ -16,9 +16,3 @@ Some of the projects I've enjoyed working on the most are:
 |     | The Game                               |
 |     | Microsoft Money                        |
 |     | Microsoft Mail                         |
-
-## Contact
-
-You can find me on Mastodon as [@JanMiksovsky](https://fosstodon.org/@JanMiksovsky).
-
-You can email me at my first name @ my last name dot com.

@@ -36,8 +36,9 @@ public = @graph/merge(client, {
   # Top-level index page
   index.html = index.ori()
 
-  # About page
-  about.html = page.ori(@mdHtml(about.md))
+  # Contact page
+  contact.html = page.ori(@mdHtml(contact.md))
+  # about.html = page.ori(@mdHtml(about.md))
 
   feed.json = @json(feed)
   rss.xml = @rss(feed)
