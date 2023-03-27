@@ -1,3 +1,7 @@
+---
+title: Contact Jan Miksovsky
+---
+
 # Get in touch! 😃
 
 🐘 Follow me on Mastodon at [@JanMiksovsky](https://fosstodon.org/@JanMiksovsky). I'm always happy to receive direct messages.
