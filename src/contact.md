@@ -8,4 +8,6 @@ title: Contact Jan Miksovsky
 
 💻 I'm on GitHub as [JanMiksovsky](https://github.com/JanMiksovsky)
 
-✉️ You can email me at &lt;_my first name_>@&lt;_my last name_>.com
+✉️ Send email on Graph Origami to &lt;_my first name_>@graphorigami.org
+
+✉️ Send email on other topics to &lt;_my first name_>@miksovsky.com
