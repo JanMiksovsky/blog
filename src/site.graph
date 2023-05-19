@@ -18,7 +18,7 @@ years = @map/values(pages, =@graph/merge(@value, @scope/set({
 
 # The recent feed is the posts in reverse chronological order.
 # For the `recent` feed, we only want 10 posts.
-reversed = @graph/reverse(html)
+reversed = @graph/reverse(html, { deep: @true })
 recent = takeDeep(reversed, 10)
 
 # The feed items are the recent posts with just the necessary feed data.
