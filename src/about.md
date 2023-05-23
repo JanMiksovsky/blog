@@ -22,11 +22,11 @@ I think emoji will someday evolve into a global written pidgin language, and I t
 
 <img src="/images/about/elix.png" style="width: 64px">
 
-At my second startup, I developed the [Elix](https://component.kitchen/elix) web component library, an open collection of high-quality web components for common user interface patterns. My goal was to consolidate a career's worth of experience refining the details of user interface controls into a shareable library of readily reusable components. Working on Elix led me to understand the value of building as close to the underlying platform as possible.
+At my second startup, I developed the [Elix](https://component.kitchen/elix) web component library, an open collection of high-quality web components for common user interface patterns. My goal was to consolidate a career's worth of experience refining the details of user interface controls into a shareable library of readily reusable components. Working on Elix led me to appreciate the value of building as close to the underlying platform as possible. In a presentation at Microsoft, I packed a decade of work into a single, comprehensive [talk about Elix](https://www.youtube.com/watch?v=mtHf7crZZIQ).
 
-## HTML &lt;slot> element
+## &lt;slot>
 
-For some years I participated in the WHATWG web apps working group, an experience that led me to appreciate the enormous work that goes on year after year to ensure that the web remains a dynamic place — but in a backward-compatible way. I'm proud of work I did to help Apple and Google resolve their disagreements on a fundamental point that had threatened to derail the adoption of web components, an episode I wrote up in [A history of the HTML slot element](/posts/2019/04-08-a-history-of-the-slot-element.html).
+For some years I participated in the WHATWG web apps working group, an experience that led me to appreciate the enormous work that goes on year after year to ensure that the web remains a dynamic place — but in a backward-compatible way. I'm proud of work I did to help Apple and Google resolve their disagreements on a fundamental point that had threatened to derail the adoption of web components, a story I wrote up in [A history of the HTML &lt;slot> element](/posts/2019/04-08-a-history-of-the-slot-element.html).
 
 ## Presterity
 
