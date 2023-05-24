@@ -24,15 +24,23 @@ I think emoji will someday evolve into a global written pidgin language, and I t
 
 At my second startup, I developed the [Elix](https://component.kitchen/elix) web component library, an open collection of high-quality web components for common user interface patterns. My goal was to consolidate a career's worth of experience refining the details of user interface controls into a shareable library of readily reusable components. Working on Elix led me to appreciate the value of building as close to the underlying platform as possible. In a presentation at Microsoft, I packed a decade of work into a single, comprehensive [talk about Elix](https://www.youtube.com/watch?v=mtHf7crZZIQ).
 
-## &lt;slot>
+## Eastside Traverse
 
-For some years I participated in the WHATWG web apps working group, an experience that led me to appreciate the enormous work that goes on year after year to ensure that the web remains a dynamic place — but in a backward-compatible way. I'm proud of work I did to help Apple and Google resolve their disagreements on a fundamental point that had threatened to derail the adoption of web components, a story I wrote up in [A history of the HTML &lt;slot> element](/posts/2019/04-08-a-history-of-the-slot-element.html).
+I like to backpack in Washington State. I've hiked the Pacific Crest Trail across Washington, and have been section-hiking Washington's portion of the Pacific Northwest Trail. One day I was looking at maps of the smaller mountains between Seattle and the Cascades, and realized that I could probably stitch together a pretty good hiking route between my own house and the Pacific Crest Trail at Snoqualmie Pass. It was challenging (75 miles over three days, but the real killer proved to be 17,000+ feet of elevation gain) but ultimately exhilarating to walk out my front door and then step on the PCT a few days later. The Washington Trails Association, an organization I'm proud to support, wrote an [article about my hike](https://www.wta.org/news/magazine/features/trail-system-at-work) to highlight the value of an extensive trail network.
 
 ## Presterity
 
 <img src="/images/about/presterity.png" style="width: 64px">
 
 My disappointment with the 2016 U.S. presidential election let me to form Presterity.org, a collective effort to document the abuses of the Trump administration. A group of wonderful people joined this effort, and I was proud of what we were able to pull together in a short time. I gave an [interview on KUOW](https://kuow.org/stories/presterity-reference-desk-resistance/), my local NPR affiliate, about the project.
+
+## &lt;slot>
+
+For some years I participated in the WHATWG web apps working group, an experience that led me to appreciate the enormous work that goes on year after year to ensure that the web remains a dynamic place — but in a backward-compatible way. I'm proud of work I did to help Apple and Google resolve their disagreements on a fundamental point that had threatened to derail the adoption of web components, a story I wrote up in [A history of the HTML &lt;slot> element](/posts/2019/04-08-a-history-of-the-slot-element.html).
+
+## Hiking pole scale
+
+When I started long-distance hiking, I liked camping with gas stoves but was unnerved by an inability to accurately gauge how much fuel was left in them. This turned into a fun puzzle: how to measure the gas in a can using only the stuff a hiker already brings with them? It turned out to be possible to [Accurately measure the camping stove fuel in a gas can with a hiking pole](https://www.youtube.com/watch?v=2lAzEOaP_A0).
 
 ## Family journal
 
@@ -52,7 +60,9 @@ I co-founded [Cozi](https://en.wikipedia.org/wiki/Cozi) in 2005 with the idea of
 
 ## Puzzlehunts
 
-Friends and I fielded a team for the 1995 edition of [The Game](<https://en.wikipedia.org/wiki/The_Game_(treasure_hunt)>), an elaborate semi-annual 24-hour puzzlehunt. Winning conferred the dubious honor of being expected to host the next Game. We designed a puzzlehunt around a fictitious game show called "Hope2Die", and the experience of [designing the puzzles](/posts/2010/12-20-what-designing-a-user-interface-shares-with-creating-a-puzzle.html) was enjoyable. I was inspired later to create smaller-scale puzzlehunts for some of my children's birthday parties, and they were all immensely fun for me, my kids, and their friends. One standout was "Professor Pete’s School for Sensitive Youngsters", which combined whimsical humor with interesting puzzles and activities, all while teaching the kids that their bodies have many more than five senses.
+Friends and I fielded a team for the 1995 edition of [The Game](<https://en.wikipedia.org/wiki/The_Game_(treasure_hunt)>), an elaborate semi-annual 24-hour puzzlehunt. Winning conferred the dubious honor of being expected to host the next Game. We designed a puzzlehunt around a fictitious game show called "Hope2Die", and the experience of [designing the puzzles](/posts/2010/12-20-what-designing-a-user-interface-shares-with-creating-a-puzzle.html) was enjoyable. My favorite puzzle was probably "Hope2Die Aerobics", in which a group of players collectively synchronized their movements in order to generate the digits of a phone number. One player said, "I get that we were acting as components in a logic circuit, but what kind of sick mind _combines electrical engineering with aerobics?_"
+
+I was later to created smaller-scale puzzlehunts for some of my children's birthday parties, and they were all immensely fun for me, my kids, and their friends. One standout was "Professor Pete’s School for Sensitive Youngsters", which combined whimsical humor with interesting puzzles and activities, all while teaching the kids that their bodies have many more than five senses.
 
 ## Microsoft Money
 
