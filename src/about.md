@@ -42,6 +42,10 @@ For some years I participated in the WHATWG web apps working group, an experienc
 
 When I started long-distance hiking, I liked cooking with gas stoves but was unnerved by an inability to accurately gauge how much fuel was left in them. This makes for an interesting puzzle: how can you measure the gas in a can using only the stuff you already bring on a hike? It turns out to be possible to [Accurately measure the camping stove fuel in a gas can with a hiking pole](https://www.youtube.com/watch?v=2lAzEOaP_A0).
 
+## The Bead Tree
+
+When my kids were young I drove them to school in a carpool with another family's children. A discussion of how movies get made led to the idea: "Let's make a movie!". Over a series of subsequent get-togethers, I led the kids through various aspects of filmmaking, culminating in [The Bead Tree](https://www.youtube.com/watch?v=xErdOOQwr2c). I suggested we record the audio separately from the video, which resulted in me spending many nights editing the final result. I was particularly happy with how my eldest's piano piece pulled everything together.
+
 ## Family journal
 
 When our first child was born, my wife and I began jotting down little notes and stories that evolved into a family journal we've now maintained for many years. It's become a critical part of how I remember the events of our lives. Our journal site generates a monthly email newsletter, and each December I consolidate the year's journal stories into a holiday letter. Those things play important roles in keeping us connected with friends and family members. I encourage people to journal in any fashion they can manage — writing a few words down can make the difference between keeping a fond memory alive and letting it slip into oblivion.
