@@ -5,6 +5,7 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/main.css" />
     <link rel="me" href="https://fosstodon.org/@JanMiksovsky">
+    <link rel="me" href="https://github.com/JanMiksovsky">
   </head>
   <body>
     <header>
