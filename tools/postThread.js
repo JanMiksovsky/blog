@@ -1,8 +1,8 @@
-import { ExplorableGraph } from "@graphorigami/origami";
+import { GraphHelpers } from "@graphorigami/origami";
 import postStatus from "./postStatus.js";
 
 export default async function postThread(thread, threadOptions = {}) {
-  const plain = await ExplorableGraph.plain(thread);
+  const plain = await GraphHelpers.plain(thread);
 
   let replyId = null;
   const responses = [];

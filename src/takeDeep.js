@@ -1,8 +1,12 @@
-import { ExplorableGraph, InheritScopeTransform } from "@graphorigami/origami";
+import {
+  DictionaryHelpers,
+  GraphHelpers,
+  InheritScopeTransform,
+} from "@graphorigami/origami";
 import JsMapGraph from "./JsMapGraph.js";
 
 export default async function takeDeep(variant, count) {
-  const graph = await ExplorableGraph.from(variant);
+  const graph = await GraphHelpers.from(variant);
   const { map } = await traverse(graph, count);
   const result = new (InheritScopeTransform(JsMapGraph))(map);
   result.parent = this;
@@ -16,7 +20,7 @@ async function traverse(graph, count) {
       break;
     }
     let value = await graph.get(key);
-    if (ExplorableGraph.isExplorable(value)) {
+    if (DictionaryHelpers.isAsyncDictionary(value)) {
       const traversed = await traverse(value, count);
       value = traversed.map;
       count = traversed.count;

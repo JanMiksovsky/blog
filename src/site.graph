@@ -28,6 +28,8 @@ feed = @scope/extend(feed.yaml, { @input: @graph/valuesDeep(feedItems) })
 # Main site
 public = @graph/merge(client, {
 
+  foo.html = foo
+
   # Add an index page to the overall posts archive.
   posts = @graph/merge(years, {
     index.html = archivePage.ori()
