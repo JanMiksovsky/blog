@@ -2,22 +2,13 @@
   "name": "blog",
   "type": "module",
   "dependencies": {
-    "@graphorigami/origami": "github:GraphOrigami/origami#1a499c64"
+    "@graphorigami/origami": "https://gitpkg.now.sh/GraphOrigami/origami/packages/origami?bcab0790"
   },
   "devDependencies": {
     "rehype-stringify": "9.0.3",
     "remark-parse": "10.0.1",
     "remark-rehype": "10.1.0",
-    "unified": "10.1.2",
-    "graphviz-wasm": "3.0.0",
-    "highlight.js": "11.8.0",
-    "marked": "5.0.4",
-    "marked-gfm-heading-id": "3.0.4",
-    "marked-highlight": "2.0.1",
-    "marked-smartypants": "1.0.2",
-    "sharp": "0.32.1",
-    "watcher": "2.2.2",
-    "yaml": "2.3.1"
+    "unified": "10.1.2"
   },
   "scripts": {
     "build": "ori @copy src/site.graph/public, @files/dist",
