@@ -1,5 +1,5 @@
 <article>
-  <a class="quiet" href="{{ postUrl() }}">
+  <a class="quiet" href="{{ postUrl.js() }}">
     <h1 class="postHeader">{{ title }}</h1>
   </a>
   <p class="postDate">{{ formatDate.js(date) }}</p>
