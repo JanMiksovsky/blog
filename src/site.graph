@@ -1,5 +1,5 @@
 # Add slugs to the top-level `posts` folder.
-slugs = postSlugs(posts)
+slugs = postSlugs.js(posts)
 # slugs = mapKeys(posts, =postSlug(@key), { deep: true })
 
 # Convert posts from markdown to HTML.
@@ -19,10 +19,10 @@ years = @map/values(pages, =@graph/merge(@value, @scope/set({
 # The recent feed is the posts in reverse chronological order.
 # For the `recent` feed, we only want 10 posts.
 reversed = @graph/reverse(html, { deep: @true })
-recent = takeDeep(reversed, 10)
+recent = takeDeep.js(reversed, 10)
 
 # The feed items are the recent posts with just the necessary feed data.
-feedItems = @map/values(recent, feedItem, { deep: @true, extension: 'html→yaml' })
+feedItems = @map/values(recent, feedItem.js, { deep: @true, extension: 'html→yaml' })
 feed = @scope/extend(feed.yaml, { @input: @graph/valuesDeep(feedItems) })
 
 # Main site
