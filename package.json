@@ -2,7 +2,7 @@
   "name": "blog",
   "type": "module",
   "dependencies": {
-    "@graphorigami/origami": "https://gitpkg.now.sh/GraphOrigami/origami/packages/origami?81963384"
+    "@graphorigami/origami": "https://gitpkg.now.sh/GraphOrigami/origami/packages/origami?edf6a37a"
   },
   "devDependencies": {
     "rehype-stringify": "9.0.3",
