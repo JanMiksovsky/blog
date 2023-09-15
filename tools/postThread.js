@@ -1,8 +1,8 @@
-import { GraphHelpers } from "@graphorigami/origami";
+import { Graph } from "@graphorigami/origami";
 import postStatus from "./postStatus.js";
 
 export default async function postThread(thread, threadOptions = {}) {
-  const plain = await GraphHelpers.plain(thread);
+  const plain = await Graph.plain(thread);
 
   let replyId = null;
   const responses = [];

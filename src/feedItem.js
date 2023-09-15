@@ -1,8 +1,8 @@
-import { GraphHelpers } from "@graphorigami/origami";
+import { Graph } from "@graphorigami/origami";
 import path from "path";
 
 export default async function feedItem(item) {
-  const plain = await GraphHelpers.plain(item);
+  const plain = await Graph.plain(item);
   const { date, slug, title } = plain;
   const content_html = String(item);
 
