@@ -1,3 +1,5 @@
+// This gets called for the year keys too, but happily it returns the year
+// unchanged.
 export default function postSlug(value, filename) {
   if (filename === "index.md" || filename === "index.html") {
     // No slug for index page

@@ -1,11 +1,11 @@
 # Add slugs to the top-level `posts` folder.
 slugs = postSlugs.js(posts)
-# slugs = mapKeys(posts, =postSlug(@key), { deep: true })
+# slugs = @map/keys(posts, =postSlug.js(@key), { deep: @true })
 
 # Convert posts from markdown to HTML.
 html = @map/values(
   slugs
-  =@mdHtml(@value)
+  =@mdHtml(@body(@value))
   { deep: @true, extension: 'md→html', preferExistingValue: @true }
 )
 
@@ -43,8 +43,8 @@ public = @graph/merge(client, {
   index.html = index.ori()
 
   # Contact page
-  contact.html = page.ori(@mdHtml(contact.md))
-  about.html = page.ori(@mdHtml(about.md))
+  contact.html = page.ori(@mdHtml(@body(contact.md)))
+  about.html = page.ori(@mdHtml(@body(about.md)))
 
   feed.json = @json(feed)
   rss.xml = @rss(feed)

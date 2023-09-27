@@ -3,5 +3,5 @@
     <h1 class="postHeader">{{ title }}</h1>
   </a>
   <p class="postDate">{{ formatDate.js(date) }}</p>
-  {{ @body(@text) }}
+  {{ @input }}
 </article>
