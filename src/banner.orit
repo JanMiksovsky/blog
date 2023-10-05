@@ -4,7 +4,7 @@
   <a class="quiet" href="/posts/">Archive</a>
   {{ @if yearArea, =`
   •
-  <a class="quiet" href="/posts/{{yearArea}}/">{{yearArea}}</a>
+  <a class="quiet" href="/posts/{{yearArea}}/">{{ yearArea }}</a>
   `}}
 </span>
 <span>

@@ -1,7 +1,0 @@
----
-title: !ori year
----
-{{ page.ori =`
-  <h1 class="yearHeader">{{ year }}</h1>
-  {{ @map/values @graph/reverse(html(year)), =@if(@not(draft), post.ori(@value))  }}
-` }}

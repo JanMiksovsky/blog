@@ -1,4 +1,4 @@
 ---
 yearArea: !ori postYear.js(date)
 ---
-{{ page.ori(post.ori(@input)) }}
+{{ page.orit(post.orit(@input)) }}

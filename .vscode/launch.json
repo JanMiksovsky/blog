@@ -19,7 +19,7 @@
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/node_modules/@graphorigami/origami/src/cli/cli.js",
       "runtimeArgs": ["--preserve-symlinks"],
-      "args": ["@serve @watch src, =@debug(site.graph/public)"]
+      "args": ["@serve @watch src, =@debug(site.ori/public)"]
     }
   ]
 }
