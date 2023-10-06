@@ -6,7 +6,7 @@
   # Convert posts from markdown to HTML.
   html = @map/values(
     slugs
-    =@mdHtml(@value)
+    @mdHtml
     { deep: @true, extension: 'md→html', preferExistingValue: @true }
   )
 
@@ -17,7 +17,7 @@
   # Add an index page to the year folders in the virtual pages graph. The setScope
   # call captures the scope that includes the current year, ensuring the year.orit
   # template can see that `year` in scope when it is rendered.
-  years = @map/values(pages, =@graph/merge(@value, @scope/set({
+  years = @map/values(pages, =@graph/merge(_, @scope/set({
     index.html = yearPage.orit()
   })), { keyName: 'year' })
 
@@ -39,7 +39,7 @@
     })
 
     # Top-level index page
-    index.html = index.orit()
+    index.html = index.orit(recent)
 
     # Contact page
     contact.html = page.orit(@mdHtml(contact.md))

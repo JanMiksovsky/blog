@@ -1,7 +1,9 @@
+{{ =@if(@not(_/draft), `
 <article>
-  <a class="quiet" href="{{ postUrl.js() }}">
-    <h1 class="postHeader">{{ title }}</h1>
+  <a class="quiet" href="{{ postUrl.js(_) }}">
+    <h1 class="postHeader">{{ _/title }}</h1>
   </a>
-  <p class="postDate">{{ formatDate.js(date) }}</p>
-  {{ @input }}
+  <p class="postDate">{{ formatDate.js(_/date) }}</p>
+  {{ _ }}
 </article>
+`) }}

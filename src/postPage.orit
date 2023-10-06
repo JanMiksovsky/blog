@@ -1,4 +1,6 @@
----
-yearArea: !ori postYear.js(date)
----
-{{ page.orit(post.orit(@input)) }}
+{{ page.orit(
+  @document(
+    post.orit(_)
+    { title: _/title }
+  )
+) }}

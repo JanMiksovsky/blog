@@ -2,20 +2,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>{{ @input/title }}</title>
+    <title>{{ @or(_/title, "Jan Miksovsky’s Blog") }}</title>
     <link rel="stylesheet" href="/main.css" />
     <link rel="me" href="https://fosstodon.org/@JanMiksovsky">
     <link rel="me" href="https://github.com/JanMiksovsky">
   </head>
   <body>
     <header>
-      {{ banner.orit() }}
+      {{ banner.orit(_) }}
     </header>
     <main>
-      {{ @input }}
+      {{ _ }}
     </main>
     <footer>
-      {{ banner.orit() }}
+      {{ banner.orit(_) }}
     </footer>
   </body>
 </html>

@@ -1,10 +1,13 @@
+---
+yearArea: !ori postYear.js(_/date)
+---
 <span>
   <a class="quiet" href="/"><span class="optional">Jan Miksovsky’s </span>Blog</a>
   •
   <a class="quiet" href="/posts/">Archive</a>
   {{ @if yearArea, =`
   •
-  <a class="quiet" href="/posts/{{yearArea}}/">{{ yearArea }}</a>
+  <a class="quiet" href="/posts/{{ yearArea }}/">{{ yearArea }}</a>
   `}}
 </span>
 <span>
