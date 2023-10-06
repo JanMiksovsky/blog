@@ -28,7 +28,7 @@
 
   # The feed items are the recent posts with just the necessary feed data.
   feedItems = @map/values(recent, feedItem.js, { deep: @true, extension: 'html→yaml' })
-  feed = @scope/extend(feed.yaml, { @input: @graph/valuesDeep(feedItems) })
+  feed = @scope/extend(feed.yaml, { _: @graph/valuesDeep(feedItems) })
 
   # Main site
   public = @graph/merge(client, {

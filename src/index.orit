@@ -1,20 +1,8 @@
-{{ page.orit(
-  `
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="{{ title }}"
-      href="rss.xml"
-    />
-    <link
-      rel="alternate"
-      type="application/json"
-      title="{{ title }}"
-      href="feed.json"
-    />
-    {{ postList.orit(_) }}
-    <p style="margin-top: 4em;">
-      <a href="posts/">Older posts</a>
-    </p>
-  `
-) }}
+{{ page.orit(`
+  <link rel="alternate" type="application/rss+xml" title="{{ title }}" href="rss.xml" />
+  <link rel="alternate" type="application/json" title="{{ title }}" href="feed.json" />
+  {{ postList.orit(_) }}
+  <p style="margin-top: 4em;">
+    <a href="posts/">Older posts</a>
+  </p>
+`) }}

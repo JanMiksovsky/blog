@@ -1,9 +1,4 @@
-{{ page.orit(
-  @document(
-    `
-      <h1 class="yearHeader">{{ year }}</h1>
-      {{ postList.orit(@graph/reverse(html(year))) }}
-    `
-    { title: year }
-  )
-) }}
+{{ page.orit(`
+  <h1 class="yearHeader">{{ year }}</h1>
+  {{ postList.orit(@graph/reverse(html(year))) }}
+`) }}

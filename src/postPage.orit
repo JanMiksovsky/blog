@@ -1,6 +1,6 @@
 {{ page.orit(
   @document(
     post.orit(_)
-    { title: _/title }
+    { title: _/title, year }
   )
 ) }}
