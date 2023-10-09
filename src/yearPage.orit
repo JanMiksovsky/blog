@@ -1,4 +1,7 @@
-{{ page.orit(`
+{{ page.orit(
+  @document(`
   <h1 class="yearHeader">{{ _ }}</h1>
   {{ formattedPosts(_) }}
-`) }}
+`
+  { title: @key }
+)) }}

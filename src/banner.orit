@@ -1,11 +1,14 @@
 <span>
   <a class="quiet" href="/"><span class="optional">Jan Miksovsky’s </span>Blog</a>
-  • <a class="quiet" href="/posts/">Archive</a>
+  •
+  <a class="quiet" href="/posts/">Archive</a>
   {{ @if _/year, =`
-    • <a class="quiet" href="/posts/{{ _/year }}/">{{ _/year }}</a>
+  •
+  <a class="quiet" href="/posts/{{ _/year }}/">{{ _/year }}</a>
   `}}
 </span>
 <span>
   <a class="quiet" href="/about.html">About</a>
-  • <a class="quiet" href="/contact.html">Contact</a>
+  •
+  <a class="quiet" href="/contact.html">Contact</a>
 </span>

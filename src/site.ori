@@ -33,7 +33,7 @@
     })
 
     # Top-level index page
-    index.html = index.orit(formattedPosts)
+    index.html = index.orit(recent)
 
     # Contact page
     contact.html = page.orit(@mdHtml(contact.md))
