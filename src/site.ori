@@ -1,33 +1,27 @@
 {
-  # Add slugs to the top-level `posts` folder.
-  slugs = postSlugs.js(posts)
-  # slugs = @map/keys(posts, =postSlug.js(@key), { deep: @true })
+  bodies = @map/values(posts, @mdHtml, { deep: @true, extension: "md→html" })
 
-  # Convert posts from markdown to HTML.
-  html = @map/values(
-    slugs
-    @mdHtml
-    { deep: @true, extension: 'md→html', preferExistingValue: @true }
-  )
+  data = @map/values(bodies, =postData.js(_, @key), { deep: @true })
+
+  slugKeys = slugKeys.js(data)
+
+  reversed = @graph/reverse(slugKeys, { deep: @true })
+
+  formattedPosts = @map/values(reversed, post.orit, { deep: @true })
 
   # Apply the post page template to the posts.
-  pages = @map/values(html, postPage.orit, { deep: @true })
+  postPages = @map/values(formattedPosts, page.orit, { deep: @true })
 
-  # Add an index page to the year folders in the virtual pages graph. The setScope
-  # call captures the scope that includes the current year, ensuring the year.orit
-  # template can see that `year` in scope when it is rendered.
-  years = @map/values(pages, =@graph/merge(_, @scope/set({
-    index.html = yearPage.orit(year)
-  })), { keyName: 'year' })
+  # Add an index page to the year folders in the post pages graph.
+  years = @map/values(postPages, =@graph/merge(_, @scope/set({
+    index.html = yearPage.orit(@key)
+  })))
 
-  # The recent feed is the posts in reverse chronological order.
-  # For the `recent` feed, we only want 10 posts.
-  reversed = @graph/reverse(html, { deep: @true })
-  recent = takeDeep.js(reversed, 10)
+  # The recent feed is the 10 most recent posts.
+  recent = @graph/valuesDeep(takeDeep.js(reversed, 10))
   
   # The feed items are the recent posts with just the necessary feed data.
-  feedItems = @map/values(recent, feedItem.js, { deep: @true, extension: 'html→yaml' })
-  feedItemsFlat = @graph/valuesDeep(feedItems)
+  feedItems = @map/values(recent, feedItem.js, { deep: @true })
   feed = @scope/set(feed.yaml)
 
   # Main site
@@ -39,7 +33,7 @@
     })
 
     # Top-level index page
-    index.html = index.orit(@graph/valuesDeep(recent))
+    index.html = index.orit(formattedPosts)
 
     # Contact page
     contact.html = page.orit(@mdHtml(contact.md))

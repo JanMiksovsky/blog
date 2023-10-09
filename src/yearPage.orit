@@ -1,4 +1,4 @@
 {{ page.orit(`
-  <h1 class="yearHeader">{{ year }}</h1>
-  {{ postList.orit(@graph/reverse(html(year))) }}
+  <h1 class="yearHeader">{{ _ }}</h1>
+  {{ formattedPosts(_) }}
 `) }}
