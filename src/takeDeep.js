@@ -1,22 +1,22 @@
-import { Graph, InheritScopeTransform } from "@graphorigami/origami";
-import JsMapGraph from "./JsMapGraph.js";
+import { InheritScopeTransform, Tree } from "@graphorigami/origami";
+import JsMapTree from "./JsMapTree.js";
 
-export default async function takeDeep(variant, count) {
-  const graph = await Graph.from(variant);
-  const { map } = await traverse(graph, count);
-  const result = new (InheritScopeTransform(JsMapGraph))(map);
+export default async function takeDeep(treelike, count) {
+  const tree = await Tree.from(treelike);
+  const { map } = await traverse(tree, count);
+  const result = new (InheritScopeTransform(JsMapTree))(map);
   result.parent = this;
   return result;
 }
 
-async function traverse(graph, count) {
+async function traverse(tree, count) {
   const map = new Map();
-  for (const key of await graph.keys()) {
+  for (const key of await tree.keys()) {
     if (count === 0) {
       break;
     }
-    let value = await graph.get(key);
-    if (Graph.isAsyncDictionary(value)) {
+    let value = await tree.get(key);
+    if (Tree.isAsyncDictionary(value)) {
       const traversed = await traverse(value, count);
       value = traversed.map;
       count = traversed.count;

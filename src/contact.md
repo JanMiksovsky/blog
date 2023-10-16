@@ -4,9 +4,6 @@ title: Contact Jan Miksovsky
 
 # Get in touch! 😃
 
-🐘 Follow me on Mastodon at [@JanMiksovsky](https://fosstodon.org/@JanMiksovsky). I'm always happy to receive direct messages.
+🐘 Follow me on Mastodon at [@JanMiksovsky](https://fosstodon.org/@JanMiksovsky) or send a direct message.
 
-💻 GitHub at [JanMiksovsky](https://github.com/JanMiksovsky)
-
-✉️ Email on Graph Origami: &lt;_my first name_>@graphorigami.org<br>
-✉️ Email on Elix and web components: &lt;_my first name_>@component.kitchen
+✉️ Email: &lt;_my first name_>@graphorigami.org<br>

@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>{{ @or(_/title, "Jan Miksovsky’s Blog") }}</title>
+    <title>{{ _/title }}</title>
     <link rel="stylesheet" href="/main.css" />
     <link rel="me" href="https://fosstodon.org/@JanMiksovsky">
     <link rel="me" href="https://github.com/JanMiksovsky">

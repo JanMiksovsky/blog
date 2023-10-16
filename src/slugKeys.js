@@ -1,4 +1,4 @@
-import { Graph, MapInnerKeysGraph } from "@graphorigami/origami";
+import { MapInnerKeysTree, Tree } from "@graphorigami/origami";
 
 export default function (graphable) {
   function getSlug(value, outerKey) {
@@ -6,9 +6,9 @@ export default function (graphable) {
     if (outerKey.length === 4) {
       return outerKey;
     }
-    return Graph.traversePath(value, "slug");
+    return Tree.traversePath(value, "slug");
   }
-  return new MapInnerKeysGraph(graphable, getSlug, {
+  return new MapInnerKeysTree(graphable, getSlug, {
     deep: true,
   });
 }

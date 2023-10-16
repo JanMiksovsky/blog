@@ -5,30 +5,30 @@
 
   slugKeys = slugKeys.js(data)
 
-  reversed = @graph/reverse(slugKeys, { deep: @true })
+  reversed = @tree/reverse(slugKeys, { deep: @true })
 
   formattedPosts = @map/values(reversed, post.orit, { deep: @true })
 
   # Apply the post page template to the posts.
   postPages = @map/values(formattedPosts, page.orit, { deep: @true })
 
-  # Add an index page to the year folders in the post pages graph.
-  years = @map/values(postPages, =@graph/merge(_, @scope/set({
+  # Add an index page to the year folders in the post pages tree.
+  years = @map/values(postPages, =@tree/merge(_, @scope/set({
     index.html = yearPage.orit(@key)
   })))
 
   # The recent feed is the 10 most recent posts.
-  recent = @graph/valuesDeep(takeDeep.js(reversed, 10))
+  recent = @tree/valuesDeep(takeDeep.js(reversed, 10))
   
   # The feed items are the recent posts with just the necessary feed data.
   feedItems = @map/values(recent, feedItem.js, { deep: @true })
   feed = @scope/set(feed.yaml)
 
   # Main site
-  public = @graph/merge(client, {
+  public = @tree/merge(client, {
 
     # Add an index page to the overall posts archive.
-    posts = @graph/merge(years, {
+    posts = @tree/merge(years, {
       index.html = archivePage.orit()
     })
 
@@ -42,6 +42,6 @@
     feed.json = @json(feed)
     rss.xml = @rss(feed)
 
-    sitemap.xml = @graph/sitemap(public, "https://jan.miksovsky.com")
+    sitemap.xml = @tree/sitemap(public, "https://jan.miksovsky.com")
   })
 }

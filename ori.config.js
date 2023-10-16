@@ -1,18 +1,18 @@
 import {
-  CommandModulesTransform,
-  FilesGraph,
-  ImportModulesMixin,
-  MergeGraph,
   builtins,
+  CommandModulesTransform,
+  FileTree,
+  ImportModulesMixin,
+  MergeTree,
 } from "@graphorigami/origami";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 const toolsPath = path.resolve(dirname, "tools");
-const tools = new (CommandModulesTransform(ImportModulesMixin(FilesGraph)))(
+const tools = new (CommandModulesTransform(ImportModulesMixin(FileTree)))(
   toolsPath
 );
 
-const config = new MergeGraph(builtins, tools);
+const config = new MergeTree(builtins, tools);
 export default config;

@@ -1,4 +1,4 @@
-export default class JsMapGraph {
+export default class JsMapTree {
   constructor(map) {
     this.map = map;
   }

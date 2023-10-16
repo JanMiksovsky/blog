@@ -1,8 +1,13 @@
-{{ page.orit(`
-  <link rel="alternate" type="application/rss+xml" title="{{ title }}" href="rss.xml" />
-  <link rel="alternate" type="application/json" title="{{ title }}" href="feed.json" />
-  {{ @map/values(_, post.orit) }}
-  <p style="margin-top: 4em;">
-    <a href="posts/">Older posts</a>
-  </p>
-`) }}
+{{ page.orit(
+  @document(
+    `
+      <link rel="alternate" type="application/rss+xml" title="{{ title }}" href="rss.xml" />
+      <link rel="alternate" type="application/json" title="{{ title }}" href="feed.json" />
+      {{ @map/values(_, post.orit) }}
+      <p style="margin-top: 4em;">
+        <a href="posts/">Older posts</a>
+      </p>
+    `
+    { title: "Jan Miksovsky’s Blog" }
+  )
+) }}
