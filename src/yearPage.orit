@@ -1,7 +1,7 @@
 {{ page.orit(
   @document(`
-  <h1 class="yearHeader">{{ _ }}</h1>
-  {{ formattedPosts(_) }}
+  <h1 class="yearHeader">{{ _/title }}</h1>
+  {{ _/posts }}
 `
-  { title: @key }
+  { title: _/title }
 )) }}

@@ -3,9 +3,9 @@
     `
       <h1>Posts by year</h1>
       <ul class="yearList">
-      {{ @map/values reversed, =`
+      {{ @map/values _, =`
         <li class="yearItem">
-          <a href="{{ @key }}/">{{ @key }}</a>
+          <a href="{{ _ }}/">{{ _ }}</a>
         </li>
       `}}
       </ul>

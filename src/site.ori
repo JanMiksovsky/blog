@@ -14,7 +14,7 @@
 
   # Add an index page to the year folders in the post pages tree.
   years = @map/values(postPages, =@tree/merge(_, @scope/set({
-    index.html = yearPage.orit(@key)
+    index.html = yearPage.orit({ posts: formattedPosts(@key), title: @key })
   })))
 
   # The recent feed is the 10 most recent posts.
@@ -22,14 +22,14 @@
   
   # The feed items are the recent posts with just the necessary feed data.
   feedItems = @map/values(recent, feedItem.js, { deep: @true })
-  feed = @scope/set(feed.yaml)
+  feed = @scope/set(feed.yaml, { _: feedItems }, @scope/get())
 
   # Main site
   public = @tree/merge(client, {
 
     # Add an index page to the overall posts archive.
     posts = @tree/merge(years, {
-      index.html = archivePage.orit()
+      index.html = archivePage.orit(@tree/keys(reversed))
     })
 
     # Top-level index page
