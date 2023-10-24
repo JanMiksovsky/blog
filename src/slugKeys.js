@@ -1,4 +1,4 @@
-import { MapInnerKeysTree, Tree } from "@graphorigami/origami";
+import { MapInnerKeysTree, Tree, treeWithScope } from "@graphorigami/origami";
 
 export default function (graphable) {
   function getSlug(value, outerKey) {
@@ -8,7 +8,12 @@ export default function (graphable) {
     }
     return Tree.traversePath(value, "slug");
   }
-  return new MapInnerKeysTree(graphable, getSlug, {
+
+  let mappedTree = new MapInnerKeysTree(graphable, getSlug, {
     deep: true,
   });
+  if (this) {
+    mappedTree = treeWithScope(mappedTree, this);
+  }
+  return mappedTree;
 }
