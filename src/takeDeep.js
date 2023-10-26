@@ -1,11 +1,12 @@
-import { InheritScopeMixin, Tree } from "@graphorigami/origami";
-import JsMapTree from "./JsMapTree.js";
+import { MapTree, Tree, treeWithScope } from "@graphorigami/origami";
 
 export default async function takeDeep(treelike, count) {
   const tree = await Tree.from(treelike);
   const { map } = await traverse(tree, count);
-  const result = new (InheritScopeMixin(JsMapTree))(map);
-  result.parent = this;
+  let result = new MapTree(map);
+  if (this) {
+    result = treeWithScope(result, this);
+  }
   return result;
 }
 
@@ -16,7 +17,7 @@ async function traverse(tree, count) {
       break;
     }
     let value = await tree.get(key);
-    if (Tree.isAsyncDictionary(value)) {
+    if (Tree.isAsyncTree(value)) {
       const traversed = await traverse(value, count);
       value = traversed.map;
       count = traversed.count;
