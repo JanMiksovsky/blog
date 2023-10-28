@@ -1,4 +1,4 @@
-import { Tree } from "@graphorigami/core";
+import { Tree } from "@graphorigami/async-tree";
 
 export default async function postUrl() {
   const dateText = await Tree.traversePath(this, "_/date");

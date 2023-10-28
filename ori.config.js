@@ -1,8 +1,8 @@
+import { FileTree } from "@graphorigami/async-tree";
+import { ImportModulesMixin } from "@graphorigami/language";
 import {
   builtins,
   CommandModulesTransform,
-  FileTree,
-  ImportModulesMixin,
   MergeTree,
 } from "@graphorigami/origami";
 import path from "node:path";

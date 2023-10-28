@@ -1,11 +1,12 @@
-import { MapTree, Tree, treeWithScope } from "@graphorigami/origami";
+import { MapTree, Tree } from "@graphorigami/async-tree";
+import { Scope } from "@graphorigami/language";
 
 export default async function takeDeep(treelike, count) {
   const tree = await Tree.from(treelike);
   const { map } = await traverse(tree, count);
   let result = new MapTree(map);
   if (this) {
-    result = treeWithScope(result, this);
+    result = Scope.treeWithScope(result, this);
   }
   return result;
 }
