@@ -1,27 +1,28 @@
 {
-  bodies = @map/values(posts, @mdHtml, { deep: @true, extension: "md→html" })
+  bodies = @tree/map({ deep: @true, extensions: "md→html", valueFn: @mdHtml })(posts)
 
-  data = @map/values(bodies, =postData.js(_, @key), { deep: @true })
+  data = @tree/map({ deep: @true, valueFn: =postData.js(_, @key) })(bodies)
 
-  slugKeys = slugKeys.js(data)
+  slugKeys = @tree/map({ deep: @true, keyFn: =@or(_/slug, @key) })(data)
 
   reversed = @tree/reverse(slugKeys, { deep: @true })
 
-  formattedPosts = @map/values(reversed, post.orit, { deep: @true })
+  formattedPosts = @tree/map({ deep: @true, valueFn: post.orit })(reversed)
 
-  # Apply the post page template to the posts.
-  postPages = @map/values(formattedPosts, page.orit, { deep: @true })
+  postPages = @tree/map({ deep: @true, valueFn: page.orit })(formattedPosts)
 
-  # Add an index page to the year folders in the post pages tree.
-  years = @map/values(postPages, =@tree/merge(_, @scope/set({
-    index.html = yearPage.orit({ posts: formattedPosts(@key), title: @key })
-  })))
+  # Add an index page to each year folder.
+  years = @tree/map(
+    =@tree/merge(_, @scope/set({
+      index.html = yearPage.orit({ posts: formattedPosts(@key), title: @key })
+    }))
+  )(postPages)
 
   # The recent feed is the 10 most recent posts.
   recent = @tree/valuesDeep(takeDeep.js(reversed, 10))
   
   # The feed items are the recent posts with just the necessary feed data.
-  feedItems = @map/values(recent, feedItem.js, { deep: @true })
+  feedItems = @tree/map({ deep: @true, valueFn: feedItem.js })(recent)
   feed = @scope/set(feed.yaml, { _: feedItems }, @scope/get())
 
   # Main site
