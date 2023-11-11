@@ -1,10 +1,6 @@
-import { FileTree } from "@graphorigami/async-tree";
+import { FileTree, merge } from "@graphorigami/async-tree";
 import { ImportModulesMixin } from "@graphorigami/language";
-import {
-  builtins,
-  CommandModulesTransform,
-  MergeTree,
-} from "@graphorigami/origami";
+import { builtins, CommandModulesTransform } from "@graphorigami/origami";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -14,5 +10,5 @@ const tools = new (CommandModulesTransform(ImportModulesMixin(FileTree)))(
   toolsPath
 );
 
-const config = new MergeTree(builtins, tools);
+const config = merge(builtins, tools);
 export default config;

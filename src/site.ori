@@ -1,15 +1,15 @@
 {
-  bodies = @tree/map({ deep: @true, extensions: "md→html", valueFn: @mdHtml })(posts)
+  bodies = @tree/map({ deep: @true, extensions: "md→html", source: posts, valueMap: @mdHtml })
 
-  data = @tree/map({ deep: @true, valueFn: =postData.js(_, @key) })(bodies)
+  data = @tree/map({ deep: @true, source: bodies, valueMap: =postData.js(_, @key) })
 
-  slugKeys = @tree/map({ deep: @true, keyFn: =@or(_/slug, @key) })(data)
+  slugKeys = @tree/map({ deep: @true, keyMap: =_/slug, source: data })
 
   reversed = @tree/reverse(slugKeys, { deep: @true })
 
-  formattedPosts = @tree/map({ deep: @true, valueFn: post.orit })(reversed)
+  formattedPosts = @tree/map({ deep: @true, source: reversed, valueMap: post.orit })
 
-  postPages = @tree/map({ deep: @true, valueFn: page.orit })(formattedPosts)
+  postPages = @tree/map({ deep: @true, source: formattedPosts, valueMap: page.orit })
 
   # Add an index page to each year folder.
   years = @tree/map(
@@ -22,7 +22,7 @@
   recent = @tree/valuesDeep(takeDeep.js(reversed, 10))
   
   # The feed items are the recent posts with just the necessary feed data.
-  feedItems = @tree/map({ deep: @true, valueFn: feedItem.js })(recent)
+  feedItems = @tree/map({ deep: @true, source: recent, valueMap: feedItem.js })
   feed = @scope/set(feed.yaml, { _: feedItems }, @scope/get())
 
   # Main site
@@ -36,9 +36,9 @@
     # Top-level index page
     index.html = index.orit(recent)
 
-    # Contact page
-    contact.html = page.orit(@mdHtml(contact.md))
+    # About Us and Contact pages
     about.html = page.orit(@mdHtml(about.md))
+    contact.html = page.orit(@mdHtml(contact.md))
 
     feed.json = @json(feed)
     rss.xml = @rss(feed)
