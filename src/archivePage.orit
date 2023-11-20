@@ -3,11 +3,11 @@
     `
       <h1>Posts by year</h1>
       <ul class="yearList">
-      {{ @tree/map({ source: _, valueMap: =`
+      {{ @tree/map(_, =`
         <li class="yearItem">
           <a href="{{ _ }}/">{{ _ }}</a>
         </li>
-      `}) }}
+      `) }}
       </ul>
     `
     { title: "Posts by year" }
