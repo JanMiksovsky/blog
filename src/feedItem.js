@@ -1,6 +1,7 @@
 export default async function feedItem(document) {
-  const { date, path, title } = document.data;
-  const content_html = String(document);
+  const { date, path, title } = document;
+  // const content_html = String(document);
+  const content_html = document["@text"];
 
   // Date will not have time zone; shift to Pacific time.
   const date_published = new Date(Date.parse(`${date} PST`));

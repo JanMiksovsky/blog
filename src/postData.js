@@ -1,26 +1,18 @@
-import { TextDocument } from "@graphorigami/origami";
-
 /**
  * Given the basic set of information in a post document, return a new document
  * with additional information.
  */
 export default async function postData(document, filename) {
-  const data = await document.unpack();
-
   const slug = postSlug(filename);
-  const year = postYear(data.date);
+  const year = postYear(document.date);
   const path = `/posts/${year}/${slug}`;
-
-  const expanded = Object.assign(
-    {
-      formattedDate: formatDate(data.date),
-      path,
-      slug,
-      year,
-    },
-    data
-  );
-  return new TextDocument(String(document), expanded, document.parent);
+  const augmented = Object.create(document);
+  return Object.assign(augmented, {
+    formattedDate: formatDate(document.date),
+    path,
+    slug,
+    year,
+  });
 }
 
 function formatDate(dateText) {

@@ -5,4 +5,4 @@ title: Jan Miksovsky’s blog
 description: Writings on the craft of user interface design and development
 feed_url: https://jan.miksovsky.com/feed.json
 home_page_url: https://jan.miksovsky.com
-items: !ori _
+items: !ori site.ori/feedItems

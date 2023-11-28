@@ -12,7 +12,7 @@
       {{ banner.orit(_) }}
     </header>
     <main>
-      {{ _ }}
+      {{ _/@text }}
     </main>
     <footer>
       {{ banner.orit(_) }}

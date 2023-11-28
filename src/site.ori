@@ -1,7 +1,7 @@
 {
   bodies = @tree/map(posts, { deep: @true, extensions: "md→html", valueMap: @mdHtml })
 
-  data = @tree/map(bodies, { deep: @true, valueMap: =postData.js(_, @key) })
+  data = @tree/map(bodies, { deep: @true, valueMap: postData.js })
 
   slugKeys = @tree/map(data, { deep: @true, keyMap: =_/slug })
 
@@ -23,8 +23,11 @@
   recent = @tree/valuesDeep(takeDeep.js(reversed, 10))
   
   # The feed items are the recent posts with just the necessary feed data.
-  feedItems = @tree/map(recent, { deep: @true, valueMap: feedItem.js })
-  feed = @scope/set(feed.yaml, { _: feedItems }, @scope/get())
+  # HACK: Shouldn't need to apply @tree/plain, something above is turning
+  # document objects into trees.
+  feedItems = @tree/map(recent, =feedItem.js(@tree/plain(_)))
+  # Evaluate feed.yaml, which will read feedItems above.
+  feed = feed.yaml/
 
   # Main site
   public = @tree/merge(client, {

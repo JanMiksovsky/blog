@@ -4,6 +4,6 @@
     <h1 class="postHeader">{{ _/title }}</h1>
   </a>
   <p class="postDate">{{ _/formattedDate }}</p>
-  {{ _ }}
+  {{ _/@text }}
 </article>
 `) }}
