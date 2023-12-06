@@ -1,18 +1,18 @@
 {
-  bodies = @tree/map(posts, { deep: @true, extensions: "md→html", valueMap: @mdHtml })
+  bodies = @map(posts, { deep: @true, extensions: "md→html", valueMap: @mdHtml })
 
-  data = @tree/map(bodies, { deep: @true, valueMap: postData.js })
+  data = @map(bodies, { deep: @true, valueMap: postData.js })
 
-  slugKeys = @tree/map(data, { deep: @true, keyMap: =_/slug })
+  slugKeys = @map(data, { deep: @true, keyMap: =_/slug })
 
   reversed = @tree/reverse(slugKeys, { deep: @true })
 
-  formattedPosts = @tree/map(reversed, { deep: @true, valueMap: post.orit })
+  formattedPosts = @map(reversed, { deep: @true, valueMap: post.orit })
 
-  postPages = @tree/map(formattedPosts, { deep: @true, valueMap: page.orit })
+  postPages = @map(formattedPosts, { deep: @true, valueMap: page.orit })
 
   # Add an index page to each year folder.
-  years = @tree/map(
+  years = @map(
     postPages,
     =@tree/merge(_, @scope/set({
       index.html = yearPage.orit({ posts: formattedPosts(@key), title: @key })
@@ -25,7 +25,7 @@
   # The feed items are the recent posts with just the necessary feed data.
   # HACK: Shouldn't need to apply @tree/plain, something above is turning
   # document objects into trees.
-  feedItems = @tree/map(recent, =feedItem.js(@tree/plain(_)))
+  feedItems = @map(recent, =feedItem.js(@tree/plain(_)))
   # Evaluate feed.yaml, which will read feedItems above.
   feed = feed.yaml/
 

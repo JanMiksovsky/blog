@@ -1,4 +1,4 @@
-import { extractFrontMatter } from "@graphorigami/origami";
+import { extractFrontMatter } from "@weborigami/origami";
 import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";

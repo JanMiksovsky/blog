@@ -1,4 +1,4 @@
-import { Graph } from "@graphorigami/origami";
+import { Graph } from "@weborigami/origami";
 import postStatus from "./postStatus.js";
 
 export default async function postThread(thread, threadOptions = {}) {

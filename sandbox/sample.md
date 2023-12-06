@@ -48,7 +48,7 @@ $ ori serve https://gist.githubusercontent.com/JanMiksovsky/0d41ea862f2d08cbd2f6
 ```
 
 ```console
-$ npx @graphorigami/origami serve https://gist.githubusercontent.com/JanMiksovsky/0d41ea862f2d08cbd2f6fcd805683511/raw/46502f5e3cb5b129627f057ca493462bde9f7c23/site.yaml
+$ npx @weborigami/origami serve https://gist.githubusercontent.com/JanMiksovsky/0d41ea862f2d08cbd2f6fcd805683511/raw/46502f5e3cb5b129627f057ca493462bde9f7c23/site.yaml
 ```
 
 This might be interesting, for example, to share multi-file repro cases via any means that lets you share a file. You can serve the site out of the repro case file directly, or unpack it to local files:

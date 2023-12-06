@@ -1,4 +1,4 @@
-import { Graph } from "@graphorigami/origami";
+import { Graph } from "@weborigami/origami";
 
 export default function leaves(graph) {
   return {

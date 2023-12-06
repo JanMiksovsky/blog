@@ -47,7 +47,7 @@
 
       </code></pre>
     - >-
-      <pre><code class="language-console">$ npx @graphorigami/origami serve
+      <pre><code class="language-console">$ npx @weborigami/origami serve
       https://gist.githubusercontent.com/JanMiksovsky/0d41ea862f2d08cbd2f6fcd805683511/raw/46502f5e3cb5b129627f057ca493462bde9f7c23/site.yaml
 
       </code></pre>

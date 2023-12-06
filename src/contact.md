@@ -6,4 +6,4 @@ title: Contact Jan Miksovsky
 
 🐘 Follow me on Mastodon at [@JanMiksovsky](https://fosstodon.org/@JanMiksovsky) or send a direct message.
 
-✉️ Email: &lt;_my first name_>@graphorigami.org<br>
+✉️ Email: &lt;_my first name_>@weborigami.org<br>

@@ -17,7 +17,7 @@
       "request": "launch",
       "name": "serve",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/node_modules/@graphorigami/origami/src/cli/cli.js",
+      "program": "${workspaceFolder}/node_modules/@weborigami/origami/src/cli/cli.js",
       "runtimeArgs": ["--preserve-symlinks"],
       "args": ["@serve @watch src, =@debug(site.ori/public)"]
     }
