@@ -9,7 +9,7 @@
 
   formattedPosts = @map(reversed, { deep: @true, valueMap: post.orit })
 
-  postPages = @map(formattedPosts, { deep: @true, valueMap: page.orit })
+  postPages = @map(formattedPosts, { deep: @true, valueMap: postPage.orit })
 
   # Add an index page to each year folder.
   years = @map(
