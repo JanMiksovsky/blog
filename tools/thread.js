@@ -1,15 +1,12 @@
-import { extractFrontMatter } from "@weborigami/origami";
 import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 
-export default async function thread(markdownBuffer) {
-  const markdown = String(markdownBuffer);
-  const frontMatter = extractFrontMatter(markdown);
-  const body = frontMatter?.bodyText ?? markdown;
-
-  const ast = await unified().use(remarkParse).parse(body);
+export default async function thread(buffer) {
+  const document = await buffer.unpack();
+  const markdown = document["@text"];
+  const ast = await unified().use(remarkParse).parse(markdown);
   const posts = [];
   let currentPost = null;
   for (const node of ast.children) {
