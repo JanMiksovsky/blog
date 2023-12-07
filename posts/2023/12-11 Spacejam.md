@@ -48,7 +48,7 @@ Poring over it, I think the original Space Jam site is a remarkable artifact.
 
 Kudos to the [people behind the site](https://www.spacejam.com/1996/cmp/pressbox/credits.html): executive producer Donald Buckley, producer Dara Kobovy-Weiss, designers Jen Braun Davies and Andrew Stachler, and writer/coder Michael Tritter. And kudos to Warner Bros. for keeping the site up!
 
-If you want to inspect the site yourself, you can crawl and copy it using the following command (requires Node to be installed but no other pre-installation):
+If you want to inspect the site yourself (or one of your own sites), you can crawl and copy it using the following command (requires Node to be installed but no other pre-installation):
 
 ```
 npx @weborigami/origami "@copy @crawl(tree://www.spacejam.com/1996/), @files/spacejam"
@@ -57,5 +57,11 @@ npx @weborigami/origami "@copy @crawl(tree://www.spacejam.com/1996/), @files/spa
 Origami’s [crawl](https://weborigami.org/language/@crawl.html) command doesn’t throttle requests, and doesn’t try to recover dropped files, so it may not copy everything. Once the site is copied, you can serve it with whatever server you like, or:
 
 ```
-npx @weborigami/origami @serve spacejam
+npx @weborigami/origami @serve @debug spacejam
+```
+
+The `@debug` option gives you the ability to produce interactive maps like the one above from the served site. In the browser, go to any local URL and add `/!@svg` to the end of it, e.g.:
+
+```
+http://localhost:5000/cmp/jamcentral/!@svg
 ```
