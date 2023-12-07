@@ -6,11 +6,11 @@ title: About
 
 Here are some of the personal and professional projects I've most enjoyed — or am proudest of — in rough reverse-chronological order:
 
-## Graph Origami
+## Web Origami
 
-<img src="/images/about/graphOrigami.png" style="width: 64px">
+<img src="/images/about/webOrigami.png" style="width: 64px">
 
-I'm quite happy with the progression of my current project, [Graph Origami](https://graphorigami.org), a conceptual framework and set of tools for creating content. I'm specifically interested in helping people create websites and other artifacts without having to depend on large corporate platforms and the costs and restrictions those impose. Graph Origami gets a great deal of mileage from a very small set of core ideas, and I look forward to refining and promoting those.
+I'm quite happy with the progression of my current project, [Web Origami](https://weborigami.org), a conceptual framework and set of tools for creating content. I'm specifically interested in helping people create websites and other artifacts without having to depend on large corporate platforms and the costs and restrictions those impose. Graph Origami gets a great deal of mileage from a very small set of core ideas, and I look forward to refining and promoting those.
 
 ## Emojese
 
