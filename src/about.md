@@ -42,6 +42,10 @@ For some years I participated in the WHATWG web apps working group, an experienc
 
 When I started long-distance hiking, I liked cooking with gas stoves but was unnerved by an inability to accurately gauge how much fuel was left in them. This makes for an interesting puzzle: how can you measure the gas in a can using only the stuff you already bring on a hike? It turns out to be possible to [Accurately measure the camping stove fuel in a gas can with a hiking pole](https://www.youtube.com/watch?v=2lAzEOaP_A0).
 
+## Printable wall calendar
+
+I designed a [compact, minimalist paper wall calendar](posts/2013/12-18-paper-can-be-faster-than-gadgets-a-printable-2014-wall-calendar-for-more-efficient-scheduling-discussions.html) that was extremely helpful in facilitating team planning discussions. I found it very useful for daily reference too, and always keep two of these calendars by my desk: one for the current year, one for the next.
+
 ## The Bead Tree
 
 When my kids were young I drove them to school in a carpool with another family's children. A discussion of how movies get made led to the idea: "Let's make a movie!". Over a series of subsequent get-togethers, I led the kids through various aspects of filmmaking, culminating in [The Bead Tree](https://www.youtube.com/watch?v=xErdOOQwr2c). I suggested we record the audio separately from the video, which resulted in me spending many nights editing the final result. I was particularly happy with how my eldest's piano piece pulled everything together.
