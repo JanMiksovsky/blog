@@ -11,4 +11,4 @@ Even the simplest possible static site requires site structure (organizing the f
 
 JavaScript developers will happily explain that their preferred language can be used for all those purposes via Node, so for them the first diagram is actually complete. That’s great for them! (I use Node too.)
 
-But many people don’t want to learn JavaScript or find it too difficult, and for basic sites it’s massive overkill. Moreover, the diagram on the left is that it suggests you can't build a page without JavaScript, but I think JavaScript on the front end should be used sparingly.
+But many people don’t want to learn JavaScript or find it too difficult, and for basic sites it’s massive overkill. Moreover, the diagram on the left suggests you can't build a page without JavaScript, but I think JavaScript on the front end should be used sparingly.
