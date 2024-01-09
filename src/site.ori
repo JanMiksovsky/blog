@@ -7,15 +7,15 @@
 
   reversed = @tree/reverse(slugKeys, { deep: @true })
 
-  formattedPosts = @map(reversed, { deep: @true, valueMap: post.orit })
+  formattedPosts = @map(reversed, { deep: @true, valueMap: post.ori })
 
-  postPages = @map(formattedPosts, { deep: @true, valueMap: postPage.orit })
+  postPages = @map(reversed, { deep: @true, valueMap: postPage.ori })
 
   # Add an index page to each year folder.
   years = @map(
     postPages,
     =@tree/merge(_, @scope/set({
-      index.html = yearPage.orit({ posts: formattedPosts(@key), title: @key })
+      index.html = yearPage.ori({ posts: formattedPosts(@key), title: @key })
     }))
   )
 
@@ -34,15 +34,15 @@
 
     # Add an index page to the overall posts archive.
     posts = @tree/merge(years, {
-      index.html = archivePage.orit(@tree/keys(reversed))
+      index.html = archivePage.ori(@tree/keys(reversed))
     })
 
     # Top-level index page
-    index.html = index.orit(recent)
+    index.html = index.ori(recent)
 
     # About Us and Contact pages
-    about.html = page.orit(@mdHtml(about.md))
-    contact.html = page.orit(@mdHtml(contact.md))
+    about.html = page.ori(@mdHtml(about.md))
+    contact.html = page.ori(@mdHtml(contact.md))
 
     feed.json = @json(feed)
     rss.xml = @rss(feed)

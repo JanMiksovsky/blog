@@ -1,6 +1,0 @@
-{{ page.orit({
-  slug: _/slug
-  title: _/title
-  year: _/year
-  @text: post.orit(_)
-}) }}

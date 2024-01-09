@@ -1,0 +1,9 @@
+= @if @not(_/draft), `
+  <article>
+    <a class="quiet" href="{{ _/path }}">
+      <h1 class="postHeader">{{ _/title }}</h1>
+    </a>
+    <p class="postDate">{{ _/formattedDate }}</p>
+    {{ _/@text }}
+  </article>
+`

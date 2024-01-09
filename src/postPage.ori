@@ -1,0 +1,5 @@
+=page.ori({
+  @text: post.ori(_)
+  title: _/title
+  year: _/year
+})

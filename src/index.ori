@@ -1,11 +1,11 @@
-{{ page.orit {
+= page.ori {
   title: "Jan Miksovsky’s Blog"
   @text: `
     <link rel="alternate" type="application/rss+xml" title="{{ title }}" href="rss.xml" />
     <link rel="alternate" type="application/json" title="{{ title }}" href="feed.json" />
-    {{ @map(_, post.orit) }}
+    {{ @map(_, post.ori) }}
     <p style="margin-top: 4em;">
       <a href="posts/">Older posts</a>
     </p>
   `
-} }}
+}

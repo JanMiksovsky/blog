@@ -1,4 +1,4 @@
-{{ page.orit {
+= page.ori {
   title: "Posts by year"
   @text: `
     <h1>Posts by year</h1>
@@ -10,4 +10,4 @@
     `) }}
     </ul>
   `
-} }}
+}

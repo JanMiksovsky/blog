@@ -1,4 +1,4 @@
-<html lang="en">
+=`<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -9,13 +9,14 @@
   </head>
   <body>
     <header>
-      {{ banner.orit(_) }}
+      {{ banner.ori(_) }}
     </header>
     <main>
       {{ _/@text }}
     </main>
     <footer>
-      {{ banner.orit(_) }}
+      {{ banner.ori(_) }}
     </footer>
   </body>
 </html>
+`

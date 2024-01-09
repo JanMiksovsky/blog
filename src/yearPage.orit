@@ -1,7 +1,0 @@
-{{ page.orit {
-  title: _/title
-  @text: `
-      <h1 class="yearHeader">{{ _/title }}</h1>
-{{ _/posts }}
-  `
-} }}
