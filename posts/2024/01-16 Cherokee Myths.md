@@ -7,11 +7,11 @@ I built a sample [Cherokee Myths](https://cherokee-myths.netlify.app) site to ex
 
 ![Cherokee Myths site home page with a table of contents listing myths grouped by topic](/images/2024/01/mythsHome.png)
 
-As described in the [site source](https://github.com/WebOrigami/cherokee-myths), the site's overall structure is defined in a single concise Origami file, which orchestrates the creation of the table of contents on the home page, the generation of search indexes, and the process of the tree of markdown content into HTML.
+As described in the [site source](https://github.com/WebOrigami/cherokee-myths), the site's overall structure is defined in a single concise Origami file that orchestrates the creation of the table of contents on the home page, the generation of search indexes, and the processing of the tree of markdown content into HTML.
 
 ![Diagram of navigational structure of the Cherokee Myths site](/images/2024/01/myths.svg)
 
-The tree of stories is flattened by a template to create the table of contents, and is also fed to a great tool called [Pagefind](https://pagefind.app) to generate search indexes to allow full-text search on the static site.
+The tree of stories is flattened by a template to create the table of contents, and that same tree is also fed to a great tool called [Pagefind](https://pagefind.app) to generate search indexes to allow full-text search on the static site.
 
 ![Search page showing that "hummingbird" produces two hits](/images/2024/01/mythsSearch.png)
 
