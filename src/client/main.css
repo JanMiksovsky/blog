@@ -57,6 +57,12 @@ a.quiet {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
 h2 {
   font-size: 22px;
   margin-top: 2em;
