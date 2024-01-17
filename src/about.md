@@ -4,13 +4,19 @@ title: About
 
 # A few of my favorite things
 
-Here are some of the personal and professional projects I've most enjoyed — or am proudest of — in rough reverse-chronological order:
+I've been a software designer and engineer for many years, I've founded two companies and a political volunteer organization, and raised three children.
+
+Here are the personal and professional projects I've most enjoyed, in rough reverse-chronological order:
 
 ## Web Origami
 
 <img src="/images/about/webOrigami.png" style="width: 64px">
 
-I'm quite happy with the progression of my current project, [Web Origami](https://weborigami.org), a conceptual framework and set of tools for creating content. I'm specifically interested in helping people create websites and other artifacts without having to depend on large corporate platforms and the costs and restrictions those impose. Graph Origami gets a great deal of mileage from a very small set of core ideas, and I look forward to refining and promoting those.
+I'm quite happy with the progression of my current project, [Web Origami](https://weborigami.org), a programming language, conceptual framework, and set of tools for creating content. I'm specifically interested in helping people create websites and other artifacts without having to depend on large corporate platforms and the costs and restrictions those impose. Web Origami gets a great deal of mileage from a very small set of core ideas, and I enjoy refining and promoting those.
+
+## Japan traverse
+
+I spent [a month hiking across Japan](https://www.youtube.com/watch?v=GF0okTdSp9I), crossing the main island of Honshu from the Pacific Ocean to the Sea of Japan. My route took me over steep mountains in a number of national parks, including Mt. Fuji, and portions of the Southern Alps, Yatsugatake, the Northern Alps, and the Shio no Michi Trail. In between, I walked through cities, towns, and rural areas.
 
 ## Emojese
 
@@ -50,7 +56,7 @@ I designed a [compact, minimalist paper wall calendar](posts/2013/12-18-paper-ca
 
 When my kids were young I drove them to school in a carpool with another family's children. A discussion of how movies get made led to the idea: "Let's make a movie!". Over a series of subsequent get-togethers, I led the kids through various aspects of filmmaking, culminating in [The Bead Tree](https://www.youtube.com/watch?v=xErdOOQwr2c). I suggested we record the audio separately from the video, which resulted in me spending many nights editing the final result. I was particularly happy with how my eldest's piano piece pulled everything together.
 
-## Family journal
+## Family journal and newsletter
 
 When our first child was born, my wife and I began jotting down little notes and stories that evolved into a family journal we've now maintained for many years. It's become a critical part of how I remember the events of our lives. Our journal site generates a monthly email newsletter, and each December I consolidate the year's journal stories into a holiday letter. Those things play important roles in keeping us connected with friends and family members. I encourage people to journal in any fashion they can manage — writing a few words down can make the difference between keeping a fond memory alive and letting it slip into oblivion.
 
