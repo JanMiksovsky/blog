@@ -4,9 +4,9 @@ title: Contact Jan Miksovsky
 
 # Get in touch! 😃
 
-🐘 Follow me on Mastodon at [@JanMiksovsky](https://fosstodon.org/@JanMiksovsky) or send a direct message.
+🐘 Follow me on Mastodon at [@JanMiksovsky@fosstodon.org](https://fosstodon.org/@JanMiksovsky) or send a direct message.
 
-💼 LinkedIn: [Jan Miksovsky](https://www.linkedin.com/in/janmiksovsky/)
+💼 LinkedIn: [janmiksovsky](https://www.linkedin.com/in/janmiksovsky/)
 
 ✉️ Email: &lt;_my first name_>@weborigami.org<br>
 
