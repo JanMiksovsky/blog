@@ -23,9 +23,8 @@
   recent = @tree/valuesDeep(takeDeep.js(reversed, 10))
   
   # The feed items are the recent posts with just the necessary feed data.
-  # HACK: Shouldn't need to apply @tree/plain, something above is turning
-  # document objects into trees.
-  feedItems = @map(recent, =feedItem.js(@tree/plain(_)))
+  feedItems = @map(recent, feedItem.js)
+  
   # Evaluate feed.yaml, which will read feedItems above.
   feed = feed.yaml/
 

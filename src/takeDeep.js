@@ -3,8 +3,7 @@ import { Scope } from "@weborigami/language";
 
 export default async function takeDeep(treelike, count) {
   const tree = await Tree.from(treelike);
-  const { map } = await traverse(tree, count);
-  let result = new MapTree(map);
+  let { tree: result } = await traverse(tree, count);
   if (this) {
     result = Scope.treeWithScope(result, this);
   }
@@ -20,12 +19,15 @@ async function traverse(tree, count) {
     let value = await tree.get(key);
     if (Tree.isAsyncTree(value)) {
       const traversed = await traverse(value, count);
-      value = traversed.map;
+      value = traversed.tree;
       count = traversed.count;
     } else {
       count--;
     }
     map.set(key, value);
   }
-  return { map, count };
+  return {
+    tree: new MapTree(map),
+    count,
+  };
 }
