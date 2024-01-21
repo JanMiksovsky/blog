@@ -20,3 +20,5 @@ Using public domain content for this sample was way more interesting than lorem 
 ![Cherokee Myth of the Race Between the Crane and the Hummingbird](/images/2024/01/mythsRace.png)
 
 This sample also gave me a chance to place with two recent CSS additions: `text-wrap: balance` so that long headings end up with lines roughly equal in length (instead of a long line followed by an orphaned word), and `initial-letter` to add a drop cap at the start of the story text.
+
+_Update: I made a [video tour](https://jan.miksovsky.com/posts/2024/01-22-small-web-build.html) of this site._

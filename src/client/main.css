@@ -131,6 +131,13 @@ svg {
   width: 100%;
 }
 
+.video4x3 {
+  aspect-ratio: 4 / 3;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
 @media (min-width: 600px) {
   .optional {
     display: initial;
