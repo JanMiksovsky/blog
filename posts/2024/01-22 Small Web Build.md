@@ -9,7 +9,7 @@ I’d love to see #smallweb/#indieweb creators do the same with #SmallWebBuild v
 
 <iframe class="video4x3" src="https://www.youtube.com/embed/ym6s2VsqeYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-This walks you through [the Cherokee Myths site I described previously](https://jan.miksovsky.com/posts/2024/01-16-cherokee-myths.html) that uses Origami to create a static site feature with a generated table of contents, plus a full-text search using [Pagefind](https://pagefind.app) by [Liam Bigelow](https://fosstodon.org/@bglw).
+This walks you through [the Cherokee Myths site I described previously](https://jan.miksovsky.com/posts/2024/01-16-cherokee-myths.html) that uses Origami to create a static site with a generated table of contents, plus a full-text search feature using [Pagefind](https://pagefind.app) by [Liam Bigelow](https://fosstodon.org/@bglw).
 
 Using small home and van build videos as models, the following could make for good #SmallWebBuild videos:
 
