@@ -31,6 +31,8 @@
   # Main site
   public = @tree/merge(client, {
 
+    images
+
     # Add an index page to the overall posts archive.
     posts = @tree/merge(years, {
       index.html = archivePage.ori(@tree/keys(reversed))
