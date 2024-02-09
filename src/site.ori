@@ -17,7 +17,7 @@
   years = @map(
     postPages,
     =@tree/merge(_, @scope/set({
-      index.html = yearPage.ori({ posts: formattedPosts(@key), title: @key })
+      index.html = yearPage.ori(formattedPosts(@key), @key)
     }))
   )
 

@@ -1,7 +1,7 @@
-= page.ori {
-  title: _/title
+(posts, year) => page.ori {
+  title: year
   @text: `
-    <h1 class="yearHeader">{{ _/title }}</h1>
-    {{ _/posts }}
+    <h1 class="yearHeader">{{ year }}</h1>
+    {{ posts }}
   `
 }
