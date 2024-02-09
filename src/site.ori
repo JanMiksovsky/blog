@@ -1,7 +1,9 @@
 {
   bodies = @map(posts, { deep: @true, extensions: "md→html", valueMap: @mdHtml })
 
-  data = @map(bodies, { deep: @true, valueMap: postData.js })
+  data = @map(bodies, (_, year) => @map(_,
+    (_, filename) => postData.js(_, filename, year)
+  ))
 
   slugKeys = @map(data, { deep: @true, keyMap: =_/slug })
 

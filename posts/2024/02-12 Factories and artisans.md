@@ -1,6 +1,5 @@
 ---
 title: Factories and artisans
-date: 2024-02-12
 draft: true
 ---
 

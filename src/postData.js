@@ -2,21 +2,31 @@
  * Given the basic set of information in a post document, return a new document
  * with additional information.
  */
-export default async function postData(document, filename) {
+export default async function postData(document, filename, year) {
   const slug = postSlug(filename);
-  const year = postYear(document.date);
+
+  const dateRegex = /^(?<month>\d\d)-(?<day>\d\d) (?<title>.+).html$/;
+  const match = filename.match(dateRegex);
+  if (!match) {
+    console.error(
+      `Filename doesn't start with a date in MM-DD format: ${filename}`
+    );
+  }
+  const { month, day } = match.groups;
+
+  const formattedDate = formatDate(year, month, day);
   const path = `/posts/${year}/${slug}`;
   const augmented = Object.create(document);
   return Object.assign(augmented, {
-    formattedDate: formatDate(document.date),
+    formattedDate,
     path,
     slug,
     year,
   });
 }
 
-function formatDate(dateText) {
-  const date = new Date(Date.parse(`${dateText} PST`));
+function formatDate(year, month, day) {
+  const date = new Date(Date.parse(`${year}-${month}-${day} PST`));
   return date.toLocaleDateString("en-US", {
     day: "numeric",
     month: "long",
@@ -44,10 +54,10 @@ function postSlug(filename) {
   return slug;
 }
 
-function postYear(dateText) {
+function postDate(dateText) {
   if (!dateText) {
     return undefined;
   }
   const date = new Date(`${dateText} PST`);
-  return date.getFullYear();
+  return date;
 }
