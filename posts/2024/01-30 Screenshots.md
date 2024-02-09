@@ -1,7 +1,3 @@
----
-title: Functions to take screenshots of sites
----
-
 The Origami language gives web creators functions for making parts of web sites in the same way a spreadsheet offers functions for crunching numbers: give a function some input, get something useful back.
 
 Case in point: every so often I want a web page to show a screenshot of another web page. [Puppeteer](https://pptr.dev/) is great for that but cumbersome to set up, so I made [screenshot functions](https://github.com/WebOrigami/extensions/tree/main/screenshot): give them HTML or a URL, get back an image.

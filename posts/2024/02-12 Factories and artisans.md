@@ -1,8 +1,3 @@
----
-title: Factories and artisans
-draft: true
----
-
 When considering modern web development, I keep two images in mind.
 
 <img src="/images/2024/02/factory.webp" alt="Gleaming Tesla gigafactory with robots and no people">

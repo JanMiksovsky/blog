@@ -14,25 +14,70 @@ export default async function postData(document, filename, year) {
   }
   const { month, day } = match.groups;
 
-  const formattedDate = formatDate(year, month, day);
+  const extractedTitle = document.title
+    ? undefined
+    : extractTitle(plainText(document["@text"]));
+
+  const date = `${year}-${month}-${day}`;
+  const formattedDate = formatDate(date);
   const path = `/posts/${year}/${slug}`;
   const augmented = Object.create(document);
-  return Object.assign(augmented, {
-    formattedDate,
-    path,
-    slug,
-    year,
-  });
+  return Object.assign(
+    augmented,
+    {
+      date,
+      formattedDate,
+      path,
+      slug,
+      year,
+    },
+    extractedTitle && { extractedTitle }
+  );
 }
 
-function formatDate(year, month, day) {
-  const date = new Date(Date.parse(`${year}-${month}-${day} PST`));
+function extractTitle(text) {
+  // Find the position of the first sentence-final punctuation mark in the first
+  // 80 characters.
+  const sentenceEnd = text.search(/[\.\?\!]/);
+  if (sentenceEnd >= 0 && sentenceEnd < 80) {
+    let title = text.slice(0, sentenceEnd + 1);
+    if (title.endsWith(".")) {
+      // Remove trailing period.
+      title = title.slice(0, -1);
+    }
+    return title;
+  }
+
+  // Find the first interior punctuation mark in the first 80 characters.
+  const interiorPunctuation = text.search(/[,;:–—]/);
+  if (interiorPunctuation >= 0 && interiorPunctuation < 80) {
+    // Don't include the punctuation in the title.
+    return text.slice(0, interiorPunctuation);
+  }
+
+  // Find the first word boundary between characters 40 and 80.
+  const wordBoundary = text.slice(40, 80).search(/\s/);
+  if (wordBoundary >= 0) {
+    return text.slice(0, wordBoundary + 40);
+  }
+
+  // Last choice: use the first 40 characters.
+  return text.slice(0, 40);
+}
+
+function formatDate(yyyyMmDd) {
+  const date = new Date(Date.parse(`${yyyyMmDd} PST`));
   return date.toLocaleDateString("en-US", {
     day: "numeric",
     month: "long",
     timeZone: "America/Los_Angeles",
     year: "numeric",
   });
+}
+
+// Remove HTML tags
+function plainText(text) {
+  return text.replace(/<[^>]+>/g, "");
 }
 
 // This gets called for the year keys too, but happily it returns the year
