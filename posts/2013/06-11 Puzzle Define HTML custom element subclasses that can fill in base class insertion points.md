@@ -187,8 +187,7 @@ originalUrl: http://blog.quickui.org/2013/06/11/puzzle-define-html-custom-elemen
         &lt;/plain-button&gt;
     &lt;/template&gt;
     …
-&lt;/element&gt;</pre
->
+&lt;/element&gt;</pre>
 <p>
   See a <a href="http://jsbin.com/unutay/1/edit">live example of this</a>. It
   should work in most browsers, but use Chrome if you want to see it working
