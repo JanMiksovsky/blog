@@ -40,9 +40,9 @@ I like to backpack in Washington State. I've hiked the Pacific Crest Trail acros
 
 My disappointment with the 2016 U.S. presidential election let me to form Presterity.org, a collective effort to document the abuses of the Trump administration. A group of wonderful people joined this effort, and I was proud of what we were able to pull together in a short time. I gave an [interview on KUOW](https://kuow.org/stories/presterity-reference-desk-resistance/), my local NPR affiliate, about the project.
 
-## &lt;slot>
+## The HTML &lt;slot> element
 
-For some years I participated in the WHATWG web apps working group, an experience that led me to appreciate the enormous work that goes on year after year to ensure that the web remains a dynamic place — but in a backward-compatible way. I helped Apple and Google resolve their disagreements on a fundamental point that had threatened to derail the adoption of web components, a story I wrote up in [A history of the HTML &lt;slot> element](/posts/2019/04-08-a-history-of-the-slot-element.html).
+For some years I participated in the WHATWG web apps working group, an experience that led me to appreciate the enormous work that goes on year after year to ensure that the web remains a dynamic place — but in a backward-compatible way. I helped Apple and Google resolve their disagreements on fundamental points that had threatened to derail the adoption of web components, a story I wrote up in [A history of the HTML &lt;slot> element](/posts/2019/04-08-a-history-of-the-slot-element.html).
 
 ## Hiking pole scale
 

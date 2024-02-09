@@ -8,6 +8,6 @@ This factory image captures how many devs seem to approach creating websites: co
 
 In contrast, an individual artisan working in a studio directly creates something with simple tools and their own hands. To me this second image captures the #smallweb/#indieweb spirit.
 
-Factories aren't always bad and artisans aren't always good, but many devs promote the factory approach as the only way to build anything. "You're creating that pot by hand?? Fool! A gleaming pot factory could make a million pots a day!"
+Factories aren't always bad and artisans aren't always good, but many devs promote the factory approach as the only way to build anything. "You're creating that pot by hand?? Why, a gleaming pot factory could make a million pots a day!"
 
-That's ridiculous. A factory — even one magically built for you — can easily become a monstrosity you don't understand but have to maintain. In some cases simple tools produce _better_ results than a factory. And some of us like to make things by hand!
+That's ridiculous. A factory — even one magically built for you — can easily become a monstrosity you don't understand but have to maintain. In some cases simple tools produce _better_ results than a factory. And some of us like making things by hand!
