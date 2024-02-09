@@ -1,24 +1,24 @@
 {
-  bodies = @map(posts, { deep: @true, extensions: "md→html", valueMap: @mdHtml })
+  bodies = @mapDeep(posts, @mdHtml)
 
   data = @map(bodies, (_, year) => @map(_,
     (_, filename) => postData.js(_, filename, year)
   ))
 
-  slugKeys = @map(data, { deep: @true, keyMap: =_/slug })
+  slugKeys = @mapDeep(data, { keyMap: =_/slug })
 
   reversed = @tree/reverse(slugKeys, { deep: @true })
 
-  formattedPosts = @map(reversed, { deep: @true, valueMap: post.ori })
+  formattedPosts = @mapDeep(reversed, post.ori)
 
-  postPages = @map(reversed, { deep: @true, valueMap: postPage.ori })
+  postPages = @mapDeep(reversed, postPage.ori)
 
   # Add an index page to each year folder.
   years = @map(
-    postPages,
-    =@tree/merge(_, @scope/set({
+    postPages
+    (yearPosts, year) => @tree/merge(yearPosts, {
       index.html = yearPage.ori(formattedPosts(@key), @key)
-    }))
+    })
   )
 
   # The recent feed is the 10 most recent posts.
