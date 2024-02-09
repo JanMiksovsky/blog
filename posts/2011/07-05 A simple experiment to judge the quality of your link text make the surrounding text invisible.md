@@ -1,6 +1,5 @@
 ---
 title: "A simple experiment to judge the quality of your link text: make the surrounding text invisible"
-date: 2011-07-05
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/07/a-simple-experiment-to-judge-the-quality-of-your-link-text-make-the-surrounding-text-invisible.html
 ---
 

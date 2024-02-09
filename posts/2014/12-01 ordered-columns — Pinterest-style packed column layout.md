@@ -1,6 +1,5 @@
 ---
 title: ordered-columns — Pinterest-style packed column layout
-date: 2014-12-01 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/ordered-columns-pinterest-style-packed-column-layout
 ---
 

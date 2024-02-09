@@ -1,6 +1,5 @@
 ---
 title: "UI Control of the Week: a PanelWithOverflow to create toolbars with overflow menus and maximum layout efficiency"
-date: 2011-12-05
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/12/panelwithoverflow.html
 ---
 

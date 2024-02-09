@@ -1,7 +1,6 @@
 ---
 title: "Geni: Slickest trial-to-signup path yet"
 CONVERT BREAKS: __default__
-date: 2007-06-03
 originalUrl: https://miksovsky.blogs.com/flowstate/2007/06/geni_slickest_t.html
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Your web components with Shadow DOM may need to update light DOM too
-date: 2017-10-30 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/your-web-components-with-shadow-dom-may-need-to-update-light-dom-too
 ---
 

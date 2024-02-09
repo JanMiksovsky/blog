@@ -1,6 +1,5 @@
 ---
 title: 'Presentation: "UX Design at a Startup"'
-date: 2010-11-23
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/11/presentation-ux-design-at-a-startup.html
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Matching design sketches to the desired level of design feedback"
-date: 2006-10-26
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/10/using_crude_ske.html
 ---
 

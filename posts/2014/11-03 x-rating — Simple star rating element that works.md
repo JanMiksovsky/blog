@@ -1,6 +1,5 @@
 ---
 title: x-rating — Simple star rating element that works
-date: 2014-11-03 08:00
 originalUrl: https://component.kitchen/blog/posts/x-rating-simple-star-rating-element-that-works
 ---
 

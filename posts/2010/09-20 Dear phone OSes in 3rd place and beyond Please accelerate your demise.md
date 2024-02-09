@@ -1,6 +1,5 @@
 ---
 title: "Dear phone OSes in 3rd place and beyond: Please accelerate your demise"
-date: 2010-09-20
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/09/dear-phone-oses-in-3rd-place-and-beyond-please-accelerate-your-demise.html
 ---
 

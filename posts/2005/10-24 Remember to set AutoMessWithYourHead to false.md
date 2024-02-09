@@ -1,6 +1,5 @@
 ---
 title: "Remember to set AutoMessWithYourHead to false"
-date: 2005-10-24
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/10/remember_to_set.html
 ---
 

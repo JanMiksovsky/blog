@@ -1,6 +1,5 @@
 ---
 title: "Make every piece of text count"
-date: 2005-08-01
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/08/make_every_piec.html
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "MaxSquare: a fast and simple algorithm for maximizing photo thumbnail sizes"
-date: 2011-03-07
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/03/maxsquare.html
 ---
 

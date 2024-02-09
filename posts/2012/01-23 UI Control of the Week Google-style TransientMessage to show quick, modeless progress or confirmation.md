@@ -1,6 +1,5 @@
 ---
 title: "UI Control of the Week: Google-style TransientMessage to show quick, modeless progress or confirmation"
-date: 2012-01-23
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/01/transientmessage.html
 ---
 

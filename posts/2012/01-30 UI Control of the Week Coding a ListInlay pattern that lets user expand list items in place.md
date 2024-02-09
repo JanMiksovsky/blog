@@ -1,6 +1,5 @@
 ---
 title: "UI Control of the Week: Coding a ListInlay pattern that lets user expand list items in place"
-date: 2012-01-30
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/01/listinlay.html
 ---
 

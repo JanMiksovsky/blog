@@ -1,6 +1,5 @@
 ---
 title: "Deconstructing the standard photo carousel into general-purpose web components"
-date: 2014-06-16
 originalUrl: https://miksovsky.blogs.com/flowstate/2014/06/deconstructing-the-standard-photo-carousel-into-general-purpose-web-components.html
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Some basic UI patterns for preventing accidental deletion"
-date: 2006-02-12
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/02/some_basic_ui_p.html
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Indefinitely postponing really great feature suggestions is one of the toughest tasks in UX design"
-date: 2011-08-29
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/08/indefinitely-postponing-really-great-feature-suggestions-is-one-of-the-toughest-tasks-in-ux-design.html
 ---
 

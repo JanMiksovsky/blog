@@ -1,6 +1,5 @@
 ---
 title: "If we created an open library of web components for all general-purpose UI patterns, how many would there be?"
-date: 2013-07-15
 originalUrl: https://miksovsky.blogs.com/flowstate/2013/07/how-many-general-purpose-ui-components.html
 ---
 

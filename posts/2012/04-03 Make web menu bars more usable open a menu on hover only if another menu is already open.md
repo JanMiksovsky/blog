@@ -1,6 +1,5 @@
 ---
 title: "Make web menu bars more usable: open a menu on hover only if another menu is already open"
-date: 2012-04-03
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/04/menubar.html
 ---
 

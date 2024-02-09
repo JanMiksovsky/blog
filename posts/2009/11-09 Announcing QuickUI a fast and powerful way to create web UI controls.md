@@ -1,6 +1,5 @@
 ---
 title: "Announcing QuickUI: a fast and powerful way to create web UI controls"
-date: 2009-11-09
 originalUrl: https://miksovsky.blogs.com/flowstate/2009/11/introducing-quickui-a-tool-for-creating-web-ui.html
 ---
 

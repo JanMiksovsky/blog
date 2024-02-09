@@ -1,6 +1,5 @@
 ---
 title: Consolidating blog content
-date: 2023-01-01
 ---
 
 For the new year, I consolidated content from three earlier blogs to create a new blog at https://jan.miksovsky.com. This includes content from: a) flow|state, a UI design blog I wrote from 2005–2014, b) a blog for my UI component framework called QuickUI from 2012–2013, and c) the blog for my second startup, Component Kitchen, which was generally focused on web components from 2014–2020.

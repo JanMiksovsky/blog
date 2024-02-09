@@ -1,6 +1,5 @@
 ---
 title: Composing mixins to make a solid foundation for web components
-date: 2015-11-30 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/composing-mixins-to-make-a-solid-foundation-for-web-components
 ---
 

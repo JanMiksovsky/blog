@@ -1,6 +1,5 @@
 ---
 title: "Don't bury the lede: What's the real story behind a UI interaction?"
-date: 2007-06-20
 originalUrl: https://miksovsky.blogs.com/flowstate/2007/06/dont-bury-the-l.html
 ---
 

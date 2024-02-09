@@ -1,6 +1,5 @@
 ---
 title: "If a person talked to you the same way user interfaces talk, you'd ignore them too"
-date: 2011-06-27
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/06/user-interface-text-empathy.html
 ---
 

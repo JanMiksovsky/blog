@@ -1,6 +1,5 @@
 ---
 title: "Placebo controls make implicit actions explicit"
-date: 2011-02-07
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/02/placebo-controls-make-implicit-actions-explicit.html
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Asking for first names with an example"
-date: 2006-10-01
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/10/asking_for_firs.html
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Vista Start menu: a nice command prompt for normal users"
-date: 2007-03-04
 originalUrl: https://miksovsky.blogs.com/flowstate/2007/03/command_lines_s.html
 ---
 

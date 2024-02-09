@@ -1,6 +1,5 @@
 ---
 title: Bill Buxton's "Sketching User Experiences"
-date: 2007-09-05
 originalUrl: https://miksovsky.blogs.com/flowstate/2007/09/bill-buxtons-sk.html
 ---
 

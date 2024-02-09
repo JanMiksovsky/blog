@@ -1,6 +1,5 @@
 ---
 title: "There must be 50 ways to close a popup: menus, dropdowns, tooltips, palettes, dialogs, and more"
-date: 2012-03-26
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/03/popup.html
 ---
 

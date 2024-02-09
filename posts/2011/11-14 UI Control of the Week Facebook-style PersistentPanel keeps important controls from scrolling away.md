@@ -1,6 +1,5 @@
 ---
 title: "UI Control of the Week: Facebook-style PersistentPanel keeps important controls from scrolling away"
-date: 2011-11-14
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/11/persistentpanel.html
 ---
 

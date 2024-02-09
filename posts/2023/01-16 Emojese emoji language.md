@@ -1,6 +1,5 @@
 ---
 title: "Emojese: a written emoji language"
-date: 2023-01-16
 ---
 
 The [Emojese emoji language](https://emojese.org) is rich enough to express complex thoughts entirely in emoji and other Unicode glyphs.

@@ -1,6 +1,5 @@
 ---
 title: "Control of the Week: Pinterest-style PackedColumns efficiently fills space with tiles of varying heights"
-date: 2012-03-12
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/03/packedcolumns.html
 ---
 

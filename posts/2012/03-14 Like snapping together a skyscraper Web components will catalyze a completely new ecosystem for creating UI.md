@@ -1,6 +1,5 @@
 ---
 title: "Like snapping together a skyscraper: Web components will catalyze a completely new ecosystem for creating UI"
-date: 2012-03-14
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/03/snapping-together-a-skyscraper.html
 ---
 

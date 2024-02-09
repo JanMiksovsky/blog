@@ -1,6 +1,5 @@
 ---
 title: "Paper can be faster than gadgets: a printable 2014 wall calendar for more efficient scheduling discussions"
-date: 2013-12-18
 originalUrl: https://miksovsky.blogs.com/flowstate/2013/12/paper-can-be-faster-than-gadgets-printable-wall-calendar.html
 ---
 

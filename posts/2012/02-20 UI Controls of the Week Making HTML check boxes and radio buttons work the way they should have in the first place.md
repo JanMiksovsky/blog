@@ -1,6 +1,5 @@
 ---
 title: "UI Controls of the Week: Making HTML check boxes and radio buttons work the way they should have in the first place"
-date: 2012-02-20
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/02/labeledinput.html
 ---
 

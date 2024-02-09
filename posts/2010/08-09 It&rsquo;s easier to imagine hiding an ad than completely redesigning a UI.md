@@ -1,6 +1,5 @@
 ---
 title: "It&rsquo;s easier to imagine hiding an ad than completely redesigning a UI"
-date: 2010-08-09
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/08/its-easier-to-imagine-hiding-an-ad-than-completely-redesigning-a-ui.html
 ---
 

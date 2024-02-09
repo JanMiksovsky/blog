@@ -1,6 +1,5 @@
 ---
 title: "Ending active development of QuickUI"
-date: 2013-11-26
 originalUrl: http://blog.quickui.org/2013/11/26/ending-active-development-of-quickui/
 ---
 

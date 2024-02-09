@@ -1,6 +1,5 @@
 ---
 title: "Paternalistic design"
-date: 2010-07-12
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/07/paternalistic-design-1.html
 ---
 

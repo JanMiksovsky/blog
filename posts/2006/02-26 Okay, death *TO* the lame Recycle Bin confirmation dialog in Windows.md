@@ -1,6 +1,5 @@
 ---
 title: "Okay, death *TO* the lame Recycle Bin confirmation dialog in Windows"
-date: 2006-02-26 10:58:00 AM
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/02/okay_death_to_t.html
 ---
 

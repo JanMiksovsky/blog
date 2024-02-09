@@ -1,6 +1,5 @@
 ---
 title: "Lightweight in situ editing of page content"
-date: 2005-12-05
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/12/editing_setting.html
 ---
 

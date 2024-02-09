@@ -1,6 +1,5 @@
 ---
 title: Web components let you preserve the backward compatibility of your own old code
-date: 2016-02-15 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/web-components-let-you-preserve-the-backward-compatibility-of-your-own-old-code
 ---
 

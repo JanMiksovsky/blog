@@ -1,6 +1,5 @@
 ---
 title: "Windows Media Player 11: Early bit of Aero"
-date: 2006-05-25
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/05/windows_media_p.html
 ---
 

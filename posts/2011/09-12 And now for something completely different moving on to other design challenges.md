@@ -1,6 +1,5 @@
 ---
 title: "And now for something completely different: moving on to other design challenges"
-date: 2011-09-12
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/09/and-now-for-something-completely-different-moving-on-to-other-design-challenges.html
 ---
 

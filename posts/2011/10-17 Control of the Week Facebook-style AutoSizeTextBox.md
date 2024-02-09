@@ -1,6 +1,5 @@
 ---
 title: "Control of the Week: Facebook-style AutoSizeTextBox"
-date: 2011-10-17
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/10/autosizetextbox.html
 ---
 

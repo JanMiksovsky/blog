@@ -1,6 +1,5 @@
 ---
 title: "Font impoverished"
-date: 2006-05-09 09:30:00 PM
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/05/what_the_font.html
 ---
 

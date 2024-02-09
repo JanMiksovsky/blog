@@ -1,6 +1,5 @@
 ---
 title: "Evidence suggesting more than half of web app UI code is reinventing results already achieved many times before"
-date: 2012-06-19
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/06/reinventing-the-ui-wheel.html
 ---
 

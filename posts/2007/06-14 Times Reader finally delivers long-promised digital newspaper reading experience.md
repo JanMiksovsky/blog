@@ -1,6 +1,5 @@
 ---
 title: "Times Reader finally delivers long-promised digital newspaper reading experience"
-date: 2007-06-14
 originalUrl: https://miksovsky.blogs.com/flowstate/2007/06/times_reader_fi.html
 ---
 

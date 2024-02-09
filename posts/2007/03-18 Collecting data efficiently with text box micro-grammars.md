@@ -1,6 +1,5 @@
 ---
 title: "Collecting data efficiently with text box micro-grammars"
-date: 2007-03-18
 originalUrl: https://miksovsky.blogs.com/flowstate/2007/03/collecting_data.html
 ---
 

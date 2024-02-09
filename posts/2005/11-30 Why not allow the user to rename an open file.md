@@ -1,6 +1,5 @@
 ---
 title: "Why not allow the user to rename an open file?"
-date: 2005-11-30
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/11/why_not_allow_t.html
 ---
 

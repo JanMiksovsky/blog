@@ -1,6 +1,5 @@
 ---
 title: A new release of Basic Web Components based on plain JavaScript component mixins
-date: 2016-02-01 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/a-new-release-of-basic-web-components-based-on-plain-javascript-component-mixins
 ---
 

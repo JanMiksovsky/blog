@@ -1,6 +1,5 @@
 ---
 title: "QuickUI breaks with CoffeeScript 1.5"
-date: 2013-02-27
 originalUrl: http://blog.quickui.org/2013/02/27/quickui-breaks-with-coffeescript-1-5/
 ---
 

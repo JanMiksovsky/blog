@@ -1,6 +1,5 @@
 ---
 title: "Updated tutorial for JavaScript-only QuickUI development"
-date: 2012-02-01 16:00:00
 originalUrl: http://blog.quickui.org/2012/02/01/updated-tutorial-for-javascript-only-quickui-development/
 ---
 

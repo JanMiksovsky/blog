@@ -1,6 +1,5 @@
 ---
 title: "Cozi calendar UI overhaul"
-date: 2008-04-02
 originalUrl: https://miksovsky.blogs.com/flowstate/2008/04/fit-and-finish.html
 ---
 

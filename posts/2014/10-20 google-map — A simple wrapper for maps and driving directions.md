@@ -1,6 +1,5 @@
 ---
 title: "google-map — A simple wrapper for maps and driving directions"
-date: 2014-10-20 08:00
 originalUrl: https://component.kitchen/blog/posts/google-map-a-simple-wrapper-for-maps-and-driving-directions
 ---
 

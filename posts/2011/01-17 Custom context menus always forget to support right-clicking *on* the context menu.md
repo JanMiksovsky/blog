@@ -1,6 +1,5 @@
 ---
 title: "Custom context menus always forget to support right-clicking *on* the context menu"
-date: 2011-01-17
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/01/custom-context-menus-always-forget-to-support-right-clicking-on-the-context-menu.html
 ---
 

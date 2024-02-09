@@ -1,6 +1,5 @@
 ---
 title: "UI Control of the Week: Straight-up DateComboBox (and why your browser won't solve your date picker needs)"
-date: 2011-11-07
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/11/datecombobox.html
 ---
 

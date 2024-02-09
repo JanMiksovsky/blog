@@ -1,6 +1,5 @@
 ---
 title: "Stop abusive task list UIs: highlight imminent tasks, not overdue ones"
-date: 2011-02-21
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/02/stop-abusive-task-list-uis-highlight-imminent-tasks-not-overdue-ones.html
 ---
 

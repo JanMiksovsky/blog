@@ -1,6 +1,5 @@
 ---
 title: A new series of web component reviews with live demos
-date: 2014-10-30 08:00
 originalUrl: https://component.kitchen/blog/posts/a-new-series-of-web-component-reviews-with-live-demos
 ---
 

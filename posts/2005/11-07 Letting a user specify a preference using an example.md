@@ -1,6 +1,5 @@
 ---
 title: "Letting a user specify a preference using an example"
-date: 2005-11-07
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/11/letting_a_user_.html
 ---
 

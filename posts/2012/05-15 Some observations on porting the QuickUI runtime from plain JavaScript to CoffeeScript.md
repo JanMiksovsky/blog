@@ -1,6 +1,5 @@
 ---
 title: "Some observations on porting the QuickUI runtime from plain JavaScript to CoffeeScript"
-date: 2012-05-15 21:55:29
 originalUrl: http://blog.quickui.org/2012/05/15/porting-quickui-to-coffeescript/
 ---
 

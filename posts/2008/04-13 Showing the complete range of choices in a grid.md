@@ -1,6 +1,5 @@
 ---
 title: "Showing the complete range of choices in a grid"
-date: 2008-04-13
 originalUrl: https://miksovsky.blogs.com/flowstate/2008/04/using-a-grid-of.html
 ---
 

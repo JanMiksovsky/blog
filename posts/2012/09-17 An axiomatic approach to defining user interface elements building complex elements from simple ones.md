@@ -1,6 +1,5 @@
 ---
 title: "An axiomatic approach to defining user interface elements: building complex elements from simple ones"
-date: 2012-09-17
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/09/axiomatic-user-interface-framework.html
 ---
 

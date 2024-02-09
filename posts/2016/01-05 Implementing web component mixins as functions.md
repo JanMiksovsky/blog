@@ -1,6 +1,5 @@
 ---
 title: Implementing web component mixins as functions
-date: 2016-01-05 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/implementing-web-component-mixins-as-functions
 ---
 

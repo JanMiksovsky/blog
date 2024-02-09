@@ -1,6 +1,5 @@
 ---
 title: Building a great combo box component is so much trickier than you'd think
-date: 2018-12-10 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/building-a-great-combo-box-component-is-so-much-trickier-than-youd-think
 ---
 

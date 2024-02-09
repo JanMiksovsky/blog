@@ -1,6 +1,5 @@
 ---
 title: "Are wireframes, paper prototypes, and other design outputs simply reflections of the cost of developing a real UI?"
-date: 2011-01-10
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/01/design-outputs-as-reflections-of-the-cost-of-developing-ui.html
 ---
 

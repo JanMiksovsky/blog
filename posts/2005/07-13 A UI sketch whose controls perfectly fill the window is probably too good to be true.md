@@ -1,6 +1,5 @@
 ---
 title: "A UI sketch whose controls perfectly fill the window is probably too good to be true"
-date: 2005-07-13
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/07/if_a_ui_sketch_.html
 ---
 

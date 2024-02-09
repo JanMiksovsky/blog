@@ -1,6 +1,5 @@
 ---
 title: "Every app has a scary basement"
-date: 2010-09-07
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/09/every-app-has-a-scary-basement.html
 ---
 

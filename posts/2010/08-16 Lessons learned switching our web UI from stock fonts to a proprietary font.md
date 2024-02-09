@@ -1,6 +1,5 @@
 ---
 title: "Lessons learned switching our web UI from stock fonts to a proprietary font"
-date: 2010-08-16
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/08/lessons-switching-our-web-ui-from-stock-fonts-to-a-proprietary-font.html
 ---
 

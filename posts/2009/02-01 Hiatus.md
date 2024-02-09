@@ -1,6 +1,5 @@
 ---
 title: "Hiatus"
-date: 2009-02-01
 originalUrl: https://miksovsky.blogs.com/flowstate/2009/02/hiatus.html
 ---
 

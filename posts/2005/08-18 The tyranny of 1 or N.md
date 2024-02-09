@@ -1,6 +1,5 @@
 ---
 title: "The tyranny of 1 or N"
-date: 2005-08-18
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/08/the_tyranny_of_.html
 ---
 

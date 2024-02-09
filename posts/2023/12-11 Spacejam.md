@@ -1,6 +1,5 @@
 ---
 title: What I learned crawling the unbelievably massive 1996 Space Jam site
-date: 2023-12-11
 ---
 
 To test a site-crawling feature for [Web Origami](https://weborigami.org), I thought I’d crawl the original 1996 [Space Jam](https://www.spacejam.com/1996) site. The site’s often referenced as proof of HTML longevity, but I've only ever seen the site’s famous “solar system” home page:

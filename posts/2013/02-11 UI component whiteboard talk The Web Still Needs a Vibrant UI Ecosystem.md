@@ -1,6 +1,5 @@
 ---
 title: "UI component whiteboard talk: The Web Still Needs a Vibrant UI Ecosystem"
-date: 2013-02-11
 originalUrl: https://miksovsky.blogs.com/flowstate/2013/02/the-web-still-needs-a-vibrant-ui-ecosystem.html
 ---
 

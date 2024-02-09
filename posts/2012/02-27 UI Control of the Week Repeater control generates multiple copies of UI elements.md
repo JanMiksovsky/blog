@@ -1,6 +1,5 @@
 ---
 title: "UI Control of the Week: Repeater control generates multiple copies of UI elements"
-date: 2012-02-27
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/02/repeater.html
 ---
 

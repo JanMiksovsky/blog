@@ -1,6 +1,5 @@
 ---
 title: "Insert key safely disarmed in Microsoft Word 2007"
-date: 2006-07-11
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/07/insert_key_safe.html
 ---
 

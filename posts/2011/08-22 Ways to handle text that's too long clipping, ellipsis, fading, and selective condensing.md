@@ -1,6 +1,5 @@
 ---
 title: "Ways to handle text that's too long: clipping, ellipsis, fading, and selective condensing"
-date: 2011-08-22
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/08/handling-long-text.html
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Nobody writes production web components in vanilla JS — so using a framework makes total sense
-date: 2015-10-26 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/nobody-writes-production-web-components-in-vanilla-js-so-using-a-framework-makes-total-sense
 ---
 

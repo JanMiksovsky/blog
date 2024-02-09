@@ -1,6 +1,5 @@
 ---
 title: "Announcing a UI control catalog and this week's Control of the Week: Apple-style SlidingPagesWithDots"
-date: 2011-10-10
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/10/slidingpageswithdots.html
 ---
 

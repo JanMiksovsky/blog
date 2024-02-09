@@ -1,6 +1,5 @@
 ---
 title: "Designing for families"
-date: 2006-09-27
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/09/designing_for_f_1.html
 ---
 

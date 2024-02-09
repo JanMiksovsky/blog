@@ -1,6 +1,5 @@
 ---
 title: "Vista UX details starting to arrive"
-date: 2005-09-15
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/09/windows_vista_u.html
 ---
 

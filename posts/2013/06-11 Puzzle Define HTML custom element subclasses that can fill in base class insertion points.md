@@ -1,6 +1,5 @@
 ---
 title: "Puzzle: Define HTML custom element subclasses that can fill in base class insertion points"
-date: 2013-06-11
 originalUrl: http://blog.quickui.org/2013/06/11/puzzle-define-html-custom-element-subclasses-that-can-fill-in-base-class-insertion-points/
 ---
 

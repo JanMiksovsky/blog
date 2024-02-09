@@ -1,6 +1,5 @@
 ---
 title: "UI Control of the Week: standard Collapsible panel for content that can be put away"
-date: 2011-12-12
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/12/collapsible.html
 ---
 

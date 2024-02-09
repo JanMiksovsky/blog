@@ -1,6 +1,5 @@
 ---
 title: "Front-loading user interaction before long operations"
-date: 2005-12-13
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/12/frontloading_us.html
 ---
 

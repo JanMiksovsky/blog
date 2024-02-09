@@ -1,6 +1,5 @@
 ---
 title: "Progress bars that start over are almost useless"
-date: 2005-07-12
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/07/progress_bars_t.html
 ---
 

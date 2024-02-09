@@ -1,6 +1,5 @@
 ---
 title: Appreciations
-date: 2023-11-14
 ---
 
 In a humane world, people would _start_ interacting with an open source project by saying “I ❤️ your work” and “Here’s what I’m using it for.”

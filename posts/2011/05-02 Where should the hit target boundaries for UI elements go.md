@@ -1,6 +1,5 @@
 ---
 title: "Where should the hit target boundaries for UI elements go?"
-date: 2011-05-02
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/05/where-should-the-hit-target-boundaries-for-ui-elements-go.html
 ---
 

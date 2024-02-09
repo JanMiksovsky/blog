@@ -1,6 +1,5 @@
 ---
 title: The actual selection factors for new Unicode emoji proposals?
-date: 2023-01-21
 ---
 
 The Unicode emoji proposal process is open to the public in theory, but as far as I can tell, is currently accepting a tiny number of proposals based mostly on "things people like". I submitted an emoji proposal for [Person Pointing at Self](https://drive.google.com/file/d/1y-aO0tl6LnSpHavLnpESRt6h5Idz4K0_/view?usp=sharing), which was rejected.

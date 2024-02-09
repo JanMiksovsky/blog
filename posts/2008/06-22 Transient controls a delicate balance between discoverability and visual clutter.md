@@ -1,6 +1,5 @@
 ---
 title: "Transient controls: a delicate balance between discoverability and visual clutter"
-date: 2008-06-22
 originalUrl: https://miksovsky.blogs.com/flowstate/2008/06/transient-contr.html
 ---
 

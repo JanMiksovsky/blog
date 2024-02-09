@@ -1,6 +1,5 @@
 ---
 title: "Need an inexpensive designer for your project? Consider hiring a college student!"
-date: 2010-09-27
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/09/looking-for-an-inexpensive-designer-consider-hiring-a-college-student.html
 ---
 

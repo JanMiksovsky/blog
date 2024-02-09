@@ -1,6 +1,5 @@
 ---
 title: Web authoring tasks you’d think should be easy but are surprisingly hard
-date: 2024-01-01
 ---
 
 I wish it were possible to create more complex sites just with HTML and CSS — but any aspiring web author learning to create a site that way quickly finds some very common task that’s impossible in plain HTML and CSS.

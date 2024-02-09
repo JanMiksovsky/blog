@@ -1,6 +1,5 @@
 ---
 title: "The web could benefit from a control panel for cross-app settings (e.g., for sounds)"
-date: 2011-12-08
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/12/the-web-could-benefit-from-a-control-panel-for-cross-app-settings.html
 ---
 

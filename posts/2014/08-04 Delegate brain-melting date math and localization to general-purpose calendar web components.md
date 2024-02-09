@@ -1,6 +1,5 @@
 ---
 title: "Delegate brain-melting date math and localization to general-purpose calendar web components"
-date: 2014-08-04
 originalUrl: https://miksovsky.blogs.com/flowstate/2014/08/general-purpose-calendar-web-components.html
 ---
 

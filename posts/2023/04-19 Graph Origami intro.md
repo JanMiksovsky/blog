@@ -1,6 +1,5 @@
 ---
 title: Introducing Graph Origami
-date: 2023-04-19
 ---
 
 I've made a [video](https://www.youtube.com/watch?v=H5qu0sHLbi0) to introduce [Graph Origami](https://graphorigami.org): a novel conceptual framework and toolset for building websites and other digital content using graphs as foundational design and development artifacts. This approach makes frontend and backend development in JavaScript enormously productive (and fun!).

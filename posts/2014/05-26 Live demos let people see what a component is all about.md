@@ -1,6 +1,5 @@
 ---
 title: Live demos let people see what a component is all about
-date: 2014-05-26 08:00
 originalUrl: https://component.kitchen/blog/posts/live-demos-let-people-see-what-a-component-is-all-about
 ---
 

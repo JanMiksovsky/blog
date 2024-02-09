@@ -1,6 +1,5 @@
 ---
 title: Elix general-purpose web component library releases v1.0.0
-date: 2018-02-09 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/elix-general-purpose-web-component-library-releases-v100
 ---
 

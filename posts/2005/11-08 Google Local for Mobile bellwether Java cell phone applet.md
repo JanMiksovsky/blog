@@ -1,6 +1,5 @@
 ---
 title: "Google Local for Mobile: bellwether Java cell phone applet"
-date: 2005-11-08
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/11/google_local_ni.html
 ---
 

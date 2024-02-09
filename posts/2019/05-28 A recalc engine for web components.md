@@ -1,6 +1,5 @@
 ---
 title: A simple state-based recalc engine for web components
-date: 2019-05-28 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/a-simple-state-based-recalc-engine-for-web-components
 ---
 

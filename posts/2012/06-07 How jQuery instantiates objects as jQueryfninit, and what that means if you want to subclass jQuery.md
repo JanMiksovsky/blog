@@ -1,6 +1,5 @@
 ---
 title: "How jQuery instantiates objects as jQuery.fn.init, and what that means if you want to subclass jQuery"
-date: 2012-06-07 18:51:51
 originalUrl: http://blog.quickui.org/2012/06/07/jquery-fn-init/
 ---
 

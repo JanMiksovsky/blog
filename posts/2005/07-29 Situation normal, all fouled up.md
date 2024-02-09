@@ -1,6 +1,5 @@
 ---
 title: "Situation normal, all fouled up"
-date: 2005-07-29
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/07/outlooks_terrib.html
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "vision for coevolving QuickUI and the emerging Web Components standard"
-date: 2012-04-16
 originalUrl: http://blog.quickui.org/2012/04/16/a-vision-for-coevolving-quickui-and-the-emerging-web-components-standard/
 ---
 

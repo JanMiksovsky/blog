@@ -1,6 +1,5 @@
 ---
 title: "Update"
-date: 2012-05-22
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/05/update.html
 ---
 

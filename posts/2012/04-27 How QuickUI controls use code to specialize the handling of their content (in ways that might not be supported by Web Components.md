@@ -1,6 +1,5 @@
 ---
 title: "How QuickUI controls use code to specialize the handling of their content (in ways that might not be supported by Web Components"
-date: 2012-04-27
 originalUrl: http://blog.quickui.org/2012/04/27/how-quickui-controls-use-code-to-specialize-the-handling-of-their-content-in-ways-that-might-not-be-supported-by-web-components/
 ---
 

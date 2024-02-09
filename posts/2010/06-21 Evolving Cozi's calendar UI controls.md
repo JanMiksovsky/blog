@@ -1,6 +1,5 @@
 ---
 title: "Evolving Cozi's calendar UI controls"
-date: 2010-06-21
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/06/evolving-cozis-calendar-ui-controls.html
 ---
 

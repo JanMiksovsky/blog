@@ -1,6 +1,5 @@
 ---
 title: "Even if HTML5 doesn’t actually give you much, its buzzword status could still help you deliver a better UX"
-date: 2010-11-22
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/11/html5-buzzword.html
 ---
 

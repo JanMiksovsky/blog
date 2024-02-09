@@ -1,6 +1,5 @@
 ---
 title: An evaluation of polymer-micro as a minimal web component framework
-date: 2015-11-02 17:00 UTC
 originalUrl: https://component.kitchen/blog/posts/an-evaluation-of-polymer-micro-as-a-minimal-web-component-framework
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Functions to take screenshots of sites
-date: 2024-01-30
 ---
 
 The Origami language gives web creators functions for making parts of web sites in the same way a spreadsheet offers functions for crunching numbers: give a function some input, get something useful back.

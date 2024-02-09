@@ -1,6 +1,5 @@
 ---
 title: "slide-page — Create basic browser-based presentations in HTML"
-date: 2014-10-27 08:00
 originalUrl: https://component.kitchen/blog/posts/slide-page-create-basic-browser-based-presentations-in-html
 ---
 

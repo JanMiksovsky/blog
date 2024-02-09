@@ -1,6 +1,5 @@
 ---
 title: "QuickUI Catalog 0.9.3.1 released"
-date: 2013-01-23
 originalUrl: http://blog.quickui.org/2013/01/23/quickui-catalog-0-9-3-1-released/
 ---
 

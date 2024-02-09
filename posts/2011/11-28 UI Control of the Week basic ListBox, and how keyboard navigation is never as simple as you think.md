@@ -1,6 +1,5 @@
 ---
 title: "UI Control of the Week: basic ListBox, and how keyboard navigation is never as simple as you think"
-date: 2011-11-28
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/11/listbox.html
 ---
 

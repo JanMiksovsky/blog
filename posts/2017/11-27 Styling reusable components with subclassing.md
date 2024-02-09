@@ -1,6 +1,5 @@
 ---
 title: "Our current best answer for styling reusable components: subclassing"
-date: 2017-11-27 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/our-current-best-answer-for-styling-reusable-components-subclassing
 ---
 

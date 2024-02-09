@@ -1,6 +1,5 @@
 ---
 title: We’re shutting down our web component catalog
-date: 2015-10-19 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/were-shutting-down-our-web-component-catalog
 ---
 

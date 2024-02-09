@@ -1,6 +1,5 @@
 ---
 title: "QuickUI 0.8.8 released"
-date: 2012-01-30 18:18:05
 originalUrl: http://blog.quickui.org/2012/01/30/quickui-0-8-8-released/
 ---
 

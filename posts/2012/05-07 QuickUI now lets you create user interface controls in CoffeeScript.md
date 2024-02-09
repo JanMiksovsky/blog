@@ -1,6 +1,5 @@
 ---
 title: "QuickUI now lets you create user interface controls in CoffeeScript"
-date: 2012-05-07
 originalUrl: http://blog.quickui.org/2012/05/07/quickui-now-supports-coffeescript/
 ---
 

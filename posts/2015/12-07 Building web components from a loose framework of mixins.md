@@ -1,6 +1,5 @@
 ---
 title: Building web components from a loose framework of mixins
-date: 2015-12-07 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/building-web-components-from-a-loose-framework-of-mixins
 ---
 

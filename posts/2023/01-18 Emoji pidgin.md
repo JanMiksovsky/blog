@@ -1,6 +1,5 @@
 ---
 title: Emoji’s destiny is to become a global written pidgin language
-date: 2023-01-18
 ---
 
 Emoji week continues! With emoji as an expanding foundation for cross-cultural communication, I don’t think it’s a stretch to envision the eventual emergence of a basic grammar and the identification of existing emoji for specific abstract meanings. Emoji will form the basis of a written pidgin language: a simplified language that is incomplete but can nevertheless fill a useful role.

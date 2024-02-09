@@ -1,6 +1,5 @@
 ---
 title: 'Wall Street Journal: "Cozi just works."'
-date: 2007-04-04
 originalUrl: https://miksovsky.blogs.com/flowstate/2007/04/wall_street_jou.html
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "voice-elements — Easy access to the Web Speech API (on Chrome)"
-date: 2014-10-30 08:01
 originalUrl: https://component.kitchen/blog/posts/voice-elements-easy-access-to-the-web-speech-api-on-chrome
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Once a routine animation has made its point, speed it up"
-date: 2011-01-24
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/01/speed-up-routine-animations-once-theyve-made-their-point.html
 ---
 

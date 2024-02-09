@@ -1,6 +1,5 @@
 ---
 title: "Some observations of the pluses and minuses of Android's user experience"
-date: 2010-10-18
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/10/some-observations-of-the-plusses-and-minuses-of-androids-user-experience.html
 ---
 

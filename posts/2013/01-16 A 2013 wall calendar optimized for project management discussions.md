@@ -1,7 +1,6 @@
 ---
 title: "A 2013 wall calendar optimized for project management discussions"
 CONVERT BREAKS: 1
-date: 2013-01-16
 originalUrl: https://miksovsky.blogs.com/flowstate/2013/01/a-2013-wall-calendar-optimized-for-project-management-discussions.html
 ---
 

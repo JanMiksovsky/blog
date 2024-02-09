@@ -1,6 +1,5 @@
 ---
 title: "The fractal nature of UI design problems"
-date: 2005-10-03
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/10/the_fractal_nat.html
 ---
 

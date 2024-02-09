@@ -1,6 +1,5 @@
 ---
 title: Small Web Build video of sample Cherokee Myths site
-date: 2024-01-22
 ---
 
 I enjoy videos of people showing off small homes they’ve built or van conversions they’ve done. The person shows off their craftwork, describes goals and trade-offs, recommends tools/components/techniques, and shares lessons learned. It makes building something feel approachable and can inspire people to try it themselves.

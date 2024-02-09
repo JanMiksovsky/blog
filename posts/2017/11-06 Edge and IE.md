@@ -1,6 +1,5 @@
 ---
 title: Is it worth creating web components that work on IE 11? Or Edge?
-date: 2017-11-06 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/is-it-worth-creating-web-components-that-work-on-ie-11-or-edge
 ---
 

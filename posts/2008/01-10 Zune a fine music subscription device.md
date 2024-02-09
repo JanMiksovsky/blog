@@ -1,6 +1,5 @@
 ---
 title: "Zune: a fine music subscription device"
-date: 2008-01-10
 originalUrl: https://miksovsky.blogs.com/flowstate/2008/01/zune-a-fine-mus.html
 ---
 

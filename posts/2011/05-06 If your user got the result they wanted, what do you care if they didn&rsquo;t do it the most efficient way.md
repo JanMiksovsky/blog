@@ -1,6 +1,5 @@
 ---
 title: "If your user got the result they wanted, what do you care if they didn&rsquo;t do it the most efficient way?"
-date: 2011-05-06
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/05/if-your-user-got-the-result-they-wanted-what-do-you-care-if-they-didnt-do-it-the-most-efficient-way.html
 ---
 

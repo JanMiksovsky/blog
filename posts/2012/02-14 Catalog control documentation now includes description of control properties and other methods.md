@@ -1,6 +1,5 @@
 ---
 title: "Catalog control documentation now includes description of control properties and other methods"
-date: 2012-02-14
 originalUrl: http://blog.quickui.org/2012/02/14/catalog-control-documentation-now-includes-description-of-control-properties-and-other-methods/
 ---
 

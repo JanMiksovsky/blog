@@ -1,6 +1,5 @@
 ---
 title: "Your most recent feature probably should NOT be the most prominent element of your UI"
-date: 2011-05-31
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/05/your-most-recent-feature-probably-should-not-be-the-most-prominent-element-of-your-ui.html
 ---
 

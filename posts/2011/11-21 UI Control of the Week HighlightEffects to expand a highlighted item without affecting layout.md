@@ -1,6 +1,5 @@
 ---
 title: "UI Control of the Week: HighlightEffects to expand a highlighted item without affecting layout"
-date: 2011-11-21
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/11/highlighteffects.html
 ---
 

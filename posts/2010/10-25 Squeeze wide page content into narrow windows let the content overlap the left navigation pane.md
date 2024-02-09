@@ -1,6 +1,5 @@
 ---
 title: "Squeeze wide page content into narrow windows: let the content overlap the left navigation pane"
-date: 2010-10-25
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/10/squeeze-wide-page-content-into-narrow-windows-let-the-content-overlap-the-left-navigation-pane.html
 ---
 

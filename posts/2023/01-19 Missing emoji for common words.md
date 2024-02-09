@@ -1,6 +1,5 @@
 ---
 title: Unicode should add missing emoji for very common words
-date: 2023-01-19
 ---
 
 While developing vocabulary for the [Emojese emoji

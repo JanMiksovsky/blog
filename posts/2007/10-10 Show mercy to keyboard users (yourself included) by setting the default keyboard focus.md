@@ -1,6 +1,5 @@
 ---
 title: "Show mercy to keyboard users (yourself included) by setting the default keyboard focus"
-date: 2007-10-10
 originalUrl: https://miksovsky.blogs.com/flowstate/2007/10/show-mercy-to-k.html
 ---
 

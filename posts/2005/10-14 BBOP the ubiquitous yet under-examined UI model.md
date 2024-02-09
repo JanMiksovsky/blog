@@ -1,6 +1,5 @@
 ---
 title: "BBOP: the ubiquitous yet under-examined UI model"
-date: 2005-10-14
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/10/bbop_the_ubiqui.html
 ---
 

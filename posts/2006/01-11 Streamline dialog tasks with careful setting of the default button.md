@@ -1,6 +1,5 @@
 ---
 title: "Streamline dialog tasks with careful setting of the default button"
-date: 2006-01-11
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/01/speed_tasks_wit.html
 ---
 

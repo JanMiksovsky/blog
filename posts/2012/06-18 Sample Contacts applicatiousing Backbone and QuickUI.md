@@ -1,6 +1,5 @@
 ---
 title: "Sample Contacts applicatiousing Backbone and QuickUI"
-date: 2012-06-18
 originalUrl: http://blog.quickui.org/2012/06/18/sample-contacts-application/
 ---
 

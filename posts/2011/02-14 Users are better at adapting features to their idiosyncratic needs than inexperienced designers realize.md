@@ -1,6 +1,5 @@
 ---
 title: "Users are better at adapting features to their idiosyncratic needs than inexperienced designers realize"
-date: 2011-02-14
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/02/users-are-better-at-adapting-features-to-their-idiosyncratic-needs-than-inexperienced-designers-realize.html
 ---
 

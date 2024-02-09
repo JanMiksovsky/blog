@@ -1,6 +1,5 @@
 ---
 title: "iOS 4 Home button double-click: Rare case of retiring a behavior preference"
-date: 2010-08-23
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/08/ios-4-home-button-double-tap-rare-case-of-retiring-a-behavior-preference.html
 ---
 

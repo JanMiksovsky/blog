@@ -1,6 +1,5 @@
 ---
 title: "Negative space in a user interface is priceless — so it inevitably gets filled up"
-date: 2011-05-23
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/05/its-impossible-to-put-a-price-on-negative-space-in-a-ui-so-it-inevitably-gets-filled-up.html
 ---
 

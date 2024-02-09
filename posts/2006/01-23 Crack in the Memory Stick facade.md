@@ -1,6 +1,5 @@
 ---
 title: "Crack in the Memory Stick facade"
-date: 2006-01-23
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/01/crack_in_the_me.html
 ---
 

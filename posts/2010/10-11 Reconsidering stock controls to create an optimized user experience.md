@@ -1,6 +1,5 @@
 ---
 title: "Reconsidering stock controls to create an optimized user experience"
-date: 2010-10-11
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/10/reconsidering-stock-controls-to-create-an-optimized-user-experience.html
 ---
 

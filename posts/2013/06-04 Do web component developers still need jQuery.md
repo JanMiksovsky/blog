@@ -1,6 +1,5 @@
 ---
 title: "Do web component developers still need jQuery"
-date: 2013-06-04
 originalUrl: http://blog.quickui.org/2013/06/04/do-web-component-developers-still-need-jquery/
 ---
 

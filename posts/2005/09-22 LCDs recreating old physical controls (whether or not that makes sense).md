@@ -1,6 +1,5 @@
 ---
 title: "LCDs recreating old physical controls (whether or not that makes sense)"
-date: 2005-09-22
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/09/prius_lcd.html
 ---
 

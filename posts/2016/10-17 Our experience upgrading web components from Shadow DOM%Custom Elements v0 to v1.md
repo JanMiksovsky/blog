@@ -1,6 +1,5 @@
 ---
 title: Our experience upgrading web components from Shadow DOM/Custom Elements v0 to v1
-date: 2016-10-17 7:00 UTC
 originalUrl: https://component.kitchen/blog/posts/our-experience-upgrading-web-components-from-shadow-domcustom-elements-v0-to-v1
 ---
 

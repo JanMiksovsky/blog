@@ -1,6 +1,5 @@
 ---
 title: "Looking forward to seeing Facebook apps drop their pointless mystery"
-date: 2008-01-27
 originalUrl: https://miksovsky.blogs.com/flowstate/2008/01/facebook-applic.html
 ---
 

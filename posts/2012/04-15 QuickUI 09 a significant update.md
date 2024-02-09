@@ -1,6 +1,5 @@
 ---
 title: "QuickUI 0.9: a significant update"
-date: 2012-04-15 17:32:51
 originalUrl: http://blog.quickui.org/2012/05/15/quickui-0-9-a-significant-update/
 ---
 

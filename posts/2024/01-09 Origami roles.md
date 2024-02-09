@@ -1,6 +1,5 @@
 ---
 title: Origami language as a complement to HTML/CSS/JS
-date: 2024-01-09
 ---
 
 Writing about the incompleteness of HTML/CSS/JS has helped me reframe my [Origami language](https://weborigami.org/language) as a way to complement those native web languages.

@@ -1,6 +1,5 @@
 ---
 title: "The Web Components spec should add support for multiple, named, DOM-valued properties"
-date: 2012-07-02
 originalUrl: http://blog.quickui.org/2012/07/02/web-component-properties/
 ---
 

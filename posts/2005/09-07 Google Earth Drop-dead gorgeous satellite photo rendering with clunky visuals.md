@@ -1,6 +1,5 @@
 ---
 title: "Google Earth: Drop-dead gorgeous satellite photo rendering with clunky visuals"
-date: 2005-09-07
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/09/google_earth_dr.html
 ---
 

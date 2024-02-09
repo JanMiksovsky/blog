@@ -1,6 +1,5 @@
 ---
 title: "From MacPaint to FiftyThree's Paper: Someday all our apps will be this great"
-date: 2012-04-05
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/04/someday-all-our-apps-will-be-this-great.html
 ---
 

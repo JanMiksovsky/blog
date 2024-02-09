@@ -1,6 +1,5 @@
 ---
 title: "A fun photo collage Facebook app that was fun to create"
-date: 2010-12-10
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/12/a-fun-photo-collage-facebook-app-that-was-fun-to-create.html
 ---
 

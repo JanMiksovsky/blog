@@ -1,6 +1,5 @@
 ---
 title: "The inscrutable purpose of Mac controls"
-date: 2005-07-22
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/07/the_impenetrabl.html
 ---
 

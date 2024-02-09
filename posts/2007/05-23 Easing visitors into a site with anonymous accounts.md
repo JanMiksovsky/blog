@@ -1,6 +1,5 @@
 ---
 title: "Easing visitors into a site with anonymous accounts"
-date: 2007-05-23
 originalUrl: https://miksovsky.blogs.com/flowstate/2007/05/easing_visitors.html
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Form validation feedback: Be slow to complain, and quick to forgive"
-date: 2010-09-13
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/09/form-validation-feedback-be-slow-to-complain-and-quick-to-forgive.html
 ---
 

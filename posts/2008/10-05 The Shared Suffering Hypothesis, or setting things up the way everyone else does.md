@@ -1,6 +1,5 @@
 ---
 title: "The Shared Suffering Hypothesis, or setting things up the way everyone else does"
-date: 2008-10-05
 originalUrl: https://miksovsky.blogs.com/flowstate/2008/10/the-shared-suff.html
 ---
 

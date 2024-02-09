@@ -1,6 +1,5 @@
 ---
 title: Building a great menu component is so much trickier than you'd think
-date: 2018-07-11 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/building-a-great-menu-component-is-so-much-trickier-than-youd-think
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "UI Controls of the Week: Quickly fill up a UI mockup with photos, placeholder text, and ads"
-date: 2012-02-13
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/02/placeholders.html
 ---
 

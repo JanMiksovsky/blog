@@ -1,6 +1,5 @@
 ---
 title: akyral-modal – Modal overlay with beautiful demos and documentation
-date: 2014-11-06 08:00
 originalUrl: https://component.kitchen/blog/posts/akyral-modal-modal-overlay-with-beautiful-demos-and-documentation
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "What designing a user interface shares with creating a puzzle"
-date: 2010-12-20
 originalUrl: https://miksovsky.blogs.com/flowstate/2010/12/what-designing-a-user-interface-shares-with-creating-a-puzzle.html
 ---
 

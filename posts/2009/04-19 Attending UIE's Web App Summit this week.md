@@ -1,6 +1,5 @@
 ---
 title: "Attending UIE's Web App Summit this week"
-date: 2009-04-19
 originalUrl: https://miksovsky.blogs.com/flowstate/2009/04/attending-uies-web-app-summit-this-week.html
 ---
 

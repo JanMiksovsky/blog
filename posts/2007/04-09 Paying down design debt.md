@@ -1,6 +1,5 @@
 ---
 title: "Paying down design debt"
-date: 2007-04-09
 originalUrl: https://miksovsky.blogs.com/flowstate/2007/04/paying_down_des.html
 ---
 

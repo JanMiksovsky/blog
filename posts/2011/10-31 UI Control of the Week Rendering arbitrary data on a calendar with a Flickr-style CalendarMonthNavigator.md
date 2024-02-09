@@ -1,6 +1,5 @@
 ---
 title: "UI Control of the Week: Rendering arbitrary data on a calendar with a Flickr-style CalendarMonthNavigator"
-date: 2011-10-31
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/10/calendarmonthnavigator.html
 ---
 

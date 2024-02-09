@@ -1,6 +1,5 @@
 ---
 title: "Controls of the Week: HorizontalPanels and VerticalPanels for basic CSS3 flexbox layouts today"
-date: 2012-03-19
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/03/simpleflexbox.html
 ---
 

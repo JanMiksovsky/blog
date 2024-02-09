@@ -1,6 +1,5 @@
 ---
 title: "Outlook's clever modeless delivery of useful info"
-date: 2005-07-26
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/07/outlooks_clever.html
 ---
 

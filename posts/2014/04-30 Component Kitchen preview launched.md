@@ -1,6 +1,5 @@
 ---
 title: Component Kitchen preview launched
-date: 2014-04-30 22:08
 originalUrl: https://component.kitchen/blog/posts/component-kitchen-preview-launched
 ---
 

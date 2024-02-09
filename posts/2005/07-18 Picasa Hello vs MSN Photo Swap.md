@@ -1,6 +1,5 @@
 ---
 title: "Picasa Hello vs MSN Photo Swap"
-date: 2005-07-18
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/07/picasa_hello_vs.html
 ---
 

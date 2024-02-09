@@ -1,6 +1,5 @@
 ---
 title: Web diagrams look deceptively complete
-date: 2024-01-05
 ---
 
 I see so many web platform diagrams that represent HTML/CSS/JS in a tidy, complete arrangement that suggests those are everything you need to know — when in reality those only let you define what happens in individual pages. A more realistic diagram would be incomplete! You’re going to need to choose and master additional technologies to create a coherent, functional site.

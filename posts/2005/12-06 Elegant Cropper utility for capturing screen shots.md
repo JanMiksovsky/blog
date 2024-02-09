@@ -1,6 +1,5 @@
 ---
 title: "Elegant Cropper utility for capturing screen shots"
-date: 2005-12-06
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/12/elegant_cropper.html
 ---
 

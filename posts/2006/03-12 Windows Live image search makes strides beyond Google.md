@@ -1,6 +1,5 @@
 ---
 title: "Windows Live image search makes strides beyond Google"
-date: 2006-03-12
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/03/windows_live_im.html
 ---
 

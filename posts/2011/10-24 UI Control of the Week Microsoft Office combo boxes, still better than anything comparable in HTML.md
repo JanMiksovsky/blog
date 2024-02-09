@@ -1,6 +1,5 @@
 ---
 title: "UI Control of the Week: Microsoft Office combo boxes, still better than anything comparable in HTML"
-date: 2011-10-24
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/10/listcombobox.html
 ---
 

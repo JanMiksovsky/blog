@@ -1,6 +1,5 @@
 ---
 title: "Media Center nicely blends data sources to create album list"
-date: 2005-09-12
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/09/media_center_ni.html
 ---
 

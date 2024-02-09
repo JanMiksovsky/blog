@@ -1,6 +1,5 @@
 ---
 title: "Start with a stripped-down visual design and slowly add elements back in"
-date: 2011-04-04
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/04/start-with-a-stripped-down-visual-design-and-slowly-add-elements-back-in.html
 ---
 

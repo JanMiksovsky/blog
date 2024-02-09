@@ -1,6 +1,5 @@
 ---
 title: "Avoiding unnecessary questions in command UI"
-date: 2005-10-30
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/10/ui_as_a_pesky_w.html
 ---
 

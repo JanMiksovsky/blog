@@ -1,6 +1,5 @@
 ---
 title: "Improving the EULA user experience with Bullet Summaries"
-date: 2006-09-14
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/09/improving_the_u.html
 ---
 

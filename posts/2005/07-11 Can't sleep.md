@@ -1,6 +1,5 @@
 ---
 title: "Can't sleep..."
-date: 2005-07-11
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/07/cant_sleep.html
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Looking for concrete research on impact of animated ads on user experience"
-date: 2008-05-15
 originalUrl: https://miksovsky.blogs.com/flowstate/2008/05/concrete-resear.html
 ---
 

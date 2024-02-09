@@ -1,6 +1,5 @@
 ---
 title: "How big is a big download these days?"
-date: 2005-09-05
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/09/how_big_is_a_bi.html
 ---
 

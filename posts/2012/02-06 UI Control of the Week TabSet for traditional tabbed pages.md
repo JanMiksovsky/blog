@@ -1,6 +1,5 @@
 ---
 title: "UI Control of the Week: TabSet for traditional tabbed pages"
-date: 2012-02-06
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/02/ui-control-of-the-week-tabset-for-traditional-tabbed-pages.html
 ---
 

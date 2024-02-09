@@ -1,6 +1,5 @@
 ---
 title: "Oh app, for crying out loud, go update yourself"
-date: 2006-06-25
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/06/hey_app_go_upda.html
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Some lessons from an open source project that never gained critical mass"
-date: 2013-12-01
 originalUrl: http://blog.quickui.org/2013/12/01/some-lessons-from-an-open-source-project-that-never-gained-critical-mass/
 ---
 

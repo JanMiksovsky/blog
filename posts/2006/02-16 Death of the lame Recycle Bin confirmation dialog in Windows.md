@@ -1,6 +1,5 @@
 ---
 title: "Death of the lame Recycle Bin confirmation dialog in Windows?"
-date: 2006-02-16
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/02/completely_lame.html
 ---
 

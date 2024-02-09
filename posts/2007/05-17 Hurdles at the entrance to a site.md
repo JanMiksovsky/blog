@@ -1,6 +1,5 @@
 ---
 title: "Hurdles at the entrance to a site"
-date: 2007-05-17
 originalUrl: https://miksovsky.blogs.com/flowstate/2007/05/hurdles_in_the_.html
 ---
 

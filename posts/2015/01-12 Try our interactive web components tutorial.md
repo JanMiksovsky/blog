@@ -1,6 +1,5 @@
 ---
 title: Try our interactive web components tutorial
-date: 2015-01-12 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/try-our-interactive-web-components-tutorial
 ---
 

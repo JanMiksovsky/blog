@@ -1,6 +1,5 @@
 ---
 title: "Filling in base class slots with the awesome new capability of the shadow element"
-date: 2013-11-08
 originalUrl: http://blog.quickui.org/2013/11/08/filling-slots-in-shadow/
 ---
 

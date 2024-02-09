@@ -1,6 +1,5 @@
 ---
 title: "Directional keyboard navigation could improve PC-based browsing too"
-date: 2007-11-08
 originalUrl: https://miksovsky.blogs.com/flowstate/2007/11/directional-key.html
 ---
 

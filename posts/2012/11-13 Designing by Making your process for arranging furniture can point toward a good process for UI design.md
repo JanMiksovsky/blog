@@ -1,6 +1,5 @@
 ---
 title: "Designing by Making: your process for arranging furniture can point toward a good process for UI design"
-date: 2012-11-13
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/11/designing-by-making.html
 ---
 

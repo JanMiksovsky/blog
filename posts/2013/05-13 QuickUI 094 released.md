@@ -1,6 +1,5 @@
 ---
 title: "QuickUI 0.9.4 released"
-date: 2013-05-13
 originalUrl: http://blog.quickui.org/2013/05/13/quickui-0-9-4-released/
 ---
 

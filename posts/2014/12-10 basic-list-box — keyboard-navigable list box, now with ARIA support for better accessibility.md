@@ -1,6 +1,5 @@
 ---
 title: basic-list-box — keyboard-navigable list box, now with ARIA support for better accessibility
-date: 2014-12-10 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/basic-list-box-keyboard-navigable-list-box-now-with-aria-support-for-better-accessibility
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "My complication had a complication"
-date: 2005-10-02
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/10/my_complication.html
 ---
 

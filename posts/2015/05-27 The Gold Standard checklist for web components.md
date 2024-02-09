@@ -1,6 +1,5 @@
 ---
 title: The Gold Standard checklist for web components
-date: 2015-05-27 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/the-gold-standard-checklist-for-web-components
 ---
 

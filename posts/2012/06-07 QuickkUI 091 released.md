@@ -1,6 +1,5 @@
 ---
 title: "QuickkUI 0.9.1 released"
-date: 2012-06-07 17:28:08
 originalUrl: http://blog.quickui.org/2012/06/07/quickui-0-9-1-released/
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Quetzal: an experimental translation of the QuickUI component model to HTML custom elements"
-date: 2013-06-03
 originalUrl: http://blog.quickui.org/2013/06/03/quetzal-an-experimental-translation-of-quickui-component-model-to-html-custom-elements/
 ---
 

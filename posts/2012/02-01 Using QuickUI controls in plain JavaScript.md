@@ -1,6 +1,5 @@
 ---
 title: "Using QuickUI controls in plain JavaScript"
-date: 2012-02-01
 originalUrl: https://miksovsky.blogs.com/flowstate/2012/02/using-quickui-controls-in-plain-javascript.html
 ---
 

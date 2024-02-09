@@ -1,6 +1,5 @@
 ---
 title: Replacing your server-side template language with plain JavaScript functions
-date: 2016-04-05 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/replacing-your-server-side-template-language-with-plain-javascript-functions
 ---
 

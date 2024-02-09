@@ -1,6 +1,5 @@
 ---
 title: General-purpose web components
-date: 2014-06-16 08:15
 originalUrl: https://component.kitchen/blog/posts/general-purpose-web-components
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Positive emotion from the point of first contact"
-date: 2005-07-25 09:40:00 AM
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/07/positive_emotio.html
 ---
 

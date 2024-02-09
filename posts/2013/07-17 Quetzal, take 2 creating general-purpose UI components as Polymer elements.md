@@ -1,6 +1,5 @@
 ---
 title: "Quetzal, take 2: creating general-purpose UI components as Polymer elements"
-date: 2013-07-17
 originalUrl: http://blog.quickui.org/2013/07/17/quetzal-take-2-creating-general-purpose-ui-components-as-polymer-elements/
 ---
 

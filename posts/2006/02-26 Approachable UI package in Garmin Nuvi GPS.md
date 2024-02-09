@@ -1,6 +1,5 @@
 ---
 title: "Approachable UI package in Garmin Nuvi GPS"
-date: 2006-02-26
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/02/approachable_ui.html
 ---
 

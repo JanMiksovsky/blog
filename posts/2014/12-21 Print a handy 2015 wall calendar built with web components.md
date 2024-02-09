@@ -1,6 +1,5 @@
 ---
 title: Print a handy 2015 wall calendar built with web components
-date: 2014-12-21 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/print-a-handy-2015-wall-calendar-built-with-web-components
 ---
 

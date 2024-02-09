@@ -1,6 +1,5 @@
 ---
 title: Creating software in 2028 is so amazing now that we build with reusable UI components!
-date: 2018-05-14 16:00 UTC
 originalUrl: https://component.kitchen/blog/posts/creating-software-in-2028-is-so-amazing-now-that-we-build-with-reusable-ui-components
 ---
 

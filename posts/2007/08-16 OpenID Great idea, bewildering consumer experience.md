@@ -1,6 +1,5 @@
 ---
 title: "OpenID: Great idea, bewildering consumer experience"
-date: 2007-08-16
 originalUrl: https://miksovsky.blogs.com/flowstate/2007/08/openid-great-id.html
 ---
 

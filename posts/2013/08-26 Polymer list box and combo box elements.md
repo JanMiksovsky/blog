@@ -1,6 +1,5 @@
 ---
 title: "Polymer list box and combo box elements"
-date: 2013-08-26
 originalUrl: http://blog.quickui.org/2013/08/26/polymer-list-box-and-combo-box-elements/
 ---
 

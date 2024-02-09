@@ -1,6 +1,5 @@
 ---
 title: "How many apps are there in that app, anyway?"
-date: 2005-07-15
 originalUrl: https://miksovsky.blogs.com/flowstate/2005/07/how_many_apps_a.html
 ---
 

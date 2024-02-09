@@ -1,6 +1,5 @@
 ---
 title: "Celebrating 100 posts and 6 years of UI design craft on flow|state"
-date: 2011-07-11
 originalUrl: https://miksovsky.blogs.com/flowstate/2011/07/100th-post.html
 ---
 

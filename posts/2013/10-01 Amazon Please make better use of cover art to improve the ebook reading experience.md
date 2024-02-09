@@ -1,7 +1,6 @@
 ---
 title: "Amazon: Please make better use of cover art to improve the ebook reading experience"
 convertBreaks: 0
-date: 2013-10-01
 originalUrl: https://miksovsky.blogs.com/flowstate/2013/10/amazon-please-make-better-use-of-cover-art-to-improve-the-ebook-reading-experience.html
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Blogging through the product cycle"
-date: 2006-05-09 09:29:00 PM
 originalUrl: https://miksovsky.blogs.com/flowstate/2006/05/blogging_throug.html
 ---
 
