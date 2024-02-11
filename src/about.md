@@ -12,7 +12,7 @@ Here are the personal and professional projects I've most enjoyed, in rough reve
 
 <img src="/images/about/webOrigami.png" style="width: 64px">
 
-I'm quite happy with the progression of my current project, [Web Origami](https://weborigami.org), a programming language, conceptual framework, and set of tools for creating content. I'm specifically interested in helping people create websites and other artifacts without having to depend on large corporate platforms and the costs and restrictions those impose. Web Origami gets a great deal of mileage from a very small set of core ideas, and I enjoy refining and promoting those.
+I'm quite happy with the progression of my current project, [Web Origami](https://weborigami.org), a programming language, conceptual framework, and set of tools for creating content. I'm specifically interested in helping people create websites and other artifacts without having to depend on large corporate platforms and the costs and restrictions those impose. Origami gets a great deal of mileage from a very small set of core ideas, and I enjoy refining and promoting those.
 
 ## Japan traverse
 
@@ -32,7 +32,7 @@ At my second startup, I developed the [Elix](https://component.kitchen/elix) web
 
 ## Eastside Traverse
 
-I like to backpack in Washington State. I've hiked the Pacific Crest Trail across Washington, and have been section-hiking Washington's portion of the Pacific Northwest Trail. One day I was looking at maps of the smaller mountains between Seattle and the Cascades, and realized that I could probably stitch together a pretty good hiking route between my own house and the Pacific Crest Trail at Snoqualmie Pass. It was challenging (75 miles over three days, but the real killer proved to be 17,000+ feet of elevation gain) but ultimately exhilarating to walk out my front door and then step on the PCT a few days later. The Washington Trails Association, an organization I'm proud to support, wrote an [article about my hike](https://www.wta.org/news/magazine/features/trail-system-at-work) to highlight the value of an extensive trail network.
+I like to backpack in Washington State. I've hiked the Pacific Crest Trail across Washington, and have been section-hiking Washington's portion of the Pacific Northwest Trail. One day I was looking at maps of the smaller mountains between Seattle and the Cascades, and realized that I could probably stitch together a pretty good hiking route between my own house and the Pacific Crest Trail at Snoqualmie Pass. It was challenging (75 miles over three days, though the real killer proved to be 17,000+ feet of elevation gain) and ultimately exhilarating to walk out my front door and then step on the PCT a few days later. The Washington Trails Association, an organization I'm proud to support, wrote an [article about my hike](https://www.wta.org/news/magazine/features/trail-system-at-work) to highlight the value of an extensive trail network.
 
 ## Presterity
 
@@ -91,3 +91,9 @@ During one Microsoft Money release I developed a general design strategy I calle
 ![Microsoft Mail 2.0 icon](/images/about/microsoftMail.png)
 
 The first commercial software project I worked on was [Microsoft Mail](https://en.wikipedia.org/wiki/Microsoft_Mail), an email app created at the dawn of mainstream corporate email adoption. I started as a program management intern in 1988, and eventually joined the company and worked on the project full time. I cut my teeth as a user interface designer on that project, and learned a great deal from my colleagues and our users.
+
+## Karel the Robot
+
+In high school I wrote an interpreter for the [Karel programming language](<https://en.wikipedia.org/wiki/Karel_(programming_language)>) so that teachers could use Richard Pattis' book _Karel the Robot: A Gentle Introduction to the Art of Programming_ in the school's computer science classes. While I'd been programming for a few years at that point, I think the interpreter and accompanying editor constituted the first app I ever wrote that other people used.
+
+The school had a connection to USENET, which was unusual for a high school at that time. I posted my Karel interpreter on the net.sources newsgroup, and some other schools picked up the interpreter for their own intro CS classes. Forty years later, I found my interpreter in a USENET archive and [posted it on GitHub](https://github.com/JanMiksovsky/karel).
