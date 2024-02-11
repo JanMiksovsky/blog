@@ -97,3 +97,7 @@ The first commercial software project I worked on was [Microsoft Mail](https://e
 In high school I wrote an interpreter for the [Karel programming language](<https://en.wikipedia.org/wiki/Karel_(programming_language)>) so that teachers could use Richard Pattis' book _Karel the Robot: A Gentle Introduction to the Art of Programming_ in the school's computer science classes. While I'd been programming for a few years at that point, I think the interpreter and accompanying editor constituted the first app I ever wrote that other people used.
 
 The school had a connection to USENET, which was unusual for a high school at that time. I posted my Karel interpreter on the net.sources newsgroup, and some other schools picked up the interpreter for their own intro CS classes. Forty years later, I found my interpreter in a USENET archive and [posted it on GitHub](https://github.com/JanMiksovsky/karel).
+
+## Metamorph
+
+When I was 15, I took a filmmaking and animation class and created a short claymation film called [Metamorph](https://youtu.be/mTbMxvtvSqE). My teacher encouraged me to submit to a state film festival and I was delighted the film won 1st prize in the high school division.
