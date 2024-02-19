@@ -1,5 +1,15 @@
-The Origami language gives #smallweb/#indieweb creators functions for making parts of web sites in the same way a spreadsheet offers functions for crunching numbers: give a function some input, get something useful back.
+I continue to be amazed at what's possible in a static (or nearly static) website. For this month's #SmallWebBuild, I made a static site that's a little store for selling art prints. This seems like a viable alternative to hosting your store on a big platform that you don't control. #smallweb
 
-Case in point: every so often I want a web page to show a screenshot of another web page. Puppeteer is great for that but cumbersome to set up, so I made screenshot functions: give them HTML or a URL, get back an image. https://github.com/WebOrigami/extensions/tree/main/screenshot
+https://www.youtube.com/watch?v=tfojhW5frgk
 
-I used this to make a new Examples page on the Origami docs site. A build script uses the screenshot function to take pictures of each sample URL, producing a virtual folder of images that get saved as real images for deployment. This will make it easy to add new samples or update the screenshots as the sample sites evolve. https://weborigami.org/language/examples
+The Cat Prints Store at https://cat-prints-store.weborigami.org is defined in a single file in the Origami site design language that turns the sample artwork images and data into a gallery home page and a separate page for each print.
+
+![](/images/2024/02/catPrintsGallery.png)
+![](/images/2024/02/catPrints.svg)
+
+I built this to try out Snipcart (https://snipcart.com), a service for adding a shopping cart to a static site. They seem to charge lower fees than the larger site hosting platforms, and it was trivial to add the shopping cart with a few HTML attributes. I **love** that their approach leaves you in control of the rest of your site. (That said, I'm not using Snipcart to actually execute financial transactions; if you're interested in Snipcart, investigate it carefully.)
+
+I also used this store site to experiment with the new View Transitions API. I was able to create a zoom effect in #CSS that works _across page navigations (!)_ which is completely nuts. Caveats: currently in Chrome/Edge/Opera only; it was hard to figure out how to do what I wanted; Chrome often shows a white flash before the zoom-out animation. Still, I'm excited to see these effects coming to simple multi-page sites.
+
+
+@sundress@eigenmagic.net Doing my best to work 🐈🐾 cats into web examples
