@@ -7,7 +7,7 @@
 
   slugKeys = @mapDeep(data, { keyMap: =_/slug })
 
-  reversed = @tree/reverse(slugKeys, { deep: @true })
+  reversed = @reverse(slugKeys, { deep: @true })
 
   formattedPosts = @mapDeep(reversed, post.ori)
 
@@ -16,13 +16,13 @@
   # Add an index page to each year folder.
   years = @map(
     postPages
-    (yearPosts, year) => @tree/merge(yearPosts, {
+    (yearPosts, year) => @merge(yearPosts, {
       index.html = yearPage.ori(formattedPosts(@key), @key)
     })
   )
 
   # The recent feed is the 10 most recent posts.
-  recent = @tree/valuesDeep(takeDeep.js(reversed, 10))
+  recent = @valuesDeep(takeDeep.js(reversed, 10))
   
   # The feed items are the recent posts with just the necessary feed data.
   feedItems = @map(recent, feedItem.js)
@@ -31,13 +31,13 @@
   feed = feed.yaml/
 
   # Main site
-  public = @tree/merge(client, {
+  public = @merge(client, {
 
     images
 
     # Add an index page to the overall posts archive.
-    posts = @tree/merge(years, {
-      index.html = archivePage.ori(@tree/keys(reversed))
+    posts = @merge(years, {
+      index.html = archivePage.ori(@keys(reversed))
     })
 
     # Top-level index page
@@ -50,6 +50,6 @@
     feed.json = @json(feed)
     rss.xml = @rss(feed)
 
-    sitemap.xml = @tree/sitemap(public, "https://jan.miksovsky.com")
+    sitemap.xml = @sitemap(public, "https://jan.miksovsky.com")
   })
 }
