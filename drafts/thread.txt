@@ -12,27 +12,23 @@ Before reading it I hadn't appreciated that EPUB files are just ZIP files with a
 
 https://willcrichton.net/notes/portable-epubs/
 
-You can use apps to make an ebook, but I wanted to build one more directly. Since the Origami website definition language is great at processing trees of content (like a folder of text and images) into new forms, I realized it could easily generate an ebook in EPUB format.
+You can use apps to make an ebook, but I wanted to build one more directly. Since the Origami website definition language is great at processing trees of content (like a folder of text and images) into new forms, I realized it could easily generate an ebook in EPUB format. https://weborigami.org
 
 It wasn't hard to write an Origami program to generate files in the required folder structure, and then it was just a matter of zipping it up.
 
 Which left the question: what material could I turn into a book?
 
-@‌capjamesg@indieweb.social posted a good list of ideas for things people can do on their website. https://jamesg.blog/2024/02/19/personal-website-ideas/ #smallweb #indieweb
+@‌capjamesg@indieweb.social posted a good list of ideas for things people can do on their site. https://jamesg.blog/2024/02/19/personal-website-ideas/ #smallweb #indieweb
 
 @‌facundoolano@hachyderm.io expanded on that to suggest adding EPUB downloads for your blog or subsets of it.
 https://olano.dev/2024-02-22-a-few-more-things-you-can-do-on-your-website
 
-Their posts made me realize my own hike posts might make an interesting sample book.
-
-During the hike I'd kept a travel diary in markdown with photos, so it was fairly easy to add a cover image, an introduction, and some metadata. Voilà: a book!
+These made me realize my hike journal might make an interesting sample book. It was easy to add a cover image, an introduction, and some metadata. Voilà: a book!
 
 It may seem silly, but packaging something as a "book" *feels* weightier. Simply seeing the cover art in my ebook library alongside purchased novels was thrilling, as was opening up the book and paging through it.
 
 It felt like that day in third grade when a teacher had us bind illustrated stories into books and the school librarian put them on a library shelf. 📚
 
-Try making an ebook — about anything — and you'll feel the same thrill.
+Try making an ebook file — about anything — and you'll feel the same thrill.
 
-Facundo Olano
-JamesG
-Will Crichton
+Original post: https://jan.miksovsky.com/posts/2024/02-26-japan-hike-ebook

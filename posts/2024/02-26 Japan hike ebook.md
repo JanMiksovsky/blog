@@ -7,7 +7,7 @@ I've made a little [ebook about my hike across Japan](https://github.com/WebOrig
 In the summer of 2023, I walked for a month from the Pacific Coast to the Sea of Japan. I crossed steep mountains including Mt. Fuji, portions of the Southern Alps, the Yatsugatake range, the Northern Alps, and the Shio no Michi Trail. In between, I walked through cities, towns, and rural areas. The hike was a substantial challenge but also a fun adventure.
 
 <a href="https://github.com/WebOrigami/ebook-sample/">
-  <img src="/images/2024/02/cover.jpg" alt="Book cover showing a grassy method and an elevated walking path" style="max-height: 40vh">
+  <img src="/images/2024/02/cover.jpg" alt="Book cover showing a grassy meadow and an elevated walking path" style="max-height: 40vh">
 </a>
 
 Creating an ebook is not difficult. Will Crichton wrote a great [article advocating for using the EPUB format](https://willcrichton.net/notes/portable-epubs/) as a more portable and responsive alternative to PDFs.
