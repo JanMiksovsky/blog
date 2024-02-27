@@ -13,7 +13,7 @@
 
   postPages = @mapDeep(reversed, postPage.ori)
 
-  # Add an index page to each year folder.
+  // Add an index page to each year folder.
   years = @map(
     postPages
     (yearPosts, year) => @merge(yearPosts, {
@@ -21,29 +21,29 @@
     })
   )
 
-  # The recent feed is the 10 most recent posts.
+  // The recent feed is the 10 most recent posts.
   recent = @valuesDeep(takeDeep.js(reversed, 10))
   
-  # The feed items are the recent posts with just the necessary feed data.
+  // The feed items are the recent posts with just the necessary feed data.
   feedItems = @map(recent, feedItem.js)
   
-  # Evaluate feed.yaml, which will read feedItems above.
+  // Evaluate feed.yaml, which will read feedItems above.
   feed = feed.yaml/
 
-  # Main site
+  // Main site
   public = @merge(client, {
 
     images
 
-    # Add an index page to the overall posts archive.
+    // Add an index page to the overall posts archive.
     posts = @merge(years, {
       index.html = archivePage.ori(@keys(reversed))
     })
 
-    # Top-level index page
+    // Top-level index page
     index.html = index.ori(recent)
 
-    # About Us and Contact pages
+    // About Us and Contact pages
     about.html = page.ori(@mdHtml(about.md))
     contact.html = page.ori(@mdHtml(contact.md))
 

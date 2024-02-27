@@ -1,9 +1,9 @@
-= @if @not(_/draft), `
+(post) => @if @not(post/draft), `
   <article>
-    <a class="quiet" href="{{ _/path }}">
-      {{ @if(_/title, =`<h1 class="postHeader">{{ _/title }}</h1>`) }}
-      <p class="postDate">{{ _/formattedDate }}</p>
+    <a class="quiet" href="${ post/path }">
+      ${ @if(post/title, =`<h1 class="postHeader">${ post/title }</h1>`) }
+      <p class="postDate">${ post/formattedDate }</p>
     </a>
-    {{ _/@text }}
+    ${ post/@text }
   </article>
 `

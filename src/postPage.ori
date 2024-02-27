@@ -1,5 +1,5 @@
-=page.ori({
-  @text: post.ori(_)
-  title: @or(_/title, _/extractedTitle)
-  year: _/year
+(post) => page.ori({
+  @text: post.ori(post)
+  title: @or(post/title, post/extractedTitle)
+  year: post/year
 })

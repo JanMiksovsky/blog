@@ -1,21 +1,21 @@
-=`<html lang="en">
+(document) => `<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>{{ _/title }}</title>
+    <title>${ document/title }</title>
     <link rel="stylesheet" href="/main.css" />
     <link rel="me" href="https://fosstodon.org/@JanMiksovsky">
     <link rel="me" href="https://github.com/JanMiksovsky">
   </head>
   <body>
     <header>
-      {{ banner.ori(_) }}
+      ${ banner.ori(document) }
     </header>
     <main>
-      {{ _/@text }}
+      ${ document/@text }
     </main>
     <footer>
-      {{ banner.ori(_) }}
+      ${ banner.ori(document) }
     </footer>
   </body>
 </html>
