@@ -1,4 +1,4 @@
-(posts) =>  page.ori {
+(posts) => page.ori {
   title: "Jan Miksovsky’s Blog"
   @text: `
     <link rel="alternate" type="application/rss+xml" title="Jan Miksovsky’s Blog" href="rss.xml" />
