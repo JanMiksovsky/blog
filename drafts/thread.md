@@ -79,3 +79,5 @@ The fonts are so different from the stock fonts that any font swap was really ja
 screenshot of heading
 
 ---
+
+Original post: https://jan.miksovsky.com/posts/2024/03-12-all-city-someday.html

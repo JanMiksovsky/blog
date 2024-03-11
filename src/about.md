@@ -16,7 +16,7 @@ I'm quite happy with the progression of my current project, [Web Origami](https:
 
 ## Japan traverse
 
-I spent [a month hiking across Japan](https://www.youtube.com/watch?v=GF0okTdSp9I), crossing the main island of Honshu from the Pacific Ocean to the Sea of Japan. My route took me over steep mountains in a number of national parks, including Mt. Fuji, and portions of the Southern Alps, Yatsugatake, the Northern Alps, and the Shio no Michi Trail. In between, I walked through cities, towns, and rural areas.
+I spent [a month hiking across Japan](https://www.youtube.com/watch?v=GF0okTdSp9I), crossing the main island of Honshu from the Pacific Ocean to the Sea of Japan. My route took me over steep mountains in a number of national parks, including Mt. Fuji, and portions of the Southern Alps, Yatsugatake, the Northern Alps, and the Shio no Michi Trail. In between, I walked through cities, towns, and rural areas. I made a little [ebook](https://github.com/WebOrigami/japan-hike-ebook) about the experience.
 
 ## Emojese
 
