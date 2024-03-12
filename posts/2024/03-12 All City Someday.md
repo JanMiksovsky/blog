@@ -2,7 +2,7 @@
 title: "All City Someday: a photo blog backed by Google Drive"
 ---
 
-Suppose you want a #photoblog that's not on Tumblr or Instagram. Maybe you don't like being sold, or want to draw outside the lines, or want photos as part of your own site. What would a #smallweb alternative look like that let you post a photo and caption from your phone?
+Suppose you want a photo blog that's not on Tumblr or Instagram. Maybe you don't like being sold, or want to draw outside the lines, or want photos as part of your own site. What would a #smallweb alternative look like that let you post a photo and caption from your phone?
 
 I made a proof-of-concept [street art photo blog](https://all-city-someday.netlify.app) that supports this on-phone flow: 1) snap a photo and set a caption, 2) save the photo to Google Drive via Files, 3) trigger a rebuild via the browser, 4) see the new photo on your own site.
 
@@ -25,7 +25,7 @@ I made a proof-of-concept [street art photo blog](https://all-city-someday.netli
 
 Google Drive is hardly #indieweb, but look beyond "corporate = bad" and consider the nature of the relationship. They provide a commodity service: you pay them, they store your files. Those files are a medium of exchange. If (when?) Google screws around, you can easily move the files to a different storage provider. Switching costs for hosted platforms like Tumblr or Instagram are _far_ higher.
 
-All storage services provide a proprietary API to enable unique features and faster service… but also to force you to write to their stupid API and make your own code a switching cost. But most of what you want from storage is just an easy way to: 1) list directories, 2) read a whole file, and (maybe) 3) save a whole file.
+All storage services provide a proprietary API to enable unique features and faster service… but also to force you to write to that API and make your own code a switching cost. But most of what you want from storage is just an easy way to: 1) list directories, 2) read a whole file, and (maybe) 3) save a whole file.
 
 The tiny [AsyncTree interface](https://weborigami.org/async-tree/interface) does exactly those things.
 
