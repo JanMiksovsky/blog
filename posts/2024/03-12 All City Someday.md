@@ -37,9 +37,9 @@ interface AsyncTree {
 }
 ```
 
-This interface lets small storage drivers deal with the stupid proprietary APIs. The Origami language can use such a driver to read images out of Google Drive and create a static, deployable site. Switching to another provider just means switching drivers.
+This interface lets small storage drivers wrap the proprietary APIs; switching providers is just a matter of switching drivers.
 
-Origami templates also understand that interface, so you can make a template that directly [maps a folder's photos](https://github.com/WebOrigami/all-city-someday/blob/main/src/index.ori) to HTML `<img>` tags with dates and captions. 🎉
+The Origami language can use such a driver to read images out of Google Drive and create a static, deployable site. Origami templates also understand that interface, so you can make a template that directly [maps a folder's photos](https://github.com/WebOrigami/all-city-someday/blob/main/src/index.ori) to HTML `<img>` tags with dates and captions. 🎉
 
 <div class="sideBySide">
   <a href="/images/2024/03/photoIndexTemplate.png">
