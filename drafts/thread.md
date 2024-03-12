@@ -1,14 +1,14 @@
 Suppose you want a photo blog that's not on Tumblr or Instagram. Maybe you don't like being sold, or want to draw outside the lines, or want photos as part of your own site. What would a #smallweb alternative look like that let you post a photo and caption from your phone?
 
-I made a proof-of-concept #streetart blog: snap a photo on an iPhone, save to Google Drive via Files, trigger a rebuild via the browser → see the new photo on your own site.
+I made All City Someday, a proof-of-concept #streetart blog: snap a photo on an iPhone, save to Google Drive via Files, trigger a rebuild via the browser → see the new photo on your own site.
 
 https://all-city-someday.netlify.app
 
 screenshots:
-Photos app setting caption
-Saving to Google Drive
-Netlify redeploy
-Published image
+Typing a caption for a new photo in the iPhone Photos app
+Saving the photo to Google Drive via iPhone Files
+Triggering a Netlify redeploy in the browser
+Published photo blog home page showing the new photo
 
 ---
 
@@ -22,7 +22,7 @@ All storage services provide a proprietary API to enable unique features and fas
 
 But most of what you want from storage is just an easy way to: 1) list directories, 2) read a whole file, and (maybe) 3) save a whole file. We can design a tiny interface that does only those things. https://weborigami.org/async-tree/interface
 
-screenshot of interface
+TypeScript definition of AsyncTree interface with get, keys, and set methods
 
 ---
 
@@ -30,8 +30,8 @@ This interface lets small storage drivers wrap the proprietary APIs; switching p
 
 The Origami language can use such a driver to read images out of Google Drive and create a static, deployable site. Origami templates also understand that interface, so you can make a template that directly maps a folder's photos to HTML `<img>` tags with dates and captions. 🎉 https://github.com/WebOrigami/all-city-someday/blob/main/src/index.ori
 
-screenshot of template
-screenshot of HTML
+Origami code for a photo blog index page
+Resulting HTML for a photo blog index page showing photo dates and captions
 
 ---
 
@@ -53,7 +53,7 @@ Origami is a general-purpose language, not specifically a blog engine, but even 
 
 If I ever needed to switch storage providers, I'd just have to update the 3 lines of code that authenticate with Google and get a reference to the Drive folder. Everything else would stay the same.
 
-svg diagram
+Diagram showing the tree structure of the photo blog site
 
 ---
 
@@ -64,7 +64,7 @@ Abstracting away storage doesn't just give you an interesting way to build a sit
 - extract the dates from all the photos
 - copy all the files from Google Drive to the local machine
 
-CLI snapshot
+Terminal window showing the ori command-line tool accessing Google Drive files
 
 ---
 
@@ -75,8 +75,6 @@ It was fun to play with #CSS blur, text-shadow, and -webkit-text-stroke for a gr
 I was able to auto-size the header width to be roughly as wide as the photos by playing with values for `font-size: clamp(…)`.
 
 The fonts are so different from the stock fonts that any font swap was really jarring, so I forced early loading of the small font files and used `font-display: block`.
-
-screenshot of heading
 
 ---
 
