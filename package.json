@@ -11,7 +11,7 @@
     "unified": "10.1.2"
   },
   "scripts": {
-    "build": "rm -r build; ori @copy src/site.ori/public, @files/build",
+    "build": "rm -r build; ori @copy src/site.ori/public, @mkdir/build",
     "test": "node tools/test/*.test.js"
   }
 }

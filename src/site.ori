@@ -5,7 +5,7 @@
     (_, filename) => postData.js(_, filename, year)
   ))
 
-  slugKeys = @mapDeep(data, { keyMap: =_/slug })
+  slugKeys = @mapDeep(data, { key: =_/slug })
 
   reversed = @reverse(slugKeys, { deep: @true })
 
