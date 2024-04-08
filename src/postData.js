@@ -3,6 +3,11 @@
  * with additional information.
  */
 export default async function postData(document, filename, year) {
+  // Some documents are plain text; upgrade them to document objects.
+  if (!(typeof document === "object")) {
+    document = { "@text": document };
+  }
+
   const slug = postSlug(filename);
 
   const dateRegex = /^(?<month>\d\d)-(?<day>\d\d) (?<title>.+).html$/;
