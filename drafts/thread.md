@@ -1,15 +1,13 @@
-Each month this year I'm trying to post a sample website written in Origami, a declarative programming language at the level of #HTML and #CSS for defining websites. This month's sample is Aventour Expeditions, a site for an outdoor travel company.
+Each month this year I'm trying to post a sample website written in Origami, a declarative programming language at the level of #HTML and #CSS for defining websites. This month's sample is Aventour Expeditions, a site for an outdoor travel company: https://aventour-expeditions.netlify.app
 
 It's easy to have Origami call other template languages, so for this sample I used the #Handlebars template language to turn markup and data into HTML.
 
-https://aventour-expeditions.netlify.app
-
-Home page for an outdoor trekking company with tagline "Start your adventure"
+Home page for an outdoor trekking company with woman drinking coffee outdoors and tagline "Start your adventure"
 Page for a trek to the Wadi Rum desert in Jordan
 
 ---
 
-It took just a few lines of Origami code to define the structure of the site and indicate which Handlebars template should be used to create which pages. For this outdoor travel example, Origami makes it very, very easy to:
+It took just a bit of Origami code to define the structure of the site and indicate which Handlebars template should be used to create which pages. For this outdoor travel example, Origami makes it very, very easy to:
 
 - Create a web page for trek described in markup with front matter.
 - Create index pages showing cards for a set of treks.
@@ -32,3 +30,7 @@ Rewriting slashed the size of the pages. For the home page:
 
 Before: 42K HTML, 600K CSS, 1580K JS
 After: 13K HTML, 12K CSS, 0K JS!
+
+---
+
+Original post: https://jan.miksovsky.com/posts/2024/04-18-aventour.html
