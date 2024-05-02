@@ -1,0 +1,7 @@
+(post) => {
+  content_html: post/@text
+  date_published: post/date
+  id: `https://jan.miksovsky.com${post/path}`
+  url: `https://jan.miksovsky.com${post/path}`
+  title: @or(post/title, post/extractedTitle)
+}

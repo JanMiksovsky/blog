@@ -3,10 +3,11 @@
  * with additional information.
  */
 export default async function postData(document, filename, year) {
-  // Some documents are plain text; upgrade them to document objects.
-  if (!(typeof document === "object")) {
-    document = { "@text": document };
-  }
+  // Some documents are plain text, others are document objects.
+  const isDocument = typeof document === "object";
+  const text = isDocument ? document["@text"] : document;
+  const title = isDocument && document.title ? document.title : undefined;
+  const extractedTitle = !title ? extractTitle(plainText(text)) : undefined;
 
   const slug = postSlug(filename);
 
@@ -19,23 +20,26 @@ export default async function postData(document, filename, year) {
   }
   const { month, day } = match.groups;
 
-  const extractedTitle = document.title
-    ? undefined
-    : extractTitle(plainText(document["@text"]));
-
-  const date = `${year}-${month}-${day}`;
-  const formattedDate = formatDate(date);
+  // Treat date as PST.
+  const date = new Date(Date.parse(`${year}-${month}-${day} PST`));
+  const formattedDate = date.toLocaleDateString("en-US", {
+    day: "numeric",
+    month: "long",
+    timeZone: "America/Los_Angeles",
+    year: "numeric",
+  });
   const path = `/posts/${year}/${slug}`;
-  const augmented = Object.create(document);
+
   return Object.assign(
-    augmented,
     {
       date,
       formattedDate,
       path,
       slug,
       year,
+      "@text": text,
     },
+    title && { title },
     extractedTitle && { extractedTitle }
   );
 }
@@ -68,16 +72,6 @@ function extractTitle(text) {
 
   // Last choice: use the first 40 characters.
   return text.slice(0, 40);
-}
-
-function formatDate(yyyyMmDd) {
-  const date = new Date(Date.parse(`${yyyyMmDd} PST`));
-  return date.toLocaleDateString("en-US", {
-    day: "numeric",
-    month: "long",
-    timeZone: "America/Los_Angeles",
-    year: "numeric",
-  });
 }
 
 // Remove HTML tags

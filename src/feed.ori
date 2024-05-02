@@ -1,0 +1,10 @@
+// Top-level feed data in JSON Feed format
+// See https://www.jsonfeed.org/version/1.1/
+(items) => {
+  version: "https://jsonfeed.org/version/1.1"
+  title: "Jan Miksovsky’s blog"
+  description: "Writings on the craft of user interface design and development"
+  feed_url: "https://jan.miksovsky.com/feed.json"
+  home_page_url: "https://jan.miksovsky.com"
+  items: @map(items, feedItem.ori)
+}

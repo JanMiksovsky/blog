@@ -23,12 +23,7 @@
 
   // The recent feed is the 10 most recent posts.
   recent = @valuesDeep(takeDeep.js(reversed, 10))
-  
-  // The feed items are the recent posts with just the necessary feed data.
-  feedItems = @map(recent, feedItem.js)
-  
-  // Evaluate feed.yaml, which will read feedItems above.
-  feed = feed.yaml/
+  feed = feed.ori(recent)
 
   // Main site
   public = @merge(client, {
