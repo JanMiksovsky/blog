@@ -103,11 +103,3 @@ function postSlug(filename) {
   }
   return slug;
 }
-
-function postDate(dateText) {
-  if (!dateText) {
-    return undefined;
-  }
-  const date = new Date(`${dateText} PST`);
-  return date;
-}
