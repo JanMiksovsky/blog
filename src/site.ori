@@ -1,11 +1,11 @@
 {
   bodies = @mapDeep(posts, @mdHtml)
 
-  data = @map(bodies, (_, year) => @map(_,
-    (_, filename) => postData.js(_, filename, year)
+  data = @map(bodies, (yearPosts, year) => @map(yearPosts,
+    (post, filename) => postData.js(post, filename, year)
   ))
 
-  slugKeys = @mapDeep(data, { key: =_/slug })
+  slugKeys = @mapDeep(data, { key: (post) => post/slug })
 
   reversed = @reverse(slugKeys, { deep: @true })
 
@@ -17,7 +17,7 @@
   years = @map(
     postPages
     (yearPosts, year) => @merge(yearPosts, {
-      index.html = yearPage.ori(formattedPosts(@key), @key)
+      index.html = yearPage.ori(formattedPosts(year), year)
     })
   )
 
