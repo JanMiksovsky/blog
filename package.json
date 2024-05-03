@@ -2,13 +2,13 @@
   "name": "blog",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "0.0.47"
+    "@weborigami/origami": "0.0.49"
   },
   "devDependencies": {
-    "rehype-stringify": "9.0.3",
-    "remark-parse": "10.0.1",
-    "remark-rehype": "10.1.0",
-    "unified": "10.1.2"
+    "rehype-stringify": "10.0.0",
+    "remark-parse": "11.0.0",
+    "remark-rehype": "11.1.0",
+    "unified": "11.0.4"
   },
   "scripts": {
     "build": "rm -r build; ori @copy src/site.ori/public, @mkdir/build",
