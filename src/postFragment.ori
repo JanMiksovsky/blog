@@ -1,4 +1,4 @@
-(post) => @if @not(post/draft), `
+(post) => `
   <article>
     <a class="quiet" href="${ post/path }">
       ${ @if(post/title, =`<h1 class="postHeader">${ post/title }</h1>`) }

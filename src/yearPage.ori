@@ -2,6 +2,6 @@
   title: year
   @text: `
     <h1 class="yearHeader">${ year }</h1>
-    ${ posts }
+    ${ @map(posts, postFragment.ori) }
   `
 }

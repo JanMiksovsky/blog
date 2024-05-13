@@ -1,11 +1,11 @@
-(posts) => page.ori {
+(posts) => page.ori({
   title: "Jan Miksovsky’s Blog"
   @text: `
     <link rel="alternate" type="application/rss+xml" title="Jan Miksovsky’s Blog" href="rss.xml" />
     <link rel="alternate" type="application/json" title="Jan Miksovsky’s Blog" href="feed.json" />
-    ${ @map(posts, post.ori) }
+    ${ @map(posts, postFragment.ori) }
     <p style="margin-top: 4em;">
       <a href="posts/">Older posts</a>
     </p>
   `
-}
+})

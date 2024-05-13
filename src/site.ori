@@ -1,50 +1,44 @@
 {
-  bodies = @mapDeep(posts, @mdHtml)
+  processed = posts
+    → @deepMapFn(@mdHtml)
+    → @mapFn((yearPosts, year) => @map(
+      yearPosts
+      (post, filename) => postData.js(post, filename, year)
+    ))
+    → @deepMapFn({ key: (post) => post/slug })
+    → (slugs) => @reverse(slugs, { deep: @true })
 
-  data = @map(bodies, (yearPosts, year) => @map(yearPosts,
-    (post, filename) => postData.js(post, filename, year)
+  // Apply to template to post pages, and create a page for each year.
+  years = @map(processed, (yearPosts, year) => @merge(
+    {
+      index.html = yearPage.ori(yearPosts, year)
+    }
+    @map(yearPosts, postPage.ori)
   ))
 
-  slugKeys = @mapDeep(data, { key: (post) => post/slug })
-
-  reversed = @reverse(slugKeys, { deep: @true })
-
-  formattedPosts = @mapDeep(reversed, post.ori)
-
-  postPages = @mapDeep(reversed, postPage.ori)
-
-  // Add an index page to each year folder.
-  years = @map(
-    postPages
-    (yearPosts, year) => @merge(yearPosts, {
-      index.html = yearPage.ori(formattedPosts(year), year)
-    })
-  )
-
   // The recent feed is the 10 most recent posts.
-  recent = @valuesDeep(takeDeep.js(reversed, 10))
+  recent = @deepTake(processed, 10)
   feed = feed.ori(recent)
 
   // Main site
   public = @merge(client, {
 
-    images
-
-    // Add an index page to the overall posts archive.
-    posts = @merge(years, {
-      index.html = archivePage.ori(@keys(reversed))
-    })
-
-    // Top-level index page
-    index.html = index.ori(recent)
-
     // About Us and Contact pages
     about.html = page.ori(@mdHtml(about.md))
     contact.html = page.ori(@mdHtml(contact.md))
 
+    images
+
+    // Top-level index page
+    index.html = index.ori(recent)
+
+    // Add an index page to the overall posts archive.
+    posts = @merge(years, {
+      index.html = archivePage.ori(@keys(processed))
+    })
+
     feed.json = @json(feed)
     rss.xml = @rss(feed)
-
     sitemap.xml = @sitemap(public, "https://jan.miksovsky.com")
   })
 }
