@@ -2,7 +2,7 @@
   "name": "blog",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "0.0.49"
+    "@weborigami/origami": "0.0.50"
   },
   "devDependencies": {
     "rehype-stringify": "10.0.0",
