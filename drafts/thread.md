@@ -6,7 +6,7 @@ Creating a site in Origami is completely different than creating a site in any o
 
 ---
 
-Origami isn't a blog engine or framework, just like Microsoft Excel isn't an invoicing or expense reporting framework. Excel is a general tool that transforms and aggregates numbers and text in tables. Origami is a general tool that transforms and aggregates data and content in trees.
+Origami isn't a blog engine or framework, just like Microsoft Excel isn't an invoicing or expense reporting framework. Excel is a general tool that transforms and aggregates numbers and text in tables. Origami is a general tool that transforms and aggregates data and content in trees. https://weborigami.org
 
 So this project isn't configuring a blog tool — it's defining what a blog is from scratch. The source is endlessly malleable, and you can readily change what gets produced to achieve a wide variety of results.
 
