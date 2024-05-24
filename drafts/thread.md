@@ -1,36 +1,42 @@
-Each month this year I'm trying to post a sample website written in Origami, a declarative programming language at the level of #HTML and #CSS for defining websites. This month's sample is Aventour Expeditions, a site for an outdoor travel company: https://aventour-expeditions.netlify.app
+To demonstrate that Origami is a good language for building #smallweb / #indieweb blogs, I built a fun sample site reenvisioning Henry David Thoreau has a modern influencer with a lifestyle blog about off-grid living. #BuildInPublic https://pondlife.netlify.app
 
-It's easy to have Origami call other template languages, so for this sample I used the #Handlebars template language to turn markup and data into HTML.
+Creating a site in Origami is completely different than creating a site in any other tool I know of.
 
-Home page for an outdoor trekking company with woman drinking coffee outdoors and tagline "Start your adventure"
-Page for a trek to the Wadi Rum desert in Jordan
-
----
-
-It took just a bit of Origami code to define the structure of the site and indicate which Handlebars template should be used to create which pages. For this outdoor travel example, Origami makes it very, very easy to:
-
-- Create a web page for trek described in markup with front matter.
-- Create index pages showing cards for a set of treks.
-- Create a gallery page showing each image in a folder. Origami makes it very easy to pass a Handlebars gallery template the list of image file names, which the template can turn into img tags and links.
-
-Origami site definition for the trekking company site
-Tree diagram of the trekking company site
+![Blog post titled "Beans" with text adapted from Thoreau's "Walden"]
 
 ---
 
-Origami also made it easy to cross-link the data for each trek with related treks. That allows the page for one trek to show cards links to related treks.
+Origami isn't a blog engine or framework, just like Microsoft Excel isn't an invoicing or expense reporting framework. Excel is a general tool that transforms and aggregates numbers and text in tables. Origami is a general tool that transforms and aggregates data and content in trees.
 
-Page showing related treks to mountain destinations in Canada and Nepal
-
----
-
-Aside: modern HTML and CSS are soooo much better than the past. I based the trekking site on a WordPress template whose design I liked but whose HTML/CSS was ridiculously complex and burdened with tons of JavaScript for trivial things.
-
-Rewriting slashed the size of the pages. For the home page:
-
-Before: 42K HTML, 600K CSS, 1580K JS
-After: 13K HTML, 12K CSS, 0K JS!
+So this project isn't configuring a blog tool — it's defining what a blog is from scratch. The source is endlessly malleable, and you can readily change what gets produced to achieve a wide variety of results.
 
 ---
 
-Original post: https://jan.miksovsky.com/posts/2024/04-18-aventour.html
+To build in Origami, think about the starting tree of content you'll write or gather by hand, and the final tree of resources in your running site. Step by step, you transform the former into the latter.
+
+For a blog you might start with, say, a `markdown` folder containing markdown posts, an `images` folder for photos, and an `assets` folder for stylesheets.
+
+The final resource tree comprises the `images` and `assets` as is, plus generated pages for individual posts, list pages, and feeds.
+
+![](Starting tree of content)
+![](Desired tree of website resources)
+
+---
+
+To generate individual pages you can use a template language. Origami has a nice one built in; you can use others.
+
+But the real magic is writing formulas to process a pile of content at once, like a pipeline that transforms markdown to HTML, calculates data, and sorts the posts to prepare them for rendering — or a compact definition of the entire public portion of the site.
+
+![](Origami pipeline transforming a markdown folder into data)
+![](Origami program that defines the publicly-visible resources for a blog site)
+
+---
+
+This Origami program generates the full tree of the resources for your blog, which you can browse immediately. The Origami runtime only does the work to generate a page when you ask for it.
+
+The same Origami program can also produce a complete build folder with all your site files. Deploy those on a static web server or have a service do a build whenever you update your project.
+
+---
+
+Full source with more details: https://github.com/WebOrigami/pondlife
+Original post: https://jan.miksovsky.com/posts/2024/05-24-pondlife.html
