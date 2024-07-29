@@ -2,7 +2,7 @@
   "name": "blog",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "0.0.52"
+    "@weborigami/origami": "0.0.62"
   },
   "devDependencies": {
     "rehype-stringify": "10.0.0",
@@ -11,7 +11,7 @@
     "unified": "11.0.4"
   },
   "scripts": {
-    "build": "rm -r build; ori @copy src/site.ori/public, @mkdir/build",
+    "build": "ori @copy src/site.ori/public, @clean @files/build",
     "test": "node tools/test/*.test.js"
   }
 }
