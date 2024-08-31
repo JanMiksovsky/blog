@@ -1,0 +1,8 @@
+(item) => @if(
+  @log(item/image)
+  =@tree/traversePath(images, item/image)
+  =package:@weborigami/screenshot/html(preview.ori(item), {
+    width: 1200
+    height: 630
+  })
+)

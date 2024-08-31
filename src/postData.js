@@ -32,10 +32,17 @@ export default async function postData(document, filename, year) {
   const postSlug = slug(filename);
   const path = `/posts/${year}/${postSlug}`;
 
+  // Find the src of the first image in the HTML.
+  const imageRegex =
+    /<img src="\/images\/(?<src>[^"]+(?:.avif|.png|.jpe?g|.webp))"/;
+  const imageMatch = text.match(imageRegex);
+  const image = imageMatch?.groups?.src;
+
   return Object.assign(
     {
       date,
       formattedDate,
+      image,
       path,
       slug: postSlug,
       year,

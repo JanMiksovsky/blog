@@ -2,13 +2,14 @@
   "name": "blog",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "0.0.62"
+    "@weborigami/origami": "0.0.64",
+    "@weborigami/screenshot": "0.0.6"
   },
   "devDependencies": {
     "rehype-stringify": "10.0.0",
     "remark-parse": "11.0.0",
     "remark-rehype": "11.1.0",
-    "unified": "11.0.4"
+    "unified": "11.0.5"
   },
   "scripts": {
     "build": "ori @copy src/site.ori/public, @clean @files/build",

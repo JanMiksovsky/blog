@@ -21,6 +21,8 @@
 
   // Main site
   public = {
+
+
     // Merge in the client folder
     …client
 
@@ -39,8 +41,19 @@
       …years
     }
 
+    previews = @map(recent, {
+      key: (item) => item/slug
+      value: preview.ori
+    })
+
+    screenshots = @map(recent, {
+      key: (item) => `${ @node/path/basename(item/slug, ".html") }.png`
+      value: screenshot.ori
+    })
+
     feed.json = @json(feed)
     rss.xml = @rss(feed, { feed_url: "https://jan.miksovsky.com/rss.xml" })
-    sitemap.xml = @sitemap(public, "https://jan.miksovsky.com")
+
+    // sitemap.xml = @sitemap(public, "https://jan.miksovsky.com")
   }
 }
