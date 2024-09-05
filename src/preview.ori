@@ -1,28 +1,7 @@
-(item) => `<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <base href="/images">
-    <style>
-      body {
-        font-family: "Helvetica", Arial, sans-serif;
-        font-size: 18pt;
-        margin: 0;
-        padding: 2em;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>
-      ${ @if(
-          item/title
-          item/title
-          @if(item/extractedTitle, item/extractedTitle)
-      ) }
-      </h1>
-      ${ item/@text }
-    </main>
-  </body>
-</html>
-`
+(item) => @if(
+  item/previewUrl // Is item new enough to deserve a preview?
+  =package:@weborigami/screenshot/html(excerpt.ori(item), {
+    width: 1200
+    height: 630
+  })
+)

@@ -32,24 +32,44 @@ export default async function postData(document, filename, year) {
   const postSlug = slug(filename);
   const path = `/posts/${year}/${postSlug}`;
 
+  // Is the post less than a year old?
+  const isNew = date > new Date(Date.now() - 365 * 24 * 60 * 60 * 1000);
+
   // Find the src of the first image in the HTML.
   const imageRegex =
-    /<img src="\/images\/(?<src>[^"]+(?:.avif|.png|.jpe?g|.webp))"/;
+    /<img\s+src="\/(?<src>images\/[^"]+(?:.avif|.png|.jpe?g|.webp))"/;
   const imageMatch = text.match(imageRegex);
-  const image = imageMatch?.groups?.src;
+  const imagePath = imageMatch?.groups?.src;
+
+  let previewSlug;
+  let previewUrl;
+  if (imagePath) {
+    // Use first image as preview
+    previewUrl = imagePath;
+  } else if (isNew) {
+    // Recent post; generate preview image
+    previewSlug = postSlug.replace(/\.html$/, ".png");
+    previewUrl = `https://jan.miksovsky.com/previews/${year}/${previewSlug}`;
+  }
+
+  const url = `https://jan.miksovsky.com/${year}/${postSlug}`;
 
   return Object.assign(
     {
       date,
       formattedDate,
-      image,
       path,
       slug: postSlug,
+      url,
       year,
-      "@text": text,
     },
     title && { title },
-    extractedTitle && { extractedTitle }
+    extractedTitle && { extractedTitle },
+    previewSlug && { previewSlug },
+    previewUrl && { previewUrl },
+    {
+      "@text": text,
+    }
   );
 }
 

@@ -15,6 +15,9 @@
     …@map(yearPosts, postPage.ori)
   })
 
+  // Excerpted form for previews, only used for debugging
+  excerpts = @map(processed, @mapFn(excerpt.ori))
+
   // The recent feed is the 10 most recent posts.
   recent = @deepTake(processed, 10)
   feed = feed.ori(recent)
@@ -41,15 +44,10 @@
       …years
     }
 
-    previews = @map(recent, {
-      key: (item) => item/slug
+    previews = @map(processed, @mapFn({
+      key: (item) => item/previewSlug
       value: preview.ori
-    })
-
-    screenshots = @map(recent, {
-      key: (item) => `${ @node/path/basename(item/slug, ".html") }.png`
-      value: screenshot.ori
-    })
+    }))
 
     feed.json = @json(feed)
     rss.xml = @rss(feed, { feed_url: "https://jan.miksovsky.com/rss.xml" })

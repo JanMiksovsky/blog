@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="/main.css" />
     <link rel="me" href="https://fosstodon.org/@JanMiksovsky">
     <link rel="me" href="https://github.com/JanMiksovsky">
+    <meta property="og:title" content="${ document/title }">
+    <meta property="og:type" content="article">
+    ${ @if(document/url, =`<meta property="og:url" content="${ document/url }">`) }
+    ${ @if(document/previewUrl, =`<meta property="og:image" content="${ document/previewUrl }">`) }
   </head>
   <body>
     <header>
