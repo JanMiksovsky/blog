@@ -16,8 +16,8 @@ export default async function postData(document, filename, year) {
 
   const html = await mdHtml(markdown);
 
-  const text = stripMarkdown(markdown);
-  const description = extractFirstSentence(text);
+  const text = strip(markdown);
+  const description = title ? extractFirstSentence(text) : undefined;
   const extractedTitle = !title ? extractTitle(text) : undefined;
 
   const dateRegex = /^(?<month>\d\d)-(?<day>\d\d) (?<title>.+).md$/;
@@ -63,7 +63,6 @@ export default async function postData(document, filename, year) {
   return Object.assign(
     {
       date,
-      description,
       formattedDate,
       html,
       path,
@@ -72,10 +71,11 @@ export default async function postData(document, filename, year) {
       url,
       year,
     },
-    title && { title },
+    description && { description },
     extractedTitle && { extractedTitle },
     previewSlug && { previewSlug },
-    previewUrl && { previewUrl }
+    previewUrl && { previewUrl },
+    title && { title }
   );
 }
 
@@ -110,8 +110,8 @@ function extractTitle(text) {
   return text.slice(0, 40);
 }
 
-// Remove Markdown formatting
-function stripMarkdown(markdown) {
+// Remove HTML, markdown, and hashtags.
+function strip(markdown) {
   return stripHtml(markdown) // Strip HTML
     .replace(/```[^`]+```/g, "") // Remove code blocks
     .replace(/`([^`]+)`/g, "$1") // Remove inline code formatting
@@ -119,6 +119,7 @@ function stripMarkdown(markdown) {
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // Remove links, keep text
     .replace(/\*\*([^*]+)\*\*/g, "$1") // Remove bold
     .replace(/\*([^*]+)\*/g, "$1") // Remove italics
+    .replace(/#(\w+)/g, "$1") // Remove hashtags
     .trim();
 }
 
