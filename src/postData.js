@@ -49,13 +49,11 @@ export default async function postData(document, filename, year) {
   const imageMatch = html.match(imageRegex);
   const imagePath = imageMatch?.groups?.src;
 
+  // If the post has an image, use it as the preview. Alternatively, if the post
+  // is from the recent markdown era, generate a preview image.
   let previewSlug;
   let previewUrl;
-  if (imagePath) {
-    // Use first image as preview
-    previewUrl = `https://jan.miksovsky.com/${imagePath}`;
-  } else if (year >= 2023) {
-    // Recent era markdown post; generate preview image
+  if (imagePath || year >= 2023) {
     previewSlug = postSlug.replace(/\.html$/, ".png");
     previewUrl = `https://jan.miksovsky.com/previews/${year}/${previewSlug}`;
   }
@@ -73,6 +71,7 @@ export default async function postData(document, filename, year) {
     },
     description && { description },
     extractedTitle && { extractedTitle },
+    imagePath && { imagePath },
     previewSlug && { previewSlug },
     previewUrl && { previewUrl },
     title && { title }
