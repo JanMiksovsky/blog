@@ -8,6 +8,7 @@
     <link rel="me" href="https://github.com/JanMiksovsky">
     ${ @if(document/url, =`
       <meta property="og:title" content="${ document/title }">
+      <meta property="og:description" content="${ document/description }">
       <meta property="og:type" content="article">
       <meta property="og:url" content="${ document/url }">
       ${ @if(document/previewUrl, =`<meta property="og:image" content="${ document/previewUrl }">`) }

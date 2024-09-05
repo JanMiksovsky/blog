@@ -17,6 +17,7 @@ export default async function postData(document, filename, year) {
   const html = await mdHtml(markdown);
 
   const text = stripMarkdown(markdown);
+  const description = extractFirstSentence(text);
   const extractedTitle = !title ? extractTitle(text) : undefined;
 
   const dateRegex = /^(?<month>\d\d)-(?<day>\d\d) (?<title>.+).md$/;
@@ -45,7 +46,7 @@ export default async function postData(document, filename, year) {
   // Find the src of the first image in the HTML.
   const imageRegex =
     /<img\s+src="\/(?<src>images\/[^"]+(?:.avif|.png|.jpe?g|.webp))"/;
-  const imageMatch = text.match(imageRegex);
+  const imageMatch = html.match(imageRegex);
   const imagePath = imageMatch?.groups?.src;
 
   let previewSlug;
@@ -62,6 +63,7 @@ export default async function postData(document, filename, year) {
   return Object.assign(
     {
       date,
+      description,
       formattedDate,
       html,
       path,
@@ -77,17 +79,18 @@ export default async function postData(document, filename, year) {
   );
 }
 
+function extractFirstSentence(text) {
+  const sentenceEnd = text.search(/[\.\?\!]/);
+  return sentenceEnd >= 0 ? text.slice(0, sentenceEnd + 1) : null;
+}
+
 function extractTitle(text) {
   // Find the position of the first sentence-final punctuation mark in the first
   // 80 characters.
-  const sentenceEnd = text.search(/[\.\?\!]/);
-  if (sentenceEnd >= 0 && sentenceEnd < 80) {
-    let title = text.slice(0, sentenceEnd + 1);
-    if (title.endsWith(".")) {
-      // Remove trailing period.
-      title = title.slice(0, -1);
-    }
-    return title;
+  const firstSentence = extractFirstSentence(text);
+  if (firstSentence && firstSentence.length <= 80) {
+    // Remove final punctuation.
+    return firstSentence.slice(0, -1);
   }
 
   // Find the first interior punctuation mark in the first 80 characters.
@@ -115,7 +118,8 @@ function stripMarkdown(markdown) {
     .replace(/!\[[^\]]+\]\([^)]+\)/g, "") // Remove images
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // Remove links, keep text
     .replace(/\*\*([^*]+)\*\*/g, "$1") // Remove bold
-    .replace(/\*([^*]+)\*/g, "$1"); // Remove italics
+    .replace(/\*([^*]+)\*/g, "$1") // Remove italics
+    .trim();
 }
 
 // Remove HTML tags
