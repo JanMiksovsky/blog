@@ -1,7 +1,13 @@
 (item) => @if(
   item/previewUrl // Is item new enough to deserve a preview?
-  =package:@weborigami/screenshot/html(excerpt.ori(item), {
-    width: 1200
+  // =package:@weborigami/screenshot/html(excerpt.ori(item), {
+  //   width: 1200
+  //   height: 630
+  // })
+  =ogImage.js({
     height: 630
+    text: item/@text
+    title: @or(item/title, item/extractedTitle)
+    width: 1200
   })
 )
