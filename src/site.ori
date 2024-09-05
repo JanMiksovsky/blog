@@ -45,7 +45,7 @@
 
     previews = @map(processed, @mapFn({
       key: (item) => item/previewSlug
-      value: preview.ori
+      value: (item) => @if(item/previewUrl, =preview.ori(item))
     }))
 
     feed.json = @json(feed)
