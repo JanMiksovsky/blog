@@ -1,9 +1,8 @@
 {
   processed = posts
-    → @deepMapFn(@mdHtml)
     → @mapFn((yearPosts, year) =>
         @map(yearPosts, {
-          key: (post, fileName) => @slug(fileName)
+          key: (post, fileName) => `${ @node/path/basename(@slug(fileName), ".md") }.html`
           value: (post, fileName) => postData.js(post, fileName, year)
         })
     )

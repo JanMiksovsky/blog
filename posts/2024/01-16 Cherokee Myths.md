@@ -2,7 +2,7 @@
 title: Cherokee Myths sample Origami site with a table of contents and full-text search
 ---
 
-I built a sample [Cherokee Myths](https://cherokee-myths.netlify.app) site to explore how easy it is to create a static site in [Origami](https://weborigami.org/language) that includes a generated table of contents and full-text search. I'm happy with how the site turned out. <!-- #smallweb #indieweb -->
+I built a sample [Cherokee Myths](https://cherokee-myths.netlify.app) site to explore how easy it is to create a static site in [Origami](https://weborigami.org/language) that includes a generated table of contents and full-text search. I'm happy with how the site turned out.
 
 ![Cherokee Myths site home page with a table of contents listing myths grouped by topic](/images/2024/01/mythsHome.png)
 

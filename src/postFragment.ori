@@ -1,9 +1,9 @@
 (post) => `
   <article>
-    <a class="quiet" href="${ post/path }">
+    <a class="quiet" href="/${ post/path }">
       ${ @if(post/title, =`<h1 class="postHeader">${ post/title }</h1>`) }
       <p class="postDate">${ post/formattedDate }</p>
     </a>
-    ${ post/@text }
+    ${ post/html }
   </article>
 `
