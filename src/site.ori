@@ -14,16 +14,12 @@
     …@map(yearPosts, postPage.ori)
   })
 
-  // Excerpted form for previews, only used for debugging
-  excerpts = @map(processed, @mapFn(excerpt.ori))
-
   // The recent feed is the 10 most recent posts.
   recent = @deepTake(processed, 10)
   feed = feed.ori(recent)
 
   // Main site
   public = {
-
 
     // Merge in the client folder
     …client
@@ -50,7 +46,5 @@
 
     feed.json = @json(feed)
     rss.xml = @rss(feed, { feed_url: "https://jan.miksovsky.com/rss.xml" })
-
-    // sitemap.xml = @sitemap(public, "https://jan.miksovsky.com")
   }
 }
