@@ -1,4 +1,3 @@
 ---
-title: I made a little ebook about my hike across Japan
-draft: true
+title: Generating blog post preview images in Origami
 ---

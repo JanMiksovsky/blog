@@ -1,8 +1,7 @@
-// import { createCanvas, loadImage } from "canvas";
 import { createCanvas } from "canvas";
 
 /**
- * Generate an OpenGraph image.
+ * Generate an OpenGraph image given some text and a title.
  *
  * @param {Object} options
  * @param {number} options.height
@@ -11,7 +10,7 @@ import { createCanvas } from "canvas";
  * @param {number} options.width
  */
 export default async function ogImage(options) {
-  const { width = 1200, height = 630, text, title } = options;
+  const { height = 630, text, title, width = 1200 } = options;
   const canvas = createCanvas(width, height);
   const ctx = canvas.getContext("2d");
 
@@ -44,6 +43,8 @@ export default async function ogImage(options) {
 // Draw text with basic wrapping
 function drawText(ctx, width, height, x, y, fontHeight, text) {
   const lineHeight = 1.25 * fontHeight;
+
+  // Lay out lines word-by-word
   let line = "";
   const words = text.split(/\s+/);
   for (const word of words) {
@@ -65,6 +66,7 @@ function drawText(ctx, width, height, x, y, fontHeight, text) {
   }
 
   if (line && y + lineHeight <= height) {
+    // Draw the last line
     y += lineHeight;
     ctx.fillText(line, x, y);
   }
