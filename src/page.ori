@@ -1,28 +1,28 @@
-(document) => `<html lang="en">
+(page) => `<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>${ document/title }</title>
+    <title>${ page/title }</title>
     <link rel="stylesheet" href="/main.css" />
     <link rel="me" href="https://fosstodon.org/@JanMiksovsky">
     <link rel="me" href="https://github.com/JanMiksovsky">
-    ${ @if(document/url, =`
-      ${ @if(document/description, =`<meta property="og:description" content="${ document/description }">`) }
-      ${ @if(document/previewUrl, =`<meta property="og:image" content="${ document/previewUrl }">`) }
-      <meta property="og:url" content="${ document/url }">
-      <meta property="og:title" content="${ document/title }">
+    ${ @if(page/url, =`
+      ${ @if(page/description, =`<meta property="og:description" content="${ page/description }">`) }
+      ${ @if(page/previewUrl, =`<meta property="og:image" content="${ page/previewUrl }">`) }
+      <meta property="og:url" content="${ page/url }">
+      <meta property="og:title" content="${ page/title }">
       <meta property="og:type" content="article">
     `) }
   </head>
   <body>
     <header>
-      ${ banner.ori(document) }
+      ${ banner.ori(page) }
     </header>
     <main>
-      ${ document/@text }
+      ${ page/@text }
     </main>
     <footer>
-      ${ banner.ori(document) }
+      ${ banner.ori(page) }
     </footer>
   </body>
 </html>

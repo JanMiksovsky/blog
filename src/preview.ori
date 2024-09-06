@@ -1,20 +1,20 @@
-(item) => 
-  @if(
-    item/imagePath
+// Return a preview image for the given blog item
+(item) => @if(
+  item/imagePath
 
-    // Use image thumbnail as the preview
-    =@image/resize(@tree/traverse(.., item/imagePath), {
-      background: { r: 0, g: 0, b: 0, alpha: 0 }
-      fit: "contain"
-      height: 630
-      width: 1200
-    })
+  // Post has an image; resize it
+  =@image/resize(@tree/traverse(.., item/imagePath), {
+    background: { r: 0, g: 0, b: 0, alpha: 0 }
+    fit: "contain"
+    height: 630
+    width: 1200
+  })
 
-    // Generate preview image from title and text
-    =ogImage.js({
-      height: 630
-      text: item/text
-      title: @or(item/title, item/extractedTitle)
-      width: 1200
-    })
-  )
+  // No post image; generate an image of the title and text
+  =ogImage.js({
+    height: 630
+    text: item/text
+    title: @or(item/title, item/extractedTitle)
+    width: 1200
+  })
+)

@@ -1,4 +1,7 @@
+// Overall site definition for the whole blog
 {
+  // Main blog post pipeline turns markdown into objects with all the data
+  // needed for rendering in various ways
   processed = posts
     → @mapFn((yearPosts, year) =>
         @map(yearPosts, {
@@ -8,17 +11,17 @@
     )
     → @deepReverse
 
-  // Apply to template to post pages, and create a page for each year.
+  // Apply to template to post pages, and create a page for each year
   years = @map(processed, (yearPosts, year) => {
     index.html = yearPage.ori(yearPosts, year)
     …@map(yearPosts, postPage.ori)
   })
 
-  // The recent feed is the 10 most recent posts.
+  // The recent feed is the 10 most recent posts
   recent = @deepTake(processed, 10)
   feed = feed.ori(recent)
 
-  // Main site
+  // Main public area -- this is the part that gets built and deployed
   public = {
 
     // Merge in the client folder
@@ -28,22 +31,27 @@
     about.html = page.ori(@mdHtml(about.md))
     contact.html = page.ori(@mdHtml(contact.md))
 
+    // Include the `images` folder
     images
 
     // Top-level index page
     index.html = index.ori(recent)
 
-    // Add an index page to the overall posts archive.
     posts = {
+      // Add an index page to the overall posts archive.
       index.html = archivePage.ori(@keys(processed))
+
+      // Add in posts for all the years
       …years
     }
 
+    // Create preview images for posts
     previews = @map(processed, @mapFn({
       key: (item) => item/previewSlug
       value: preview.ori
     }))
 
+    // Feeds
     feed.json = @json(feed)
     rss.xml = @rss(feed, { feed_url: "https://jan.miksovsky.com/rss.xml" })
   }

@@ -1,7 +1,8 @@
 import { createCanvas } from "canvas";
 
 /**
- * Generate an OpenGraph image given some text and a title.
+ * Given some text and a title, return a Buffer for a PNG image suitable for
+ * use as an Open Graph image.
  *
  * @param {Object} options
  * @param {number} options.height
@@ -18,24 +19,29 @@ export default async function ogImage(options) {
   ctx.fillStyle = "#fff";
   ctx.fillRect(0, 0, width, height);
 
+  // We'll draw inside an inset rectangle
   const margin = 36;
   const insetWidth = width - 2 * margin;
   const insetHeight = height - 2 * margin;
-
-  // Draw title
-  let fontHeight = 48;
-  ctx.font = `bold ${fontHeight}px Helvetica`;
-  ctx.fillStyle = "#000";
   const x = margin;
   let y = margin;
-  y = drawText(ctx, insetWidth, insetHeight, x, y, fontHeight, title);
 
-  // Draw body text
-  fontHeight = 36;
-  y += fontHeight;
-  ctx.font = `normal ${fontHeight}px Helvetica`;
-  ctx.fillStyle = "#333";
-  drawText(ctx, insetWidth, insetHeight, x, y, fontHeight, text);
+  if (title) {
+    // Draw title
+    const fontHeight = 48;
+    ctx.font = `bold ${fontHeight}px Helvetica`;
+    ctx.fillStyle = "#000";
+    y = drawText(ctx, insetWidth, insetHeight, x, y, fontHeight, title);
+  }
+
+  if (text) {
+    // Draw body text
+    const fontHeight = 36;
+    y += fontHeight;
+    ctx.font = `normal ${fontHeight}px Helvetica`;
+    ctx.fillStyle = "#333";
+    drawText(ctx, insetWidth, insetHeight, x, y, fontHeight, text);
+  }
 
   return canvas.toBuffer();
 }
