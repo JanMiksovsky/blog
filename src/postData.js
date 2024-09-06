@@ -43,17 +43,27 @@ export default async function postData(document, filename, year) {
   const path = `posts/${year}/${postSlug}`;
   const url = `https://jan.miksovsky.com/${path}`;
 
-  // Find the src of the first image in the HTML.
-  const imageRegex =
-    /<img\s+src="\/(?<src>images\/[^"]+(?:.avif|.png|.jpe?g|.webp))"/;
-  const imageMatch = html.match(imageRegex);
-  const imagePath = imageMatch?.groups?.src;
-
   // If the post has an image, use it as the preview. Alternatively, if the post
   // is from the recent markdown era, generate a preview image.
   let previewSlug;
   let previewUrl;
-  if (imagePath || year >= 2023) {
+  let generatePreview = false;
+  const imagePath = extractFirstImage(html);
+  if (imagePath) {
+    generatePreview = true;
+  } else {
+    // No image; look for an embedded video.
+    const videoId = extractFirstVideoId(html);
+    if (videoId) {
+      // Use preview image from YouTube.
+      previewUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+    } else if (year >= 2023) {
+      // Recent post
+      generatePreview = true;
+    }
+  }
+
+  if (generatePreview) {
     previewSlug = postSlug.replace(/\.html$/, ".png");
     previewUrl = `https://jan.miksovsky.com/previews/${year}/${previewSlug}`;
   }
@@ -76,6 +86,19 @@ export default async function postData(document, filename, year) {
     previewUrl && { previewUrl },
     title && { title }
   );
+}
+
+function extractFirstImage(html) {
+  const imageRegex =
+    /<img\s+src="\/(?<src>images\/[^"]+(?:.avif|.png|.jpe?g|.webp))"/;
+  const imageMatch = html.match(imageRegex);
+  return imageMatch?.groups?.src;
+}
+
+function extractFirstVideoId(html) {
+  const videoRegex = /src="https:\/\/www.youtube.com\/embed\/(?<id>[\w\d]+)"/;
+  const videoMatch = html.match(videoRegex);
+  return videoMatch?.groups?.id;
 }
 
 function extractFirstSentence(text) {

@@ -19,7 +19,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2013/02/the-web-still-needs-a
   <iframe
     frameborder="0"
     height="315"
-    src="https://www.youtube.com/embed/SnwiFWIhqYA?rel=0"
+    src="https://www.youtube.com/embed/SnwiFWIhqYA"
     width="560"
   ></iframe>
 </p>
