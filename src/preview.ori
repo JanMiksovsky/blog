@@ -4,7 +4,7 @@
 
     // Use image thumbnail as the preview
     =@image/resize(@tree/traverse(.., item/imagePath), {
-      background: { r:0, g: 0, b: 0, alpha: 0 }
+      background: { r: 0, g: 0, b: 0, alpha: 0 }
       fit: "contain"
       height: 630
       width: 1200
