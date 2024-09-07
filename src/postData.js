@@ -108,28 +108,28 @@ function extractFirstSentence(text) {
 
 function extractTitle(text) {
   // Find the position of the first sentence-final punctuation mark in the first
-  // 80 characters.
+  // 160 characters.
   const firstSentence = extractFirstSentence(text);
-  if (firstSentence && firstSentence.length <= 80) {
+  if (firstSentence && firstSentence.length <= 160) {
     // Remove final punctuation.
     return firstSentence.slice(0, -1);
   }
 
-  // Find the first interior punctuation mark in the first 80 characters.
+  // Find the first interior punctuation mark in the first 160 characters.
   const interiorPunctuation = text.search(/[,;:–—]/);
-  if (interiorPunctuation >= 0 && interiorPunctuation < 80) {
+  if (interiorPunctuation >= 0 && interiorPunctuation < 160) {
     // Don't include the punctuation in the title.
     return text.slice(0, interiorPunctuation);
   }
 
-  // Find the first word boundary between characters 40 and 80.
-  const wordBoundary = text.slice(40, 80).search(/\s/);
+  // Find the first word boundary between characters 80 and 160.
+  const wordBoundary = text.slice(80, 160).search(/\s/);
   if (wordBoundary >= 0) {
-    return text.slice(0, wordBoundary + 40);
+    return text.slice(0, wordBoundary + 80);
   }
 
-  // Last choice: use the first 40 characters.
-  return text.slice(0, 40);
+  // Last choice: use the first 80 characters.
+  return text.slice(0, 80);
 }
 
 // Remove HTML, markdown, and hashtags.
