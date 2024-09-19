@@ -134,15 +134,17 @@ function extractTitle(text) {
 
 // Remove HTML, markdown, and hashtags.
 function strip(markdown) {
-  return stripHtml(markdown) // Strip HTML
-    .replace(/```[^`]+```/g, "") // Remove code blocks
-    .replace(/`([^`]+)`/g, "$1") // Remove inline code formatting
-    .replace(/!\[[^\]]+\]\([^)]+\)/g, "") // Remove images
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // Remove links, keep text
-    .replace(/\*\*([^*]+)\*\*/g, "$1") // Remove bold
-    .replace(/\*([^*]+)\*/g, "$1") // Remove italics
-    .replace(/#(\w+)/g, "$1") // Remove hashtags
-    .trim();
+  return (
+    stripHtml(markdown) // Strip HTML
+      .replace(/```[^`]+```/g, "") // Remove code blocks
+      .replace(/`([^`]+)`/g, "$1") // Remove inline code formatting
+      .replace(/!\[[^\]]+\]\([^)]+\)/g, "") // Remove images
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") // Remove links, keep text
+      .replace(/\*\*([^*]+)\*\*/g, "$1") // Remove bold
+      .replace(/\*([^*]+)\*/g, "$1") // Remove italics
+      // .replace(/#(\w+)/g, "$1") // Remove hashtags
+      .trim()
+  );
 }
 
 // Remove HTML tags
