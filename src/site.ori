@@ -3,17 +3,21 @@
   // Main blog post pipeline turns markdown into objects with all the data
   // needed for rendering in various ways
   processed = posts
-    → @mapFn((yearPosts, year) =>
+    → @mapFn((yearPosts, yearSlash) =>
         @map(yearPosts, {
           key: (post, fileName) => `${ @node/path/basename(@slug(fileName), ".md") }.html`
-          value: (post, fileName) => postData.js(post, fileName, year)
+          value: (post, fileName) => postData.js(
+            post
+            @slash/remove(fileName)
+            @slash/remove(yearSlash)
+          )
         })
     )
     → @deepReverse
 
   // Apply to template to post pages, and create a page for each year
-  years = @map(processed, (yearPosts, year) => {
-    index.html = yearPage.ori(yearPosts, year)
+  years = @map(processed, (yearPosts, yearSlash) => {
+    index.html = yearPage.ori(yearPosts, @slash/remove(yearSlash))
     …@map(yearPosts, postPage.ori)
   })
 

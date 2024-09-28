@@ -3,9 +3,9 @@
   @text: `
     <h1>Posts by year</h1>
     <ul class="yearList">
-    ${ @map(years, (year) => `
+    ${ @map(years, (yearSlash) => `
       <li class="yearItem">
-        <a href="${ year }/">${ year }</a>
+        <a href="${ yearSlash }">${ @slash/remove(yearSlash) }</a>
       </li>
     `) }
     </ul>
