@@ -63,7 +63,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2006/02/approachable_ui.html
   <li>
     Responsive touch screen. Unlike some folks (like
     <a
-      href="/posts/2005/09-22-lcds-recreating-old-physical-controls-whether-or-not-that-makes-sense-.html"
+      href="/posts/2005/09-22-lcds-recreating-old-physical-controls-whether-or-not-that-makes-sense.html"
       >Toyota</a
     >), Garmin generally makes good use of buttons placed flush against the
     corners to improve the chance you'll actually hit what you want. (The map

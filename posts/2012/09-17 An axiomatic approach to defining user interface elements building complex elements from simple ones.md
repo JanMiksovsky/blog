@@ -284,7 +284,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2012/09/axiomatic-user-interf
   platform. This is why attempts to build a tiny handful of new controls into
   web browsers &#0160;is almost completely uninteresting to me. A new date
   picker in the browser, to take just one example, is just&#0160;<a
-    href="/posts/2011/11-07-ui-control-of-the-week-straight-up-datecombobox-and-why-your-browser-wont-solve-your-date-picker-needs-.html"
+    href="/posts/2011/11-07-ui-control-of-the-week-straight-up-datecombobox-and-why-your-browser-wont-solve-your-date-picker-needs.html"
     target="_self"
     >never going to solve your date picker needs</a
   >. It&#39;s like the FORTRAN committee adding yet another hard-baked statement

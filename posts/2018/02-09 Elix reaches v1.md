@@ -3,7 +3,7 @@ title: Elix general-purpose web component library releases v1.0.0
 originalUrl: https://component.kitchen/blog/posts/elix-general-purpose-web-component-library-releases-v100
 ---
 
-We're excited to announce that the [Elix](/elix) project we lead has reached its v1.0.0 milestone.
+We're excited to announce that the [Elix](https://component.kitchen/elix) project we lead has reached its v1.0.0 milestone.
 
 This represents the culmination of over a year of work to create a great set of high-quality, general-purpose web components for common user interface patterns. These include:
 

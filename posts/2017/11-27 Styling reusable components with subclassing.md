@@ -3,7 +3,7 @@ title: "Our current best answer for styling reusable components: subclassing"
 originalUrl: https://component.kitchen/blog/posts/our-current-best-answer-for-styling-reusable-components-subclassing
 ---
 
-Even though [styling reusable components is a hard problem](https://component.kitchen/blog/posts/styling-is-critical-to-web-component-reuse-but-may-prove-difficult-in-practice), the [Elix](/elix) project needs a solution if it's to keep moving forward. The library's goal is to provide general-purpose components that can be styled/themed to meet customers' needs. As far as we're aware, neither the web platform nor component frameworks give us the styling primitives we need. For now, Elix is tackling this styling challenge with subclassing.
+Even though [styling reusable components is a hard problem](https://component.kitchen/blog/posts/styling-is-critical-to-web-component-reuse-but-may-prove-difficult-in-practice), the [Elix](https://component.kitchen/elix) project needs a solution if it's to keep moving forward. The library's goal is to provide general-purpose components that can be styled/themed to meet customers' needs. As far as we're aware, neither the web platform nor component frameworks give us the styling primitives we need. For now, Elix is tackling this styling challenge with subclassing.
 
 ## Asking a component what it wants to update
 

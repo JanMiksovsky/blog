@@ -5,7 +5,7 @@ originalUrl: https://component.kitchen/blog/posts/implementing-web-component-mix
 
 <p>
   In response to our last post on
-  <a href="/blog/posts/building-web-components-from-a-loose-framework-of-mixins"
+  <a href="/posts/2015/12-07-building-web-components-from-a-loose-framework-of-mixins.html"
     >building components from a loose collection of mixins</a
   >, a helpful commenter
   <a href="https://plus.google.com/+JanMiksovsky/posts/bFBBGB8kEs8"

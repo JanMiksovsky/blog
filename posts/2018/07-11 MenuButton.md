@@ -3,7 +3,7 @@ title: Building a great menu component is so much trickier than you'd think
 originalUrl: https://component.kitchen/blog/posts/building-a-great-menu-component-is-so-much-trickier-than-youd-think
 ---
 
-We've released v2.2 of the [Elix](/elix) web components library, which includes some new components for menus:
+We've released v2.2 of the [Elix](https://component.kitchen/elix) web components library, which includes some new components for menus:
 
 - [PopupSource](https://component.kitchen/elix/PopupSource) for buttons that invoke any kind of popup
 - [MenuButton](https://component.kitchen/elix/MenuButton) for the common case of a button that invokes a menu
@@ -79,7 +79,7 @@ For styling and general customizability, all these menus components have replace
 
 With our `MenuButton` component in hand, it was easy to create a [DropdownList](https://component.kitchen/elix/DropdownList) variation that shows the selected value as the menu button's label. When the user makes a selection from the menu, the button label updates to match.
 
-This effectively lets you use `DropdownList` as a customizable version of the built-in HTML `<select>` element. The native `<select>` can only cope with text choices, but `DropdownList` can handle arbitrary content — including custom elements, of course — as content in both the menu button and the menu items. See this [customized dropdown list demo](/demos/colorDropdownList.html) for an example.
+This effectively lets you use `DropdownList` as a customizable version of the built-in HTML `<select>` element. The native `<select>` can only cope with text choices, but `DropdownList` can handle arbitrary content — including custom elements, of course — as content in both the menu button and the menu items. See this [customized dropdown list demo](https://component.kitchen/demos/colorDropdownList.html) for an example.
 
 Interestingly, the native `<select>` is a place where some users may use the drag-to-select method to make a selection — even if they're the type of user that normally selects from an app's menu bar using the two-click method. In other words, all the work we did to build a menu button with great mouse support _also_ makes it possible for us to deliver a dropdown list (`<select>`) with great mouse support.
 

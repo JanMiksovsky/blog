@@ -56,7 +56,7 @@ originalUrl: https://miksovsky.blogs.com/flowstate/2011/06/user-interface-text-e
   </li>
   <li>
     UI text may&#0160;<a
-      href="/posts/2007/06-20-dont-bury-the-lede-what-s-the-real-story-behind-a-ui-interaction.html"
+      href="/posts/2007/06-20-dont-bury-the-lede-whats-the-real-story-behind-a-ui-interaction.html"
       >bury the lede in a UI interaction</a
     >, that is, fail to draw your attention to the larger point. Someone who
     claims to give you the information you asked for, but deliberately
