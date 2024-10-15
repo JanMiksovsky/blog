@@ -1,9 +1,9 @@
 (years) => page.ori {
   title: "Posts by year"
-  @text: `
+  @text: @indent`
     <h1>Posts by year</h1>
     <ul class="yearList">
-    ${ @map(years, (yearSlash) => `
+    ${ @map(years, (yearSlash) => @indent`
       <li class="yearItem">
         <a href="${ yearSlash }">${ @slash/remove(yearSlash) }</a>
       </li>

@@ -1,4 +1,6 @@
-(page) => `<html lang="en">
+(page) => @indent`
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -6,7 +8,7 @@
     <link rel="stylesheet" href="/main.css">
     <link rel="me" href="https://fosstodon.org/@JanMiksovsky">
     <link rel="me" href="https://github.com/JanMiksovsky">
-    ${ @if(page/url, =`
+    ${ @if(page/url, =@indent`
       ${ @if(page/description, =`<meta property="og:description" content="${ page/description }">`) }
       ${ @if(page/previewUrl, =`<meta property="og:image" content="${ page/previewUrl }">`) }
       <meta property="og:url" content="${ page/url }">
@@ -19,7 +21,7 @@
       ${ banner.ori(page) }
     </header>
     <main>
-      ${ page/@text }
+${ page/@text }
     </main>
     <footer>
       ${ banner.ori(page) }
