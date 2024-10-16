@@ -2,7 +2,7 @@
   "name": "blog",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "0.0.69",
+    "@weborigami/origami": "0.0.70",
     "canvas": "v3.0.0-rc2"
   },
   "devDependencies": {
