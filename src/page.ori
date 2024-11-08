@@ -1,4 +1,4 @@
-(page) => @indent`
+(page) => :indent`
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,9 +9,9 @@
     <link rel="me" href="https://fosstodon.org/@JanMiksovsky">
     <link rel="me" href="https://github.com/JanMiksovsky">
     <meta name="fediverse:creator" content="@JanMiksovsky@fosstodon.org">
-    ${ @if(page/url, =@indent`
-      ${ @if(page/description, =`<meta property="og:description" content="${ page/description }">`) }
-      ${ @if(page/previewUrl, =`<meta property="og:image" content="${ page/previewUrl }">`) }
+    ${ :if(page/url, =:indent`
+      ${ :if(page/description, =`<meta property="og:description" content="${ page/description }">`) }
+      ${ :if(page/previewUrl, =`<meta property="og:image" content="${ page/previewUrl }">`) }
       <meta property="og:url" content="${ page/url }">
       <meta property="og:title" content="${ page/title }">
       <meta property="og:type" content="article">

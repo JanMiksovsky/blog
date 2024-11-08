@@ -1,9 +1,9 @@
 // Return a preview image for the given blog item
-(item) => @if(
+(item) => :if(
   item/imagePath
 
   // Post has an image; resize it
-  =@image/resize(@tree/traverse(.., item/imagePath), {
+  =image:resize(tree:traverse(.., item/imagePath), {
     background: { r: 0, g: 0, b: 0, alpha: 0 }
     fit: "contain"
     height: 630
@@ -14,7 +14,7 @@
   =ogImage.js({
     height: 630
     text: item/text
-    title: @or(item/title, item/extractedTitle)
+    title: :or(item/title, item/extractedTitle)
     width: 1200
   })
 )
