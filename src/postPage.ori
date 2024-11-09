@@ -1,7 +1,7 @@
 (post) => page.ori({
   description: post/description
   previewUrl: post/previewUrl
-  title: :or(post/title, post/extractedTitle)
+  title: or(post/title, post/extractedTitle)
   url: post/url
   year: post/year
   @text: postFragment.ori(post)

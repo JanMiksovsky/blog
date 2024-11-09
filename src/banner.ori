@@ -1,9 +1,9 @@
-(document) => :indent`
+(document) => indent`
   <span>
     <a class="quiet" href="/"><span class="optional">Jan Miksovsky’s </span>Blog</a>
     •
     <a class="quiet" href="/posts/">Archive</a>
-    ${ :if(document/year, =:indent`
+    ${ if(document/year, =indent`
       •
       <a class="quiet" href="/posts/${ document/year }/">${ document/year }</a>
     `) }

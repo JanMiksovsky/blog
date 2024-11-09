@@ -12,8 +12,8 @@
     "unified": "11.0.5"
   },
   "scripts": {
-    "build": "ori :copy src/site.ori/public, :clean files:build",
-    "start": "ori :serve :watch src, =:debug site.ori/public",
+    "build": "ori copy src/site.ori/public, clean files:build",
+    "start": "ori serve watch src, =debug site.ori/public",
     "test": "node tools/test/*.test.js"
   }
 }

@@ -1,13 +1,13 @@
-(years) => page.ori {
+(years) => page.ori({
   title: "Posts by year"
-  @text: :indent`
+  @text: indent`
     <h1>Posts by year</h1>
     <ul class="yearList">
-    ${ tree:map(years, (yearSlash) => :indent`
+    ${ map(years, (yearSlash) => indent`
       <li class="yearItem">
-        <a href="${ yearSlash }">${ :slash/remove(yearSlash) }</a>
+        <a href="${ yearSlash }">${ slash/remove(yearSlash) }</a>
       </li>
     `) }
     </ul>
   `
-}
+})
