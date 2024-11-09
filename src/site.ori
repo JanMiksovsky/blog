@@ -1,28 +1,13 @@
 // Overall site definition for the whole blog
 {
-  // Main blog post pipeline turns markdown into objects with all the data
-  // needed for rendering in various ways
-  processed = posts
-    → =map(_, (yearPosts, yearSlash) =>
-        map(yearPosts, {
-          key: (post, fileName) => `${ path/basename(slug(fileName), ".md") }.html`
-          value: (post, fileName) => postData.js(
-            post
-            slash/remove(fileName)
-            slash/remove(yearSlash)
-          )
-        })
-      )
-    → deepReverse
-
   // Apply to template to post pages, and create a page for each year
-  years = map(processed, (yearPosts, yearSlash) => {
+  years = map(data.ori, (yearPosts, yearSlash) => {
     index.html = yearPage.ori(yearPosts, slash/remove(yearSlash))
     …map(yearPosts, postPage.ori)
   })
 
   // The recent feed is the 10 most recent posts
-  recent = deepTake(processed, 10)
+  recent = deepTake(data.ori, 10)
   feed = feed.ori(recent)
 
   // Main public area -- this is the part that gets built and deployed
@@ -43,14 +28,14 @@
 
     posts = {
       // Add an index page to the overall posts archive.
-      index.html = archivePage.ori(keys(processed))
+      index.html = archivePage.ori(keys(data.ori))
 
       // Add in posts for all the years
       …years
     }
 
     // Create preview images for posts
-    previews = map(processed, =map(_, {
+    previews = map(data.ori, =map(_, {
       key: (item) => item/previewSlug
       value: preview.ori
     }))
