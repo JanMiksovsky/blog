@@ -3,7 +3,7 @@
   item/imagePath
 
   // Post has an image; resize it
-  =resize(traverse(.., item/imagePath), {
+  =resize(..(item/imagePath), {
     background: { r: 0, g: 0, b: 0, alpha: 0 }
     fit: "contain"
     height: 630

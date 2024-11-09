@@ -1,47 +1,42 @@
 // Overall site definition for the whole blog
 {
-  // Apply to template to post pages, and create a page for each year
-  years = map(data.ori, (yearPosts, yearSlash) => {
-    index.html = yearPage.ori(yearPosts, slash/remove(yearSlash))
-    …map(yearPosts, postPage.ori)
-  })
+  // Merge in the client folder
+  …client
 
-  // The recent feed is the 10 most recent posts
-  recent = deepTake(data.ori, 10)
-  feed = feed.ori(recent)
+  // About Us and Contact pages
+  about.html = page.ori(mdHtml(about.md))
+  contact.html = page.ori(mdHtml(contact.md))
 
-  // Main public area -- this is the part that gets built and deployed
-  public = {
+  // Include the `images` folder as is
+  images
 
-    // Merge in the client folder
-    …client
+  // Top-level home page
+  index.html = index.ori(recent)
 
-    // About Us and Contact pages
-    about.html = page.ori(mdHtml(about.md))
-    contact.html = page.ori(mdHtml(contact.md))
+  posts = {
+    // Index page for the whole posts archive lists the years
+    index.html = archivePage.ori(keys(data.ori))
 
-    // Include the `images` folder
-    images
-
-    // Top-level index page
-    index.html = index.ori(recent)
-
-    posts = {
-      // Add an index page to the overall posts archive.
-      index.html = archivePage.ori(keys(data.ori))
-
-      // Add in posts for all the years
-      …years
-    }
-
-    // Create preview images for posts
-    previews = map(data.ori, =map(_, {
-      key: (item) => item/previewSlug
-      value: preview.ori
-    }))
-
-    // Feeds
-    feed.json = json(feed)
-    rss.xml = rss(feed, { feed_url: "https://jan.miksovsky.com/rss.xml" })
+    // Add in folders for each year
+    …map(data.ori, (yearPosts, yearSlash) => {
+      // Index page for the year
+      index.html = yearPage.ori(yearPosts, slash/remove(yearSlash))
+      // Pages for each post that year
+      …map(yearPosts, postPage.ori)
+    })
   }
+
+  // Create preview images for posts
+  previews = map(data.ori, =map(_, {
+    key: (item) => item/previewSlug
+    value: preview.ori
+  }))
+
+  // The 10 most recent posts, used for home page and feeds
+  (recent) = deepTake(data.ori, 10)
+
+  // Feeds
+  (feed) = feed.ori(recent)
+  feed.json = json(feed)
+  rss.xml = rss(feed, { feed_url: "https://jan.miksovsky.com/rss.xml" })
 }
