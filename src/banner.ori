@@ -11,6 +11,10 @@
   <span>
     <a class="quiet" href="/about.html">About</a>
     •
+    <a class="quiet" href="/rss.xml">RSS</a>
+    •
+    <a class="quiet" href="/feed.json">JSON</a>
+    •
     <a class="quiet" href="/contact.html">Contact</a>
   </span>
 `
