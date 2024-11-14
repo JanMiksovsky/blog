@@ -102,7 +102,7 @@ My mom was happy with the display right away.
 
 ## Retrospective
 
-Despite her amnesia, my mom came to remember that this display exits and what it’s for. She looks forward to seeing updates from her children on it.
+Despite her amnesia, my mom came to remember that this display exists and what it’s for. She looks forward to seeing updates from her children on it.
 
 If we tell her about something that’s coming up, she often asks whether we’ve already put that event on the MomBoard. On the flip side, we have to be careful to keep it up to date; if we fail to take down a message that no longer applies, it confuses her.
 
