@@ -12,7 +12,7 @@
     "unified": "11.0.5"
   },
   "scripts": {
-    "build": "ori copy src/site.ori, clean files:build",
+    "build": "ori copy src/site.ori, clear files:build",
     "start": "ori serve watch src, =debug site.ori",
     "test": "node tools/test/*.test.js"
   }
