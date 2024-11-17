@@ -113,3 +113,5 @@ The device's reliability has surpassed my expectations. There was one period whe
 The display still looks great, and it still displays messages day in and day out.
 
 If you want to try to set up something similar to what I describe here, I’m happy to answer technical questions or share advice.
+
+_Update: I've published the [MomBoard source code on GitHub](https://github.com/JanMiksovsky/momboard)._
