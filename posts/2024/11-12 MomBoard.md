@@ -10,7 +10,7 @@ _Note: unless you have specific experience caring for someone who has amnesia bu
 
 ## The patient
 
-In June 2022 the side-effects of a long surgery left my mom with permanent anterograde amnesia: she can no longer form new long-term memories. Memory isn’t just one neurological system, so very occasionally she will able to remember certain types of things. But for the most part, if she hears or sees something, a few minutes later she will no longer remember it.
+In June 2022 the side-effects of a long surgery left my mom with permanent anterograde amnesia: she can no longer form new long-term memories. Memory isn’t just one neurological system, so very occasionally she will be able to remember certain types of things. But for the most part, if she hears or sees something, a few minutes later she will no longer remember it.
 
 To medical professionals her condition looks a lot like dementia — amnesia is a common symptom of dementia — but she doesn’t have dementia. One difference is that (as I understand it) dementia is a progressive disease, while this amnesia is stable. There is no cure.
 
