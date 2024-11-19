@@ -4,7 +4,7 @@ title: Source code for the MomBoard project
 
 ![Hacker News screenshot on November 14, 2024, showing the MomBoard post as the #1 story](/images/2024/11/hackernews.png)
 
-I am deeply touched by the warm response to my recent [MomBoard: E-ink display for a parent with amnesia](11-12-momboard.html) post. It got _much_ more circulation on Mastodon that I usually get, and overnight someone posted it to Hacker News — where it shot to the #1 story. I discovered this after waking up and finding my inbox full of LinkedIn requests.
+I am deeply touched by the warm response to my recent [MomBoard: E-ink display for a parent with amnesia](/posts/2024/11-12-momboard.html) post. It got _much_ more circulation on Mastodon that I usually get, and overnight someone posted it to Hacker News — where it shot to the #1 story. I discovered this after waking up and finding my inbox full of LinkedIn requests.
 
 The post stayed on the HN home page for two full days, which stunned me because their story ranking algorithm heavily discounts stories over time. The story got 2000+ points, more than every other post on HN that day, beating out the day's news that [The Onion bought InfoWars](https://theonion.com/heres-why-i-decided-to-buy-infowars/).
 
