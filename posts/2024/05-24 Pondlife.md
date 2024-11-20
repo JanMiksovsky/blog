@@ -4,7 +4,9 @@ title: Sample influencer lifestyle blog for Henry David Thoreau
 
 To demonstrate that Origami is a good language for building #smallweb / #indieweb blogs, I built a fun [sample blog](https://pondlife.netlify.app) reenvisioning Henry David Thoreau has a modern influencer with a lifestyle blog about off-grid living.
 
-![Blog post titled "Beans" with text adapted from Thoreau's "Walden"](/images/2024/05/beans.png)
+<a href="https://pondlife.netlify.app">
+  <img src="/images/2024/05/beans.png" alt="Blog post titled Beans with text adapted from Thoreau's Walden">
+</a>
 
 Creating a site in Origami is completely different than creating a site in any other tool I know of.
 
