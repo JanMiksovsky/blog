@@ -3,10 +3,13 @@
     <a class="quiet" href="/"><span class="optional">Jan Miksovsky’s </span>Blog</a>
     •
     <a class="quiet" href="/posts/">Archive</a>
-    ${ if(document/year, =indent`
-      •
-      <a class="quiet" href="/posts/${ document/year }/">${ document/year }</a>
-    `) }
+    ${ document/year
+      ? indent`
+        •
+        <a class="quiet" href="/posts/${ document/year }/">${ document/year }</a>
+      `
+      : ""
+    }
   </span>
   <span>
     <a class="quiet" href="/about.html">About</a>

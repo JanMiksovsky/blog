@@ -1,9 +1,8 @@
 // Return a preview image for the given blog item
-(item) => if(
-  item/imagePath
+(item) => item/imagePath
 
   // Post has an image; resize it
-  =resize(..(item/imagePath), {
+  ? resize(..(item/imagePath), {
     background: { r: 0, g: 0, b: 0, alpha: 0 }
     fit: "contain"
     height: 630
@@ -11,10 +10,9 @@
   })
 
   // No post image; generate an image of the title and text
-  =ogImage.js({
+  : ogImage.js({
     height: 630
     text: item/text
     title: or(item/title, item/extractedTitle)
     width: 1200
   })
-)
