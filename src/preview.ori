@@ -13,6 +13,6 @@
   : ogImage.js({
     height: 630
     text: item/text
-    title: or(item/title, item/extractedTitle)
+    title: item/title ?? item/extractedTitle
     width: 1200
   })
