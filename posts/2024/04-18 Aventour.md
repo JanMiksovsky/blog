@@ -6,7 +6,7 @@ Each month this year I'm trying to post a sample website written in [Origami](ht
 
 It's easy to have Origami call other template languages, so for this sample I used the [Handlebars](https://handlebarsjs.com) template language to turn markup and data into HTML.
 
-![Home page for an outdoor trekking company with tagline "Start your adventure"](/images/2024/04/trekHome.png)
+![Home page for an outdoor trekking company with tagline 'Start your adventure'](/images/2024/04/trekHome.png)
 ![Page for a trek to the Wadi Rum desert in Jordan](/images/2024/04/trek.png)
 
 It took just a few lines of Origami code to define the structure of the site and indicate which Handlebars template should be used to create which pages. For this outdoor travel example, Origami makes it very, very easy to:

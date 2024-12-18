@@ -12,7 +12,7 @@ As described in the [site source](https://github.com/WebOrigami/cherokee-myths),
 
 The tree of stories is flattened by a template to create the table of contents, and that same tree is also fed to a great tool called [Pagefind](https://pagefind.app) to generate search indexes to allow full-text search on the static site.
 
-![Search page showing that "hummingbird" produces two hits](/images/2024/01/mythsSearch.png)
+![Search page showing that 'hummingbird' produces two hits](/images/2024/01/mythsSearch.png)
 
 Using public domain content for this sample was way more interesting than lorem ipsum text, and the Cherokee myths have a distinctly different mood than Greek myths or Aesop's fables. The tale of the [The Race Between the Crane and the Hummingbird](https://cherokee-myths.netlify.app/stories/birds/the%20race%20between%20the%20crane%20and%20the%20hummingbird) did not end the way I'd expected.
 
