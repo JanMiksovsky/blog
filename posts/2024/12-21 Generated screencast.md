@@ -65,8 +65,8 @@ One unpleasant surprise: After a second round of feedback, I went to rerecord th
 
 I hope this approach pans out so that I can make more useful screencasts that can stay relevant for a longer time. Towards that end, I’d love to be able to:
 
-* Replace the use of a keyboard/mouse desktop automation with something that has a real programming language, ideally JavaScript.
-* Annotate the desktop automation script with the dialogue so that I can somehow programmatically sync the audio and video tracks.
-* Alternatively, create a way to render something that looks like a generic code editor (and browser) with enough functionality to illustrate the kinds of points I make in screencasts, and where I can drive all the activity through code.
+- Replace the use of a keyboard/mouse desktop automation with something that has a real programming language, ideally JavaScript.
+- Annotate the desktop automation script with the dialogue so that I can somehow programmatically sync the audio and video tracks.
+- Alternatively, create a way to render something that looks like a generic code editor (and browser) with enough functionality to illustrate the kinds of points I make in screencasts, and where I can drive all the activity through code.
 
 If you’re familiar with tools that can do any of those things, **please let me know!**

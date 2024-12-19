@@ -48,7 +48,8 @@ export default async function postData(document, filename, year) {
   let previewSlug;
   let previewUrl;
   let generatePreview = false;
-  const imagePath = extractFirstImage(html);
+  const rawImagePath = extractFirstImage(html);
+  const imagePath = rawImagePath ? decodeURIComponent(rawImagePath) : null;
   if (imagePath) {
     generatePreview = true;
   } else {
