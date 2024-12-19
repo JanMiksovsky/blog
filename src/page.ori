@@ -11,8 +11,12 @@
     <meta name="fediverse:creator" content="@JanMiksovsky@fosstodon.org">
     ${ page/url
       ? indent`
-        ${ page/description ? `<meta property="og:description" content="${ page/description }">` : "" }
-        ${ page/previewUrl ? `<meta property="og:image" content="${ page/previewUrl }">` : "" }
+        ${ page/description ? indent`
+          <meta property="og:description" content="${ page/description }">
+        ` : "" }
+        ${ page/previewUrl ? indent`
+          <meta property="og:image" content="${ page/previewUrl }">
+        ` : "" }
         <meta property="og:url" content="${ page/url }">
         <meta property="og:title" content="${ page/title }">
         <meta property="og:type" content="article">
