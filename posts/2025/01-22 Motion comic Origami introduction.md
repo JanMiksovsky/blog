@@ -1,8 +1,8 @@
 ---
-title: "I wrote a screenplay for a programming language introduction, then wrote a program to turn that into a motion comic #WebOrigami #comics #webdev"
+title: I wrote a screenplay for a programming language introduction, then wrote a program to turn that into a motion comic
 ---
 
-I’ve posted a short introduction to the [Origami language](https://weborigami.org/language) in the form of a motion comic you can play in your browser:
+I’ve posted a short introduction to the [Origami language](https://weborigami.org/language) in the form of a [motion comic you can play in your browser](https://origami-comics.netlify.app):
 
 <a href="https://origami-comics.netlify.app">
 	<img src="/images/2025/01/comic.png" alt="Comic panel with the text ‘Intro to Origami’ with a bright explosion behind it in the style of classic comic book covers">
@@ -14,14 +14,14 @@ This comic builds on last month’s experiment to [automate the generation of th
 
 I learned a lot in that experiment:
 
-* **Great**: Generating audio from a screenplay made things go much, much faster!
-* **A little bad**: Writing a keyboard macro to drive a programming environment is a bit tedious and finicky. I wanted to use a real programming language.
-* **A little bad**: Even with a keyboard macro triggering the action on screen, it’s still cumbersome to set up a screen capture program to record the action into video. It was annoying enough that I was reluctant to go through the process again whenever I needed to re-record video.
-* **Bad**: Manually editing together the audio fragments and the video was still time-consuming.
-* **Bad**: The video showed a session in Microsoft VS Code, but during the days I was working on the video, Microsoft changed the UI of VS Code! That prevented me from incorporating new video, because I didn’t want the distraction of the UI changing back and forth during the video.
-* **Bad**: YouTube doesn’t allow you to replace a video with an updated one at the same URL, so each time I edited my video I had to post it at a new URL. This eroded any theoretical value of likes or comments.
+- **Great**: Generating audio from a screenplay made things go much, much faster!
+- **A little bad**: Writing a keyboard macro to drive a programming environment is a bit tedious and finicky. I wanted to use a real programming language.
+- **A little bad**: Even with a keyboard macro triggering the action on screen, it’s still cumbersome to set up a screen capture program to record the action into video. It was annoying enough that I was reluctant to go through the process again whenever I needed to re-record video.
+- **Bad**: Manually editing together the audio fragments and the video was still time-consuming.
+- **Bad**: The video showed a session in Microsoft VS Code, but during the days I was working on the video, Microsoft changed the UI of VS Code! That prevented me from incorporating new video, because I didn’t want the distraction of the UI changing back and forth during the video.
+- **Bad**: YouTube doesn’t allow you to replace a video with an updated one at the same URL, so each time I edited my video I had to post it at a new URL. This eroded any theoretical value of likes or comments.
 
-What I really wanted to be able to do was write a screenplay and have both the audio and video completely generated from that. I eventually concluded that it would be easier to *mock* a user interface (like a terminal or editor) than to drive an actual application.
+What I really wanted to be able to do was write a screenplay and have both the audio and video completely generated from that. I eventually concluded that it would be easier to _mock_ a user interface (like a terminal or editor) than to drive an actual application.
 
 ## Motion comics
 
@@ -50,8 +50,8 @@ It was really fun to round out the experience with stock vector illustrations, s
 
 Building this mostly as plain HTML and CSS has two other important benefits:
 
-* **Change detection.** As with all Origami projects, I can use Origami’s own [`changes`](https://weborigami.org/builtins/dev/changes) function to test the built files against a previously-generated baseline. That includes checking the text of any comic panels that incorporate the output of Origami expressions. If I make a change to the language itself that inadvertently changes the output shown in the comic, the `changes` function should flag those for me.
-* **These plain web files can be hosted anywhere.** I don’t have any particular beef with YouTube at this time but their market position as a capricious and rapacious monopolist should give us all pause. Without the constraints of YouTube, I can update the comic whenever I want and keep the same URL. And you don’t have to sit through ads!
+- **Change detection.** As with all Origami projects, I can use Origami’s own [`changes`](https://weborigami.org/builtins/dev/changes) function to test the built files against a previously-generated baseline. That includes checking the text of any comic panels that incorporate the output of Origami expressions. If I make a change to the language itself that inadvertently changes the output shown in the comic, the `changes` function should flag those for me.
+- **These plain web files can be hosted anywhere.** I don’t have any particular beef with YouTube at this time but their market position as a capricious and rapacious monopolist should give us all pause. Without the constraints of YouTube, I can update the comic whenever I want and keep the same URL. And you don’t have to sit through ads!
 
 ## What I really want to do is direct
 
