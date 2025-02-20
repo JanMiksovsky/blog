@@ -42,7 +42,7 @@ This static-first approach meant I could easily build the comic page in Origami 
 
 Given the advancing state of CSS, building a page in plain HTML and CSS still requires a lot of knowledge, but things mostly work as expected. A particularly important feature for this project was using CSS [`scroll-snap`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll_snap) to center the current panel on the page.
 
-The `scroll-snap` feature more or less works as advertised, although I notice some slightly odd behaviors on iOS Safari. iOS Safari also has some deeply annoying behavior related to audio autoplay that make it very difficult even to let users opt into audio. These iOS is my least favorite browser to work in.
+The `scroll-snap` feature more or less works as advertised, although I notice some slightly odd behaviors on iOS Safari. iOS Safari also has some deeply annoying behavior related to audio autoplay that make it very difficult even to let users opt into audio. These days iOS is my least favorite browser to work in.
 
 Once I could render the basic comic, I went through and added a bit of JavaScript animation to the panels as a progressive enhancement. For now this animation mostly takes the form of typing, but it’s a start. Just as Grant Sanderson has evolved his [system for programmatic math animations](https://www.3blue1brown.com/lessons/manim-demo), this comic system can evolve in the future.
 
