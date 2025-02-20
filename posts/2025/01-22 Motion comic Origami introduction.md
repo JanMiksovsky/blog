@@ -5,7 +5,7 @@ title: I wrote a screenplay for a programming language introduction, then wrote 
 I’ve posted a short introduction to the [Origami language](https://weborigami.org/language) in the form of a [motion comic you can play in your browser](https://origami-comics.netlify.app):
 
 <a href="https://origami-comics.netlify.app">
-	<img src="/images/2025/01/comic.png" alt="Comic panel with the text ‘Intro to Origami’ with a bright explosion behind it in the style of classic comic book covers">
+	<img src="/images/2025/01/comic.png" alt="Comic panel with the text ‘Intro to Origami’ with a bright explosion behind it in the style of classic comic book covers" style="width: 66%;">
 </a>
 
 ## Lessons from the audio/video experiment
