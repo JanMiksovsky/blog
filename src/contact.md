@@ -4,10 +4,12 @@ title: Contact Jan Miksovsky
 
 # Get in touch! 😃
 
-🐘 Follow me on Mastodon at [@JanMiksovsky@fosstodon.org](https://fosstodon.org/@JanMiksovsky) or send a direct message.
+✉️ Email: &lt;_my first name_>@weborigami.org<br>
+
+🐘 Mastodon: [@JanMiksovsky@fosstodon.org](https://fosstodon.org/@JanMiksovsky) — DMs welcome
 
 💼 LinkedIn: [janmiksovsky](https://www.linkedin.com/in/janmiksovsky/)
 
-✉️ Email: &lt;_my first name_>@weborigami.org<br>
+💻 GitHub: [JanMiksovsky](https://github.com/JanMiksovsky)
 
 I occasionally take on contract projects.
