@@ -31,6 +31,7 @@ export default async function postData(document, filename, year) {
 
   // Treat date as PST.
   const date = new Date(Date.parse(`${year}-${month}-${day} PST`));
+  const isoDate = date.toISOString();
   const formattedDate = date.toLocaleDateString("en-US", {
     day: "numeric",
     month: "long",
@@ -72,6 +73,7 @@ export default async function postData(document, filename, year) {
   return Object.assign(
     {
       date,
+      isoDate,
       formattedDate,
       html,
       path,
