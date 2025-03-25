@@ -163,6 +163,10 @@ svg {
   width: 100%;
 }
 
+.screenshot {
+  width: 66%;
+}
+
 @media (min-width: 600px) {
   .optional {
     display: initial;
