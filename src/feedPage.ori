@@ -1,0 +1,7 @@
+page.ori({
+  title: "Feeds"
+  @text: indent`
+    <h1>Feeds</h1>
+    You can subscribe to this blog in <a href="/rss.xml">RSS</a> and <a href="/feed.json">JSON Feed</a> formats.
+  `
+})

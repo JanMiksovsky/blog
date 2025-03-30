@@ -1,23 +1,18 @@
 (document) => indent`
   <span>
-    <a class="quiet" href="/"><span class="optional">Jan Miksovsky’s </span>Blog</a>
-    •
-    <a class="quiet" href="/posts/">Archive</a>
+    <a class="quiet" href="/">Jan<span class="optional"> Miksovsky</span></a>&emsp14;
+    <a class="quiet" href="/posts/">Archive</a>&emsp14;
     ${ document/year
       ? indent`
-        •
-        <a class="quiet" href="/posts/${ document/year }/">${ document/year }</a>
+        <a class="quiet" href="/posts/${ document/year }/">${ document/year }</a>&emsp14;
       `
       : ""
     }
   </span>
   <span>
-    <a class="quiet" href="/about.html">About</a>
-    •
-    <a class="quiet" href="/rss.xml">RSS</a>
-    •
-    <a class="quiet" href="/feed.json">JSON</a>
-    •
+    <a class="quiet" href="/about.html">About</a>&emsp14;
+    <a class="quiet" href="/feed.html">Feed</a>&emsp14;
+    <a class="quiet" href="/search.html">Search</a>&emsp14;
     <a class="quiet" href="/contact.html">Contact</a>
   </span>
 `

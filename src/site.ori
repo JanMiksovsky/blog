@@ -27,16 +27,21 @@
   }
 
   // Create preview images for posts
-  previews = map(data.ori, =map(_, {
+  previews/ = map(data.ori, =map(_, {
     key: (item) => item/previewSlug
     value: preview.ori
   }))
+
+  // Search UI and indexes
+  search.html = search.ori()
+  pagefind/ = once(=package:@weborigami/pagefind({ posts }))
 
   // The 10 most recent posts, used for home page and feeds
   (recent) = deepTake(data.ori, 10)
 
   // Feeds
   (feed) = feed.ori(recent)
+  feed.html = feedPage.ori/
   feed.json = json(feed)
   rss.xml = rss(feed, { feed_url: "https://jan.miksovsky.com/rss.xml" })
 }
