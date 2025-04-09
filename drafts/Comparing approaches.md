@@ -27,7 +27,7 @@ The Astro team seems dedicated to performance, so I’m willing to stipulate it 
 
 ## What do you actually need to learn?
 
-Astro is actually several languages
+Origami is a language — but so is Astro, actually several languages
 
 ## Answering questions
 
@@ -38,6 +38,8 @@ what should the boilerplate create?
 what does getStaticPaths do?
 
 ## What do SSG frameworks provide?
+
+All these SSGs are trying to define a way to map a tree of content onto a different tree of content
 
 Much of the value is confidence: someone has figured out the problem for you
 
