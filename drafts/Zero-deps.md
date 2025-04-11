@@ -1,14 +1,17 @@
 ---
 title: “This minimalist static site generator pattern is only for #JavaScript developers who want something small, fast, flexible, and comprehensible”
+tags: “#ssg”
 ---
 
-The configuration of a complex tool may take more work that coding the same functionality from scratch. In the last post I described [creating a simple blog in Astro](*** link ***), a popular static site generator (SSG). I felt it was more complicated than the problem justified, so I wanted to rewrite the generation of the entire blog project from scratch in pure JavaScript with zero dependencies.
+Configuring a complex tool can take more work that just coding the functionality you want from scratch. In the last post I described [creating a simple blog in Astro](posts/2025/04-14-astro.html), a popular static site generator (SSG). I felt the Astro solution was more complicated than the problem justified, so I wanted to try rewriting the entire blog project from scratch in pure JavaScript with zero dependencies.
 
 *** image goes here ***
 
-This went very well: I coded the blog in about a day, I can completely understand every part of it, and it’s very fast.
+This went very well: I coded the blog in about a day; I can completely understand every part of it; and it’s very fast. That last blog post linked above includes an appendix of requirements and writing from scratch made it easy to achieve all of them.
 
-This isn’t a product but a pattern. If you’re familiar with JavaScript, there are only two small ideas here you might not have tried before. I think you’ll find it easier than you expect.
+This isn’t a product but a pattern. If you’re familiar with JavaScript, there are only two small ideas here you might not have tried before. I think you’ll find it easier than you expect. I used JavaScript but you could just as easily do this in Python or any other language.
+
+You can look at the final zero-dependencies blog [source code](https://github.com/WebOrigami/pondlife-zero-deps) and the [live site](https://pondlife-zero-deps.netlify.app/).
 
 ## What is a static site generator doing?
 
@@ -20,7 +23,7 @@ To that end, an SSG also helps you with a variety of conventions about how the c
 * Converting markdown to HTML
 * Applying templates to data and HTML fragments to create a consistent set of final pages
 * Generating feeds in formats like RSS
-* Handling one-off pages like the About page
+* Handling one-off markdown pages like the About page
 * Linking pages together
 
 Individually, each of those transformations is straightforward.
@@ -29,9 +32,9 @@ To write this SSG from scratch, we’ll need a way to represent a site overall, 
 
 ## Plain objects and functions are all you need
 
-A useful general principle in coding is to see how far you can get with plain objects and functions. (What JavaScript calls plain objects, Python calls dictionaries and other languages might call associative arrays.) When possible, functions should be pure, i.e., have no side effects.
+A useful general principle in coding is to see how far you can get with plain objects and functions. (What JavaScript calls plain objects, Python calls dictionaries and other languages might call associative arrays.) When possible, functions should be pure — that is, have no side effects.
 
-So the basic strategy:
+So the basic strategy is:
 
 1. Read the folders of markdown posts and static assets into plain objects.
 2. Use a sequence of pure functions to transform the posts object into new objects that are closer and closer to the form we want.
@@ -41,13 +44,15 @@ So the basic strategy:
 
 ## Idea 1: Treat a file tree as an object
 
-Both a tree of files and a plain object are hierarchical, so we can use a plain object to represent a complete set of files in memory. The keys of the object will be the file names, and the values will be the contents of the files. For very large sites keeping everything in memory be an issue, but at the scale of a personal blog it’s generally fine.
+Both a tree of files and a plain object are hierarchical, so we can use a plain object to represent a complete set of files in memory. The keys of the object will be the file names, and the values will be the contents of the files. For very large sites keeping everything in memory could an issue, but at the scale of a personal blog it’s generally fine.
 
 If you’ve ever worked with Node’s [`fs`](https://nodejs.org/api/fs.html) file system API, then recursively reading a tree of files into an object is not an overly difficult task. The same goes for writing a plain object out to the file system. If you aren’t familiar with `fs` but are comfortable using AI, this is the sort of code that AI is generally very good at writing.
 
 You can read my handwritten solution at [files.js](https://github.com/WebOrigami/pondlife-zero-deps/blob/main/src/files.js). You could just copy that.
 
 ## Idea 2: Map objects
+
+Once we have a bunch of files represented as a plain object, we next want some way to easily create new objects in which the files have been transformed.
 
 The JavaScript `Array` class has a workhorse [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) function that lets you concisely apply a function to every item an array. Sadly the JavaScript [`Object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) class is missing a corresponding function to map the keys and values of an object — but we can create such an object-mapping function ourselves:
 
@@ -76,15 +81,15 @@ const mapped = mapObject(object, (value, key) => [
 console.log(mapped);  // { A: 2, B: 4, C: 6 }
 ```
 
-This little helper forms the core of our transformation work. Since we’re treating a set of files as an object, we can use this helper to transform a set of one kind of file to a set of different files, renaming the files as necessary.
+This little helper forms the core of our transformation work. Since we’re treating a set of files as an object, we can use this helper to transform a set of one kind of file to a set of a different kind of file, renaming the files as necessary.
 
-We will also often want to just map the values of an object while keeping the keys the same, so a related `mapValues` helper handles that common case.
+We will also often want to map just the values of an object while keeping the keys the same, so a related `mapValues` helper handles that common case.
 
 ## Preparing the data for rendering
 
-I find it useful to consolidate the work required to read in a site’s source content and prepare it in a single module. This does all the calculations and transformations necessary to get the content in a form that can be easily rendered to HTML, feeds, and other forms.
+I find it useful to consolidate the work required to read in a site’s source content and prepare it for rendering in a single module. This does all the calculations and transformations necessary to get the content in a form that can be easily rendered to HTML, feeds, and other forms.
 
-This project does that work in [posts.js](https://github.com/WebOrigami/pondlife-zero-deps/blob/main/src/posts.js), which exports an object with all the posts data ready for render. We can call that a data “pipeline”; it’s just a series of function calls.
+This project does that work in [posts.js](https://github.com/WebOrigami/pondlife-zero-deps/blob/main/src/posts.js), which exports a plain object with all the posts data ready for render. We can call that a module a “pipeline”, but it’s just a series of function calls.
 
 The pipeline starts by using our `files` help to read in all the posts in the `/markdown` folder.
 
@@ -168,7 +173,7 @@ This is assigned to the `data` variable so that it can be rendered into HTML by 
 
 These steps could all be merged into a single pass but, to me, doing the transformations in separate steps makes this easier to reason about, inspect, and debug. It also means that transformations like pagination or adding next/previous links are independent and can be repurposed for other projects.
 
-## Just use template literals
+## Template literals are great, actually
 
 Most static site generators come with one or more template languages. For example, here’s the [PostFragment.astro](https://github.com/JanMiksovsky/pondlife-astro/blob/main/src/layouts/PostFragment.astro) template from the Astro version of this blog. It converts a blog post to an HTML fragment:
 
@@ -193,7 +198,9 @@ const { post } = Astro.props;
 </section>
 ```
 
-This isn’t that bad — although if you’re a JavaScript programmer, you can just use JavaScript template literals to do the exact same thing. Here’s the [postFragment.js](https://github.com/WebOrigami/pondlife-zero-deps/blob/main/src/templates/postFragment.js) function from the zero dependency version:
+This isn’t that bad, although it’s a combination of both quasi-JavaScript and quasi-HTML.
+
+If you’re a JavaScript programmer, you can just use standard JavaScript with template literals to do the exact same thing. Here’s the [postFragment.js](https://github.com/WebOrigami/pondlife-zero-deps/blob/main/src/templates/postFragment.js) function from the zero dependency version:
 
 ```js
 // A single blog post, on its own or in a list
@@ -212,13 +219,13 @@ export default (post, key) => `
 `;
 ```
 
-It’s a matter of taste, but I think the plain JS version is basically as easy to read, 100% standard, and requires no build step. Best of all, any intermediate JavaScript programmer can read and understand it — including future me!
+It’s a matter of taste, but I think the plain JS version is as easy to read. It’s also 100% standard, requires no build step, and will work in any JavaScript environment. Best of all, any intermediate or better JavaScript programmer can read and understand it — _including future me!_
 
 ## Zero dependencies
 
 I challenged myself to create this site with zero dependencies. That was mostly fine, but there were two places where I really wanted help:
 
-1. Converting markdown to HTML. I’d always taken for granted that one needed to use a markdown processor so I wasn’t sure what I’d do here. Most processors have a ton of options, a plugin model, etc., so they certainly feel like big tools. But at its core, the markdown format is straightforward _by design_. Some searching turned up the minimalist drawdown processor that does [the markdown-to-HTML transformation in a single file](https://github.com/adamvleggett/drawdown/blob/master/drawdown.js) through repeated regular expression and string replacements. I copied that and [ported it to modern ES modules and syntax](https://github.com/WebOrigami/pondlife-zero-deps/blob/main/src/drawdown.js).
+1. Converting markdown to HTML. I’d always taken for granted that one needed to use a markdown processor so I wasn’t sure what I’d do here. Most processors have a ton of options, a plugin model, etc., so they certainly feel like big tools. But at its core, the markdown format is actually straightforward _by design_. Some searching turned up the minimalist “drawdown” processor that does [the markdown-to-HTML transformation in a single file](https://github.com/adamvleggett/drawdown/blob/master/drawdown.js) through repeated regular expression and string replacements. I copied that and [ported it to modern ES modules and syntax](https://github.com/WebOrigami/pondlife-zero-deps/blob/main/src/drawdown.js).
 2. Rendering a JSON Feed object as RSS. This is mostly just string concatenation but I didn’t want to rewrite it by hand. I copied in an existing [JSON Feed to RSS](https://github.com/WebOrigami/json-feed-to-rss) module I’d written previously.
 
 If I weren’t pushing myself to hit zero dependencies, I would just depend on those projects. But both of them are small; using local copies of them doesn’t feel crazy to me.
@@ -227,24 +234,40 @@ If I weren’t pushing myself to hit zero dependencies, I would just depend on t
 
 [site.js](https://github.com/WebOrigami/pondlife-zero-deps/blob/main/src/site.js)
 
-## A trick to inspect data from the command line
+## A tool to work with JavaScript in the command line
+
+Because everything in this project is just regular objects and functions, it was easy to debug. But I also made ample use of a useful tool: although this site isn’t depending on Origami, I could still use the Origami [`ori`](https://weborigami.org/cli/) CLI to inspect and debug individual components from the command line.
+
+For example, to dump the entire posts object to the command line I could write the following. (If `ori` isn’t globally installed, one could do `npx ori` instead.)
 
 ```console
 $ ori src/posts.js/
 ```
 
+I do this inside of a VS Code JavaScript Debug Terminal and set breakpoints too. This let me quickly verify that individual pieces were producing the expected output without having to build the whole site.
 
+For example, while working on generating the JSON Feed, I could produce just that resource on demand:
 
 ```console
 $ ori src/site.js/feed.json
 ```
+
+And although my intention was to build a static site, any time I wanted to check how the pages looked in the browser, I could use `ori` to serve the plain JavaScript object locally:
+
+```console
+$ ori serve src/site.js
+```
+
+Origami happily serves and works with plain JavaScript objects, so I could use it without taking on an Origami dependency -- the plain JS code that creates the site object doesn’t have to know anything about the tool being used to inspect it.
+
+You could do the same thing, or not — whatever works for you. This is just another argument for doing everything in the plainest fashion possible.
 
 ## Building the static files
 
 With all the groundwork laid above, the build process defined in [build.js](https://github.com/WebOrigami/pondlife-zero-deps/blob/main/src/build.js) is trivial:
 
 1. Erase the existing contents of the `/build` folder.
-2. Get the big object that represents the entire site.
+2. Load the big object that represents the entire site.
 3. Write the big object to the `/build` folder.
 
 That’s it.
@@ -256,17 +279,20 @@ Note that, although this project has a “build”, that’s building the site �
 This was pretty fun.
 
 * It was easy to keep the entire process in my head, so I made steady progress the whole time. I don’t think I hit a single real roadblock or had to backtrack.
-* Because I was working with plain objects and functions, there was literally no point at which I was confused about what was happening. Of course there were bugs, but they were easy to find and fix.
-* There were a very few cases where I had to look up something, like the details of some Node `fs` API calls. I learned about the `fs.rm()` function, a call I’d somehow overlooked before that removes both files and folders. Everything I learned is something I’ll be able to apply in future projects.
+* Of course there were bugs, but because I was working with plain objects and functions, the bugs were easy to find and fix.
+* There were a very few cases where I had to look up something, like the details of some Node `fs` API calls. I learned about the `fs.rm()` function, a call I’d somehow overlooked before that removes both files and folders. Now I know something new I’ll be able to apply in future projects instead of having invested in some bespoke API I might never use again.
 * Since I was in complete control over the program, there was no point where I had to struggle with someone else’s opinion.
 
-This took a day’s worth of work. That was distinctly less the time (half?) of what it took me to write the same blog in Astro. (I’m not knocking Astro; using any other SSG might have taken just as long.)
+This took a day’s worth of work. That was distinctly less time (half?) than it took me to write the same blog in Astro. (I’m not knocking Astro; learning any other SSG might have taken just as long.)
 
-The bottom line is that it took me less time to write my own SSG for this blog from scratch than it did to try to configure and convince someone else’s SSG to make the same blog.
+The bottom line is that it took me less time to write my own SSG from scratch than it did to learn, configure, and cajole someone else’s SSG into making the same blog.
 
-I think more people who assume they need an SSG should give at least a little thought to just writing it themselves along these lines.
+I think more people who assume they need an SSG should give at least a little consideration to writing it themselves along these lines.
 
 ## Why not build every site this way?
 
-Sharing
-Can be more concise
+Although this project didn’t require a lot of code, a big chunk of it is generic and could be reused. It’d be reasonable to put those into a library so that similar projects could build with those pieces.
+
+While a library may run into some of the same issues as an SSG framework like Astro, Eleventy, Hugh, etc., a library has the critical advantage that it always leaves you in control of the action. Since a good library will do nothing unless you ask for it, in my experience it’s easier to get the results you want.
+
+So having now written this blog three times, I figured I might as well write it a _fourth_ time using a library. I’ll look at that next time.

@@ -12,13 +12,19 @@ export default async function postData(document, filename, year) {
   }
   const isDocument = isPlainObject(document);
   const markdown = isDocument ? document["@text"] : toString(document);
-  const title = isDocument && document.title ? document.title : undefined;
+  const rawTitle = isDocument && document.title ? document.title : undefined;
+  const title = rawTitle ? stripHashTags(rawTitle) : undefined;
 
   const html = await mdHtml(markdown);
 
   const text = strip(markdown);
   const description = title ? extractFirstSentence(text) : undefined;
   const extractedTitle = !title ? extractTitle(text) : undefined;
+
+  let socialTitle = rawTitle ?? extractedTitle;
+  if (isDocument && document.tags) {
+    socialTitle += " " + document.tags;
+  }
 
   const dateRegex = /^(?<month>\d\d)-(?<day>\d\d) (?<title>.+).md$/;
   const match = filename.match(dateRegex);
@@ -78,6 +84,7 @@ export default async function postData(document, filename, year) {
       html,
       path,
       slug: postSlug,
+      socialTitle,
       text,
       url,
       year,
@@ -148,6 +155,11 @@ function strip(markdown) {
       // .replace(/#(\w+)/g, "$1") // Remove hashtags
       .trim()
   );
+}
+
+// Remove `#` from the string
+function stripHashTags(text) {
+  return text.replace(/#/g, "");
 }
 
 // Remove HTML tags
