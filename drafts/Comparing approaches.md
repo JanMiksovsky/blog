@@ -7,21 +7,27 @@ Equivalent results, equivalent performance
 
 ## Time invested
 
-Astro: 1.5 days
-Zero deps: less than a day
+Astro: ~2 days
+Zero deps: ~1 day
 
 Using Astro took me longer than writing something completely from scratch, even accounting for the time required to transform markdown and generate RSS from scratch
 
+## Code size
+
+find src -type f \( -name "*.js" \) -exec wc -l {} +
+
 ## Package size
+
+du -sh node_modules
 
 0 for Zero Deps!
 1MB AsyncTree
-27MB for Origami. X% of this is in dev tools that could be factored out at some point.
-100MB of node_modules
+27MB for Origami
+
 
 ## Build time
 
-Astro’s elapsed “real” build time is actually less than the “user” time that (as I understand it) reflects the sum of the CPU time across all cores. I infer that Astro or something it’s calling is doing work on multiple threads. So the actual work performed by Astro here is greater than what’s represented, and perhaps on single-core machines the build times would be higher. 
+
 
 The Astro team seems dedicated to performance, so I’m willing to stipulate it might do a much better job on larger sites. But I’m also willing to bet that many people and organizations have sites that are small enough that performance isn’t a critical factor.
 
