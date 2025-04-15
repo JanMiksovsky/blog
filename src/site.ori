@@ -18,7 +18,7 @@
     index.html = archivePage.ori(keys(data.ori))
 
     // Add in folders for each year
-    …map(data.ori, (yearPosts, yearSlash) => {
+    …map(published, (yearPosts, yearSlash) => {
       // Index page for the year
       index.html = yearPage.ori(yearPosts, slash/remove(yearSlash))
       // Pages for each post that year
@@ -36,8 +36,9 @@
   search.html = search.ori()
   pagefind/ = once(=package:@weborigami/pagefind({ posts }))
 
-  // The 10 most recent posts, used for home page and feeds
-  (recent) = deepTake(data.ori, 10)
+  // The 10 most recent published posts, used for home page and feeds
+  (published) = filter(data.ori, { deep: true, test: =!_/draft })
+  (recent) = deepTake(published, 10)
 
   // Feeds
   (feed) = feed.ori(recent)

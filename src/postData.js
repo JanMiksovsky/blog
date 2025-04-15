@@ -14,6 +14,7 @@ export default async function postData(document, filename, year) {
   const markdown = isDocument ? document["@text"] : toString(document);
   const rawTitle = isDocument && document.title ? document.title : undefined;
   const title = rawTitle ? stripHashTags(rawTitle) : undefined;
+  const draft = isDocument && document.draft;
 
   const html = await mdHtml(markdown);
 
@@ -79,6 +80,7 @@ export default async function postData(document, filename, year) {
   return Object.assign(
     {
       date,
+      draft,
       isoDate,
       formattedDate,
       html,
