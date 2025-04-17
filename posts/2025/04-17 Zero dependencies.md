@@ -1,10 +1,9 @@
 ---
 title: "This minimalist static site generator pattern is only for #JavaScript developers who want something small, fast, flexible, and comprehensible"
-draft: true
 tags: "#ssg #blogging"
 ---
 
-Configuring a complex tool can take more work that just coding the functionality you want from scratch. In the last post I described [creating a simple blog in Astro](/posts/2025/04-14-astro.html), a popular static site generator (SSG). I felt the Astro solution was more complicated than the problem justified, so I wanted to try rewriting the entire blog project from scratch in pure JavaScript with zero dependencies.
+Configuring a complex tool can take more work that just coding the functionality you want from scratch. In the last post I described [creating a simple blog in Astro](/posts/2025/04-14-astro.html), a popular static site generator (SSG). The Astro solution felt more complicated than the problem justified, so I rewrote the entire blog project from scratch in pure JavaScript with zero dependencies.
 
 This went very well! I coded the blog in about a day, I can completely understand every part of it, and it’s very fast. Writing from scratch made it easy to achieve all of the requirements for the site (described in the appendix of the linked post above).
 
