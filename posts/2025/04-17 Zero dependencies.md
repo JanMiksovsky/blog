@@ -336,3 +336,9 @@ Although this project didn’t require a lot of code, that 11K of extra JavaScri
 While a library may run into some of the same abstraction issues and potential for bloat as an SSG framework, a library has the critical advantage that it always leaves you in control of the action. Since a good library will do nothing unless you ask for it, in my experience it’s easier to get the results you want.
 
 So having now written this blog three times (Origami, Astro, and plain JS with zero dependencies), I figured I may as well write it a _fourth_ time using a library. I’ll look at that next time.
+
+Read the other posts in this series:
+
+1. [Static site generators like Astro are actually pretty complex for the problems they solve](/posts/2025/04-14-astro.html)
+2. This minimalist static site generator pattern is only for JavaScript developers who want something small, fast, flexible, and comprehensible [this post]
+3. [Making a small JavaScript blog static site generator even smaller using the general async-tree library](/posts/2025/04-23-async-tree.html)

@@ -258,6 +258,12 @@ The entirety of an SSG might seem daunting, but many programmers would probably 
 
 To prove that, I want to rewrite this sample blog again, this time in vanilla JavaScript with no dependencies. I predict this will take _slightly_ more code than the Astro version but will be just as functional, more standard, and more comprehensible.
 
+Read the other posts in this series:
+
+1. Static site generators like Astro are actually pretty complex for the problems they solve [this post]
+2. [This minimalist static site generator pattern is only for JavaScript developers who want something small, fast, flexible, and comprehensible](/posts/2025/04-17-zero-dependencies.html)
+3. [Making a small JavaScript blog static site generator even smaller using the general async-tree library](/posts/2025/04-23-async-tree.html)
+
 ## Appendix: Requirements
 
 Taking the original [#pondlife](https://github.com/WebOrigami/pondlife) blog as a reference for the Astro blog, here were my requirements for the project source code (things that only matter to me as the author):
