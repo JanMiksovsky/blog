@@ -2,11 +2,14 @@
   <span>
     <a class="quiet" href="/">Jan<span class="optional"> Miksovsky</span></a>&emsp14;
     <a class="quiet" href="/posts/">Archive</a>&emsp14;
-    ${ document/year
-      ? indent`
-        <a class="quiet" href="/posts/${ document/year }/">${ document/year }</a>&emsp14;
+    ${
+      document/year
+        ? indent`
+        <a class="quiet" href="/posts/${ document/year }/">${
+            document/year
+          }</a>&emsp14;
       `
-      : ""
+        : ""
     }
   </span>
   <span>

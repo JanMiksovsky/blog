@@ -4,22 +4,22 @@ tags: “#ssg #blogging”
 draft: true
 ---
 
-Using the [async-tree](https://weborigami.org/async-tree/) library substantially cuts down the source code necessary to build a minimalist static site generator (SSG) in JavaScript, at a very modest cost in dependencies. The result is still fast and flexible.
+Using the [async-tree](https://weborigami.org/async-tree/) library substantially cuts down the source code for a minimalist static site generator (SSG) in JavaScript, at a very modest cost in dependencies. The result is still fast and flexible.
 
-In the first post in this series, I recreated a simple [blog in Astro](/posts/2025/04-14-astro.html), but it felt complicated. I rewrote the [blog in plain JavaScript with zero dependencies](/posts/2025/04-17-zero-dependencies.html). This post discusses yet another rewrite, this one predicated on sharing code.
+In the first post in this series, I recreated a simple [blog in Astro](/posts/2025/04-14-astro.html) that felt complicated. I rewrote the [blog in plain JavaScript with zero dependencies](/posts/2025/04-17-zero-dependencies.html). This post discusses yet another rewrite, this one predicated on sharing code.
 
 You can look at the final async-tree blog [source code](https://github.com/WebOrigami/pondlife-async-tree) and the [live site](https://pondlife-async-tree.netlify.app/).
 
 ## Okay, maybe a few dependencies
 
-The zero-dependency version felt quite good, although insisting on _no_ dependencies was a little extreme. While half the source code was unique to the project, the features in the other half can be cleanly handled by libraries.
+The zero-dependency version felt quite good, although insisting on _no_ dependencies was a little extreme.
 
-Two of the more straightforward are:
+While half the source code was unique to the project, the features in the other half can be cleanly handled by libraries, like:
 
 * Transforming markdown to HTML. Markdown processing can be expressed as a pure function that accepts markdown and returns HTML. A processor like [marked](https://marked.js.org/) fits the bill.
 * Transforming a blog feed [from JSON Feed format to RSS](https://github.com/WebOrigami/json-feed-to-rss).
 
-These are both pure functions, a much easier kind of dependency to take on. You decide when to call the function and what input to give it; it gives you back a result without any side effects.
+These are both pure functions, a much easier kind of dependency to take on. You decide when to call the function and what input to give it; it gives you back a result without any side effects. This contract greatly reduces the potential for surprise or frustration.
 
 ## The async-tree library
 
@@ -36,7 +36,7 @@ Our collection of markdown documents, for example, is physically stored in the f
 
 <img src="/images/2025/04/markdownTree.svg" alt="Tree diagram showing a root node pointing to three markdown files" class="screenshot">
 
-If all we want to do is traverse this tree, APIs like Node’s [`fs`](https://nodejs.org/api/fs.html) API are overkill. We just want a way of getting keys and values. This is much closer in spirit to a JavaScript [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map), although to handle more cases we want our methods to be `async`.
+If all we want to do is traverse this tree, APIs like Node’s [`fs`](https://nodejs.org/api/fs.html) API are overkill. We just want a way of getting keys and values. This is much closer in spirit to a JavaScript [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map). Unlike `Map`, we can handle more cases by making our methods `async`.
 
 This is the [`AsyncTree`](https://github.com/WebOrigami/origami/blob/main/types/src/AsyncTree.d.ts) interface:
 
@@ -48,11 +48,11 @@ export default interface AsyncTree {
 }
 ```
 
-This is an interface (not a class like `Map`) that’s easy to define for any almost any collection-like data structure. Such async collections can be nested to form an async tree — a tree of promises.
+This is an interface (not a class) that’s easy to define for any almost any collection-like data structure. Such async collections can be nested to form an async tree — a tree of promises.
 
-Abstractions like this one come a cost. In exchange for a considerable degree of power and flexibility, you have to wrap your brain around an unfamiliar concept. “A tree of promises?” It might take a while to wrap your head around that.
+Abstractions come a cost. In exchange for a considerable degree of power and flexibility, you have to wrap your brain around an unfamiliar concept. “A tree of promises?” It might take a while to wrap your head around that.
 
-From several years of experience, I will say it’s ultimately very beneficial to view software problems like static site generation as reading, transforming, and writing out async trees.
+ I will say that, from several years of experience, it’s ultimately very beneficial to view software problems like static site generation as reading, transforming, and writing async trees.
 
 ## Example: reading markdown, reading posts
 
@@ -64,7 +64,7 @@ const files = new FileTree(new URL("markdown", import.meta.url));
 const first = await files.get("2025-07-04.md");
 ```
 
-Here `FileTree` is roughly similar to our quick-and-dirty zero-dependency code that read a folder tree into memory. But `FileTree` is much more efficient. It doesn’t read the complete set of files into memory; it only does work when you look up a key’s value with `get`.
+Here `FileTree` is roughly similar to our quick-and-dirty zero-dependency code that read a folder tree into memory. But `FileTree` is more efficient because it doesn’t read the complete set of files into memory; it only does work when you look up a key’s value with `get`.
 
 Our [posts.js](https://github.com/WebOrigami/pondlife-async-tree/blob/main/src/posts.js) function turns that collection of markdown file buffers into a completely different form: a set of plain JavaScript objects with `.html` names that are stored in memory. Despite these significant differences, if we want to get the first post from that collection, we can still use the same `get` method:
 
@@ -73,7 +73,7 @@ import posts from "./src/posts.js";
 const first = await posts.get("2025-07-04.html");
 ```
 
-Different data structure, same `get` method.
+Totally different data structure, same `get` method.
 
 ## Example: pagination
 
@@ -143,17 +143,17 @@ Once the site is defined, building the site is just a matter of copying files fr
 import { FileTree, Tree } from "@weborigami/async-tree";
 import site from "./site.js";
 
-// Build writes the site resources to the build folder
+// Build process writes the site resources to the build folder
 const buildTree = new FileTree(new URL("../build", import.meta.url).pathname);
 await Tree.clear(buildTree); // Erase any existing files
 await Tree.assign(buildTree, site); // Copy site to build folder
 ```
 
-The `async-tree` library provides a set of helpers in a static class called [`Tree`](http://localhost:5001/async-tree/Tree.html). These provide the full set of operations in the JavaScript `Map` class so that `AsyncTree` interface implementors don’t have to define those methods themselves, making it easier to create new `AsyncTree` implementations to read data directly out of new data sources.
+The `async-tree` library provides a set of helpers in a static class called [`Tree`](http://localhost:5001/async-tree/Tree.html). These provide a full set of operations like those in the JavaScript `Map` class so that `AsyncTree` interface implementors don’t have to define those methods themselves, making it easier to create new `AsyncTree` implementations to read data directly out of new data sources.
 
 ## Assessment
 
-We can compare this async-tree version of the blog with the earlier Astro and zero-dependency versions.
+We can compare this async-tree version of the blog with the earlier Astro and zero-dependency versions. All three versions create the same site.
 
 The async-tree version makes strategic use of libraries for markdown processing, RSS feed generation, and manipulating objects and files as trees. This removes over half the code from the zero-dependency version, so async-tree has only 9K handwritten source code, the smallest of the three:
 
@@ -179,11 +179,11 @@ Debugging `async` JavaScript code is harder than debugging regular, synchronous 
 
 That said, I once again made good use of the [`ori`](https://weborigami.org/cli/) CLI to check various pieces of the site in the command line. That let me confirm that individual pieces worked as expected, as well as serve the site locally to inspect the evolving site.
 
-All in all, I think this async-tree approach is a really interesting way to build sites. It’s significantly less JavaScript than the zero-dependency version while still very fast, light on package weight, and keeps you in control.
+All in all, I think this async-tree approach is a really interesting way to build sites. It’s significantly less JavaScript than the zero-dependency version, while it’s still very fast and light on package weight. You stay in control.
 
 Since I wrote the `async-tree` library, I can’t provide an objective assessment of how difficult it is to use.
 
-The library deserves more comprehensive documentation than it currently has; I’ve generally focused my documentation writing on the higher-level [Origami language](https://weborigami.org/language) and its set of builtins. If you’re intrigued by this lower-level, general-purpose `async-tree` library, let me know; I can help you out and prioritize documenting it in more detail.
+The library deserves more comprehensive documentation than it currently has; I’ve generally focused my documentation writing on the higher-level [Origami language](https://weborigami.org/language) and its set of builtins. If you’re intrigued by this more foundational, general-purpose `async-tree` library, let me know. I can help you out and prioritize documenting it in more detail.
 
 ## Improvable?
 
