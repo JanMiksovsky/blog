@@ -1,6 +1,6 @@
 ---
 title: "Making a small #JavaScript blog static site generator even smaller using the general async-tree library"
-tags: "#ssg #blogging”
+tags: "#ssg #blogging"
 ---
 
 Using the [async-tree](https://weborigami.org/async-tree/) library substantially cuts down the source code for a minimalist static site generator (SSG) in JavaScript, at a very modest cost in dependencies. The result is still fast and flexible.
