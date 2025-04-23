@@ -1,7 +1,6 @@
 ---
 title: "Making a small #JavaScript blog static site generator even smaller using the general async-tree library"
-tags: “#ssg #blogging”
-draft: true
+tags: "#ssg #blogging”
 ---
 
 Using the [async-tree](https://weborigami.org/async-tree/) library substantially cuts down the source code for a minimalist static site generator (SSG) in JavaScript, at a very modest cost in dependencies. The result is still fast and flexible.
@@ -16,8 +15,8 @@ The zero-dependency version felt quite good, although insisting on _no_ dependen
 
 While half the source code was unique to the project, the features in the other half can be cleanly handled by libraries, like:
 
-* Transforming markdown to HTML. Markdown processing can be expressed as a pure function that accepts markdown and returns HTML. A processor like [marked](https://marked.js.org/) fits the bill.
-* Transforming a blog feed [from JSON Feed format to RSS](https://github.com/WebOrigami/json-feed-to-rss).
+- Transforming markdown to HTML. Markdown processing can be expressed as a pure function that accepts markdown and returns HTML. A processor like [marked](https://marked.js.org/) fits the bill.
+- Transforming a blog feed [from JSON Feed format to RSS](https://github.com/WebOrigami/json-feed-to-rss).
 
 These are both pure functions, a much easier kind of dependency to take on. You decide when to call the function and what input to give it; it gives you back a result without any side effects. This contract greatly reduces the potential for surprise or frustration.
 
@@ -25,8 +24,8 @@ These are both pure functions, a much easier kind of dependency to take on. You 
 
 The remaining sharable code in the zero-dependency version comprises generic utility functions:
 
-* A higher-order function that maps the keys and values of an object to return a new, transformed object
-* A way to read and write a file system folder tree as an object
+- A higher-order function that maps the keys and values of an object to return a new, transformed object
+- A way to read and write a file system folder tree as an object
 
 Since these are completely generic, they’re worth sharing — so over the past 4 years I’ve been working on a library called [async-tree](https://weborigami/async-tree) that handles these and other tasks.
 
@@ -44,7 +43,7 @@ This is the [`AsyncTree`](https://github.com/WebOrigami/origami/blob/main/types/
 export default interface AsyncTree {
   get(key: any): Promise<any>;
   keys(): Promise<Iterable<any>>;
-  parent?: AsyncTree|null;
+  parent?: AsyncTree | null;
 }
 ```
 
@@ -52,11 +51,11 @@ This is an interface (not a class) that’s easy to define for any almost any co
 
 Abstractions come a cost. In exchange for a considerable degree of power and flexibility, you have to wrap your brain around an unfamiliar concept. “A tree of promises?” It might take a while to wrap your head around that.
 
- I will say that, from several years of experience, it’s ultimately very beneficial to view software problems like static site generation as reading, transforming, and writing async trees.
+I will say that, from several years of experience, it’s ultimately very beneficial to view software problems like static site generation as reading, transforming, and writing async trees.
 
 ## Example: reading markdown, reading posts
 
-As an example, to get the first file from our `markdown` folder, we can construct an `AsyncTree` for that folder using the library’s [`FileTree`](http://localhost:5001/async-tree/FileTree.html) helper, then call the tree’s `get`  method:
+As an example, to get the first file from our `markdown` folder, we can construct an `AsyncTree` for that folder using the library’s [`FileTree`](http://localhost:5001/async-tree/FileTree.html) helper, then call the tree’s `get` method:
 
 ```js
 import { FileTree } from "@weborigami/async-tree";
