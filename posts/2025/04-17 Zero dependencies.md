@@ -342,3 +342,4 @@ Read the other posts in this series:
 1. [Static site generators like Astro are actually pretty complex for the problems they solve](/posts/2025/04-14-astro.html)
 2. This minimalist static site generator pattern is only for JavaScript developers who want something small, fast, flexible, and comprehensible [this post]
 3. [Making a small JavaScript blog static site generator even smaller using the general async-tree library](/posts/2025/04-23-async-tree.html)
+4. [Write a very concise static site generator with Origami expression](/posts/2025/05-02-concise-expressions.html)
