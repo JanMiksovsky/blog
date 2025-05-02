@@ -1,5 +1,5 @@
 ---
-title: Write a very concise static site generator with Origami expression
+title: Write a very concise static site generator with Origami expressions
 ---
 
 Last year I created a sample blog called [#pondlife](https://pondlife.netlify.app/) to show how to create a basic blog in [Web Origami](https://weborigami.org/). Recently I rewrote that same blog three new ways, giving me four implementations to compare:
@@ -17,7 +17,7 @@ The Origami version is functionally the same as the JavaScript version using the
 
 The JavaScript language was originally designed for wiring up interactivity on individual pages. It was not designed to create sites, to interact with file system trees or network resources, or to parse and manipulate the contents of files.
 
-Node.js and similar environments do make those things *possible* in JavaScript — which is great! But the fact remains that JavaScript itself is a poor fit for making sites. Even basic site tasks require you to write quite a bit of JavaScript code.
+Node.js and similar environments do make those things _possible_ in JavaScript — which is great! But the fact remains that JavaScript itself is a poor fit for making sites. Even basic site tasks require you to write quite a bit of JavaScript code.
 
 ## Example: Generating the About page
 
@@ -49,11 +49,11 @@ The above code works but feels verbose for what it’s doing.
 
 ## Origami is JavaScript expressions plus paths
 
-Many tasks in creating a site or other digital artifact can be handled by an [expression](https://en.wikipedia.org/wiki/Expression_(computer_science)) — a bit of code that returns a value.
+Many tasks in creating a site or other digital artifact can be handled by an [expression](<https://en.wikipedia.org/wiki/Expression_(computer_science)>) — a bit of code that returns a value.
 
-* Many web resources can be described as applying one or more functions to some original content or data.
-* Likewise, converting data to HTML can be described as applying one or more template functions.
-* The overall structure of a site can be described as a tree, which can be defined by an object literal.
+- Many web resources can be described as applying one or more functions to some original content or data.
+- Likewise, converting data to HTML can be described as applying one or more template functions.
+- The overall structure of a site can be described as a tree, which can be defined by an object literal.
 
 These are all types of expressions.
 
