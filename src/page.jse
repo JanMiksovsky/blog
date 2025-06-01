@@ -1,25 +1,25 @@
-(page) => indent`
+(page) => Tree.indent`
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>${ page/title }</title>
+    <title>${ page.title }</title>
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="/github.min.css">
     <link rel="me" href="https://fosstodon.org/@JanMiksovsky">
     <link rel="me" href="https://github.com/JanMiksovsky">
     <meta name="fediverse:creator" content="@JanMiksovsky@fosstodon.org">
-    ${ page/url
-      ? indent`
-        ${ page/description ? indent`
-          <meta property="og:description" content="${ page/description }">
+    ${ page.url
+      ? Tree.indent`
+        ${ page.description ? Tree.indent`
+          <meta property="og:description" content="${ page.description }">
         ` : "" }
-        ${ page/previewUrl ? indent`
-          <meta property="og:image" content="${ page/previewUrl }">
+        ${ page.previewUrl ? Tree.indent`
+          <meta property="og:image" content="${ page.previewUrl }">
         ` : "" }
-        <meta property="og:url" content="${ page/url }">
-        <meta property="og:title" content="${ page/socialTitle }">
+        <meta property="og:url" content="${ page.url }">
+        <meta property="og:title" content="${ page.socialTitle }">
         <meta property="og:type" content="article">
       `
       : ""
@@ -27,13 +27,13 @@
   </head>
   <body>
     <header>
-      ${ banner.ori(page) }
+      ${ <banner.jse>(page) }
     </header>
     <main>
-${ page/@text }
+${ page._body }
     </main>
     <footer>
-      ${ banner.ori(page) }
+      ${ <banner.jse>(page) }
     </footer>
   </body>
 </html>

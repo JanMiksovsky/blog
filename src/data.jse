@@ -1,0 +1,14 @@
+// Main blog post pipeline turns markdown into objects with all the data
+// needed for rendering in various ways
+Tree.map(<posts>, (yearPosts, yearSlash) =>
+  Tree.map(yearPosts, {
+    key: (post, fileName) => `${ Origami.basename(Origami.slug(fileName), ".md") }.html`
+    value: (post, fileName) => <postData.js>(
+      post
+      Origami.slash.remove(fileName)
+      Origami.slash.remove(yearSlash)
+    )
+  })
+)
+
+→ Tree.deepReverse

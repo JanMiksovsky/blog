@@ -1,7 +1,0 @@
-(posts, year) => page.ori {
-  title: year
-  @text: indent`
-    <h1 class="yearHeader">${ year }</h1>
-    ${ map(posts, postFragment.ori) }
-  `
-}

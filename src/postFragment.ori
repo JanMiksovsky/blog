@@ -1,9 +1,0 @@
-(post) => indent`
-  <article>
-    <a class="quiet" href="/${ post/path }">
-      ${ post/title ? `<h1 class="postHeader">${ post/title }</h1>` : "" }
-      <time datetime=${ post/isoDate } class="postDate">${ post/formattedDate }</time>
-    </a>
-${ post/html }
-  </article>
-`

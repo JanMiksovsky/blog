@@ -11,7 +11,7 @@ export default async function postData(document, filename, year) {
     document = await document.unpack();
   }
   const isDocument = isPlainObject(document);
-  const markdown = isDocument ? document["@text"] : toString(document);
+  const markdown = isDocument ? document["_body"] : toString(document);
   const rawTitle = isDocument && document.title ? document.title : undefined;
   const title = rawTitle ? stripHashTags(rawTitle) : undefined;
   const draft = isDocument && document.draft;

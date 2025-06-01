@@ -1,0 +1,13 @@
+(years) => <page.jse>({
+  title: "Posts by year"
+  _body: Tree.indent`
+    <h1>Posts by year</h1>
+    <ul class="yearList">
+    ${ Tree.map(years, (yearSlash) => Tree.indent`
+      <li class="yearItem">
+        <a href="${ yearSlash }">${ Origami.slash.remove(yearSlash) }</a>
+      </li>
+    `) }
+    </ul>
+  `
+})

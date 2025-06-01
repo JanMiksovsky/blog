@@ -1,0 +1,48 @@
+// Overall site definition for the whole blog
+{
+  // Merge in the client folder
+  …<client>
+
+  // About Us and Contact pages
+  about.html = <page.jse>(Origami.mdHtml(<about.md>))
+  contact.html = <page.jse>(Origami.mdHtml(<contact.md>))
+
+  // Include the `images` folder as is
+  <images>
+
+  // Top-level home page
+  index.html = <index.jse>(recent)
+
+  posts = {
+    // Index page for the whole posts archive lists the years
+    index.html = <archivePage.jse>(Tree.keys(<data.jse>))
+
+    // Add in folders for each year
+    …Tree.map(published, (yearPosts, yearSlash) => {
+      // Index page for the year
+      index.html = <yearPage.jse>(yearPosts, Origami.slash.remove(yearSlash))
+      // Pages for each post that year
+      …Tree.map(yearPosts, <postPage.jse>)
+    })
+  }
+
+  // Create preview images for posts
+  previews/ = Tree.map(<data.jse>, (year) => Tree.map(year, {
+    key: (post) => post.previewSlug
+    value: <preview.jse>
+  }))
+
+  // Search UI and indexes
+  search.html = <search.jse/>
+  pagefind/ = Origami.once(() => <package:@weborigami/pagefind>({ posts }))
+
+  // The 10 most recent published posts, used for home page and feeds
+  (published) = Tree.filter(<data.jse>, { deep: true, test: (post) => !post.draft })
+  (recent) = Tree.deepTake(published, 10)
+
+  // Feeds
+  (feed) = <feed.jse>(recent)
+  feed.html = <feedPage.jse/>
+  feed.json = Tree.json(feed)
+  rss.xml = Origami.rss(feed, { feed_url: "https://jan.miksovsky.com/rss.xml" })
+}
