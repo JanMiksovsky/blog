@@ -1,4 +1,4 @@
-(years) => <page.jse>({
+(years) => page.jse({
   title: "Posts by year"
   _body: Tree.indent`
     <h1>Posts by year</h1>

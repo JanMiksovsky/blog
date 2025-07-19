@@ -10,7 +10,7 @@
   })
 
   // No post image; generate an image of the title and text
-  : <ogImage.js>({
+  : ogImage.js({
     height: 630
     text: item.text
     title: item.title ?? item.extractedTitle

@@ -1,9 +1,9 @@
-(post) => <page.jse>({
+(post) => page.jse({
   description: post.description
   previewUrl: post.previewUrl
   socialTitle: post.socialTitle
   title: post.title ?? post.extractedTitle
   url: post.url
   year: post.year
-  _body: <postFragment.jse>(post)
+  _body: postFragment.jse(post)
 })

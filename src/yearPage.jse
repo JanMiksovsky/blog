@@ -1,7 +1,7 @@
-(posts, year) => <page.jse>({
+(posts, year) => page.jse({
   title: year
   _body: Tree.indent`
     <h1 class="yearHeader">${ year }</h1>
-    ${ Tree.map(posts, <postFragment.jse>) }
+    ${ Tree.map(posts, postFragment.jse) }
   `
 })

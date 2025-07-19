@@ -27,13 +27,13 @@
   </head>
   <body>
     <header>
-      ${ <banner.jse>(page) }
+      ${ banner.jse(page) }
     </header>
     <main>
 ${ page._body }
     </main>
     <footer>
-      ${ <banner.jse>(page) }
+      ${ banner.jse(page) }
     </footer>
   </body>
 </html>

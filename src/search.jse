@@ -1,5 +1,5 @@
 // Search page hosting the Pagefind UI
-<page.jse>({
+page.jse({
   title: "Search"
 
   // Boilerplate UI from https://pagefind.app/docs/ui-usage/
