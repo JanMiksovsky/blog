@@ -2,7 +2,7 @@
 (item) => item.imagePath
 
   // Post has an image; resize it
-  ? Origami.image.resize(<..>(item.imagePath), {
+  ? Origami.image.resize(..(item.imagePath), {
     background: { r: 0, g: 0, b: 0, alpha: 0 }
     fit: "contain"
     height: 630
