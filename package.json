@@ -2,14 +2,14 @@
   "name": "blog",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "0.3.1",
-    "@weborigami/pagefind": "0.0.5",
-    "canvas": "v3.1.0"
+    "@weborigami/origami": "0.4.1",
+    "@weborigami/pagefind": "0.0.12",
+    "canvas": "v3.1.2"
   },
   "devDependencies": {
     "rehype-stringify": "10.0.1",
     "remark-parse": "11.0.0",
-    "remark-rehype": "11.1.1",
+    "remark-rehype": "11.1.2",
     "unified": "11.0.5"
   },
   "scripts": {
