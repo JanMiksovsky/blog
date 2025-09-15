@@ -1,4 +1,4 @@
-page.jse({
+page.ori({
   title: "Feeds"
   _body: Tree.indent`
     <h1>Feeds</h1>
