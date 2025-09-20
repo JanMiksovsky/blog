@@ -2,6 +2,9 @@
   title: year
   _body: Tree.indent`
     <h1 class="yearHeader">${ year }</h1>
-    ${ Tree.map(posts, postFragment.ori) }
+    ${ Tree.map(
+      Tree.filter(posts, { test: (post) => !post.draft })
+      postFragment.ori
+    ) }
   `
 })

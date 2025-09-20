@@ -18,7 +18,7 @@
     index.html = archivePage.ori(Tree.keys(data.ori))
 
     // Add in folders for each year
-    ...Tree.map(published, (yearPosts, yearSlash) => {
+    ...Tree.map(data.ori, (yearPosts, yearSlash) => {
       // Index page for the year
       index.html = yearPage.ori(yearPosts, Origami.slash.remove(yearSlash))
       // Pages for each post that year
