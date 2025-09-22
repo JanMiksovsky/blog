@@ -5,9 +5,9 @@ draft: true
 
 I’ve extended my series of [blog architecture comparison](/posts/2025/05-02-concise-expressions.html) posts from earlier this year by porting the [sample reference blog](https://github.com/WebOrigami/pondlife) from [Origami](https://weborigami.org) and [plain JavaScript](/posts/2025/04-17-zero-dependencies.html) to create a Python version ([source](https://github.com/JanMiksovsky/pondlife-python), [demo](https://pondlife-python.netlify.app/)).
 
-The occasion is the addition of `async` and `await` features in Python 3.14, scheduled for final release today. I’ve long used those features in JavaScript, and their pending arrival prompted me to write some Python code for the first time in a long while.
+The occasion was reading about improvements in async features in Python 3.14, scheduled for final release today, which prompted me to write some Python code for the first time in a long while.
 
-The sample blog doesn’t actually need to make network requests, so it ended up only using sync functions — but all those sync functions are still _lazy_ and do work only when necessary. And with the improvements in Python 3.14, it seems feasible to create an `AsyncMapping` abstract base class as a variation of `Mapping` to handle the sorts of network-based operations that Origami can do, e.g., reading post content directly out of Dropbox or Google Drive.
+The sample blog doesn’t actually need to make network requests, so it ended up only using sync functions — but all those sync functions are still _lazy_ and do work only when necessary. And with the improvements in Python 3.14, it might be possible to create an `AsyncMapping` abstract base class as a variation of `Mapping` to handle the sorts of network-based operations that Origami can do, e.g., reading post content directly out of Dropbox or Google Drive.
 
 ## Creating a static site
 
