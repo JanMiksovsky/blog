@@ -70,7 +70,7 @@ This programmatic approach lets you dictate precisely how you want to compose th
 
 As in Origami, the site’s tree of resources is used in two very different ways.
 
-First, a small web server that accepts any `Mapping`-based tree converts URL requests like `/assets/styles.css` into an array of keys `["assets", "styles.css"]` that are used to traverse the tree. Given the `site_tree.py` code above, the first `”assets”` key retrieves the `Folder` wrapper around a real `assets` folder, and the second key retrieves the `styles.css` file in that folder. Because the site tries to be as lazy as possible, the site only does the work necessary to fulfill the specific request.
+First, a small web server that accepts any `Mapping`-based tree converts URL requests like `/assets/styles.css` into an array of keys `["assets", "styles.css"]` that are used to traverse the tree. Given the `site_tree.py` code above, the first `”assets”` key retrieves the `Folder` wrapper for the real `assets` folder; the second key retrieves the `styles.css` file in that folder. Because the site tries to be as lazy as possible, the site only does the work necessary to fulfill the specific request.
 
 Second, building the static site files is simply a matter of copying the site’s virtual tree of resources into a real tree in the file system.
 
@@ -87,8 +87,32 @@ def build(m: Mapping):
     build_folder.update(m)
 ```
 
-A `MutableMapping` is created for the `build` output folder, and the site’s tree of resources is copied directly into it using the standard `update()` method. This ultimately calls the `Folder` instance’s `__setitem__` method to save the data for individual files.
+A `MutableMapping` is created for the `build` output folder, and the site’s tree of resources is copied directly into it using the completely standard `update()` method to copy one map into another. This ultimately walks through the source tree, calling `__getitem__` to generate each resource, then passing the resource to the build’ folder’s `__setitem__` method to create the corresponding output file.
 
 ## Assessment
 
-_[Need to compile some statistics: project file size, build time. The Python version is significantly faster than the Node.js versions.]_
+Let’s compare this Python blog port with the earlier Origami and JavaScript versions.
+
+In terms of source code size, the Python version is written as a demo application and a separate library for map manipulations. That makes it roughly comparable to the [blog using Origami’s async-tree library](/posts/2025/04-23-async-tree.html). Accordingly, I’ll factor out the library portion of the code, and the reusable JSON feed-to-RSS translation to measure the non-reusable bytes in the demo application, including both Python (`.py`) files and Jinja (`.j2`) templates.
+
+![](/images/2025/10/pythonSourceCode.png)
+
+The Python version comes in at 10021 bytes, just a bit more than the 9450 bytes for the async-tree version. For this blog application, at least, both Python and JavaScript are comparably expressive. (Origami is still more concise.)
+
+Python and Node.js are completely different environments, so comparing the weight of the project dependencies can’t be apples-to-apples. And the whole idea of measuring dependencies by file size is only a very rough approximation of potential complexity. Still, I thought it was interesting to measure the total size on disk of the Python project’s `site-packages` as an analogue for node_modules.
+
+![](/images/2025/10/pythonDependencies.png)
+
+The Python version weighs more than the `async-tree` version. It’s less than Origami, but Origami is also doing a lot more. (Astro is still the most complex answer to the problem, and I don’t think it’s actually doing that much more interesting work to justify its size.)
+
+Finally, let’s look at the time required to build the blog’s static files:
+
+![](/images/2025/10/pythonBuildTime.png)
+
+Python comes in at 0.24s — a hair faster than the zero-dependency JavaScript version, making it the fastest of all the blog versions I’ve created so far.
+
+## Conclusion
+
+This was a really interesting experiment! It was a ton of fun to write Python code again.
+
+It seems completely feasible to serve and build a site in Python in a lightweight fashion using a library (under your control) instead of a big framework (that takes control from you). Python seems like a great substrate for Origami ideas. It’s well-designed and widely-used `Mapping` abstract base class is a natural way to represent your source content as a tree that you can transform into the tree of resources you want for your site.
