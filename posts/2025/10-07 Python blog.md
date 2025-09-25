@@ -99,11 +99,11 @@ In terms of source code size, the Python version is written as a demo applicatio
 
 The Python version comes in at 10021 bytes, just a bit more than the 9450 bytes for the async-tree version. For this blog application, at least, both Python and JavaScript are comparably expressive. (Origami is still more concise.)
 
-Python and Node.js are completely different environments, so comparing the weight of the project dependencies can’t be apples-to-apples. And the whole idea of measuring dependencies by file size is only a very rough approximation of potential complexity. Still, I thought it was interesting to measure the total size on disk of the Python project’s `site-packages` as an analogue for node_modules.
+Python and Node.js are completely different environments, so it’s not possible to make an apples-to-apples comparison of the weight of the project dependencies. And in any case, measuring dependencies by total file size can only give an extremely coarse approximation of potential complexity. Still, I thought it was interesting to measure the total size on disk of the Python project’s `site-packages` as an analogue for node_modules.
 
 ![](/images/2025/10/pythonDependencies.png)
 
-The Python version weighs more than the `async-tree` version. It’s less than Origami, but Origami is also doing a lot more. (Astro is still the most complex answer to the problem, and I don’t think it’s actually doing that much more interesting work to justify its size.)
+The Python version weighs more than the `async-tree` version. It’s less than Origami, but Origami is also doing a lot more. (Astro is still the most complex answer to the problem, and I don’t believe it’s actually doing enough interesting work to justify its size.)
 
 Finally, let’s look at the time required to build the blog’s static files:
 
