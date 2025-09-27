@@ -7,7 +7,7 @@ I’ve extended my series of [blog architecture comparison](/posts/2025/05-02-co
 
 The occasion was reading about improvements in async features in Python 3.14, scheduled for final release today, which prompted me to write some Python code for the first time in a long while.
 
-The sample blog doesn’t actually need to make network requests, so it ended up only using sync functions — but all those sync functions are still _lazy_ and do work only when necessary. And with the improvements in Python 3.14, it might be possible to create an `AsyncMapping` abstract base class as a variation of `Mapping` to handle the sorts of network-based operations that Origami can do, e.g., reading post content directly out of Dropbox or Google Drive.
+The sample blog doesn’t actually need to make async network requests, so it ended up only using sync functions — but all those sync functions are still _lazy_ and do work only when necessary. And with the improvements in Python 3.14, it might be possible to create an `AsyncMapping` abstract base class as a variation of `Mapping` to handle the sorts of async network operations that Origami can do, e.g., reading post content directly out of Dropbox or Google Drive.
 
 ## Creating a static site
 
@@ -15,13 +15,13 @@ Python’s audience has always included people who don’t think of themselves p
 
 I’m not familiar with Python static site generators, but they seem to generally take the same [framework approach](https://weborigami.org/language/model#use-a-website-framework) as their Node.js counterparts: impose a particular folder structure, provide a magic transformation of that structure to static files, and offer a degree of customization through configuration.
 
-Like all the blog implementations in this series, this Python project rejects that approach entirely. Instead, the focus is on creating useful functions and abstractions for defining the site you want to create. It leaves you to put the parts together in a way that makes sense to you so that you are always in control and can entirely satisfy your requirements.
+Like all the blog implementations in this series, this Python project rejects that approach entirely. Instead, the focus is on creating useful functions and abstractions for defining the site you want to create. It leaves you to put the parts together in a way that makes sense to you. You are always in control and can entirely satisfy your requirements.
 
 ## Lazy maps
 
 Like the JavaScript versions of the sample blog, the Python version attempts to use native language constructions whenever possible. It makes heavy use of Python’s [`Mapping`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Mapping) abstract base class to represent collections which are fundamentally _lazy_: they do essentially no work when constructed. Only when asked for their keys, or for a particular value for a key, will they do substantive work.
 
-An example of this is the project’s [`Folder`](https://github.com/JanMiksovsky/pondlife-python/blob/main/src/map_origami/folder.py) class, which wraps a file system folder as a lazy `Mapping` (specifically, a `MutableMapping`).
+An example of this is the project’s [`Folder`](https://github.com/JanMiksovsky/pondlife-python/blob/main/src/map_origami/folder.py) class, which wraps a file system folder as a lazy `Mapping` (specifically, a `MutableMapping`, which can be updated after it’s created).
 
 Another example of this are the project’s operations that take one `Mapping` as input and return a new, transformed `Mapping`. For example, [`map_extensions`](https://github.com/JanMiksovsky/pondlife-python/blob/main/src/map_origami/map_extensions.py), can convert a virtual collection of `.md` files into a corresponding collection of `.html` files.
 
@@ -29,7 +29,7 @@ Another example of this are the project’s operations that take one `Mapping` a
 post_html_docs = map_extensions(folder, ".md->.html", md_doc_to_html)
 ```
 
-When backed by a `Folder` containing `post.md`, the resulting map-of-a-map _says_ that it contains a `post.html` -- but it hasn’t done the real work for that yet. When you ask for `post.html`, it will ask the underlying `Folder` for `post.md`, translate the markdown content to HTML, then return that result. (The [actual data pipeline](https://github.com/JanMiksovsky/pondlife-python/blob/main/src/blog_demo/post_docs.py) is slightly more complex.)
+When backed by a `Folder` containing `post.md`, the resulting map-of-a-map _says_ that it contains a `post.html` -- but it hasn’t done the real work for that yet. When you ask for `post.html`, it will ask the underlying `Folder` for `post.md`, translate the markdown content to HTML, then return that result. (The actual data pipeline is slightly more complex; see the [ReadMe](https://github.com/JanMiksovsky/pondlife-python/blob/main/README.md).)
 
 You can use a debugger to inspect the value of a map like this at runtime with a command like:
 
@@ -87,7 +87,15 @@ def build(m: Mapping):
     build_folder.update(m)
 ```
 
-A `MutableMapping` is created for the `build` output folder, and the site’s tree of resources is copied directly into it using the completely standard `update()` method to copy one map into another. This ultimately walks through the source tree, calling `__getitem__` to generate each resource, then passing the resource to the build’ folder’s `__setitem__` method to create the corresponding output file.
+A `MutableMapping` is created for the `build` output folder; it’s mutable so that files can be written into it.
+
+The site’s tree of resources is copied directly into it using the completely standard `update()` method to copy one map into another. That boils down the essence of a static site generator to the single line:
+
+```python
+build_folder.update(m)
+```
+
+This walks through the source tree `m`, calling `__getitem__` to get each resource. That will trigger the generation of said resource. The result will be passed to the build’ folder’s `__setitem__` method to create the corresponding output file.
 
 ## Assessment
 
