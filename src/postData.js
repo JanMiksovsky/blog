@@ -1,5 +1,5 @@
 import { isPlainObject, isUnpackable, toString } from "@weborigami/async-tree";
-import { mdHtml, slug } from "@weborigami/origami";
+import { Origami } from "@weborigami/origami";
 
 /**
  * Given the basic set of information in a post document, return a new document
@@ -16,7 +16,7 @@ export default async function postData(document, filename, year) {
   const title = rawTitle ? stripHashTags(rawTitle) : undefined;
   const draft = isDocument && document.draft;
 
-  const html = await mdHtml(markdown);
+  const html = await Origami.mdHtml(markdown);
 
   const text = strip(markdown);
   const description = title ? extractFirstSentence(text) : undefined;
@@ -47,7 +47,7 @@ export default async function postData(document, filename, year) {
   });
 
   const htmlFileName = filename.replace(/\.md$/, ".html");
-  const postSlug = slug(htmlFileName);
+  const postSlug = Origami.slug(htmlFileName);
   const path = `posts/${year}/${postSlug}`;
   const url = `https://jan.miksovsky.com/${path}`;
 
