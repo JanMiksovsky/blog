@@ -1,6 +1,5 @@
 ---
 title: 2025 Web Origami year end report
-draft: true
 ---
 
 ## Goals for 2025
