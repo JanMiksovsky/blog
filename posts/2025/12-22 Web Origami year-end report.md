@@ -1,5 +1,5 @@
 ---
-title: 2025 Web Origami year end report
+title: 2025 Web Origami year-end report
 ---
 
 ## Goals for 2025
