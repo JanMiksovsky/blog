@@ -17,9 +17,9 @@ The big feature investments I aimed to make in 2025 were:
 
 😃 **Screencast engine.** I wanted a way of introducing new users to Origami through a media somewhere between a video and traditional documentation. A video is insanely time-consuming to produce and can't be kept up to date; traditional docs are easier to maintain but less interesting to newcomers. I developed a [system for creating comics](https://jan.miksovsky.com/posts/2025/01-22-motion-comic-origami-introduction) and published an initial [introductory comic](https://origami-comics.netlify.app/). I've always loved comics and am delighted with how this turned out. I have more plans for the comics system in 2026.
 
-😐 **Feature complete for JavaScript expressions.** I mostly accomplished what I wanted, which was feature parity with JavaScript expressions, but during the year I moved the goal posts. There are still a handful of [unsupported JavaScript features in Origami](https://weborigami.org/language/expressions#unsupported-javascript-features) that remain to be implemented, but I ended up investing far more in this area than I'd expected; see below.
+😐 **Feature complete for JavaScript expressions.** I mostly accomplished what I wanted, which was feature parity with JavaScript expressions, but during the year I moved the goal posts. I ended up investing far more in this area than I'd expected; see below. There are still a few remaining [unsupported JavaScript features in Origami](https://weborigami.org/language/expressions#unsupported-javascript-features) that I'm looking forward to implementing.
 
-☹️ **Inspector/debugger.** My plan was to create a browser-hosted tool that lets a user interactively inspect the call tree of an Origami file so they can more easily diagnose errors and better understand how their code works. I spent a month on this, but it proved to be a bigger job than I'd expected and I ultimately set it aside to pursue other priorities. I plan to try tackling this again in 2026.
+☹️ **Inspector/debugger.** My plan was to create a browser-hosted tool that lets a user interactively inspect the call tree of an Origami file so they can more easily diagnose errors and better understand how their code works. I spent a month on this, but it proved to be a bigger job than I'd expected and I ultimately set it aside to pursue other priorities. I plan on trying this again in 2026.
 
 ## JavaScript with paths
 
@@ -33,8 +33,6 @@ This change was a small but important step forward towards turning Origami into 
 
 - Redefining all builtins as global objects, just like JavaScript, so the old syntax `tree:map` became the JS-style call `Tree.map()`.
 - Supporting JavaScript keywords like `new`. Old syntax: `new:@js/Date("2025-12-31")` is now `new Date("2025-12-31")`, just like JavaScript.
-
-There's more work to do in this area in 2026 to implement the remaining aspects of JavaScript expression syntax.
 
 ## Map-based trees
 
