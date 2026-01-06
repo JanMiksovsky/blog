@@ -17,11 +17,6 @@ body {
   padding: 1em;
 }
 
-/* Hide div injected by LastPass */
-body > div {
-  display: none;
-}
-
 header,
 footer {
   display: grid;
