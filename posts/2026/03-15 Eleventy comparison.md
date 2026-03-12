@@ -280,6 +280,12 @@ Both tools build this tiny blog project in less than a second:
 
 Origami comes out ahead here, but again performance shouldn't be your primary concern. (I'm nevertheless happy to see Origami perform so well. That's not a reflection of coding prowess; Origami's fundamental approach is precisely suited for this task.)
 
+### Bugs
+
+I found what I think are three very minor bugs in the sample `eleventy-base-blog` project. I reported all of them: [bug](https://github.com/11ty/eleventy-base-blog/issues/227), [bug](https://github.com/11ty/eleventy-base-blog/issues/228), [bug](https://github.com/11ty/eleventy-base-blog/issues/229).
+
+I want Eleventy to continue growing and for Eleventy’s new users to have great experiences. Although the bugs I found are minor, any bugs in such a template project will be endlessly copied into new blogs, so their impact is magnified.
+
 ## Conclusion
 
 After conducting this experiment, I stand by my conclusion from last year's comparison of Web Origami with Astro:
@@ -287,7 +293,7 @@ After conducting this experiment, I stand by my conclusion from last year's comp
 > _I myself prefer solutions that are more explicit and less magic._
 
 
-I don't know the Eleventy team, but from what I can tell, they seem like perfectly nice people who care deeply about their tool. If you end up using Eleventy for your site, chances are it'll work out just fine.
+I don't know the Eleventy team, but they seem like perfectly nice people who care deeply about their users and want to create a good tool for them. If you pick Eleventy for your site, it'll probably work out just fine.
 
 If you're interested in trying Origami for a blog, I think you'll like it. You can start with the corresponding [`origami-blog-start`](https://github.com/WebOrigami/origami-blog-start) template projecct.
 
@@ -297,9 +303,9 @@ These are small points I noticed in studying the Eleventy blog; none are as impo
 
 ### JavaScript as a template language
 
-Template languages like Nunjucks are common, but they become another language you need to learn. If you already know JavaScript, that’s enough to be able to do whatever you want in a template in Origami.
+Template languages like Nunjucks are common, but they become another language you need to learn. If you already know JavaScript, that’s enough to be able to do anything you want in a template in Origami.
 
-As a bonus, this means that you don’t have to do special things to invoke JavaScript from a template. When the Eleventy version wants to insert a timestamp onto a page, it registers a small JavaScript function:
+As a bonus, this means that you don’t have to do special things to invoke JavaScript from a template. When the Eleventy version wants to insert a timestamp onto a page, it registers a small JavaScript function as a [shortcode](https://www.11ty.dev/docs/shortcodes/):
 
 ```js
 eleventyConfig.addShortcode("currentBuildDate", () => {
@@ -307,13 +313,13 @@ eleventyConfig.addShortcode("currentBuildDate", () => {
 });
 ```
 
-This function can then called by name from a Nunjucks template:
+This shortcode can then called by name from a Nunjucks template:
 
 ```
 built on {% currentBuildDate %}
 ```
 
-The Origami template can just inline the desired JavaScript directly:
+You can skip the registration in Origami and just inline the desired JavaScript directly:
 
 ```js
 built on ${ new Date().toISOString() }
@@ -325,7 +331,7 @@ If the code were longer, you could put it in its own JavaScript file and call th
 ${ readableDate.js(post.date) }
 ```
 
-### Templates as functions
+### Passing data to templates
 
 A number of the Nunjucks templates in the Eleventy blog include lines like this:
 
@@ -334,7 +340,7 @@ A number of the Nunjucks templates in the Eleventy blog include lines like this:
 {% include "postslist.njk" %}
 ```
 
-As I understand it, a Nunjucks `include` doesn’t let you pass data directly, so you have to pass data via what's effectively a global variable. That approach seems fraught with high potential for errors.
+As I understand it, a Nunjucks `include` doesn’t let you pass data directly, so you have to pass data via what's effectively a global variable. That approach is fraught with a high potential for errors.
 
 Origami templates are functions, so you can pass data to them directly:
 
@@ -344,11 +350,11 @@ ${ postList.ori.html(posts) }
 
 ### Focusing on representing pages
 
-Blogging tools like Eleventy use folder structure to determine the built site structure. This leads them to put a focus on pages, such as the page for an individual post.
+Blogging tools like Eleventy use folder structure to determine the built site structure. This approach focuses on complete resources, such as the page for an individual post.
 
 But blog posts in this project actually have three representations:
 
-1. The post page in the `blog/` area
+1. The post page in the `blog` area
 2. A post entry in lists of posts: home page, `blog/index.html`, and tag pages
 3. An post entry in the feed at `feed/feed.xml`
 
@@ -356,7 +362,7 @@ The folder structure only gives you a way to conveniently express the first repr
 
 Meanwhile, using folder structure to represent site structure has limits. It took me a while to realize that the single file [`tag-pages.njk`](https://github.com/JanMiksovsky/eleventy-base-blog/blob/main/content/tag-pages.njk) isn't just a template for a tag page; an embedded block of JavaScript at the top of the file appears to also generate the collection of pages like `tags/second-tag/index.html`.
 
-In contrast, the Origami `site.ori` file shown earlier includes an explicit definition of the `tags/` area.
+In contrast, the Origami `site.ori` file shown earlier includes an explicit definition of the `tags` area.
 
 ### Inlining CSS
 
@@ -364,9 +370,9 @@ The original Eleventy blog inlined the main CSS stylesheet into every page inste
 
 ### Navigation plugin
 
-The Eleventy version uses an [Eleventy navigation plugin](https://www.11ty.dev/docs/plugins/navigation/). I'm probably missing something, but as far as I can tell, here the plugin is used to add `aria-current` to 3 links.
+The Eleventy version uses an [Eleventy navigation plugin](https://www.11ty.dev/docs/plugins/navigation/). I'm probably missing something, but it looks like here the plugin is used to add an `aria-current` attribute to 3 links.
 
-Invoking magic to do this sort of thing feels like overkill to me. I implemented this by addition conditions to the 3 links in question:
+Invoking magic to do this sort of thing feels like overkill to me. I implemented this by adding conditions to the 3 links in question:
 
 ```
 ${ _.area === "Home" ? `aria-current="page"` : "" }
@@ -376,15 +382,15 @@ This does the job, and is a lot easier for me to understand. This could be scale
 
 ### HTML rewrites
 
-I was baffled by this template bit in the Eleventy version:
+I was baffled by this template fragment in the Eleventy version:
 
 ```
 Go <a href="index.njk">home</a>.
 ```
 
-I just couldn’t figure out what this was doing — it’s a static site, so what would this even mean? Even closely reading the project’s source code didn’t help me see how this HTML was magically getting rewritten.
+I just couldn’t figure out what this was doing — what would it even mean to navigate to a Nunjucks template? Even closely reading the project’s source code didn’t help me see how this HTML was magically getting rewritten.
 
-Claude Code identified this code as something handled by the [Eleventy InputPath to URL plugin](https://www.11ty.dev/docs/plugins/inputpath-to-url/).
+Claude Code identified this fragment as something handled by the [Eleventy InputPath to URL plugin](https://www.11ty.dev/docs/plugins/inputpath-to-url/).
 
 Some people may love that kind of magic; I’m not one of them.
 
@@ -406,13 +412,7 @@ This Eleventy blog uses 4 common Eleventy plugins (plus an additional one from t
 
 All of these tasks have one thing in common: _they have nothing to do with Eleventy._ Every one of them is something you might want to do on any static site, regardless of which tool you’re using to make it.
 
-It’s in the nature of tools with opaque interior workings to require tool-specific plugins. The problem with this arrangement is that we, collectively, waste time reimplementing the same ideas over and over for different tools — instead of sharing code that can work with many tools.
+It’s in the nature of tools with proprietary interior workings to require tool-specific plugins. The problem is that we, collectively, waste time reimplementing the same ideas over and over for different tools — instead of sharing general-purpose code that can work with many tools.
 
-Extensibility in Origami is provided by calling functions, which can be written to be as general as possible. The aforementioned Origami package for [turning a data object into an RSS feed](https://github.com/WebOrigami/json-feed-to-rss) is a plain JavaScript function with no dependencies on Origami at all. Others are written around the use of the [standard Map class as the basis for tree structures](https://weborigami.org/async-tree/), an approach that’s at least theoretically adoptable by other tools.
-
-### Bugs
-
-I ended up finding what I believe are several minor bugs in the sample `eleventy-base-blog` project. I reported all of them.
-
-I want Eleventy to continue growing and for Eleventy’s new users to have a good experience. Although the bugs I found are small, any bugs in a template blog like this one will be endlessly copied into new blogs, so fixing them might be particularly worthwhile.
+Extensibility in Origami is provided by calling functions that can be written to be as general as possible. The aforementioned Origami package for [turning a data object into an RSS feed](https://github.com/WebOrigami/json-feed-to-rss) is a plain JavaScript function that has nothing to do with Origami at all. Other Origami packages are written around the use of the [standard Map class as the basis for tree structures](https://weborigami.org/async-tree/), an approach that’s at least theoretically adoptable by other tools.
 
