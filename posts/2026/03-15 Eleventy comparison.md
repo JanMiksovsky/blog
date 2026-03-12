@@ -1,5 +1,5 @@
 ---
-title: Is Eleventy really that simple? Comparing a sample blog in Origami and Eleventy
+title: Is Eleventy actually simple? Comparing a sample blog in Origami and Eleventy
 draft: true
 ---
 
