@@ -54,29 +54,29 @@ The files floating in space aren’t directly referenced by any other files, so 
 
 I eventually found an “advanced” documentation page called [Order of Operations](https://www.11ty.dev/docs/advanced-order/) that explained most (but not all) of what was going on. I then had Claude Code guess/explain how the remaining files worked. This clarified that, e.g., Eleventy template engine has lets you register JavaScript functions as "filters" you can from templates, so many of the `.njk` files were actually invoking code in `filters.js`. I hadn't been able to work out such connections myself.
 
-I was finally mapped a fuller dependency diagram for the Eleventy blog, here showing implicit connections as dashed lines:
+I was eventually able to flesh out the above dependency diagram, adding the implicit connections as dashed lines:
 
 ![](/images/2026/03/eleventy2.svg)
 
-Roughly half the connections in this project are dashed lines representing “action at a distance” — you have to understand the system to know the connection exists. This may be acceptable for something you will use all the time, but it certainly does make learning the system, or coming back to it, more difficult.
+Roughly half the connections in this project are dashed lines representing “action at a distance” — if you don't already know how the system works, such connections are hard to discover or intuit. This may be acceptable for something you will use all the time, but it certainly does make learning the system, or coming back to it, more difficult.
 
 ## Explicit connections are simpler
 
-In Web Origami you take a rather different approach to building a site. Instead of focusing on folders and configuration, you define the site you want in the [Origami dialect of JavaScript](https://weborigami.org/language/expressions) that allows for embedded file paths. You build the project with a `build` command that's a tiny one-line Origami program (in which function call parentheses are typically omitted):
+In Web Origami you take a rather different approach to building a site. Instead of focusing on folders and configuration, you define the site you want in the [Origami dialect of JavaScript](https://weborigami.org/language/expressions) that's basically JavaScript expressions with embedded file paths. You build the project with a `build` command like:
 
 ```
 copy src/site.ori, clear files:build
 ```
 
-You don’t know Origami, so the meaning of this program will be unclear — but you can still see an explicit reference to the file [`site.ori`](https://github.com/JanMiksovsky/origami-eleventy-blog/blob/main/src/site.ori). If you open that file, you’ll see it explicitly references all the files that it uses. (We'll look at the file in a moment.)
+You don’t know Origami, so the meaning of this command will be unclear — but you can still see an explicit reference to the file [`site.ori`](https://github.com/JanMiksovsky/origami-eleventy-blog/blob/main/src/site.ori). If you open that file, you’ll see it explicitly references all the files it uses. (We'll look at the file in a moment.)
 
 You can repeat that process, following links from one file to another, to recover the _entire_ graph of source file calls:
 
 ![](/images/2026/03/origami.svg)
 
-This Origami project has no hidden associations. Everything happens because an explicit line of code makes it happen.
+The Origami project has no hidden associations. Everything happens because an explicit line of code makes it happen.
 
-This property of an Origami project is enormously helpful when I read someone’s else project. It doesn’t matter how they’ve written it; I can *always* start at the `build` command and work forward to find all the code. That same guarantee is also invaluable to me reading my own projects from six months ago.
+This property of an Origami project is enormously helpful when I read someone’s else project — it doesn’t matter how they’ve written it; I can *always* start at the `build` command and work forward to find all the code. The project's author also benefits from this same guarantee when they read their own project after some time away from it.
 
 ## Code is more concise than configuration
 
@@ -84,7 +84,7 @@ This property of an Origami project is enormously helpful when I read someone’
 
 Let's look at how both projects define the overall structure of the site.
 
-Eleventy doesn't really have a single place you define the blog's overall structure. Most static site generators leverage the natural tree-like structure of a folder hierarchy. The good news is that the file system itself is the best picture you're going to get of your site. That's also the bad news.
+Like most static site generators, Eleventy leverages the natural tree-like structure of a folder hierarchy. The good news is that the file system itself is the best picture you're going to get of the site the project will produce. That's also the bad news.
 
 If we look at the folder structure of the Eleventy project, including all of the relevant source files, the folder structure looks like:
 
@@ -112,9 +112,9 @@ content/
 eleventy.config.js
 ```
 
-Experienced Eleventy developers can presumably picture the resulting site. They can probably also read [the lengthy configuration file](https://github.com/JanMiksovsky/eleventy-base-blog/blob/main/eleventy.config.js) and understand what it does.
+Experienced Eleventy developers can presumably picture the resulting site, especially if they also scan [the lengthy configuration file](https://github.com/JanMiksovsky/eleventy-base-blog/blob/main/eleventy.config.js).
 
-The premise of a coding-focused approach like Origami is that you describe what you want in code. Here's the `site.ori` Origami file that creates the site's tree of resources:
+In contrast, the premise of a coding-focused approach like Origami is that you describe what you want in code, like this `site.ori` file which creates the blog:
 
 ```js
 // This file defines the structure of the entire blog site
@@ -181,7 +181,7 @@ Even if you don't know Origami or JavaScript, you can probably still squint and 
 
 ### Defining a feed
 
-As another example, let’s look at the code required to give this blog a feed. The Eleventy version uses the [Eleventy RSS plugin](https://www.11ty.dev/docs/plugins/rss/), which is configured this way:
+As another example, let’s look at the code required to give this blog a feed. The Eleventy version uses the [Eleventy RSS plugin](https://www.11ty.dev/docs/plugins/rss/), which in this project is configured this way:
 
 ```js
 eleventyConfig.addPlugin(feedPlugin, {
@@ -235,11 +235,11 @@ The Origami project uses a [function that generates an RSS feed](https://github.
 Both projects use a fair bit of code but in _completely_ different ways:
 
 * The Eleventy version configures parameters for a feed-generation system whose internal workings are opaque to you. Your ability to customize that feed is limited to the extent the plugin's developers have correctly anticipated your needs.
-* The Origami version creates a feed from scratch. That fragment above is _doing the work the Eleventy plugin does_. If you want it to do something different, you retain the possibility to change it.
+* The Origami version creates a feed from scratch. That fragment above is _doing the work the Eleventy plugin does_. Your ability to customize that feed is limited to the extent you can describe what you want in code.
 
-This is the same difference between looking at numbers in Intuit QuickBooks and Microsoft Excel. The former is configured; the latter lets you code whatever you want. Configuration is generally sold as simpler than coding — but in my experience coding is actually simpler than configuration.
+This is the same difference between looking at numbers in Intuit QuickBooks and Microsoft Excel. The former is configured; the latter lets you code whatever you want. Configuration is generally sold as simpler than coding — but for creating sites, coding can actually be simpler than configuration.
 
-A long-term advantage of coding things is that you're learning transferrable knowledge. Your potential mastery of the Eleventy RSS plugin data schema won't help you in a different blog tool, or even a different Eleventy plugin. In contrast, learning an interchange format like RSS or (here) JSON Feed is knowledge you can apply elsewhere, as are the data manipulation techniques employed in the code above.
+A long-term advantage of coding things is that you're learning transferrable knowledge. Your potential mastery of the Eleventy RSS plugin data schema won't help you in a different blog tool, or even using a different Eleventy plugin. In contrast, learning an interchange format like RSS or (here) JSON Feed is knowledge you can apply elsewhere, as are the data manipulation techniques employed in the code above.
 
 ## Code is more expressive than configuration
 
@@ -254,9 +254,9 @@ I've never used this particular layout for a project, but in code it was fairly 
 
 I point this out because folder-based, configuration-focused tools will impose particular demands on how you organize your content. I have no idea whether it would be possible to configure Astro, say, to work with the particular `content` folder layout of this Eleventy project.
 
-Tools like Eleventy and Astro also impose very specific ideas about how you organize your source files. You might not care about that, or may you care about that a lot. In the Origami project, there's nothing special about the way the source files are organized; structure the source code however makes sense to you.
+Tools like Eleventy and Astro also impose very specific ideas about how you organize your source files. You might not care about that, or you may care about that a lot. In the Origami project, there's nothing special about the source file names or organization; you can structure the files in whatever way makes sense to you.
 
-Note: _both approaches require too much code!_ I hope someday you can make a great blog for yourself with little or no coding that is nevertheless under your complete control and isn't ransoming your own writing with a subscription.
+Of course, _both approaches require too much code!_ I hope someday you can make a great blog for yourself with little or no coding, one that is nevertheless under your complete control and isn't ransoming your own writings to you with a monthly subscription.
 
 But we have to start somewhere. Given that today both projects have to start with a bunch of code, you might as well think about what code you want to have to learn and tinker with.
 
@@ -264,7 +264,7 @@ But we have to start somewhere. Given that today both projects have to start wit
 
 If you're shopping for a blogging tool, I'd encourage you to find something that's simple enough that you understand it.
 
-I think the conciseness of code can reflect the approximate simplicity of the approach, so I totaled the size of all source files in each project: configuration code, data, scripts, and templates. (I did not count markdown content as source, and in any event both projects use the same markdown.)
+I think that conciseness of (legible) code can often correlate with simplicity, so I totaled the size of all source files in each project: configuration code, data, scripts, and templates. (I did not count markdown content as source, and in any event both projects use the same markdown.)
 
 Both projects are fairly concise. Eleventy has a hidden advantage: its folder structure implicitly encodes meaning that Origami must explicitly state in code. Nevertheless, the Origami version is distinctly smaller:
 
@@ -274,28 +274,25 @@ Performance should probably be your secondary concern when evaluating blogging t
 
 That said, I timed builds of both approaches via `time npm run build` on a 2024 MacBook Air M3. I threw the first (longest) time away, then averaged the `real` time of the next three builds.
 
-Both tools build this tiny blog project in less than a second:
+Both Origami and Eleventy build this tiny blog project in less than a second:
 
 ![](/images/2026/03/buildTime.png)
 
-Origami comes out ahead here, but again performance shouldn't be your primary concern. (I'm nevertheless happy to see Origami perform so well. That's not a reflection of coding prowess; Origami's fundamental approach is precisely suited for this task.)
+While performance shouldn't be your primary concern, Origami comes out ahead here. (I'm happy to see Origami perform so well; Origami's fundamental approach is precisely suited for such tasks.)
 
 ### Bugs
 
-I found what I think are three very minor bugs in the sample `eleventy-base-blog` project. I reported all of them: [bug](https://github.com/11ty/eleventy-base-blog/issues/227), [bug](https://github.com/11ty/eleventy-base-blog/issues/228), [bug](https://github.com/11ty/eleventy-base-blog/issues/229).
+I found what I think are three very minor bugs in the sample `eleventy-base-blog` project.
 
-I want Eleventy to continue growing and for Eleventy’s new users to have great experiences. Although the bugs I found are minor, any bugs in such a template project will be endlessly copied into new blogs, so their impact is magnified.
+Although the bugs I found are minor, any bugs in a template project like this will be endlessly copied into new blogs, so their impact is magnified. I want Eleventy to continue growing and for Eleventy’s new users to have great experiences. With that in mind, I reported all three bugs: [bug](https://github.com/11ty/eleventy-base-blog/issues/227), [bug](https://github.com/11ty/eleventy-base-blog/issues/228), [bug](https://github.com/11ty/eleventy-base-blog/issues/229).
 
 ## Conclusion
 
-After conducting this experiment, I stand by my conclusion from last year's comparison of Web Origami with Astro:
+For tasks like making a blog, I think an explicit, code-oriented solution is simpler, more concise, and more expressive.
 
-> _I myself prefer solutions that are more explicit and less magic._
+I don't know the Eleventy team personally, but they seem like perfectly nice people who care deeply about their users and want to create good tools for them. If you pick Eleventy for your site, it'll probably work out fine.
 
-
-I don't know the Eleventy team, but they seem like perfectly nice people who care deeply about their users and want to create a good tool for them. If you pick Eleventy for your site, it'll probably work out just fine.
-
-If you're interested in trying Origami for a blog, I think you'll like it. You can start with the corresponding [`origami-blog-start`](https://github.com/WebOrigami/origami-blog-start) template projecct.
+If you're interested in trying Origami for a blog, I think you'll like it. You can start with the corresponding [`origami-blog-start`](https://github.com/WebOrigami/origami-blog-start) template project.
 
 ## Appendix
 
@@ -340,7 +337,7 @@ A number of the Nunjucks templates in the Eleventy blog include lines like this:
 {% include "postslist.njk" %}
 ```
 
-As I understand it, a Nunjucks `include` doesn’t let you pass data directly, so you have to pass data via what's effectively a global variable. That approach is fraught with a high potential for errors.
+As I understand it, a Nunjucks `include` doesn’t let you pass data directly, so you have to pass data via what's effectively a global variable. That approach is fraught with a high potential for errors. (Note: Eleventy allows the use of template engines other than Nunjucks; perhaps those are better.)
 
 Origami templates are functions, so you can pass data to them directly:
 
@@ -388,21 +385,19 @@ I was baffled by this template fragment in the Eleventy version:
 Go <a href="index.njk">home</a>.
 ```
 
-I just couldn’t figure out what this was doing — what would it even mean to navigate to a Nunjucks template? Even closely reading the project’s source code didn’t help me see how this HTML was magically getting rewritten.
+I just couldn’t figure out what this was doing — what would it even mean to navigate to a Nunjucks template? Looking at the running site, I could see that the link was magically being rewritten. But even closely reading the project’s source code couldn't help me see how or why this was happening.
 
 Claude Code identified this fragment as something handled by the [Eleventy InputPath to URL plugin](https://www.11ty.dev/docs/plugins/inputpath-to-url/).
 
-Some people may love that kind of magic; I’m not one of them.
+Some people love such magic; I’m not one of them.
 
 ### Sitemaps
 
-The original Eleventy project defined a `sitemap.xml` file, so I implemented that for the Origami version.
-
-That said, a sitemap is unnecessary for this project; all the content is trivially discoverable by a search engine. The code to generate the sitemap ends up being both a distraction and a possible maintenance burden.
+The original Eleventy project defined a `sitemap.xml` file so I implemented one for the Origami version. That said, a sitemap seems unnecessary for this blog; all the content is trivially discoverable by a search engine. The code to generate the sitemap ends up being both a distraction and a possible maintenance burden.
 
 ### Plugins are general features bound to specific projects
 
-This Eleventy blog uses 4 common Eleventy plugins (plus an additional one from the lead developer) to:
+The original Eleventy blog uses 4 common Eleventy plugins (plus an additional one from the lead developer) to:
 
 * Optimize images
 * Help with navigation
