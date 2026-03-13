@@ -76,7 +76,7 @@ You can repeat that process, following links from one file to another, to recove
 
 The Origami project has no hidden associations. Everything happens because an explicit line of code makes it happen.
 
-This property of an Origami project is enormously helpful when I read someone’s else project — it doesn’t matter how they’ve written it; I can *always* start at the `build` command and work forward to find all the code. The project's author also benefits from this same guarantee when they read their own project after some time away from it.
+This property of an Origami project is enormously helpful when I read someone else’s project — it doesn’t matter how they’ve written it; I can *always* start at the `build` command and work forward to find all the code. The project's author also benefits from this same guarantee when they read their own project after some time away from it.
 
 ## Code is more concise than configuration
 
@@ -234,7 +234,7 @@ The Origami project uses a function that [generates an RSS feed](https://github.
 }
 ```
 
-Both projects produces the feed with code — but in completely different ways:
+Both projects produce the feed with code — but in completely different ways:
 
 * The Eleventy version configures parameters for a feed-generation plugin whose internal workings are opaque to you. Your ability to customize that feed is limited to the extent the plugin's developers have correctly anticipated your needs.
 * The Origami version creates a feed from scratch. That fragment above is _doing the work the Eleventy plugin does_. Your ability to customize that feed is limited to the extent you can describe what you want in code.
@@ -250,7 +250,7 @@ Another advantage of code over configuration is expressiveness: the degree to wh
 In this experiment, I could readily use Origami to support the Eleventy sample blog's preferred folder layout:
 
 * Posts are stored in a top-level `content` folder, like `content/firstpost.md`.
-* Posts with images are stored in a subfolder holding both the post (`content/fourthpost/fourtpost.md`) and associated images (`content/fourthpost/possum.png`).
+* Posts with images are stored in a subfolder holding both the post (`content/fourthpost/fourthpost.md`) and associated images (`content/fourthpost/possum.png`).
 
 I've never used this particular layout for a project before, but in code it was straightforward to implement.
 
@@ -286,7 +286,7 @@ While performance shouldn't be your primary concern, in this case at least Origa
 
 I found what I think are three very minor issues in the sample `eleventy-base-blog` project. Although the issues are small and debatable, any bugs in such a template project will be endlessly copied into new blogs, so their potential impact is magnified.
 
-I want Eleventy to continue growing and their new users to have great experiences, so I reported all three issues to Eleventy: [issue](https://github.com/11ty/eleventy-base-blog/issues/227), [issue](https://github.com/11ty/eleventy-base-blog/issues/228), [issue](https://github.com/11ty/eleventy-base-blog/issues/229).
+I want Eleventy to continue growing and their new users to have great experiences, and thinking the issues would be interesting to Eleventy, I reported them: [issue](https://github.com/11ty/eleventy-base-blog/issues/227), [issue](https://github.com/11ty/eleventy-base-blog/issues/228), [issue](https://github.com/11ty/eleventy-base-blog/issues/229).
 
 ## Conclusion
 
@@ -312,7 +312,7 @@ eleventyConfig.addShortcode("currentBuildDate", () => {
 });
 ```
 
-This shortcode can then called by name from a Nunjucks template:
+This shortcode can then be called by name from a Nunjucks template:
 
 ```
 built on {% currentBuildDate %}
