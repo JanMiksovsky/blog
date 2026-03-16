@@ -37,7 +37,7 @@
   pagefind/ = Origami.once(() => package:@weborigami/pagefind({ posts }))
 
   // The 10 most recent published posts, used for home page and feeds
-  (published) = Tree.filter(data.ori, { deep: true, test: (post) => !post.draft })
+  (published) = Tree.filter(data.ori, { deep: true, test: (post) => post.publish })
   (recent) = Tree.deepTake(published, 10)
 
   // Feeds

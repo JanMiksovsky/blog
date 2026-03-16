@@ -1,5 +1,6 @@
 import { isPlainObject, isUnpackable, toString } from "@weborigami/async-tree";
 import { Origami } from "@weborigami/origami";
+import process from "node:process";
 
 /**
  * Given the basic set of information in a post document, return a new document
@@ -15,6 +16,7 @@ export default async function postData(document, filename, year) {
   const rawTitle = isDocument && document.title ? document.title : undefined;
   const title = rawTitle ? stripHashTags(rawTitle) : undefined;
   const draft = isDocument && document.draft;
+  const publish = process.env.NODE_ENV !== "production" || !draft;
 
   const html = await Origami.mdHtml(markdown);
 
@@ -31,7 +33,7 @@ export default async function postData(document, filename, year) {
   const match = filename.match(dateRegex);
   if (!match) {
     console.error(
-      `Filename doesn't start with a date in MM-DD format: ${filename}`
+      `Filename doesn't start with a date in MM-DD format: ${filename}`,
     );
   }
   const { month, day } = match.groups;
@@ -85,6 +87,7 @@ export default async function postData(document, filename, year) {
       formattedDate,
       html,
       path,
+      publish,
       slug: postSlug,
       socialTitle,
       text,
@@ -96,7 +99,7 @@ export default async function postData(document, filename, year) {
     imagePath && { imagePath },
     previewSlug && { previewSlug },
     previewUrl && { previewUrl },
-    title && { title }
+    title && { title },
   );
 }
 
