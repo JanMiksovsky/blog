@@ -61,12 +61,12 @@ The Origami version, which is doing much of the work from scratch, is _smaller!_
 
 It seems Origami's smaller size can be attributed in part to:
 
-* JavaScript template literals are a little more concise than the equivalent Nunjucks templates
+* JavaScript template literals (3763 bytes) are significantly more concise than the equivalent Nunjucks templates (7000 bytes). Both Origami and Eleventy let you use other template engines, so templates could be factored out of this analysis.
 * JavaScript templates can inline JavaScript expressions directly instead of requiring separate registration as "shortcodes" or "filters" (see Appendix below)
 * Some Eleventy files include instructional commented-out code blocks which could be trimmed
 * Origami has a built-in function to create a sitemap
 
-But the biggest difference by far is that the top-level Origami site definition in `site.ori` takes much less code than `eleventy.config.js` (which configures the main behavior of Eleventy's static site generator). In the domain of site creation, code is indeed more concise than configuration.
+Even setting aside the choice of template engine, a significant difference between these approaches is that the Origami site definition in `site.ori` (which defines the top-level structure of the site) is 30% the size of `eleventy.config.js` (which configures the main behavior of Eleventy's static site generator). In the domain of site creation, code is indeed more concise than configuration.
 
 Speaking of metrics, performance should probably be no more than a secondary concern for you when evaluating blogging tools. Most static site generators are quite fast, especially for personal sites.
 

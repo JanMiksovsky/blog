@@ -50,7 +50,7 @@ export default {
 
 Most of these configuration files had no explanatory comments, by which I only conclude that we're not expected to look at them. But if the average user isn't expected to look at these files, why _not_ have comments for those users that do look at them?
 
-The above file is setting a path to a Nunjucks layout, but I couldn't see how it was used. I later learned that putting a file called `content.11tydata.js` inside a folder called `content` implicitly associates that data with the folder. In this case, it defines a default `layout` property that will be applied as the base template for _other_ templates in the `content` folder, like `content/index.njk`.
+The above file is setting a path to a Nunjucks layout, but I couldn't see how it was used. As discussed last time, configuration-oriented tools tend toward "action at a distance" behavior that is hard to intuit. I later learned that putting a file called `content.11tydata.js` inside a folder called `content` implicitly associates that data with the folder. In this case, it defines a default `layout` property that will be applied as the base template for _other_ templates in the `content` folder, like `content/index.njk`.
 
 Most of the Eleventy configuration code feels like this. The site builds a blog as advertised, but it feels like substantial work to piece together the site's construction to the point where you could change it.
 

@@ -1,6 +1,5 @@
 ---
 title: "Code is easier to follow than configuration: comparing a sample blog in Web Origami and Eleventy"
-draft: true
 ---
 
 This post series is for people who want to build or rebuild a site.
