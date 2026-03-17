@@ -87,6 +87,6 @@ This property of an Origami project makes it much easier to follow what the proj
 Other posts in this series:
 
 1. Code is easier to follow than configuration [this post]
-1. Code is more coherent than configuration [coming]
+1. [Code is more coherent than configuration](/posts/2026/03-18-code-is-more-coherent-than-configuration.html)
 1. Code is more expressive than configuration [coming]
 1. Code is more concise than configuration [coming]
