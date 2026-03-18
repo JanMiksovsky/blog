@@ -128,5 +128,5 @@ Other posts in this series:
 
 1. [Code is easier to follow than configuration](/posts/2026/03-17-code-is-easier-to-follow-than-configuration.html)
 1. Code is more coherent than configuration [this post]
-1. Code is more expressive than configuration [coming]
+1. [Code is more expressive than configuration](/posts/2026/03-19-code-is-more-expressive-than-configuration.html)
 1. Code is more concise than configuration [coming]
