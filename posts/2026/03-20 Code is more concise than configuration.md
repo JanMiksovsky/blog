@@ -1,6 +1,5 @@
 ---
 title: "Code is more concise than configuration: comparing a sample blog in Web Origami and Eleventy"
-draft: true
 ---
 
 This post is the fourth and last in a series comparing the same sample blog in [Web Origami](https://weborigami.org) and [Eleventy](https://www.11ty.dev):
@@ -65,8 +64,11 @@ It seems Origami's smaller size can be attributed in part to:
 * JavaScript templates can inline JavaScript expressions directly instead of requiring separate registration as "shortcodes" or "filters" (see Appendix below)
 * Some Eleventy files include instructional commented-out code blocks which could be trimmed
 * Origami has a built-in function to create a sitemap
+* The Origami site definition in `site.ori` (which defines the top-level structure of the site) is 30% the size of `eleventy.config.js` (which configures the main behavior of Eleventy's static site generator).
 
-Even setting aside the choice of template engine, a significant difference between these approaches is that the Origami site definition in `site.ori` (which defines the top-level structure of the site) is 30% the size of `eleventy.config.js` (which configures the main behavior of Eleventy's static site generator). In the domain of site creation, code is indeed more concise than configuration.
+In the domain of site creation, code is more concise than configuration.
+
+Static site generators presume that sites are so complex that it's better to generate a site with an engine whose behavior you configure. But _sites just aren't that complex!_ If you know how to write HTML and CSS, you can put together a site using zero magic. The code to do so is _smaller_ than the configuration code required to influence a static site generator.
 
 Speaking of metrics, performance should probably be no more than a secondary concern for you when evaluating blogging tools. Most static site generators are quite fast, especially for personal sites.
 
@@ -80,7 +82,7 @@ While performance shouldn't be your primary concern, in the case of this sample 
 
 ## Conclusion
 
-I interpret these results as demonstrating that an explicit, code-oriented solution like Origami is easier to follow, more coherent, more expressive, and more concise than one predicated on configuration like Eleventy. I expect the same comparison holds true for the countless other static site generators that rely on a combination of configuration, naming conventions, and folder structure.
+Summing up this post series, I beleive this experiment shows that an explicit, code-oriented solution like Origami is easier to follow, more coherent, more expressive, and more concise than one predicated on configuration like Eleventy. I expect the same comparison holds true for the countless other static site generators that rely on a combination of configuration, naming conventions, and folder structure.
 
 Not every person wants to code, or has the time or energy to learn to code. But I think configuration-based site generators cover up the complexity of code with a system that is ultimately just as hard to understand. If you're capable of configuring a tool like Eleventy, you are just as capable of coding in Web Origami.
 
@@ -144,7 +146,7 @@ A number of the Nunjucks templates in the Eleventy blog include lines like this:
 {% include "postslist.njk" %}
 ```
 
-As I understand it, a Nunjucks `include` doesn’t let you pass data directly, so you have to pass data via what's effectively a global variable. That approach is so fraught with the high potential for errors that it's hard for me to recommend any system that requires it. (Note: Eleventy allows the use of template engines other than Nunjucks; perhaps those are better.)
+As I understand it, a Nunjucks `include` doesn’t let you pass data directly, so you have to pass data via what's effectively a global variable. That approach is so fraught with the high potential for errors that it's hard for me to recommend any system that requires it. (Eleventy allows the use of template engines other than Nunjucks; perhaps those are better.)
 
 Origami templates are functions, so you can pass data to them directly:
 

@@ -69,7 +69,7 @@ The expressiveness of code gives you the freedom to tackle things the way you wa
 
 A long-term benefit of coding things is that you learn transferrable knowledge. Your potential mastery of the Eleventy RSS plugin data schema won't help you in a different blog tool, or even using a different Eleventy plugin. In contrast, learning an interchange format like RSS or (here) JSON Feed is knowledge you can apply elsewhere, as are the data manipulation techniques employed in the code above.
 
-_[As I was finishing this post series, I discovered that the Eleventy RSS plugin allows you to specify a [feed template](https://www.11ty.dev/docs/plugins/rss/#sample-feed-templates), giving you the same degree of expressiveness as Origami for a feed specifially although not as concisely. That only makes me wonder why the plugin has to exist at all — the feed template itself isn't that much longer than the plugin configuration code. In any event, there's no guarantee that other plugins will give you the same kind of escape hatch through code.]_
+_[As I was finishing this post series, I discovered that the Eleventy RSS plugin allows you to specify a [feed template](https://www.11ty.dev/docs/plugins/rss/#sample-feed-templates), giving you the same degree of expressiveness as Origami for a feed specifically although not as concisely. That only makes me wonder why the plugin has to exist at all — the feed template itself isn't that much longer than the plugin configuration code. In any event, there's no guarantee that other plugins will give you the same kind of escape hatch through code.]_
 
 The expressiveness of code comes into play at every level of the Origami site. At the site's highest level, I could readily use Origami to support the Eleventy sample blog's preferred folder layout:
 
@@ -91,4 +91,4 @@ Other posts in this series:
 1. [Code is easier to follow than configuration](/posts/2026/03-17-code-is-easier-to-follow-than-configuration.html)
 1. [Code is more coherent than configuration](/posts/2026/03-18-code-is-more-coherent-than-configuration.html)
 1. Code is more expressive than configuration [this post]
-1. Code is more concise than configuration [coming]
+1. [Code is more concise than configuration](/posts/2026/03-20-code-is-more-concise-than-configuration.html)
