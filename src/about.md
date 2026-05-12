@@ -62,7 +62,7 @@ For many years I drove my kids to school in a carpool with another family's chil
 
 ## Family journal and newsletter
 
-When our first child was born, my wife and I began jotting down little notes and stories that evolved into a family journal we've now maintained for many years. It's become a critical part of how I remember the events of our lives. Our journal site generates a monthly email newsletter, and each December I consolidate the year's journal stories into a holiday letter. Those things play important roles in keeping us connected with friends and family members. I encourage people to journal in any fashion they can manage — writing a few words down can make the difference between keeping a fond memory alive and letting it slip into oblivion.
+When our first child was born, my wife and I began jotting down little notes and stories that evolved into a [family journal](/posts/2026/05-11-journaling.html) we've now maintained for many years. It's become a critical part of how I remember the events of our lives. Our journal site generates a monthly email newsletter, and each December I consolidate the year's journal stories into a holiday letter. Those things play important roles in keeping us connected with friends and family members. I encourage people to journal in any fashion they can manage — writing a few words down can make the difference between keeping a fond memory alive and letting it slip into oblivion.
 
 ## Collage screen saver
 
