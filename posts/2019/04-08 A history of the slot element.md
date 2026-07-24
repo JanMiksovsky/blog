@@ -55,7 +55,7 @@ several objections to the API, including that the API didn’t provide robust en
 ## 2012
 
 I first came across web components in early 2012, and wrote a
-[blog post about web components](https://miksovsky.blogs.com/flowstate/2012/03/snapping-together-a-skyscraper.html&sa=D&ust=1554399746455000)
+[blog post about web components](/posts/2012/03-14-like-snapping-together-a-skyscraper-web-components-will-catalyze-a-completely-new-ecosystem-for-creating-ui.html)
 that March. At the time, I was working on an open source component library based on jQuery, and was excited by the prospect of a native UI component model for the web.
 
 On the other hand, I was concerned it might take a long time for web components to reach broad adoption across the major browsers. By 2012, the iPhone had become a major point of access to the web, and it was not clear whether Apple would ever implement support for Shadow DOM v0. Shadow DOM was already proving extremely difficult to polyfill. Without native Shadow DOM available on Mobile Safari, developers might avoid the technology altogether, and it might never take off.
