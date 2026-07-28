@@ -36,3 +36,5 @@ If you're interested in exploring some of the other #pondlife implementations:
 - [Origami](https://github.com/WebOrigami/pondlife)
 - [Python](https://github.com/JanMiksovsky/pondlife-python)
 - [Zig](https://github.com/JanMiksovsky/pondlife-zig)
+
+[Update July 28, 2026: I've posted a [video](https://www.youtube.com/watch?v=6t3BN3Z-TkE) that uses these different blog implementations to illustrate the map-based tree pattern for building sites.]
