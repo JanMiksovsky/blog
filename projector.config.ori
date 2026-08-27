@@ -1,0 +1,12 @@
+{
+  commands: [
+    {
+      label: "Publish to Netlify"
+      accelerator: "Shift+CmdOrCtrl+U"
+      click: () => package:@weborigami/netlify/publish(src/site.ori, {
+        netlifyProjectId: "7fdbdb9a-2ca7-4747-ad48-155c10fab680"
+        token: token.txt
+      })
+    }
+  ]
+}

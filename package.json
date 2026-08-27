@@ -2,8 +2,9 @@
   "name": "blog",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "0.6.0",
-    "@weborigami/pagefind": "0.0.15",
+    "@weborigami/origami": "0.7.1",
+    "@weborigami/netlify": "0.0.19",
+    "@weborigami/pagefind": "0.0.17",
     "canvas": "3.2.0"
   },
   "devDependencies": {
@@ -13,8 +14,8 @@
     "unified": "11.0.5"
   },
   "scripts": {
-    "build": "NODE_ENV=production ori copy src/site.ori, clear files:build",
-    "start": "ori serve watch ., =debug src/site.ori",
+    "build": "ori copy src/site.ori, clear files:build",
+    "start": "ori debug2 src/site.ori",
     "test": "node tools/test/*.test.js"
   }
 }
