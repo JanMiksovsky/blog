@@ -15,6 +15,7 @@
   },
   "scripts": {
     "build": "ori copy src/site.ori, clear files:build",
+    "publish": "ori publish src/site.ori, files:build, { manifest: 'built-files.json' }",
     "start": "ori debug2 src/site.ori",
     "test": "node tools/test/*.test.js"
   }
