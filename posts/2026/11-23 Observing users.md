@@ -37,6 +37,6 @@ I'll be honest: observing someone try to use your product is humbling and often 
 
 Some people have great difficulty acknowledging that the thing they helped make is the problem. At Microsoft in the 1990s, occasionally an engineer attending a usability lab test for the first time would make a disparaging comment along the lines of, "Where did you find such stupid users?" It could take such engineers a long time to reach the epiphany that the product they worked on had substantial design problems. It could take the engineer even longer to realize that _they themselves hadn't spotted the problem_ until the user ran into it. Maybe the stupid person isn't the one on the mirrored side of the one-way mirror.
 
-This is probably a fundamental reason why people steer clear of observing users. But fearing the awareness of shortcomings — and your own role in the process that led those shortcomings — is childish. It's a recipe for bad products, and you have so much to gain from a tiny investment of time in watching real people use your product.
+This is probably a fundamental reason why people steer clear of observing users. But fearing the awareness of shortcomings — and your own role in the process that led to those shortcomings — is childish. It's a recipe for bad products, and you have so much to gain from a tiny investment of time in watching real people use your product.
 
 If you've never done this, _why not try it once?_ Literally every time you watch users will be extremly educational.
